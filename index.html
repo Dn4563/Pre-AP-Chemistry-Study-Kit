@@ -613,8 +613,8 @@ function resDetail(q,s){
   }
   return h;
 }
-function resHTML(){
-  const exs=PT.secs.map((sec,si)=>({sec:sec,si:si})).filter(x=>x.sec.mode==='exam');
+function resHTML(si0){
+  const exs=[{sec:PT.secs[si0],si:si0}];
   let tot=0,ok=0,done=0;const byType={},byTopic={},rows=[];
   exs.forEach(x=>{x.sec.orig.forEach((id,n)=>{
     const q=x.sec.byId[id],r=qResult(x.sec,q);tot++;if(r.done)done++;if(r.done&&r.good)ok++;
@@ -622,10 +622,10 @@ function resHTML(){
     const tp=q.topic||'Other';const P=byTopic[tp]=byTopic[tp]||{ok:0,n:0,tot:0,bad:0,none:0};P.tot++;if(r.done){P.n++;if(r.good)P.ok++;else P.bad++;}else P.none++;
     rows.push({x:x,q:q,r:r,n:n});
   });});
-  let h='<div class="panel"><div class="rtop"><h2>Exam results</h2></div>';
-  if(!done){return h+'<p class="muted">You have not checked any exam questions yet. Work through Day 1 and Day 2, press Check Answer (or self-mark the FRQs), then come back here.</p></div>';}
+  let h='<div class="panel"><div class="rtop"><h2>'+esc(exs[0].sec.name.split(':')[0])+' results</h2><span class="muted">'+esc(exs[0].sec.name)+'</span></div>';
+  if(!done){return h+'<p class="muted">You have not checked any questions in this part of the exam yet. Work through it, press Check Answer (or self-mark the FRQs), then come back here. The other day is scored separately.</p></div>';}
   const pct=Math.round(ok/tot*100);
-  h+='<div class="fb '+(pct>=85?'okbox':(pct>=60?'':'badbox'))+'"><b>'+ok+' of '+tot+' correct ('+pct+'%)</b>'+(done<tot?' · '+(tot-done)+' question'+(tot-done===1?'':'s')+' not answered or self-marked yet, counted as not correct':'')+'. '+(pct>=85?'Strong. Keep reviewing the few misses below.':(pct>=70?'Solid, but the topics below still need work.':'Not there yet. Use the study list below, then retake the exam.'))+'</div>';
+  h+='<div class="fb '+(pct>=85?'okbox':(pct>=60?'':'badbox'))+'"><b>'+ok+' of '+tot+' correct ('+pct+'%)</b>'+(done<tot?' · '+(tot-done)+' question'+(tot-done===1?'':'s')+' not answered or self-marked yet, counted as not correct':'')+'. '+(pct>=85?'Strong. Keep reviewing the few misses below.':(pct>=70?'Solid, but the topics below still need work.':'Not there yet. Use the study list below, then retake this part.'))+'</div>';
   h+='<h3>By question type</h3><div class="wk">'+Object.keys(byType).map(k=>{const t=byType[k],p=Math.round(t.ok/t.tot*100);return '<div class="wkrow"><div class="wkhead"><b>'+esc(k)+'</b><span>'+t.ok+' of '+t.tot+' correct'+(t.n<t.tot?' ('+(t.tot-t.n)+' not answered)':'')+'</span></div><div class="wkbar"><i class="'+(p<60?'bad':(p<85?'mid':'ok'))+'" style="width:'+p+'%"></i></div></div>';}).join('')+'</div>';
   const need=Object.keys(byTopic).filter(k=>byTopic[k].bad||byTopic[k].none).sort((a,b)=>(byTopic[a].ok/byTopic[a].tot)-(byTopic[b].ok/byTopic[b].tot));
   h+='<h3>What to study next</h3>';
@@ -638,7 +638,6 @@ function resHTML(){
       (dk?'<div class="wkrev">Review: <b>'+esc(dk.name)+'</b> in the Study guide, then try the practice questions on this topic.</div>':'')+'</div>';}).join('')+'</div>';
   h+='<h3>Question by question</h3>';
   exs.forEach(x=>{
-    h+='<h4>'+esc(x.sec.name)+'</h4>';
     rows.filter(r=>r.x===x).forEach(r=>{
       const st=!r.r.done?'none':(r.r.good?'ok':'bad');
       const lbl=st==='ok'?'Correct':(st==='bad'?'Missed':'Not answered');
@@ -647,18 +646,19 @@ function resHTML(){
         (st==='ok'?'':'<div class="resd">'+(r.r.done?resDetail(r.q,r.r.s):(r.q.type==='frq'?'<div class="muted">Model answers:</div>'+resDetail(r.q,r.r.s):'<div class="muted">You did not check this question.</div>'))+'<div><button class="lnk" data-act="progjump" data-s="'+x.si+'" data-id="'+esc(r.q.id)+'">Go to this question</button></div></div>')+'</details>';
     });
   });
-  return h+'<div class="row"><button class="btn sec" data-act="ptres">Refresh</button></div></div>';
+  return h+'<div class="row"><button class="btn sec" data-act="ptres" data-s="'+si0+'">Refresh</button></div></div>';
 }
 function ptHTML(){
   const M=UI.tab==='exam'?'exam':'practice';
-  if(M==='exam'&&PT.res){
-    const bar='<div class="ptbar"><div class="subtabs">'+PT.secs.map((x,i)=>x.mode!==M?'':'<button class="stab" data-act="ptsec" data-i="'+i+'">'+esc(x.name)+'</button>').join('')+'<button class="stab on" data-act="ptres">Results</button></div></div>';
-    return bar+resHTML();
+  const rb=on=>PT.secs.map((x,i)=>x.mode!=='exam'?'':'<button class="stab'+(on===i?' on':'')+'" data-act="ptres" data-s="'+i+'">'+esc(x.name.split(':')[0])+' results</button>').join('');
+  if(M==='exam'&&PT.res!==false&&PT.res!=null){
+    const bar='<div class="ptbar"><div class="subtabs">'+PT.secs.map((x,i)=>x.mode!==M?'':'<button class="stab" data-act="ptsec" data-i="'+i+'">'+esc(x.name)+'</button>').join('')+rb(PT.res)+'</div></div>';
+    return bar+resHTML(PT.res);
   }
   let h=ptHTML0();
   if(M==='exam'){
-    h=h.replace('</div><div class="ptctl">','<button class="stab" data-act="ptres">Results</button></div><div class="ptctl">');
-    h=h.replace('<div class="ptctl">','<div class="ptctl"><button class="btn" data-act="ptres">Finish and see results</button>');
+    h=h.replace('</div><div class="ptctl">',rb(-1)+'</div><div class="ptctl">');
+    h=h.replace('<div class="ptctl">','<div class="ptctl"><button class="btn" data-act="ptres" data-s="'+PT.sec+'">Finish and see results</button>');
   }
   return h;
 }
@@ -670,7 +670,7 @@ function syncMain(){
   else if(r.checked&&r.correct){m.checked=true;m.correct=true;m.sel=r.sel;m.items=Object.assign({},r.items);}
 }
 ACT.ptsec=t=>{PT.res=false;PT.sec=Number(t.dataset.i);render();};
-ACT.ptres=()=>{PT.res=true;render();window.scrollTo(0,0);};
+ACT.ptres=t=>{PT.res=(t&&t.dataset&&t.dataset.s!==undefined)?Number(t.dataset.s):PT.sec;render();window.scrollTo(0,0);};
 ACT.ptintro=()=>{const n=PT.secs[PT.sec].name;PT.intro[n]=!PT.intro[n];render();};
 ACT.ptjump=t=>{const v=curView();v.h.cur=Number(t.dataset.n);render();};
 ACT.ptprev=()=>{const v=curView();if(v.h.cur>0)v.h.cur--;render();};
