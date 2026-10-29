@@ -1,0 +1,14 @@
+{
+  "name": "pre-ap-chemistry-study-kit",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync-core": "node scripts/sync-core.mjs",
+    "parse": "node scripts/parse.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node scripts/build.mjs && node test/clickthrough.test.mjs"
+  },
+  "devDependencies": {
+    "jsdom": "24.1.3"
+  }
+}

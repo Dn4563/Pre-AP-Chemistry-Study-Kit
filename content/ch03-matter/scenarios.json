@@ -1,0 +1,326 @@
+[
+  {
+    "deck": 1,
+    "q": "A student heats a sealed flask of liquid water until it is all steam. Which statement best describes the molecules in the steam?",
+    "opts": [
+      "They are still H₂O molecules, but now far apart.",
+      "Each H₂O molecule has split into hydrogen and oxygen atoms.",
+      "The water has become a different compound as it boiled.",
+      "The molecules shrink, so the gas takes up less space."
+    ],
+    "ans": 0,
+    "exp": "Boiling is a physical change. The H₂O molecules stay intact; only their motion and spacing change.",
+    "why": [
+      "",
+      "Boiling is a physical change, so the molecules are not split apart. Splitting water needs electrolysis.",
+      "The substance is still water. A different compound would need a chemical change.",
+      "The molecules do not change size; the spaces between them grow, so the gas spreads out."
+    ]
+  },
+  {
+    "deck": 2,
+    "q": "You crush a block of rock salt into powder and then dissolve the powder in water. How should the two changes be classified?",
+    "opts": [
+      "Crushing is physical and dissolving is chemical.",
+      "Both crushing and dissolving are physical changes.",
+      "Crushing is chemical and dissolving is physical.",
+      "Both crushing and dissolving are chemical changes."
+    ],
+    "ans": 1,
+    "exp": "The salt keeps its composition in both steps, so both are physical changes.",
+    "why": [
+      "Dissolving only spreads the salt through the water. No new substance forms, so it is physical.",
+      "",
+      "Crushing only changes the size of the pieces. The composition stays the same, so it is physical.",
+      "Neither process makes a new substance. Both are physical."
+    ]
+  },
+  {
+    "deck": 2,
+    "q": "A student drops an antacid tablet into vinegar and sees bubbles. What does this show?",
+    "opts": [
+      "Only a physical change, because the tablet gets smaller.",
+      "A change of state of the tablet into a gas.",
+      "A chemical change, because a new gas formed.",
+      "A mixture forming, because two substances were combined."
+    ],
+    "ans": 2,
+    "exp": "Gas formation is an indicator of a chemical change.",
+    "why": [
+      "A shrinking tablet alone could be dissolving, but bubbles of gas signal a new substance forming.",
+      "The tablet does not turn into gas; a gas forms from the reaction between the tablet and the vinegar.",
+      "",
+      "Combining substances can make a mixture, but bubbles of new gas show a reaction took place."
+    ]
+  },
+  {
+    "deck": 2,
+    "q": "Steel wool is massed, burned and massed again. The mass went up by 0.38 g. What is the best explanation?",
+    "opts": [
+      "Burning always adds mass to metals.",
+      "The iron atoms got heavier from the heat.",
+      "The steel wool absorbed water from the air.",
+      "Oxygen from the air combined with the iron."
+    ],
+    "ans": 3,
+    "exp": "Iron plus oxygen forms iron(III) oxide, which has more mass than the iron alone.",
+    "why": [
+      "Burning does not simply add mass. The extra mass comes from a specific reactant.",
+      "Heat does not make atoms heavier. The mass gain comes from additional atoms joining the iron.",
+      "Nothing in the data points to water. Burning iron combines with oxygen.",
+      ""
+    ]
+  },
+  {
+    "deck": 2,
+    "q": "Two samples of pure copper are compared: a tiny wire and a large block. Which property is identical?",
+    "opts": [
+      "Density",
+      "Volume",
+      "Length",
+      "Mass"
+    ],
+    "ans": 0,
+    "exp": "Density is intensive, so it does not depend on how much copper there is.",
+    "why": [
+      "",
+      "The block takes up more space, so volume differs. Volume is extensive.",
+      "Length depends on the size of the sample, so it is extensive.",
+      "The block has more matter, so its mass is greater. Mass is extensive."
+    ]
+  },
+  {
+    "deck": 3,
+    "q": "A jar holds pieces of Cu and Zn mixed together, written Cu & Zn. How should it be labeled?",
+    "opts": [
+      "An element, since both Cu and Zn are elements.",
+      "A mixture, because the & shows two substances.",
+      "A compound, since two types of atom are present.",
+      "A solution that cannot be separated."
+    ],
+    "ans": 1,
+    "exp": "The & symbol marks a mixture of two elements.",
+    "why": [
+      "Each of the two is an element, but the jar holds two different substances together, which is not one element.",
+      "",
+      "Compounds are written as one bonded formula. The & shows separate substances.",
+      "Mixtures can be separated by physical methods, so the claim is false."
+    ]
+  },
+  {
+    "deck": 3,
+    "q": "A particle drawing shows several separate, identical Br₂ molecules. How should the sample be labeled?",
+    "opts": [
+      "A compound, because it contains molecules of bonded atoms.",
+      "A mixture, because there are so many particles present.",
+      "An element, because only bromine atoms are present.",
+      "A compound, because the atoms in each molecule are bonded."
+    ],
+    "ans": 2,
+    "exp": "Identical Br₂ molecules contain one type of atom, so the sample is an element.",
+    "why": [
+      "Molecules can contain only one type of atom. Br₂ has only bromine atoms.",
+      "Many identical particles still make a pure substance; a mixture needs different particles.",
+      "",
+      "Bonding alone does not make a compound. A compound needs two or more types of atoms."
+    ]
+  },
+  {
+    "deck": 4,
+    "q": "Muddy water is poured through filter paper. What passes through and what stays on the paper?",
+    "opts": [
+      "Dissolved salt stays; undissolved dirt passes through.",
+      "Everything passes through because it is wet.",
+      "Water decomposes and the hydrogen stays on the paper.",
+      "Clear liquid passes through; undissolved dirt stays."
+    ],
+    "ans": 3,
+    "exp": "Filtration separates undissolved solids from liquids.",
+    "why": [
+      "This reverses the process. Dissolved particles pass through filter paper.",
+      "The paper traps solid particles that are too large to pass through.",
+      "Filtering is a physical method and does not break water apart.",
+      ""
+    ]
+  },
+  {
+    "deck": 4,
+    "q": "How would you recover pure water from salt water?",
+    "opts": [
+      "Boil it and condense the steam.",
+      "Run an electric current through the mixture.",
+      "Add more salt until the water separates.",
+      "Filter the salt water through paper."
+    ],
+    "ans": 0,
+    "exp": "Distillation uses the difference in boiling points; the salt stays behind.",
+    "why": [
+      "",
+      "An electric current would decompose water into gases; it would not separate it from the salt.",
+      "Adding salt just makes the solution more concentrated.",
+      "Dissolved salt passes through filter paper, so the water would not be pure."
+    ]
+  },
+  {
+    "deck": 4,
+    "q": "Which approach would you use to break water into hydrogen and oxygen?",
+    "opts": [
+      "Distillation, a physical method.",
+      "Electrolysis, a chemical method.",
+      "Filtration, a physical method.",
+      "Evaporation, a physical method."
+    ],
+    "ans": 1,
+    "exp": "Water is a compound, so separating its elements takes a chemical method.",
+    "why": [
+      "Distillation only boils and condenses, so the water stays water.",
+      "",
+      "Filtration separates solids from liquids and cannot split a compound.",
+      "Evaporation turns water into vapor but does not break the molecules apart."
+    ]
+  },
+  {
+    "deck": 3,
+    "q": "A student writes NaCl & H₂O for a drawing. What does the drawing most likely show?",
+    "opts": [
+      "A heterogeneous mixture of sand and water.",
+      "A compound containing sodium and chlorine.",
+      "Salt water, a homogeneous mixture.",
+      "A pure substance made of three elements."
+    ],
+    "ans": 2,
+    "exp": "The & shows two substances mixed together; salt in water is the same throughout.",
+    "why": [
+      "The formulas show salt and water, and dissolved salt is uniform throughout.",
+      "NaCl alone would be the compound; the & and H₂O show a second substance.",
+      "",
+      "A pure substance has no & in its code; this is two substances together."
+    ]
+  },
+  {
+    "deck": 2,
+    "q": "A tea light is melted, and then a different one is lit. Which statement is correct?",
+    "opts": [
+      "Melting is chemical; burning is physical.",
+      "Both are chemical changes.",
+      "Both are physical changes.",
+      "Melting is physical; burning is chemical."
+    ],
+    "ans": 3,
+    "exp": "Melted wax is still wax, but burning makes new substances.",
+    "why": [
+      "This swaps them. Melted wax is still wax.",
+      "Melting does not form a new substance.",
+      "Burning wax reacts with oxygen and forms new substances.",
+      ""
+    ]
+  },
+  {
+    "deck": 3,
+    "q": "A student says \"Br₂ is a molecule, so it must be a compound.\" What is the best reply?",
+    "opts": [
+      "Wrong, because Br₂ has only one type of atom.",
+      "Correct, because it has a subscript of two.",
+      "Wrong, because Br₂ is actually a mixture of two things.",
+      "Correct, since all molecules are compounds."
+    ],
+    "ans": 0,
+    "exp": "A compound needs two or more different atom types. Br₂ is an element made of molecules.",
+    "why": [
+      "",
+      "A subscript only counts atoms. It does not decide whether something is a compound.",
+      "There is no & in Br₂, so it is a single pure substance.",
+      "Not all molecules are compounds. Molecules of a single element exist."
+    ]
+  },
+  {
+    "deck": 3,
+    "q": "Which substance is a heterogeneous mixture?",
+    "opts": [
+      "Brass",
+      "Soil",
+      "Air",
+      "Gasoline"
+    ],
+    "ans": 1,
+    "exp": "Soil has visibly different parts.",
+    "why": [
+      "Brass is the same throughout, so it is homogeneous.",
+      "",
+      "Air is the same throughout, so it is homogeneous.",
+      "Gasoline looks uniform, so it is homogeneous."
+    ]
+  },
+  {
+    "deck": 2,
+    "q": "A post-1982 penny is cut and left overnight in hydrochloric acid. It loses 0.19 g and bubbles formed. What is the best conclusion?",
+    "opts": [
+      "The copper coating melted in the acid, a physical change.",
+      "The acid just washed dirt off the penny.",
+      "The zinc core reacted with the acid, a chemical change.",
+      "Water inside the penny evaporated during the night."
+    ],
+    "ans": 2,
+    "exp": "Bubbles and mass loss show that the zinc reacted with the acid.",
+    "why": [
+      "Melting would need heat, and bubbles would not form. Acid does not melt copper.",
+      "Dirt cannot account for bubbles and a lost mass of 0.19 g.",
+      "",
+      "A penny has no water to evaporate, and evaporation would not form bubbles."
+    ]
+  },
+  {
+    "deck": 4,
+    "q": "You stir sand into salt water, filter it, then boil the filtrate. Which is the correct order of methods?",
+    "opts": [
+      "Distillation first, then filtration.",
+      "Filtration first, then chromatography.",
+      "Chromatography first, then evaporation.",
+      "Filtration first, then distillation."
+    ],
+    "ans": 3,
+    "exp": "Remove the sand first, then boil off the water from the salt solution.",
+    "why": [
+      "Boiling first leaves sand and salt together, so the order does not separate them.",
+      "Chromatography separates substances by adherence to a surface and is not how you recover water from salt water.",
+      "Chromatography does not remove sand from water.",
+      ""
+    ]
+  },
+  {
+    "deck": 5,
+    "q": "A flashlight beam is visible as it passes through a glass of fog-like cloudy liquid. Which conclusion is best supported?",
+    "opts": [
+      "The liquid is a colloid, because it scatters the light.",
+      "The liquid is a true solution, because the beam passed through.",
+      "The liquid is a pure element, because it is cloudy and uniform.",
+      "The liquid is a suspension, because the beam is visible in it."
+    ],
+    "ans": 0,
+    "exp": "Particles of about 1 nm to 1000 nm scatter light (the Tyndall effect) and stay mixed, so the liquid is a colloid.",
+    "why": [
+      "",
+      "A true solution would not scatter the beam, so the beam would not be visible.",
+      "Being cloudy says nothing about being an element; it is a mixture.",
+      "A suspension would also settle on standing, which this liquid does not do."
+    ]
+  },
+  {
+    "deck": 5,
+    "q": "A baker makes a mousse by whipping air into a thick liquid, and a jelly by setting a liquid inside a solid network. Which pair of names fits?",
+    "opts": [
+      "The mousse is an emulsion and the jelly is a foam.",
+      "The mousse is a foam and the jelly is a gel.",
+      "The mousse is a sol and the jelly is an aerosol.",
+      "The mousse is a gel and the jelly is a solid sol."
+    ],
+    "ans": 1,
+    "exp": "A gas dispersed in a liquid is a foam. A liquid dispersed in a solid is a gel.",
+    "why": [
+      "An emulsion is a liquid in a liquid, and a foam is a gas in a liquid, so these are swapped.",
+      "",
+      "A sol is a solid in a liquid, and an aerosol has a gas as its medium.",
+      "A gel is a liquid in a solid, so it describes the jelly, not the mousse."
+    ]
+  }
+]

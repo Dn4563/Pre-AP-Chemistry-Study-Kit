@@ -1,0 +1,476 @@
+{
+  "flows": [
+    {
+      "id": "FC1",
+      "title": "Changes of state of water",
+      "deck": 1,
+      "steps": [
+        "Solid (ice)",
+        "Melting",
+        "Liquid (water)",
+        "Boiling",
+        "Gas (steam)"
+      ]
+    },
+    {
+      "id": "FC2",
+      "title": "Is it an element, a compound or a mixture?",
+      "deck": 3,
+      "steps": [
+        "Does the code contain an & (or visibly different parts)?",
+        "Yes: mixture",
+        "No: pure substance",
+        "One type of atom: element",
+        "Two or more types of atoms: compound"
+      ]
+    },
+    {
+      "id": "FC3",
+      "title": "How matter is organized",
+      "deck": 4,
+      "steps": [
+        "Matter",
+        "Mixtures (homogeneous or heterogeneous)",
+        "Physical methods",
+        "Pure substances",
+        "Compounds",
+        "Chemical methods",
+        "Elements"
+      ]
+    },
+    {
+      "id": "FC4",
+      "title": "Distilling salt water",
+      "deck": 4,
+      "steps": [
+        "Heat the salt water",
+        "Water boils to steam",
+        "Steam cools in the condenser",
+        "Pure water drips into the collection flask",
+        "Salt stays in the original flask"
+      ]
+    },
+    {
+      "id": "FC5",
+      "title": "Electrolysis of water",
+      "deck": 2,
+      "steps": [
+        "2 H₂O molecules",
+        "Electric current",
+        "Bonds break and atoms rearrange",
+        "2 H₂ molecules + 1 O₂ molecule"
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "title": "Types of colloids",
+      "rows": [
+        [
+          "Structure",
+          "Colloid",
+          "Example"
+        ],
+        [
+          "Solid in a gas",
+          "Aerosol",
+          "Smoke or dust"
+        ],
+        [
+          "Liquid in a gas",
+          "Aerosol",
+          "Fog, mist, cloud or insecticide spray"
+        ],
+        [
+          "Gas in a liquid",
+          "Foam",
+          "Whipped cream, froth or soap lather"
+        ],
+        [
+          "Liquid in a liquid",
+          "Emulsion",
+          "Milk, hair cream or butter"
+        ],
+        [
+          "Solid in a liquid",
+          "Sol",
+          "Paints or cell fluids"
+        ],
+        [
+          "Liquid in a solid",
+          "Gel",
+          "Cheese or jellies"
+        ],
+        [
+          "Solid in a solid",
+          "Solid sol",
+          "Colored glass or gemstones"
+        ],
+        [
+          "Gas in a solid",
+          "Solid sol",
+          "Pumice stone or foam rubber"
+        ]
+      ]
+    },
+    {
+      "title": "Changes of state",
+      "rows": [
+        [
+          "Change",
+          "From to",
+          "Energy",
+          "Example"
+        ],
+        [
+          "Melting",
+          "Solid to liquid",
+          "Added",
+          "Ice to water"
+        ],
+        [
+          "Freezing",
+          "Liquid to solid",
+          "Removed",
+          "Water to ice"
+        ],
+        [
+          "Evaporation or boiling",
+          "Liquid to gas",
+          "Added",
+          "Water to steam"
+        ],
+        [
+          "Condensation",
+          "Gas to liquid",
+          "Removed",
+          "Steam on a cold mirror"
+        ],
+        [
+          "Sublimation",
+          "Solid to gas",
+          "Added",
+          "Dry ice to gas"
+        ],
+        [
+          "Deposition",
+          "Gas to solid",
+          "Removed",
+          "Frost on a window"
+        ]
+      ]
+    },
+    {
+      "title": "Physical compared with chemical",
+      "rows": [
+        [
+          "",
+          "Physical",
+          "Chemical"
+        ],
+        [
+          "Property",
+          "Observed without changing the substance (color, density, boiling point)",
+          "Ability to become a new substance (flammability, rusting)"
+        ],
+        [
+          "Change",
+          "Same substance afterward (melting, boiling, dissolving, crushing)",
+          "New substance afterward (burning, rusting, fermenting, electrolysis)"
+        ],
+        [
+          "Bonds",
+          "Not broken",
+          "Broken and re-formed into new substances"
+        ],
+        [
+          "Evidence",
+          "State, shape or size changes",
+          "Precipitate, gas bubbles, color change, temperature change, light"
+        ]
+      ]
+    },
+    {
+      "title": "Element, compound and mixture compared",
+      "rows": [
+        [
+          "",
+          "Element",
+          "Compound",
+          "Mixture"
+        ],
+        [
+          "Types of atoms",
+          "One",
+          "Two or more",
+          "Varies (different substances are present)"
+        ],
+        [
+          "Composition",
+          "Fixed",
+          "Fixed",
+          "Variable"
+        ],
+        [
+          "Separation",
+          "Cannot be broken down chemically",
+          "Chemical methods",
+          "Physical methods"
+        ],
+        [
+          "Formula clue",
+          "One capital letter",
+          "Two or more capitals, no &",
+          "Contains &"
+        ],
+        [
+          "Examples",
+          "Au, Br₂, P₄",
+          "CO₂, H₂O, NaCl",
+          "Air, salt water, brass"
+        ]
+      ]
+    },
+    {
+      "title": "Separation techniques compared",
+      "rows": [
+        [
+          "Technique",
+          "Property used",
+          "Example"
+        ],
+        [
+          "Distillation",
+          "Boiling point",
+          "Pure water from salt water"
+        ],
+        [
+          "Filtration",
+          "State of matter (solid versus liquid)",
+          "Sand out of water"
+        ],
+        [
+          "Chromatography",
+          "Adherence to a surface",
+          "Separating ink pigments"
+        ],
+        [
+          "Evaporation",
+          "Volatility",
+          "Recovering salt by removing the water"
+        ]
+      ]
+    }
+  ],
+  "cheat": [
+    {
+      "title": "Classify matter in order",
+      "kind": "list",
+      "items": [
+        "Is there an & or the words dissolved, solution, air, alloy or mixture? It is a mixture. Mixtures can be separated by physical means and can vary in amount.",
+        "No &: count capital letters. One capital letter (O₂, P₄, O₃, Co) is an element, even with a subscript.",
+        "Two or more different capital letters (H₂O, CO, NaCl) is a compound. CO is a compound; Co is the element cobalt.",
+        "Element and compound together are pure substances. A mixture is not a pure substance."
+      ]
+    },
+    {
+      "title": "States of matter",
+      "kind": "table",
+      "rows": [
+        [
+          "",
+          "Shape",
+          "Volume",
+          "Particles"
+        ],
+        [
+          "Solid",
+          "Fixed",
+          "Fixed",
+          "Close together, vibrate in place"
+        ],
+        [
+          "Liquid",
+          "Takes container shape",
+          "Fixed",
+          "Close together, slide past each other"
+        ],
+        [
+          "Gas",
+          "Takes container shape",
+          "Fills container",
+          "Far apart, move freely"
+        ]
+      ]
+    },
+    {
+      "title": "Temperature and state changes",
+      "kind": "list",
+      "items": [
+        "0 K = -273.15 °C is absolute zero: the minimum possible particle motion, so nothing is colder.",
+        "At 0 °C ice and liquid water coexist and a little vapor is in the air: all three states.",
+        "Speed up (melting, boiling, evaporation, sublimation) = more energy, less order. Slow down (freezing, condensation, deposition) = less energy, more order."
+      ]
+    },
+    {
+      "title": "Colloid types",
+      "kind": "table",
+      "rows": [
+        [
+          "Structure",
+          "Colloid",
+          "Example"
+        ],
+        [
+          "Solid in gas / liquid in gas",
+          "Aerosol (both)",
+          "Smoke / fog"
+        ],
+        [
+          "Gas in liquid",
+          "Foam",
+          "Whipped cream"
+        ],
+        [
+          "Liquid in liquid",
+          "Emulsion",
+          "Milk"
+        ],
+        [
+          "Solid in liquid",
+          "Sol",
+          "Paint, cell fluid"
+        ],
+        [
+          "Liquid in solid",
+          "Gel",
+          "Jelly, cheese"
+        ],
+        [
+          "Solid in solid / gas in solid",
+          "Solid sol (both)",
+          "Colored glass / pumice"
+        ]
+      ]
+    },
+    {
+      "title": "Reaction types",
+      "kind": "list",
+      "items": [
+        "Combustion: burns in oxygen to make carbon dioxide and water. Synthesis: two or more substances combine into something new.",
+        "Decomposition: one substance breaks down into two or more. Single displacement: an element is pushed out of a compound.",
+        "Double displacement: the positive parts of two compounds switch places."
+      ]
+    },
+    {
+      "title": "Changes of state (all physical)",
+      "kind": "list",
+      "items": [
+        "Melting: solid to liquid. Freezing: liquid to solid.",
+        "Boiling or evaporating: liquid to gas. Condensing: gas to liquid.",
+        "Sublimation: solid straight to gas (dry ice). The substance is the same before and after."
+      ]
+    },
+    {
+      "title": "Physical or chemical?",
+      "kind": "table",
+      "rows": [
+        [
+          "",
+          "Physical",
+          "Chemical"
+        ],
+        [
+          "Change",
+          "Same substance after: melting, boiling, dissolving, crushing, cutting",
+          "New substance after: burning, rusting, baking, souring, electrolysis"
+        ],
+        [
+          "Property",
+          "Measured without changing it: color, density, melting and boiling point",
+          "Ability to form new substances: flammability, rusting, decomposing"
+        ],
+        [
+          "Test",
+          "Is the substance still the same afterward?",
+          "Did something new form?"
+        ]
+      ]
+    },
+    {
+      "title": "Evidence of a chemical change",
+      "kind": "list",
+      "items": [
+        "Precipitate: a solid forms when two liquids or pure substances react",
+        "Gas given off: bubbles from a reaction (not from boiling, and not dissolved gas coming out of soda)",
+        "Color change that makes a new substance (not just more dye)",
+        "Temperature change (heat given off or absorbed)",
+        "Light given off",
+        "Odor is a physical property, so a smell by itself is not a sign"
+      ]
+    },
+    {
+      "title": "Separating mixtures (all physical)",
+      "kind": "table",
+      "rows": [
+        [
+          "Method",
+          "Separates",
+          "Uses"
+        ],
+        [
+          "Filtration",
+          "Insoluble solid from a liquid",
+          "Particle size"
+        ],
+        [
+          "Evaporation",
+          "Dissolved solid from a liquid (keeps the solid)",
+          "Liquid leaves as a gas"
+        ],
+        [
+          "Distillation",
+          "Liquid from a dissolved solid, or liquids from each other (keeps the liquid)",
+          "Different boiling points"
+        ],
+        [
+          "Chromatography",
+          "Dyes or other components in a sample",
+          "A mobile phase moves each part a different distance across a fixed phase"
+        ],
+        [
+          "Magnetism",
+          "Magnetic particles from non-magnetic ones",
+          "Magnetic attraction"
+        ],
+        [
+          "Compounds",
+          "Need a chemical change such as electrolysis",
+          "Not physical means"
+        ]
+      ]
+    },
+    {
+      "title": "Traps",
+      "kind": "list",
+      "items": [
+        "Atom is not the same as element, and molecule is not the same as compound. O₂ is a molecule and an element.",
+        "Boiling bubbles are water vapor: physical. Dissolving is physical.",
+        "Burning, rusting, cooking and souring are chemical.",
+        "In a mixture each substance keeps its own properties. A compound has properties unlike its elements.",
+        "Intensive properties (density, color, melting point) do not depend on amount; extensive ones (mass, volume) do.",
+        "Electrolysis of water splits a compound into hydrogen and oxygen. Boiling water does not."
+      ]
+    }
+  ],
+  "topicDeck": {
+    "Colloids": 5,
+    "States of matter": 1,
+    "Properties": 2,
+    "Physical vs chemical change": 2,
+    "Evidence of change": 2,
+    "Classifying matter": 3,
+    "Particles and conservation": 3,
+    "Separating mixtures": 4
+  }
+}

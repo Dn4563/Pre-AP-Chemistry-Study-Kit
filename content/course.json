@@ -1,0 +1,19 @@
+{
+  "id": "chem",
+  "name": "Pre-AP Chemistry",
+  "tagline": "One kit per chapter. Pick a chapter to study; progress in each one is saved in this browser.",
+  "hub": "https://dn4563.github.io/Study-Hub-by-David/",
+  "accent": "#2C5AA0",
+  "accentDark": "#86AEEF",
+  "examTab": "Full exam",
+  "units": [
+    {
+      "id": "ch03",
+      "dir": "ch03-matter",
+      "label": "Chapter 3",
+      "title": "Matter",
+      "blurb": "States of matter, physical and chemical changes, elements, compounds and mixtures, and separating mixtures (sections 3.1 to 3.5).",
+      "legacyKeys": { "kit": "chem3_matter_kit_v1", "pt": "chem3_matter_pt_v1" }
+    }
+  ]
+}
