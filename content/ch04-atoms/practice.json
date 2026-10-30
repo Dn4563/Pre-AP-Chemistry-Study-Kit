@@ -1,0 +1,2393 @@
+{
+  "sections": [
+    {
+      "name": "Long answer",
+      "mode": "practice",
+      "tips": [
+        "Write the setup with units, then the answer. Check Answer shows the worked solution.",
+        "Self-mark each part honestly; partly right goes into Retest Missed Questions."
+      ],
+      "questions": [
+        {
+          "id": "LA1",
+          "type": "frq",
+          "topic": "Ions",
+          "title": "Long answer 1",
+          "stem": "Halogen ions.",
+          "data": [],
+          "parts": [
+            {
+              "k": "a",
+              "prompt": "What ion is formed by all members of the halogens?",
+              "model": "A 1- ion (an anion), such as F⁻, Cl⁻, Br⁻ or I⁻."
+            },
+            {
+              "k": "b",
+              "prompt": "Explain what happens to the atom as it ionizes.",
+              "model": "A halogen has 7 valence electrons. It gains 1 electron to complete its octet. Its protons and nucleus do not change, so the extra electron gives it a 1- charge."
+            }
+          ]
+        },
+        {
+          "id": "LA2",
+          "type": "frq",
+          "topic": "Ions",
+          "title": "Long answer 2",
+          "stem": "A compound contains an unknown ion X and forms the ionic compound XCl₂. Ion X contains 10 electrons.",
+          "data": [],
+          "parts": [
+            {
+              "k": "a",
+              "prompt": "What is the charge on X? Explain.",
+              "model": "2+. Two Cl⁻ ions give 2-, so X must be 2+ for the compound to be neutral."
+            },
+            {
+              "k": "b",
+              "prompt": "What is the identity of element X?",
+              "model": "Protons = 10 + 2 = 12, so X is magnesium (Mg²⁺)."
+            }
+          ]
+        },
+        {
+          "id": "LA3",
+          "type": "frq",
+          "topic": "Ionic formulas",
+          "title": "Long answer 3",
+          "stem": "A member of the alkali metal family whose most stable ion contains 36 electrons forms a compound with chlorine.",
+          "data": [],
+          "parts": [
+            {
+              "k": "a",
+              "prompt": "Identify the metal.",
+              "model": "Alkali metals form 1+ ions, so protons = 36 + 1 = 37: rubidium (Rb⁺)."
+            },
+            {
+              "k": "b",
+              "prompt": "What is the correct formula for this compound?",
+              "model": "Rb⁺ and Cl⁻ balance one to one: RbCl."
+            }
+          ]
+        },
+        {
+          "id": "LA4",
+          "type": "frq",
+          "topic": "Subatomic particles",
+          "title": "Long answer 4",
+          "stem": "An ion of Pb-297 has lost 2 electrons. (VERIFY: real lead isotopes are about Pb-204 to Pb-208, so 297 may be a typo. Use the number as given; the method is the same.)",
+          "data": [],
+          "parts": [
+            {
+              "k": "a",
+              "prompt": "How many protons, neutrons and electrons are in the ion?",
+              "model": "Protons = 82 (lead's atomic number). Neutrons = 297 - 82 = 215. Electrons = 82 - 2 = 80."
+            },
+            {
+              "k": "b",
+              "prompt": "How many subatomic particles in total?",
+              "model": "82 + 215 + 80 = 377."
+            },
+            {
+              "k": "c",
+              "prompt": "Write the isotopic notation.",
+              "model": "²⁹⁷₈₂Pb²⁺: mass number 297 on top, atomic number 82 below, charge 2+ at the upper right."
+            }
+          ]
+        },
+        {
+          "id": "LA5",
+          "type": "frq",
+          "topic": "Molar mass",
+          "title": "Long answer 5",
+          "stem": "Calcium cyanide, Ca(CN)₂.",
+          "data": [],
+          "parts": [
+            {
+              "k": "a",
+              "prompt": "Count the atoms of each element.",
+              "model": "1 Ca, 2 C, 2 N (the 2 outside the parentheses doubles both C and N)."
+            },
+            {
+              "k": "b",
+              "prompt": "What is the molar mass?",
+              "model": "40.08 + 2(12.01) + 2(14.01) = 92.12 g/mol."
+            }
+          ]
+        },
+        {
+          "id": "LA6",
+          "type": "frq",
+          "topic": "Ionic formulas",
+          "title": "Long answer 6",
+          "stem": "Barium bonds with phosphorus.",
+          "data": [],
+          "parts": [
+            {
+              "k": "a",
+              "prompt": "Give the ion each element forms.",
+              "model": "Barium (group 2) forms Ba²⁺; phosphorus (group 15) forms P³⁻."
+            },
+            {
+              "k": "b",
+              "prompt": "What ionic compound forms?",
+              "model": "Cross the charges: Ba₃P₂. Check: 3(+2) + 2(-3) = 0."
+            }
+          ]
+        },
+        {
+          "id": "LA7",
+          "type": "frq",
+          "topic": "Ionic formulas",
+          "title": "Long answer 7",
+          "stem": "Lithium bonds with nitrogen.",
+          "data": [],
+          "parts": [
+            {
+              "k": "a",
+              "prompt": "Give the ion each element forms.",
+              "model": "Lithium (group 1) forms Li⁺; nitrogen (group 15) forms N³⁻."
+            },
+            {
+              "k": "b",
+              "prompt": "What ionic compound forms?",
+              "model": "Cross the charges: Li₃N. Check: 3(+1) + (-3) = 0."
+            }
+          ]
+        },
+        {
+          "id": "LA8",
+          "type": "frq",
+          "topic": "Ions",
+          "title": "Long answer 8",
+          "stem": "An ion with a charge of 4+ has 46 electrons and 70 neutrons.",
+          "data": [],
+          "parts": [
+            {
+              "k": "a",
+              "prompt": "What element is this?",
+              "model": "Protons = 46 + 4 = 50, so it is tin (Sn⁴⁺)."
+            },
+            {
+              "k": "b",
+              "prompt": "What is its mass number?",
+              "model": "Mass number = protons + neutrons = 50 + 70 = 120."
+            }
+          ]
+        },
+        {
+          "id": "LA9",
+          "type": "frq",
+          "topic": "Molar mass",
+          "title": "Long answer 9",
+          "stem": "Carbonic acid, H₂CO₃.",
+          "data": [],
+          "parts": [
+            {
+              "k": "a",
+              "prompt": "What is the molar mass?",
+              "model": "2(1.008) + 12.01 + 3(16.00) = 62.03 g/mol."
+            }
+          ]
+        },
+        {
+          "id": "LA10",
+          "type": "frq",
+          "topic": "Subatomic particles",
+          "title": "Long answer 10",
+          "stem": "Explain each of the following.",
+          "data": [],
+          "parts": [
+            {
+              "k": "a",
+              "prompt": "Why does an ionic bond form?",
+              "model": "A metal loses electrons to become a cation and a nonmetal gains them to become an anion, so both complete their octets. The opposite charges attract: that electrostatic force is the ionic bond."
+            },
+            {
+              "k": "b",
+              "prompt": "Why does the identity of an element depend on the number of protons it has?",
+              "model": "The number of protons is the atomic number, which sets the element. Electrons can be gained or lost (ions) and neutrons can vary (isotopes), but changing the protons makes a different element."
+            },
+            {
+              "k": "c",
+              "prompt": "Why is atomic mass on the periodic table a decimal?",
+              "model": "Elements exist as a mixture of isotopes. The table lists the average of their masses, weighted by each isotope's abundance, so it is usually not a whole number."
+            },
+            {
+              "k": "d",
+              "prompt": "Why do elements in the same group have similar chemical behavior?",
+              "model": "Elements in the same group have the same number of valence electrons, and chemical behavior comes from the electrons, so they bond in similar ways."
+            }
+          ]
+        },
+        {
+          "id": "SP102",
+          "type": "frq",
+          "topic": "Ions",
+          "title": "Textbook 102",
+          "stem": "A metal ion with a 2+ charge contains 34 neutrons and 27 electrons.",
+          "data": [],
+          "parts": [
+            {
+              "k": "a",
+              "prompt": "Identify the metal ion.",
+              "model": "Protons = 27 + 2 = 29: copper, Cu²⁺."
+            },
+            {
+              "k": "b",
+              "prompt": "Determine its mass number.",
+              "model": "29 + 34 = 63."
+            }
+          ]
+        },
+        {
+          "id": "SP98",
+          "type": "frq",
+          "topic": "Ions",
+          "title": "Textbook 98",
+          "stem": "How many electrons are in each ion?",
+          "data": [],
+          "parts": [
+            {
+              "k": "a",
+              "prompt": "Se²⁻",
+              "model": "34 + 2 = 36."
+            },
+            {
+              "k": "b",
+              "prompt": "Br⁻",
+              "model": "35 + 1 = 36."
+            },
+            {
+              "k": "c",
+              "prompt": "Cr³⁺",
+              "model": "24 - 3 = 21."
+            },
+            {
+              "k": "d",
+              "prompt": "Rb⁺",
+              "model": "37 - 1 = 36."
+            },
+            {
+              "k": "e",
+              "prompt": "Bi³⁺",
+              "model": "83 - 3 = 80."
+            },
+            {
+              "k": "f",
+              "prompt": "Cu²⁺",
+              "model": "29 - 2 = 27."
+            }
+          ]
+        },
+        {
+          "id": "SP107",
+          "type": "frq",
+          "topic": "Subatomic particles",
+          "title": "Textbook 107",
+          "stem": "Give the protons, neutrons and electrons in each.",
+          "data": [],
+          "parts": [
+            {
+              "k": "a",
+              "prompt": "⁴¹₂₂Ti",
+              "model": "22 p, 19 n, 22 e."
+            },
+            {
+              "k": "b",
+              "prompt": "⁶⁴₃₀Zn²⁺",
+              "model": "30 p, 34 n, 28 e."
+            },
+            {
+              "k": "c",
+              "prompt": "⁷⁶₃₂Ge",
+              "model": "32 p, 44 n, 32 e."
+            },
+            {
+              "k": "d",
+              "prompt": "⁸⁶₃₆Kr",
+              "model": "36 p, 50 n, 36 e."
+            },
+            {
+              "k": "e",
+              "prompt": "⁷⁵₃₃As³⁻",
+              "model": "33 p, 42 n, 36 e."
+            },
+            {
+              "k": "f",
+              "prompt": "⁴¹₁₉K⁺",
+              "model": "19 p, 22 n, 18 e."
+            }
+          ]
+        },
+        {
+          "id": "SL1",
+          "type": "frq",
+          "topic": "Ions",
+          "title": "Slide problem",
+          "stem": "A certain ion X⁺ contains 54 electrons and 78 neutrons.",
+          "data": [],
+          "parts": [
+            {
+              "k": "a",
+              "prompt": "Identify the element.",
+              "model": "Protons = 54 + 1 = 55: cesium (Cs⁺)."
+            },
+            {
+              "k": "b",
+              "prompt": "What is the mass number?",
+              "model": "55 + 78 = 133."
+            }
+          ]
+        },
+        {
+          "id": "SL2",
+          "type": "frq",
+          "topic": "Average atomic mass",
+          "title": "Slide problem",
+          "stem": "A class average works like an atomic mass: 65% of students scored 100, 25% scored 95 and 10% scored 90.",
+          "data": [],
+          "parts": [
+            {
+              "k": "a",
+              "prompt": "What is the class average?",
+              "model": "0.65(100) + 0.25(95) + 0.10(90) = 97.75."
+            },
+            {
+              "k": "b",
+              "prompt": "How is this like average atomic mass?",
+              "model": "Each score (isotope mass) is multiplied by the fraction of students (abundance) who got it, then the products are added."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "True/False",
+      "mode": "practice",
+      "tips": [
+        "One wrong word makes a statement false. Check the particle (proton, neutron, electron) and the direction (gain or lose)."
+      ],
+      "questions": [
+        {
+          "id": "T1",
+          "type": "tf",
+          "topic": "Periodic table",
+          "stem": "Metals are found to the left of the metalloid staircase.",
+          "ans": true,
+          "exp": "Metals are left of the staircase and in the inner transition rows."
+        },
+        {
+          "id": "T2",
+          "type": "tf",
+          "topic": "Periodic table",
+          "stem": "Hydrogen is a metal because it sits in group 1.",
+          "ans": false,
+          "exp": "Hydrogen is a nonmetal even though it sits on the left."
+        },
+        {
+          "id": "T3",
+          "type": "tf",
+          "topic": "Periodic table",
+          "stem": "Elements in the same period have the same number of valence electrons.",
+          "ans": false,
+          "exp": "Same period means the same number of electron shells. Same group means the same valence electrons."
+        },
+        {
+          "id": "T4",
+          "type": "tf",
+          "topic": "Periodic table",
+          "stem": "At room temperature (25 °C) there are 11 gaseous elements and 2 liquid elements.",
+          "ans": true,
+          "exp": "The rest are solids."
+        },
+        {
+          "id": "T5",
+          "type": "tf",
+          "topic": "Periodic table",
+          "stem": "The actinide series is named after the element actinium.",
+          "ans": true,
+          "exp": "It follows actinium (Ac, 89). Your review sheet wrote \"actinide\" by mistake."
+        },
+        {
+          "id": "T6",
+          "type": "tf",
+          "topic": "History of the atom",
+          "stem": "Thomson's plum pudding model placed electrons in fixed orbits around a nucleus.",
+          "ans": false,
+          "exp": "Thomson had electrons scattered in a sphere of positive charge. Fixed orbits are Bohr's model."
+        },
+        {
+          "id": "T7",
+          "type": "tf",
+          "topic": "History of the atom",
+          "stem": "Chadwick discovered the neutron by bombarding beryllium with alpha particles.",
+          "ans": true,
+          "exp": "The neutral radiation was a stream of neutrons."
+        },
+        {
+          "id": "T8",
+          "type": "tf",
+          "topic": "History of the atom",
+          "stem": "Dalton's theory says atoms are created and destroyed in chemical reactions.",
+          "ans": false,
+          "exp": "Dalton said atoms are not created or destroyed; reactions only regroup them."
+        },
+        {
+          "id": "T9",
+          "type": "tf",
+          "topic": "Subatomic particles",
+          "stem": "Almost all of an atom's mass is in its nucleus.",
+          "ans": true,
+          "exp": "Protons and neutrons have mass; electrons are nearly massless."
+        },
+        {
+          "id": "T10",
+          "type": "tf",
+          "topic": "Subatomic particles",
+          "stem": "The number of electrons determines which element an atom is.",
+          "ans": false,
+          "exp": "The number of protons does. Electrons determine chemical behavior and charge."
+        },
+        {
+          "id": "T11",
+          "type": "tf",
+          "topic": "Isotopes",
+          "stem": "Isotopes of an element have different chemical properties because they have different numbers of neutrons.",
+          "ans": false,
+          "exp": "Isotopes have almost identical chemistry, because chemistry depends on electrons."
+        },
+        {
+          "id": "T12",
+          "type": "tf",
+          "topic": "Isotopes",
+          "stem": "Carbon-13 has 7 neutrons.",
+          "ans": true,
+          "exp": "13 - 6 = 7."
+        },
+        {
+          "id": "T13",
+          "type": "tf",
+          "topic": "Ions",
+          "stem": "A cation is formed when an atom gains electrons.",
+          "ans": false,
+          "exp": "Gaining electrons makes an anion. A cation forms when an atom loses electrons."
+        },
+        {
+          "id": "T14",
+          "type": "tf",
+          "topic": "Ions",
+          "stem": "Noble gases tend not to form ions because their valence shell is complete.",
+          "ans": true,
+          "exp": "They already have an octet (helium has 2)."
+        },
+        {
+          "id": "T15",
+          "type": "tf",
+          "topic": "Ionic formulas",
+          "stem": "Ionic compounds are electrically neutral overall.",
+          "ans": true,
+          "exp": "The charges of the cations and anions add to zero."
+        },
+        {
+          "id": "T16",
+          "type": "tf",
+          "topic": "Ionic formulas",
+          "stem": "Covalent compounds form when a metal transfers electrons to a nonmetal.",
+          "ans": false,
+          "exp": "That describes an ionic compound. Covalent compounds share electrons between nonmetals."
+        },
+        {
+          "id": "T17",
+          "type": "tf",
+          "topic": "Molar mass",
+          "stem": "The unit of molar mass is grams per mole (g/mol).",
+          "ans": true,
+          "exp": "Molar mass is the mass of one mole."
+        },
+        {
+          "id": "T18",
+          "type": "tf",
+          "topic": "Mole conversions",
+          "stem": "One mole of CCl₄ contains 4 moles of chlorine atoms.",
+          "ans": true,
+          "exp": "The subscript gives the mole ratio."
+        }
+      ]
+    },
+    {
+      "name": "Labeling",
+      "mode": "practice",
+      "tips": [
+        "Pick a label for every item, then press Check Answer. Each correct item counts toward the point."
+      ],
+      "questions": [
+        {
+          "id": "L1",
+          "type": "label",
+          "topic": "Isotopes",
+          "stem": "For each pair, decide whether they are isotopes, the same atom, or different elements.",
+          "labels": [
+            "Isotopes",
+            "Same atom",
+            "Different elements"
+          ],
+          "items": [
+            {
+              "t": "¹²₆C and ¹³₆C",
+              "ans": 0,
+              "exp": "Same Z (6), different mass numbers."
+            },
+            {
+              "t": "Carbon-12 and ¹²₆C",
+              "ans": 1,
+              "exp": "Two ways of writing the same atom."
+            },
+            {
+              "t": "Argon-40 and argon-41",
+              "ans": 0,
+              "exp": "Same element, different mass numbers."
+            },
+            {
+              "t": "¹¹₅B and boron-10",
+              "ans": 0,
+              "exp": "Both boron (Z = 5), different mass numbers."
+            },
+            {
+              "t": "13 p, 13 n and 14 p, 13 n",
+              "ans": 2,
+              "exp": "Different proton counts: aluminum and silicon."
+            },
+            {
+              "t": "²²₁₀X and ²²₁₁X",
+              "ans": 2,
+              "exp": "Same mass number but different atomic numbers."
+            }
+          ]
+        },
+        {
+          "id": "L2",
+          "type": "label",
+          "topic": "Periodic table",
+          "stem": "Classify each element.",
+          "labels": [
+            "Metal",
+            "Nonmetal",
+            "Metalloid"
+          ],
+          "items": [
+            {
+              "t": "Aluminum (Al)",
+              "ans": 0,
+              "exp": "Touches the staircase but is a metal."
+            },
+            {
+              "t": "Silicon (Si)",
+              "ans": 2,
+              "exp": "On the staircase."
+            },
+            {
+              "t": "Hydrogen (H)",
+              "ans": 1,
+              "exp": "A nonmetal even though it sits on the left."
+            },
+            {
+              "t": "Selenium (Se)",
+              "ans": 1,
+              "exp": "Right of the staircase."
+            },
+            {
+              "t": "Germanium (Ge)",
+              "ans": 2,
+              "exp": "On the staircase."
+            },
+            {
+              "t": "Calcium (Ca)",
+              "ans": 0,
+              "exp": "Group 2, left side."
+            },
+            {
+              "t": "Tellurium (Te)",
+              "ans": 2,
+              "exp": "On the staircase."
+            },
+            {
+              "t": "Bromine (Br)",
+              "ans": 1,
+              "exp": "A halogen, right of the staircase."
+            }
+          ]
+        },
+        {
+          "id": "L3",
+          "type": "label",
+          "topic": "Periodic table",
+          "stem": "Name the family each element belongs to.",
+          "labels": [
+            "Alkali metal",
+            "Alkaline earth metal",
+            "Transition metal",
+            "Halogen",
+            "Noble gas"
+          ],
+          "items": [
+            {
+              "t": "Potassium (K)",
+              "ans": 0,
+              "exp": "Group 1."
+            },
+            {
+              "t": "Strontium (Sr)",
+              "ans": 1,
+              "exp": "Group 2."
+            },
+            {
+              "t": "Iron (Fe)",
+              "ans": 2,
+              "exp": "Group 8, in the 3-12 block."
+            },
+            {
+              "t": "Iodine (I)",
+              "ans": 3,
+              "exp": "Group 17."
+            },
+            {
+              "t": "Argon (Ar)",
+              "ans": 4,
+              "exp": "Group 18."
+            },
+            {
+              "t": "Cesium (Cs)",
+              "ans": 0,
+              "exp": "Group 1."
+            },
+            {
+              "t": "Barium (Ba)",
+              "ans": 1,
+              "exp": "Group 2."
+            },
+            {
+              "t": "Chlorine (Cl)",
+              "ans": 3,
+              "exp": "Group 17."
+            }
+          ]
+        },
+        {
+          "id": "L4",
+          "type": "label",
+          "topic": "Ions",
+          "stem": "Give the charge of the ion each element usually forms.",
+          "labels": [
+            "+1",
+            "+2",
+            "+3",
+            "-1",
+            "-2",
+            "-3",
+            "No ion"
+          ],
+          "items": [
+            {
+              "t": "Rubidium (Rb)",
+              "ans": 0,
+              "exp": "Group 1."
+            },
+            {
+              "t": "Barium (Ba)",
+              "ans": 1,
+              "exp": "Group 2."
+            },
+            {
+              "t": "Gallium (Ga)",
+              "ans": 2,
+              "exp": "Group 13."
+            },
+            {
+              "t": "Fluorine (F)",
+              "ans": 3,
+              "exp": "Group 17."
+            },
+            {
+              "t": "Sulfur (S)",
+              "ans": 4,
+              "exp": "Group 16."
+            },
+            {
+              "t": "Nitrogen (N)",
+              "ans": 5,
+              "exp": "Group 15."
+            },
+            {
+              "t": "Krypton (Kr)",
+              "ans": 6,
+              "exp": "Noble gas: complete valence shell."
+            },
+            {
+              "t": "Lithium (Li)",
+              "ans": 0,
+              "exp": "Group 1."
+            }
+          ]
+        },
+        {
+          "id": "L5",
+          "type": "label",
+          "topic": "Ions",
+          "stem": "Decide whether each particle is a cation, an anion or a neutral atom.",
+          "labels": [
+            "Cation",
+            "Anion",
+            "Neutral atom"
+          ],
+          "items": [
+            {
+              "t": "Chlorine with 18 electrons",
+              "ans": 1,
+              "exp": "17 protons, 18 electrons: charge 1-."
+            },
+            {
+              "t": "Sodium with 10 electrons",
+              "ans": 0,
+              "exp": "11 protons, 10 electrons: charge 1+."
+            },
+            {
+              "t": "Oxygen with 8 electrons",
+              "ans": 2,
+              "exp": "8 protons, 8 electrons."
+            },
+            {
+              "t": "Iron with 23 electrons",
+              "ans": 0,
+              "exp": "26 protons, 23 electrons: charge 3+."
+            },
+            {
+              "t": "Nitrogen with 10 electrons",
+              "ans": 1,
+              "exp": "7 protons, 10 electrons: charge 3-."
+            },
+            {
+              "t": "Argon with 18 electrons",
+              "ans": 2,
+              "exp": "18 protons, 18 electrons."
+            }
+          ]
+        },
+        {
+          "id": "L6",
+          "type": "label",
+          "topic": "Subatomic particles",
+          "stem": "Match each description to the particle.",
+          "labels": [
+            "Proton",
+            "Neutron",
+            "Electron"
+          ],
+          "items": [
+            {
+              "t": "Its number sets which element it is",
+              "ans": 0,
+              "exp": "Atomic number = protons."
+            },
+            {
+              "t": "Its number changes when an ion forms",
+              "ans": 2,
+              "exp": "Ions gain or lose electrons."
+            },
+            {
+              "t": "Its number differs between isotopes",
+              "ans": 1,
+              "exp": "Isotopes differ in neutrons."
+            },
+            {
+              "t": "Determines chemical behavior",
+              "ans": 2,
+              "exp": "Electrons do the bonding."
+            },
+            {
+              "t": "Nearly massless",
+              "ans": 2,
+              "exp": "Electrons are nearly massless."
+            },
+            {
+              "t": "Neutral and in the nucleus",
+              "ans": 1,
+              "exp": "Neutrons have no charge."
+            }
+          ]
+        },
+        {
+          "id": "L7",
+          "type": "label",
+          "topic": "History of the atom",
+          "stem": "Match each discovery or model to the scientist.",
+          "labels": [
+            "Dalton",
+            "Thomson",
+            "Rutherford",
+            "Bohr",
+            "Chadwick"
+          ],
+          "items": [
+            {
+              "t": "Plum pudding model",
+              "ans": 1,
+              "exp": "Electrons in a sphere of positive charge."
+            },
+            {
+              "t": "Gold foil experiment and the nucleus",
+              "ans": 2,
+              "exp": "Alpha particles and metal foil."
+            },
+            {
+              "t": "Electrons in fixed orbits",
+              "ans": 3,
+              "exp": "Fixed energy levels."
+            },
+            {
+              "t": "Discovery of the neutron",
+              "ans": 4,
+              "exp": "Beryllium and alpha particles."
+            },
+            {
+              "t": "Atoms are regrouped, never destroyed, in reactions",
+              "ans": 0,
+              "exp": "Part of Dalton's atomic theory."
+            },
+            {
+              "t": "Discovery of the electron",
+              "ans": 1,
+              "exp": "Cathode ray tubes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Crossover formulas",
+      "mode": "practice",
+      "tips": [
+        "Write the cation and anion with charges, cross the numbers over, then reduce to the lowest ratio.",
+        "Read every choice, then cross off the ones you can prove wrong."
+      ],
+      "questions": [
+        {
+          "id": "X1",
+          "type": "mcq",
+          "topic": "Ionic formulas",
+          "stem": "Use the crossover method: what compound forms from Li and O?",
+          "options": [
+            "LiO₂",
+            "LiO",
+            "Li₂O",
+            "No compound forms"
+          ],
+          "ans": 2,
+          "exp": "Write each ion's charge, cross the numbers over as subscripts, and reduce. Formula: Li₂O.",
+          "why": [
+            "The subscripts are crossed onto the wrong ions, so the charges do not add to zero.",
+            "The charges of these two ions are not equal in size, so one of each does not balance.",
+            "",
+            "A metal and a nonmetal form an ionic compound."
+          ]
+        },
+        {
+          "id": "X2",
+          "type": "mcq",
+          "topic": "Ionic formulas",
+          "stem": "Use the crossover method: what compound forms from Mg and Cl?",
+          "options": [
+            "Mg₂Cl",
+            "MgCl",
+            "No compound forms",
+            "MgCl₂"
+          ],
+          "ans": 3,
+          "exp": "Write each ion's charge, cross the numbers over as subscripts, and reduce. Formula: MgCl₂.",
+          "why": [
+            "The subscripts are crossed onto the wrong ions, so the charges do not add to zero.",
+            "The charges of these two ions are not equal in size, so one of each does not balance.",
+            "A metal and a nonmetal form an ionic compound.",
+            ""
+          ]
+        },
+        {
+          "id": "X3",
+          "type": "mcq",
+          "topic": "Ionic formulas",
+          "stem": "Use the crossover method: what compound forms from Al and F?",
+          "options": [
+            "AlF₃",
+            "Al₃F",
+            "AlF",
+            "No compound forms"
+          ],
+          "ans": 0,
+          "exp": "Write each ion's charge, cross the numbers over as subscripts, and reduce. Formula: AlF₃.",
+          "why": [
+            "",
+            "The subscripts are crossed onto the wrong ions, so the charges do not add to zero.",
+            "The charges of these two ions are not equal in size, so one of each does not balance.",
+            "A metal and a nonmetal form an ionic compound."
+          ]
+        },
+        {
+          "id": "X4",
+          "type": "mcq",
+          "topic": "Ionic formulas",
+          "stem": "Use the crossover method: what compound forms from Ba and N?",
+          "options": [
+            "Ba₂N₃",
+            "Ba₃N₂",
+            "BaN",
+            "No compound forms"
+          ],
+          "ans": 1,
+          "exp": "Write each ion's charge, cross the numbers over as subscripts, and reduce. Formula: Ba₃N₂.",
+          "why": [
+            "The subscripts are crossed onto the wrong ions, so the charges do not add to zero.",
+            "",
+            "The charges of these two ions are not equal in size, so one of each does not balance.",
+            "A metal and a nonmetal form an ionic compound."
+          ]
+        },
+        {
+          "id": "X5",
+          "type": "mcq",
+          "topic": "Ionic formulas",
+          "stem": "Use the crossover method: what compound forms from K and S?",
+          "options": [
+            "KS₂",
+            "KS",
+            "K₂S",
+            "No compound forms"
+          ],
+          "ans": 2,
+          "exp": "Write each ion's charge, cross the numbers over as subscripts, and reduce. Formula: K₂S.",
+          "why": [
+            "The subscripts are crossed onto the wrong ions, so the charges do not add to zero.",
+            "The charges of these two ions are not equal in size, so one of each does not balance.",
+            "",
+            "A metal and a nonmetal form an ionic compound."
+          ]
+        },
+        {
+          "id": "X6",
+          "type": "mcq",
+          "topic": "Ionic formulas",
+          "stem": "Use the crossover method: what compound forms from Sr and O?",
+          "options": [
+            "Sr₂O₂",
+            "SrO₂",
+            "No compound forms",
+            "SrO"
+          ],
+          "ans": 3,
+          "exp": "Write each ion's charge, cross the numbers over as subscripts, and reduce. Formula: SrO.",
+          "why": [
+            "Sr²⁺ and O²⁻ already balance one to one; reduce 2:2 to 1:1.",
+            "That needs Sr⁴⁺. Strontium forms 2+ ions.",
+            "A metal and a nonmetal form an ionic compound.",
+            ""
+          ]
+        },
+        {
+          "id": "X7",
+          "type": "mcq",
+          "topic": "Ionic formulas",
+          "stem": "Use the crossover method: what compound forms from Na and P?",
+          "options": [
+            "Na₃P",
+            "NaP₃",
+            "NaP",
+            "No compound forms"
+          ],
+          "ans": 0,
+          "exp": "Write each ion's charge, cross the numbers over as subscripts, and reduce. Formula: Na₃P.",
+          "why": [
+            "",
+            "The subscripts are crossed onto the wrong ions, so the charges do not add to zero.",
+            "The charges of these two ions are not equal in size, so one of each does not balance.",
+            "A metal and a nonmetal form an ionic compound."
+          ]
+        },
+        {
+          "id": "X8",
+          "type": "mcq",
+          "topic": "Ionic formulas",
+          "stem": "Use the crossover method: what compound forms from Ga and Cl?",
+          "options": [
+            "Ga₃Cl",
+            "GaCl₃",
+            "GaCl",
+            "No compound forms"
+          ],
+          "ans": 1,
+          "exp": "Write each ion's charge, cross the numbers over as subscripts, and reduce. Formula: GaCl₃.",
+          "why": [
+            "The subscripts are crossed onto the wrong ions, so the charges do not add to zero.",
+            "",
+            "The charges of these two ions are not equal in size, so one of each does not balance.",
+            "A metal and a nonmetal form an ionic compound."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MCQ Set A: atoms and isotopes",
+      "mode": "practice",
+      "tips": [
+        "Read every choice, then cross off the ones you can prove wrong.",
+        "For particle questions write Z, A and the charge first: p = Z, n = A - Z, e = Z - charge.",
+        "For formulas, write both ion charges before you look at the choices, then check the sum is zero.",
+        "Distractors are built from real mistakes: a skipped subscript, swapped abundances, a reversed crossover. Name the mistake behind each wrong choice."
+      ],
+      "questions": [
+        {
+          "id": "A1",
+          "type": "mcq",
+          "topic": "Isotopes",
+          "stem": "A certain isotope contains 23 protons and 28 neutrons. What are its mass number and identity?",
+          "options": [
+            "51, vanadium",
+            "28, nickel",
+            "23, vanadium",
+            "51, antimony"
+          ],
+          "ans": 0,
+          "exp": "Mass number = protons + neutrons = 23 + 28 = 51. Atomic number 23 is vanadium (V).",
+          "why": [
+            "",
+            "28 is the neutron count, not the atomic number. The element is set by the 23 protons.",
+            "23 is the atomic number. The mass number adds protons and neutrons: 23 + 28 = 51.",
+            "Antimony has 51 protons. Here 51 is the mass number; the 23 protons make it vanadium."
+          ]
+        },
+        {
+          "id": "A2",
+          "type": "mcq",
+          "topic": "History of the atom",
+          "stem": "In Rutherford's experiment most alpha particles passed straight through the metal foil. What did this show?",
+          "options": [
+            "Electrons are spread through positive charge",
+            "The atom is mostly empty space",
+            "The nucleus contains neutral particles",
+            "Electrons orbit in fixed energy levels"
+          ],
+          "ans": 1,
+          "exp": "If most particles meet nothing, most of the atom is empty space.",
+          "why": [
+            "That is Thomson's plum pudding model, which this experiment disproved.",
+            "",
+            "Neutrons were found later, by Chadwick in 1932. Alpha particles passing through says nothing about them.",
+            "That is Bohr's 1913 model. Particles passing through show empty space, not orbits."
+          ]
+        },
+        {
+          "id": "A3",
+          "type": "mcq",
+          "topic": "History of the atom",
+          "stem": "A few alpha particles in Rutherford's experiment bounced almost straight back. What does that tell you?",
+          "options": [
+            "Electrons strongly repel alpha particles",
+            "The foil atoms are solid, packed spheres",
+            "A tiny, dense, positive center exists",
+            "Alpha particles carry a negative charge"
+          ],
+          "ans": 2,
+          "exp": "Positive alpha particles were repelled by a small, dense, positive region: the nucleus.",
+          "why": [
+            "Electrons are negative and nearly massless, so they attract rather than repel positive alpha particles and could not turn them back.",
+            "If atoms were solid spheres, most particles would bounce back, not just a few.",
+            "",
+            "Alpha particles are positive. The bounce comes from repulsion between two positive charges."
+          ]
+        },
+        {
+          "id": "A4",
+          "type": "mcq",
+          "topic": "Isotopes",
+          "stem": "Which pair of symbols shows two isotopes of the same element?",
+          "options": [
+            "²²₁₀X and ²²₁₁X",
+            "²⁰₁₀X and ²⁰₁₂X",
+            "²¹₉X and ²²₁₁X",
+            "²⁰₁₀X and ²²₁₀X"
+          ],
+          "ans": 3,
+          "exp": "Isotopes share an atomic number (bottom number) and differ in mass number. Both of these have Z = 10.",
+          "why": [
+            "Same mass number, but the atomic numbers differ (10 and 11), so these are different elements.",
+            "The atomic numbers differ (10 and 12), so these are different elements.",
+            "The atomic numbers differ (9 and 11), so these are different elements.",
+            ""
+          ]
+        },
+        {
+          "id": "A5",
+          "type": "mcq",
+          "topic": "Subatomic particles",
+          "stem": "How many protons, neutrons and electrons are in a neutral atom of ¹³⁶₅₆Ba?",
+          "options": [
+            "56 p, 80 n, 56 e",
+            "56 p, 136 n, 56 e",
+            "80 p, 56 n, 80 e",
+            "56 p, 80 n, 54 e"
+          ],
+          "ans": 0,
+          "exp": "Protons = Z = 56; neutrons = 136 - 56 = 80; neutral, so electrons = 56.",
+          "why": [
+            "",
+            "136 is the mass number. Neutrons = 136 - 56 = 80.",
+            "Protons and neutrons are swapped. The bottom number, 56, is the proton count.",
+            "54 electrons would make Ba²⁺. A neutral atom has as many electrons as protons."
+          ]
+        },
+        {
+          "id": "A6",
+          "type": "mcq",
+          "topic": "Ions",
+          "stem": "How many electrons are in the ion ⁷⁵₃₃As³⁻?",
+          "options": [
+            "30",
+            "36",
+            "33",
+            "42"
+          ],
+          "ans": 1,
+          "exp": "Electrons = Z - charge = 33 - (-3) = 36.",
+          "why": [
+            "Subtracting 3 is for a positive ion. A 3- ion gained 3 electrons: 33 + 3 = 36.",
+            "",
+            "33 is the count for a neutral arsenic atom. The 3- charge means 3 extra electrons.",
+            "42 is the neutron count (75 - 33), not the electron count."
+          ]
+        },
+        {
+          "id": "A7",
+          "type": "mcq",
+          "topic": "Average atomic mass",
+          "stem": "Boron has two isotopes: boron-10 (20% abundance) and boron-11 (80%). What is boron's average atomic mass?",
+          "options": [
+            "10.50 amu",
+            "10.20 amu",
+            "10.80 amu",
+            "21.00 amu"
+          ],
+          "ans": 2,
+          "exp": "0.20 × 10 + 0.80 × 11 = 10.80 amu.",
+          "why": [
+            "That is a plain average. Boron-11 is four times as common, so the average sits closer to 11.",
+            "The abundances are swapped: 0.80 × 10 + 0.20 × 11 = 10.20. Boron-11 is the 80% isotope.",
+            "",
+            "That just adds the two mass numbers. Each mass must be multiplied by its abundance first."
+          ]
+        },
+        {
+          "id": "A8",
+          "type": "mcq",
+          "topic": "Average atomic mass",
+          "stem": "Rhenium is 37.40% Re-185 and 62.60% Re-187. What is its average atomic mass?",
+          "options": [
+            "186.00 amu",
+            "185.75 amu",
+            "187.00 amu",
+            "186.25 amu"
+          ],
+          "ans": 3,
+          "exp": "0.3740 × 185 + 0.6260 × 187 = 186.25 amu.",
+          "why": [
+            "That is the plain average of 185 and 187. Re-187 is more common, so the answer is above 186.",
+            "The abundances are swapped. Re-187 is the 62.60% isotope.",
+            "That is only the most common isotope. The average must include Re-185 too.",
+            ""
+          ]
+        },
+        {
+          "id": "A9",
+          "type": "mcq",
+          "topic": "Isotopes",
+          "stem": "Why is the atomic mass on the periodic table a decimal?",
+          "options": [
+            "It averages isotopes by abundance",
+            "Electrons add fractional mass",
+            "It is rounded from the mass number",
+            "Each atom has a fractional neutron count"
+          ],
+          "ans": 0,
+          "exp": "Elements are mixtures of isotopes, so the table lists a weighted average of their masses.",
+          "why": [
+            "",
+            "Electrons are nearly massless. The decimal comes from averaging isotopes.",
+            "The mass number is a whole count. The table value is a weighted average, not a rounding of it.",
+            "Every atom has a whole number of neutrons. Only the average across isotopes is fractional."
+          ]
+        },
+        {
+          "id": "A10",
+          "type": "mcq",
+          "topic": "Subatomic particles",
+          "stem": "Which change would turn an atom into a different element?",
+          "options": [
+            "Changing its number of neutrons",
+            "Changing its number of protons",
+            "Changing its number of electrons",
+            "Changing only its mass number"
+          ],
+          "ans": 1,
+          "exp": "The number of protons (atomic number) sets the element's identity.",
+          "why": [
+            "That makes a different isotope of the same element.",
+            "",
+            "That makes an ion of the same element.",
+            "Isotopes of one element have different mass numbers. Only the proton count sets the element."
+          ]
+        },
+        {
+          "id": "A11",
+          "type": "mcq",
+          "topic": "History of the atom",
+          "stem": "Which observation led Thomson to his plum pudding model?",
+          "options": [
+            "Alpha particles bounced off a metal foil",
+            "Electrons occupy fixed energy levels",
+            "Atoms emit tiny negative particles",
+            "Beryllium gives off neutral radiation"
+          ],
+          "ans": 2,
+          "exp": "Thomson found that atoms give off electrons and reasoned that positive charge must balance them.",
+          "why": [
+            "That was Rutherford's result, and it disproved the plum pudding model.",
+            "That was Bohr's idea, proposed after Thomson's model.",
+            "",
+            "That was Chadwick's 1932 discovery of the neutron."
+          ]
+        },
+        {
+          "id": "A12",
+          "type": "mcq",
+          "topic": "History of the atom",
+          "stem": "How does the modern (orbital) model of the atom differ from Bohr's model?",
+          "options": [
+            "Electrons travel in fixed circular orbits",
+            "Electrons are scattered in positive charge",
+            "Electrons sit inside the nucleus",
+            "Electrons have regions, not paths"
+          ],
+          "ans": 3,
+          "exp": "Orbitals are regions where an electron is likely to be (about 90% of the time); exact positions cannot be predicted.",
+          "why": [
+            "That is Bohr's model, which the orbital model replaced.",
+            "That is Thomson's plum pudding model.",
+            "Electrons are always outside the nucleus; only protons and neutrons are inside.",
+            ""
+          ]
+        },
+        {
+          "id": "A13",
+          "type": "mcq",
+          "topic": "Periodic table",
+          "stem": "What does an element's period (row) number tell you?",
+          "options": [
+            "Its number of energy levels",
+            "Its number of valence electrons",
+            "Its number of protons",
+            "Its number of neutrons"
+          ],
+          "ans": 0,
+          "exp": "The period number equals the number of principal energy levels (electron shells).",
+          "why": [
+            "",
+            "That comes from the group (column) for representative elements.",
+            "That is the atomic number.",
+            "That is the mass number minus the atomic number."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MCQ Set B: ions and formulas",
+      "mode": "practice",
+      "tips": [
+        "Read every choice, then cross off the ones you can prove wrong.",
+        "For particle questions write Z, A and the charge first: p = Z, n = A - Z, e = Z - charge.",
+        "For formulas, write both ion charges before you look at the choices, then check the sum is zero.",
+        "Distractors are built from real mistakes: a skipped subscript, swapped abundances, a reversed crossover. Name the mistake behind each wrong choice."
+      ],
+      "questions": [
+        {
+          "id": "B1",
+          "type": "mcq",
+          "topic": "Ions",
+          "stem": "An ion with a 3+ charge contains 23 electrons. Which ion is it?",
+          "options": [
+            "V³⁺",
+            "Fe³⁺",
+            "Sc³⁺",
+            "Ca³⁺"
+          ],
+          "ans": 1,
+          "exp": "Protons = electrons + charge = 23 + 3 = 26, which is iron.",
+          "why": [
+            "Vanadium has 23 protons, so V³⁺ has only 20 electrons. You matched the electron count to the atomic number.",
+            "",
+            "Scandium has 21 protons, so Sc³⁺ has 18 electrons.",
+            "Calcium is in group 2 and forms 2+ ions, not 3+. It also has only 20 protons."
+          ]
+        },
+        {
+          "id": "B2",
+          "type": "mcq",
+          "topic": "Ions",
+          "stem": "A compound has the formula XCl₂, and ion X contains 20 electrons. What is X?",
+          "options": [
+            "Ca²⁺",
+            "Sc⁺",
+            "Ti²⁺",
+            "Cr²⁺"
+          ],
+          "ans": 2,
+          "exp": "Two Cl⁻ ions mean X is 2+. Protons = 20 + 2 = 22, which is titanium.",
+          "why": [
+            "Calcium has 20 protons, so Ca²⁺ has 18 electrons, not 20.",
+            "XCl₂ needs a 2+ cation to balance two Cl⁻ ions. A 1+ ion would form XCl.",
+            "",
+            "Chromium has 24 protons, so Cr²⁺ has 22 electrons."
+          ]
+        },
+        {
+          "id": "B3",
+          "type": "mcq",
+          "topic": "Ionic formulas",
+          "stem": "An alkaline earth metal whose most stable ion has 36 electrons bonds with bromine. What is the formula?",
+          "options": [
+            "CaBr₂",
+            "RbBr",
+            "KrBr",
+            "SrBr₂"
+          ],
+          "ans": 3,
+          "exp": "Alkaline earth ions are 2+, so protons = 36 + 2 = 38: strontium. Sr²⁺ needs two Br⁻: SrBr₂.",
+          "why": [
+            "Ca²⁺ has 18 electrons, not 36.",
+            "Rubidium is an alkali metal (group 1), not an alkaline earth metal.",
+            "Krypton is a noble gas; 36 is its electron count as a neutral atom.",
+            ""
+          ]
+        },
+        {
+          "id": "B4",
+          "type": "mcq",
+          "topic": "Ionic formulas",
+          "stem": "What ionic compound forms when barium bonds with phosphorus?",
+          "options": [
+            "Ba₃P₂",
+            "Ba₂P₃",
+            "BaP",
+            "Ba₃P"
+          ],
+          "ans": 0,
+          "exp": "Ba²⁺ and P³⁻: cross the charges to get Ba₃P₂, since 3(+2) + 2(-3) = 0.",
+          "why": [
+            "",
+            "The subscripts are on the wrong ions: 2(+2) + 3(-3) = -5, not zero.",
+            "Ba²⁺ and P³⁻ do not cancel one to one: +2 - 3 = -1.",
+            "3(+2) + (-3) = +3. Two phosphide ions are needed."
+          ]
+        },
+        {
+          "id": "B5",
+          "type": "mcq",
+          "topic": "Ionic formulas",
+          "stem": "What ionic compound forms when aluminum bonds with sulfur?",
+          "options": [
+            "Al₃S₂",
+            "Al₂S₃",
+            "AlS",
+            "Al₂S"
+          ],
+          "ans": 1,
+          "exp": "Al³⁺ and S²⁻ cross over to Al₂S₃: 2(+3) + 3(-2) = 0.",
+          "why": [
+            "The subscripts are reversed: 3(+3) + 2(-2) = +5.",
+            "",
+            "Al³⁺ and S²⁻ do not cancel one to one: +3 - 2 = +1.",
+            "2(+3) + (-2) = +4. Three sulfide ions are needed."
+          ]
+        },
+        {
+          "id": "B6",
+          "type": "mcq",
+          "topic": "Ions",
+          "stem": "Which element forms a 2- ion?",
+          "options": [
+            "Bromine",
+            "Arsenic",
+            "Selenium",
+            "Strontium"
+          ],
+          "ans": 2,
+          "exp": "Selenium is in group 16 (oxygen family), which forms 2- ions.",
+          "why": [
+            "Bromine is a halogen (group 17) and forms a 1- ion.",
+            "Arsenic is in group 15, which forms 3- ions.",
+            "",
+            "Strontium is a metal in group 2 and forms a 2+ ion, not 2-."
+          ]
+        },
+        {
+          "id": "B7",
+          "type": "mcq",
+          "topic": "Periodic table",
+          "stem": "Which series is NOT matched with the correct description?",
+          "options": [
+            "F, Cl, Br: halogens",
+            "Mg, Ca, Sr: alkaline earth metals",
+            "Fe, Co, Ni: transition metals",
+            "B, Si, Ge: metals"
+          ],
+          "ans": 3,
+          "exp": "Boron, silicon and germanium are metalloids, on the staircase, not metals.",
+          "why": [
+            "These are all in group 17, the halogens. This one is correct.",
+            "These are all in group 2. This one is correct.",
+            "These are all in groups 3 to 12. This one is correct.",
+            ""
+          ]
+        },
+        {
+          "id": "B8",
+          "type": "mcq",
+          "topic": "Ionic formulas",
+          "stem": "When does a solid ionic compound such as NaCl conduct electricity?",
+          "options": [
+            "Melted or dissolved in water",
+            "As a solid at room temperature",
+            "Only after it is crushed to powder",
+            "Never, since the compound is neutral"
+          ],
+          "ans": 0,
+          "exp": "Ionic compounds conduct electricity when melted or dissolved in water, because the ions can then move.",
+          "why": [
+            "",
+            "In the solid, the ions are locked in place and cannot move, so it does not conduct.",
+            "Powder is still a solid with locked ions, so it still does not conduct.",
+            "The compound is neutral overall but made of charged ions, which conduct once they can move."
+          ]
+        },
+        {
+          "id": "B9",
+          "type": "mcq",
+          "topic": "Ions",
+          "stem": "What happens to a halogen atom when it forms its most common ion?",
+          "options": [
+            "Loses one electron: X⁺",
+            "Gains one electron: X⁻",
+            "Gains seven electrons: X⁷⁻",
+            "Loses seven electrons: X⁷⁺"
+          ],
+          "ans": 1,
+          "exp": "Halogens have 7 valence electrons, so each gains 1 to complete the octet and becomes a 1- anion.",
+          "why": [
+            "Halogens are nonmetals with 7 valence electrons; they gain one to complete the octet, not lose one.",
+            "",
+            "A halogen needs only one more electron to reach eight.",
+            "Gaining one electron is far easier than losing seven; halogens form 1- ions."
+          ]
+        },
+        {
+          "id": "B10",
+          "type": "mcq",
+          "topic": "Ionic formulas",
+          "stem": "Which of these is a covalent compound?",
+          "options": [
+            "MgCl₂",
+            "Na₂S",
+            "CF₄",
+            "Li₃N"
+          ],
+          "ans": 2,
+          "exp": "Carbon and fluorine are both nonmetals, so they share electrons: a covalent compound.",
+          "why": [
+            "Magnesium is a metal, so MgCl₂ is ionic.",
+            "Sodium is a metal, so Na₂S is ionic.",
+            "",
+            "Lithium is a metal, so Li₃N is ionic."
+          ]
+        },
+        {
+          "id": "B11",
+          "type": "mcq",
+          "topic": "Polyatomic ions",
+          "stem": "What is the formula of calcium cyanide?",
+          "options": [
+            "CaCN₂",
+            "Ca₂CN",
+            "CaCN",
+            "Ca(CN)₂"
+          ],
+          "ans": 3,
+          "exp": "Ca²⁺ needs two CN⁻ ions. Parentheses keep each cyanide ion together: Ca(CN)₂.",
+          "why": [
+            "Without parentheses the 2 applies only to N. Two whole CN⁻ ions are needed.",
+            "2(+2) + (-1) = +3, not zero.",
+            "Ca²⁺ with one CN⁻ leaves a +1 charge.",
+            ""
+          ]
+        },
+        {
+          "id": "B12",
+          "type": "mcq",
+          "topic": "Ions",
+          "stem": "Which ion has the same number of electrons as a neutral neon atom?",
+          "options": [
+            "Mg²⁺",
+            "Ca²⁺",
+            "Cl⁻",
+            "S²⁻"
+          ],
+          "ans": 0,
+          "exp": "Neon has 10 electrons. Mg has 12 protons; losing 2 leaves 10.",
+          "why": [
+            "",
+            "Calcium has 20 protons, so Ca²⁺ has 18 electrons, like argon.",
+            "Chlorine has 17 protons, so Cl⁻ has 18 electrons.",
+            "Sulfur has 16 protons, so S²⁻ has 18 electrons."
+          ]
+        },
+        {
+          "id": "B13",
+          "type": "mcq",
+          "topic": "Polyatomic ions",
+          "stem": "What is the formula of sodium phosphate?",
+          "options": [
+            "NaPO₄",
+            "Na₃PO₄",
+            "Na₂PO₄",
+            "Na(PO₄)₃"
+          ],
+          "ans": 1,
+          "exp": "Phosphate is PO₄³⁻, so three Na⁺ balance it: Na₃PO₄.",
+          "why": [
+            "Na⁺ and PO₄³⁻ do not cancel one to one: +1 - 3 = -2.",
+            "",
+            "2(+1) + (-3) = -1. Three Na⁺ are needed.",
+            "That puts the 3 on phosphate. Sodium is the ion that needs three."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MCQ Set C: molar mass and moles",
+      "mode": "practice",
+      "tips": [
+        "Read every choice, then cross off the ones you can prove wrong.",
+        "For particle questions write Z, A and the charge first: p = Z, n = A - Z, e = Z - charge.",
+        "For formulas, write both ion charges before you look at the choices, then check the sum is zero.",
+        "Distractors are built from real mistakes: a skipped subscript, swapped abundances, a reversed crossover. Name the mistake behind each wrong choice."
+      ],
+      "questions": [
+        {
+          "id": "C1",
+          "type": "mcq",
+          "topic": "Molar mass",
+          "stem": "What is the molar mass of calcium cyanide, Ca(CN)₂?",
+          "options": [
+            "66.10 g/mol",
+            "80.11 g/mol",
+            "92.12 g/mol",
+            "132.20 g/mol"
+          ],
+          "ans": 2,
+          "exp": "40.08 + 2(12.01) + 2(14.01) = 92.12 g/mol.",
+          "why": [
+            "That counts only one C and one N. The 2 outside the parentheses doubles both.",
+            "That doubles only N. The 2 applies to everything inside the parentheses.",
+            "",
+            "That doubles calcium too. Only the CN inside the parentheses is doubled."
+          ]
+        },
+        {
+          "id": "C2",
+          "type": "mcq",
+          "topic": "Molar mass",
+          "stem": "What is the molar mass of carbonic acid, H₂CO₃?",
+          "options": [
+            "61.02 g/mol",
+            "30.03 g/mol",
+            "63.03 g/mol",
+            "62.03 g/mol"
+          ],
+          "ans": 3,
+          "exp": "2(1.008) + 12.01 + 3(16.00) = 62.03 g/mol.",
+          "why": [
+            "That counts only one hydrogen. The subscript 2 means two H.",
+            "That counts only one oxygen. The subscript 3 means three O.",
+            "That counts three hydrogens. The formula has two.",
+            ""
+          ]
+        },
+        {
+          "id": "C3",
+          "type": "mcq",
+          "topic": "Molar mass",
+          "stem": "What is the molar mass of aluminum oxide, Al₂O₃?",
+          "options": [
+            "101.96 g/mol",
+            "42.98 g/mol",
+            "74.98 g/mol",
+            "69.96 g/mol"
+          ],
+          "ans": 0,
+          "exp": "2(26.98) + 3(16.00) = 101.96 g/mol.",
+          "why": [
+            "",
+            "That ignores both subscripts.",
+            "That counts only one aluminum. The formula has two.",
+            "That counts only one oxygen. The formula has three."
+          ]
+        },
+        {
+          "id": "C4",
+          "type": "mcq",
+          "topic": "Mole conversions",
+          "stem": "How many moles of MgCl₂ are in 45.8 g? (Molar mass 95.21 g/mol.)",
+          "options": [
+            "2.08 mol",
+            "0.481 mol",
+            "0.962 mol",
+            "0.240 mol"
+          ],
+          "ans": 1,
+          "exp": "45.8 g ÷ 95.21 g/mol = 0.481 mol MgCl₂.",
+          "why": [
+            "That divides the molar mass by the grams. Divide grams by molar mass.",
+            "",
+            "That is the moles of Cl atoms, not of MgCl₂.",
+            "That halves the answer. Nothing in this step uses the subscript."
+          ]
+        },
+        {
+          "id": "C5",
+          "type": "mcq",
+          "topic": "Mole conversions",
+          "stem": "How many chlorine atoms are in 45.8 g of MgCl₂?",
+          "options": [
+            "2.90 × 10²³ atoms",
+            "0.962 atoms",
+            "5.79 × 10²³ atoms",
+            "2.76 × 10²⁵ atoms"
+          ],
+          "ans": 2,
+          "exp": "45.8 ÷ 95.21 × 2 × 6.022 × 10²³ = 5.79 × 10²³ Cl atoms.",
+          "why": [
+            "That skips the subscript: each MgCl₂ has 2 Cl atoms.",
+            "That stops at moles of Cl. Multiply by 6.022 × 10²³ to count atoms.",
+            "",
+            "That multiplies by the molar mass instead of dividing by it."
+          ]
+        },
+        {
+          "id": "C6",
+          "type": "mcq",
+          "topic": "Mole conversions",
+          "stem": "How many hydrogen atoms are in 2.50 mol of methane, CH₄?",
+          "options": [
+            "1.51 × 10²⁴",
+            "2.41 × 10²⁴",
+            "10.0",
+            "6.02 × 10²⁴"
+          ],
+          "ans": 3,
+          "exp": "2.50 mol × 4 × 6.022 × 10²³ = 6.02 × 10²⁴ H atoms.",
+          "why": [
+            "That counts molecules, not H atoms. Each CH₄ has 4 H.",
+            "That is the H count for 1 mol of CH₄, not 2.50 mol.",
+            "10.0 is the moles of H. Multiply by 6.022 × 10²³ to count atoms.",
+            ""
+          ]
+        },
+        {
+          "id": "C7",
+          "type": "mcq",
+          "topic": "Mole conversions",
+          "stem": "A sample holds 1.25 × 10²² formula units of Al₂S₃. How many aluminum atoms does it contain?",
+          "options": [
+            "2.50 × 10²²",
+            "1.25 × 10²²",
+            "3.75 × 10²²",
+            "6.25 × 10²²"
+          ],
+          "ans": 0,
+          "exp": "1.25 × 10²² × 2 = 2.50 × 10²² Al atoms.",
+          "why": [
+            "",
+            "That is the number of formula units. Each has 2 Al atoms.",
+            "That uses sulfur's subscript (3). Aluminum's subscript is 2.",
+            "That counts all 5 atoms in each formula unit, not just aluminum."
+          ]
+        },
+        {
+          "id": "C8",
+          "type": "mcq",
+          "topic": "Mole conversions",
+          "stem": "How many atoms in total (P and Cl) are in 15.0 g of PCl₃?",
+          "options": [
+            "6.58 × 10²²",
+            "2.63 × 10²³",
+            "1.97 × 10²³",
+            "4.37 × 10⁻¹"
+          ],
+          "ans": 1,
+          "exp": "15.0 ÷ 137.32 × 4 × 6.022 × 10²³ = 2.63 × 10²³ atoms.",
+          "why": [
+            "That is the number of PCl₃ molecules. Each has 4 atoms.",
+            "",
+            "That counts only chlorine atoms. Phosphorus adds one more per molecule.",
+            "That stops at moles of atoms. Multiply by 6.022 × 10²³."
+          ]
+        },
+        {
+          "id": "C9",
+          "type": "mcq",
+          "topic": "Mole conversions",
+          "stem": "A sample of SiO₂ contains 4.82 × 10²³ oxygen atoms. What is the sample's mass?",
+          "options": [
+            "48.1 g",
+            "12.8 g",
+            "24.0 g",
+            "11.2 g"
+          ],
+          "ans": 2,
+          "exp": "4.82 × 10²³ ÷ 6.022 × 10²³ = 0.8004 mol O; ÷ 2 = 0.4002 mol SiO₂; × 60.09 = 24.0 g.",
+          "why": [
+            "That skips dividing by 2: each SiO₂ has 2 O atoms.",
+            "That is the mass of the oxygen only, not the whole SiO₂.",
+            "",
+            "That uses silicon's mass instead of the molar mass of SiO₂."
+          ]
+        },
+        {
+          "id": "C10",
+          "type": "mcq",
+          "topic": "Molar mass",
+          "stem": "Which statement fits the law of constant composition?",
+          "options": [
+            "Water's ratio depends on its source",
+            "A compound's ratio changes when heated",
+            "Mixtures always have fixed ratios",
+            "Water is always 2 H to 1 O"
+          ],
+          "ans": 3,
+          "exp": "A compound always has the same elements bonded in the same ratio.",
+          "why": [
+            "Every sample of a compound has the same ratio, wherever it comes from.",
+            "Heating can change state, but the compound's atom ratio stays the same.",
+            "Mixtures have variable composition. The law is about compounds.",
+            ""
+          ]
+        },
+        {
+          "id": "C11",
+          "type": "mcq",
+          "topic": "Mole conversions",
+          "stem": "What does one mole of any substance contain?",
+          "options": [
+            "6.022 × 10²³ particles",
+            "6.022 × 10²³ grams",
+            "Exactly 1 gram of matter",
+            "One atom of each element"
+          ],
+          "ans": 0,
+          "exp": "One mole = 6.022 × 10²³ particles (Avogadro's number).",
+          "why": [
+            "",
+            "A mole is a count of particles. Its mass is the molar mass, which differs by substance.",
+            "The mass of a mole depends on the substance (its molar mass).",
+            "A mole is a huge count: 6.022 × 10²³ particles."
+          ]
+        },
+        {
+          "id": "C12",
+          "type": "mcq",
+          "topic": "Molar mass",
+          "stem": "What is the molar mass of sulfur hexafluoride, SF₆?",
+          "options": [
+            "51.07 g/mol",
+            "146.07 g/mol",
+            "211.42 g/mol",
+            "165.07 g/mol"
+          ],
+          "ans": 1,
+          "exp": "32.07 + 6(19.00) = 146.07 g/mol.",
+          "why": [
+            "That ignores the subscript 6 on fluorine.",
+            "",
+            "That puts the 6 on sulfur instead of fluorine.",
+            "That counts seven fluorines; the formula has six."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Molar mass and moles",
+      "mode": "practice",
+      "tips": [
+        "Write the setup with units, then the answer. Check Answer shows the worked solution.",
+        "Self-mark each part honestly; partly right goes into Retest Missed Questions."
+      ],
+      "questions": [
+        {
+          "id": "M1",
+          "type": "frq",
+          "topic": "Molar mass",
+          "title": "Molar mass practice",
+          "stem": "Find the molar mass of each compound. Show each element's mass times its subscript.",
+          "data": [],
+          "parts": [
+            {
+              "k": "a",
+              "prompt": "CaCl₂",
+              "model": "40.08 + 2(35.45) = 110.98 g/mol."
+            },
+            {
+              "k": "b",
+              "prompt": "CO₂",
+              "model": "12.01 + 2(16.00) = 44.01 g/mol."
+            },
+            {
+              "k": "c",
+              "prompt": "Al₂O₃",
+              "model": "2(26.98) + 3(16.00) = 101.96 g/mol."
+            },
+            {
+              "k": "d",
+              "prompt": "SF₆",
+              "model": "32.07 + 6(19.00) = 146.07 g/mol."
+            }
+          ]
+        },
+        {
+          "id": "M2",
+          "type": "frq",
+          "topic": "Molar mass",
+          "title": "Molar mass practice",
+          "stem": "Find the molar mass of each compound.",
+          "data": [],
+          "parts": [
+            {
+              "k": "a",
+              "prompt": "FeBr₃",
+              "model": "55.85 + 3(79.90) = 295.55 g/mol."
+            },
+            {
+              "k": "b",
+              "prompt": "PCl₅",
+              "model": "30.97 + 5(35.45) = 208.22 g/mol."
+            },
+            {
+              "k": "c",
+              "prompt": "Na₂S",
+              "model": "2(22.99) + 32.07 = 78.05 g/mol."
+            },
+            {
+              "k": "d",
+              "prompt": "N₂O₄",
+              "model": "2(14.01) + 4(16.00) = 92.02 g/mol."
+            }
+          ]
+        },
+        {
+          "id": "M3",
+          "type": "frq",
+          "topic": "Mole conversions",
+          "title": "Multi-step conversion",
+          "stem": "How many hydrogen atoms are in 2.50 mol of methane, CH₄?",
+          "data": [],
+          "parts": [
+            {
+              "k": "a",
+              "prompt": "Moles of H atoms",
+              "model": "2.50 mol CH₄ × (4 mol H / 1 mol CH₄) = 10.0 mol H."
+            },
+            {
+              "k": "b",
+              "prompt": "Number of H atoms",
+              "model": "10.0 mol × 6.022 × 10²³ = 6.02 × 10²⁴ H atoms."
+            }
+          ]
+        },
+        {
+          "id": "M4",
+          "type": "frq",
+          "topic": "Mole conversions",
+          "title": "Multi-step conversion",
+          "stem": "Determine the number of chlorine atoms in 45.8 g of MgCl₂.",
+          "data": [],
+          "parts": [
+            {
+              "k": "a",
+              "prompt": "Moles of MgCl₂",
+              "model": "45.8 g ÷ 95.21 g/mol = 0.481 mol."
+            },
+            {
+              "k": "b",
+              "prompt": "Moles of Cl",
+              "model": "0.481 × 2 = 0.962 mol Cl."
+            },
+            {
+              "k": "c",
+              "prompt": "Cl atoms",
+              "model": "0.962 × 6.022 × 10²³ = 5.79 × 10²³ atoms."
+            }
+          ]
+        },
+        {
+          "id": "M5",
+          "type": "frq",
+          "topic": "Mole conversions",
+          "title": "Multi-step conversion",
+          "stem": "A sample contains 1.25 × 10²² formula units of Al₂S₃. How many aluminum atoms are present?",
+          "data": [],
+          "parts": [
+            {
+              "k": "a",
+              "prompt": "Aluminum atoms",
+              "model": "1.25 × 10²² × (2 Al / 1 Al₂S₃) = 2.50 × 10²² Al atoms. No moles needed: the count stays in particles."
+            }
+          ]
+        },
+        {
+          "id": "M6",
+          "type": "frq",
+          "topic": "Mole conversions",
+          "title": "Multi-step conversion",
+          "stem": "Calculate the total number of atoms in 15.0 g of PCl₃.",
+          "data": [],
+          "parts": [
+            {
+              "k": "a",
+              "prompt": "Molar mass and moles",
+              "model": "30.97 + 3(35.45) = 137.32 g/mol; 15.0 ÷ 137.32 = 0.1092 mol."
+            },
+            {
+              "k": "b",
+              "prompt": "Total atoms",
+              "model": "Each PCl₃ has 4 atoms: 0.1092 × 4 × 6.022 × 10²³ = 2.63 × 10²³ atoms."
+            }
+          ]
+        },
+        {
+          "id": "M7",
+          "type": "frq",
+          "topic": "Mole conversions",
+          "title": "Challenge",
+          "stem": "A sample of SiO₂ contains 4.82 × 10²³ oxygen atoms. Calculate the mass of the sample.",
+          "data": [],
+          "parts": [
+            {
+              "k": "a",
+              "prompt": "Moles of O",
+              "model": "4.82 × 10²³ ÷ 6.022 × 10²³ = 0.8004 mol O."
+            },
+            {
+              "k": "b",
+              "prompt": "Moles of SiO₂",
+              "model": "0.8004 ÷ 2 = 0.4002 mol SiO₂."
+            },
+            {
+              "k": "c",
+              "prompt": "Mass",
+              "model": "0.4002 × 60.09 g/mol = 24.0 g."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mock test: multiple choice",
+      "mode": "exam",
+      "exam": "Mock test",
+      "examTips": [
+        "Your teacher's review sheet points to a multiple choice and long answer test; the exact format is not confirmed, so this mock is a best guess.",
+        "Turn the Timer on, leave Shuffle off, and finish both parts before you look at results."
+      ],
+      "tips": [
+        "Read every choice, then cross off the ones you can prove wrong.",
+        "For particle questions write Z, A and the charge first: p = Z, n = A - Z, e = Z - charge.",
+        "For formulas, write both ion charges before you look at the choices, then check the sum is zero.",
+        "Distractors are built from real mistakes: a skipped subscript, swapped abundances, a reversed crossover. Name the mistake behind each wrong choice."
+      ],
+      "questions": [
+        {
+          "id": "MK1",
+          "type": "mcq",
+          "topic": "Isotopes",
+          "stem": "A certain isotope contains 23 protons and 28 neutrons. What are its mass number and identity?",
+          "options": [
+            "51, vanadium",
+            "28, nickel",
+            "23, vanadium",
+            "51, antimony"
+          ],
+          "ans": 0,
+          "exp": "Mass number = protons + neutrons = 23 + 28 = 51. Atomic number 23 is vanadium (V).",
+          "why": [
+            "",
+            "28 is the neutron count, not the atomic number. The element is set by the 23 protons.",
+            "23 is the atomic number. The mass number adds protons and neutrons: 23 + 28 = 51.",
+            "Antimony has 51 protons. Here 51 is the mass number; the 23 protons make it vanadium."
+          ]
+        },
+        {
+          "id": "MK2",
+          "type": "mcq",
+          "topic": "Isotopes",
+          "stem": "Which pair of symbols shows two isotopes of the same element?",
+          "options": [
+            "²²₁₀X and ²²₁₁X",
+            "²⁰₁₀X and ²⁰₁₂X",
+            "²¹₉X and ²²₁₁X",
+            "²⁰₁₀X and ²²₁₀X"
+          ],
+          "ans": 3,
+          "exp": "Isotopes share an atomic number (bottom number) and differ in mass number. Both of these have Z = 10.",
+          "why": [
+            "Same mass number, but the atomic numbers differ (10 and 11), so these are different elements.",
+            "The atomic numbers differ (10 and 12), so these are different elements.",
+            "The atomic numbers differ (9 and 11), so these are different elements.",
+            ""
+          ]
+        },
+        {
+          "id": "MK3",
+          "type": "mcq",
+          "topic": "Ions",
+          "stem": "How many electrons are in the ion ⁷⁵₃₃As³⁻?",
+          "options": [
+            "30",
+            "36",
+            "33",
+            "42"
+          ],
+          "ans": 1,
+          "exp": "Electrons = Z - charge = 33 - (-3) = 36.",
+          "why": [
+            "Subtracting 3 is for a positive ion. A 3- ion gained 3 electrons: 33 + 3 = 36.",
+            "",
+            "33 is the count for a neutral arsenic atom. The 3- charge means 3 extra electrons.",
+            "42 is the neutron count (75 - 33), not the electron count."
+          ]
+        },
+        {
+          "id": "MK4",
+          "type": "mcq",
+          "topic": "Average atomic mass",
+          "stem": "Rhenium is 37.40% Re-185 and 62.60% Re-187. What is its average atomic mass?",
+          "options": [
+            "186.00 amu",
+            "185.75 amu",
+            "187.00 amu",
+            "186.25 amu"
+          ],
+          "ans": 3,
+          "exp": "0.3740 × 185 + 0.6260 × 187 = 186.25 amu.",
+          "why": [
+            "That is the plain average of 185 and 187. Re-187 is more common, so the answer is above 186.",
+            "The abundances are swapped. Re-187 is the 62.60% isotope.",
+            "That is only the most common isotope. The average must include Re-185 too.",
+            ""
+          ]
+        },
+        {
+          "id": "MK5",
+          "type": "mcq",
+          "topic": "Ions",
+          "stem": "An ion with a 3+ charge contains 23 electrons. Which ion is it?",
+          "options": [
+            "V³⁺",
+            "Fe³⁺",
+            "Sc³⁺",
+            "Ca³⁺"
+          ],
+          "ans": 1,
+          "exp": "Protons = electrons + charge = 23 + 3 = 26, which is iron.",
+          "why": [
+            "Vanadium has 23 protons, so V³⁺ has only 20 electrons. You matched the electron count to the atomic number.",
+            "",
+            "Scandium has 21 protons, so Sc³⁺ has 18 electrons.",
+            "Calcium is in group 2 and forms 2+ ions, not 3+. It also has only 20 protons."
+          ]
+        },
+        {
+          "id": "MK6",
+          "type": "mcq",
+          "topic": "Ionic formulas",
+          "stem": "An alkaline earth metal whose most stable ion has 36 electrons bonds with bromine. What is the formula?",
+          "options": [
+            "CaBr₂",
+            "RbBr",
+            "KrBr",
+            "SrBr₂"
+          ],
+          "ans": 3,
+          "exp": "Alkaline earth ions are 2+, so protons = 36 + 2 = 38: strontium. Sr²⁺ needs two Br⁻: SrBr₂.",
+          "why": [
+            "Ca²⁺ has 18 electrons, not 36.",
+            "Rubidium is an alkali metal (group 1), not an alkaline earth metal.",
+            "Krypton is a noble gas; 36 is its electron count as a neutral atom.",
+            ""
+          ]
+        },
+        {
+          "id": "MK7",
+          "type": "mcq",
+          "topic": "Ionic formulas",
+          "stem": "What ionic compound forms when barium bonds with phosphorus?",
+          "options": [
+            "Ba₃P₂",
+            "Ba₂P₃",
+            "BaP",
+            "Ba₃P"
+          ],
+          "ans": 0,
+          "exp": "Ba²⁺ and P³⁻: cross the charges to get Ba₃P₂, since 3(+2) + 2(-3) = 0.",
+          "why": [
+            "",
+            "The subscripts are on the wrong ions: 2(+2) + 3(-3) = -5, not zero.",
+            "Ba²⁺ and P³⁻ do not cancel one to one: +2 - 3 = -1.",
+            "3(+2) + (-3) = +3. Two phosphide ions are needed."
+          ]
+        },
+        {
+          "id": "MK8",
+          "type": "mcq",
+          "topic": "Periodic table",
+          "stem": "Which series is NOT matched with the correct description?",
+          "options": [
+            "F, Cl, Br: halogens",
+            "Mg, Ca, Sr: alkaline earth metals",
+            "Fe, Co, Ni: transition metals",
+            "B, Si, Ge: metals"
+          ],
+          "ans": 3,
+          "exp": "Boron, silicon and germanium are metalloids, on the staircase, not metals.",
+          "why": [
+            "These are all in group 17, the halogens. This one is correct.",
+            "These are all in group 2. This one is correct.",
+            "These are all in groups 3 to 12. This one is correct.",
+            ""
+          ]
+        },
+        {
+          "id": "MK9",
+          "type": "mcq",
+          "topic": "Ions",
+          "stem": "Which ion has the same number of electrons as a neutral neon atom?",
+          "options": [
+            "Mg²⁺",
+            "Ca²⁺",
+            "Cl⁻",
+            "S²⁻"
+          ],
+          "ans": 0,
+          "exp": "Neon has 10 electrons. Mg has 12 protons; losing 2 leaves 10.",
+          "why": [
+            "",
+            "Calcium has 20 protons, so Ca²⁺ has 18 electrons, like argon.",
+            "Chlorine has 17 protons, so Cl⁻ has 18 electrons.",
+            "Sulfur has 16 protons, so S²⁻ has 18 electrons."
+          ]
+        },
+        {
+          "id": "MK10",
+          "type": "mcq",
+          "topic": "Molar mass",
+          "stem": "What is the molar mass of calcium cyanide, Ca(CN)₂?",
+          "options": [
+            "66.10 g/mol",
+            "80.11 g/mol",
+            "92.12 g/mol",
+            "132.20 g/mol"
+          ],
+          "ans": 2,
+          "exp": "40.08 + 2(12.01) + 2(14.01) = 92.12 g/mol.",
+          "why": [
+            "That counts only one C and one N. The 2 outside the parentheses doubles both.",
+            "That doubles only N. The 2 applies to everything inside the parentheses.",
+            "",
+            "That doubles calcium too. Only the CN inside the parentheses is doubled."
+          ]
+        },
+        {
+          "id": "MK11",
+          "type": "mcq",
+          "topic": "Mole conversions",
+          "stem": "How many chlorine atoms are in 45.8 g of MgCl₂?",
+          "options": [
+            "2.90 × 10²³ atoms",
+            "0.962 atoms",
+            "5.79 × 10²³ atoms",
+            "2.76 × 10²⁵ atoms"
+          ],
+          "ans": 2,
+          "exp": "45.8 ÷ 95.21 × 2 × 6.022 × 10²³ = 5.79 × 10²³ Cl atoms.",
+          "why": [
+            "That skips the subscript: each MgCl₂ has 2 Cl atoms.",
+            "That stops at moles of Cl. Multiply by 6.022 × 10²³ to count atoms.",
+            "",
+            "That multiplies by the molar mass instead of dividing by it."
+          ]
+        },
+        {
+          "id": "MK12",
+          "type": "mcq",
+          "topic": "Mole conversions",
+          "stem": "A sample of SiO₂ contains 4.82 × 10²³ oxygen atoms. What is the sample's mass?",
+          "options": [
+            "48.1 g",
+            "12.8 g",
+            "24.0 g",
+            "11.2 g"
+          ],
+          "ans": 2,
+          "exp": "4.82 × 10²³ ÷ 6.022 × 10²³ = 0.8004 mol O; ÷ 2 = 0.4002 mol SiO₂; × 60.09 = 24.0 g.",
+          "why": [
+            "That skips dividing by 2: each SiO₂ has 2 O atoms.",
+            "That is the mass of the oxygen only, not the whole SiO₂.",
+            "",
+            "That uses silicon's mass instead of the molar mass of SiO₂."
+          ]
+        },
+        {
+          "id": "MK13",
+          "type": "mcq",
+          "topic": "Polyatomic ions",
+          "stem": "What is the formula of calcium cyanide?",
+          "options": [
+            "CaCN₂",
+            "Ca₂CN",
+            "CaCN",
+            "Ca(CN)₂"
+          ],
+          "ans": 3,
+          "exp": "Ca²⁺ needs two CN⁻ ions. Parentheses keep each cyanide ion together: Ca(CN)₂.",
+          "why": [
+            "Without parentheses the 2 applies only to N. Two whole CN⁻ ions are needed.",
+            "2(+2) + (-1) = +3, not zero.",
+            "Ca²⁺ with one CN⁻ leaves a +1 charge.",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mock test: long answer",
+      "mode": "exam",
+      "exam": "Mock test",
+      "examTips": [
+        "Your teacher's review sheet points to a multiple choice and long answer test; the exact format is not confirmed, so this mock is a best guess.",
+        "Turn the Timer on, leave Shuffle off, and finish both parts before you look at results."
+      ],
+      "tips": [
+        "Write the setup with units, then the answer. Check Answer shows the worked solution.",
+        "Self-mark each part honestly; partly right goes into Retest Missed Questions."
+      ],
+      "questions": [
+        {
+          "id": "MF1",
+          "type": "frq",
+          "topic": "Ions",
+          "title": "Long answer 2",
+          "stem": "A compound contains an unknown ion X and forms the ionic compound XCl₂. Ion X contains 10 electrons.",
+          "data": [],
+          "parts": [
+            {
+              "k": "a",
+              "prompt": "What is the charge on X? Explain.",
+              "model": "2+. Two Cl⁻ ions give 2-, so X must be 2+ for the compound to be neutral."
+            },
+            {
+              "k": "b",
+              "prompt": "What is the identity of element X?",
+              "model": "Protons = 10 + 2 = 12, so X is magnesium (Mg²⁺)."
+            }
+          ]
+        },
+        {
+          "id": "MF2",
+          "type": "frq",
+          "topic": "Subatomic particles",
+          "title": "Long answer 4",
+          "stem": "An ion of Pb-297 has lost 2 electrons. (VERIFY: real lead isotopes are about Pb-204 to Pb-208, so 297 may be a typo. Use the number as given; the method is the same.)",
+          "data": [],
+          "parts": [
+            {
+              "k": "a",
+              "prompt": "How many protons, neutrons and electrons are in the ion?",
+              "model": "Protons = 82 (lead's atomic number). Neutrons = 297 - 82 = 215. Electrons = 82 - 2 = 80."
+            },
+            {
+              "k": "b",
+              "prompt": "How many subatomic particles in total?",
+              "model": "82 + 215 + 80 = 377."
+            },
+            {
+              "k": "c",
+              "prompt": "Write the isotopic notation.",
+              "model": "²⁹⁷₈₂Pb²⁺: mass number 297 on top, atomic number 82 below, charge 2+ at the upper right."
+            }
+          ]
+        },
+        {
+          "id": "MF3",
+          "type": "frq",
+          "topic": "Ions",
+          "title": "Long answer 8",
+          "stem": "An ion with a charge of 4+ has 46 electrons and 70 neutrons.",
+          "data": [],
+          "parts": [
+            {
+              "k": "a",
+              "prompt": "What element is this?",
+              "model": "Protons = 46 + 4 = 50, so it is tin (Sn⁴⁺)."
+            },
+            {
+              "k": "b",
+              "prompt": "What is its mass number?",
+              "model": "Mass number = protons + neutrons = 50 + 70 = 120."
+            }
+          ]
+        },
+        {
+          "id": "MF4",
+          "type": "frq",
+          "topic": "Subatomic particles",
+          "title": "Long answer 10",
+          "stem": "Explain each of the following.",
+          "data": [],
+          "parts": [
+            {
+              "k": "a",
+              "prompt": "Why does an ionic bond form?",
+              "model": "A metal loses electrons to become a cation and a nonmetal gains them to become an anion, so both complete their octets. The opposite charges attract: that electrostatic force is the ionic bond."
+            },
+            {
+              "k": "b",
+              "prompt": "Why does the identity of an element depend on the number of protons it has?",
+              "model": "The number of protons is the atomic number, which sets the element. Electrons can be gained or lost (ions) and neutrons can vary (isotopes), but changing the protons makes a different element."
+            },
+            {
+              "k": "c",
+              "prompt": "Why is atomic mass on the periodic table a decimal?",
+              "model": "Elements exist as a mixture of isotopes. The table lists the average of their masses, weighted by each isotope's abundance, so it is usually not a whole number."
+            },
+            {
+              "k": "d",
+              "prompt": "Why do elements in the same group have similar chemical behavior?",
+              "model": "Elements in the same group have the same number of valence electrons, and chemical behavior comes from the electrons, so they bond in similar ways."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

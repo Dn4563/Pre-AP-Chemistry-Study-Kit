@@ -1,0 +1,330 @@
+{
+  "flows": [
+    {
+      "id": "F1",
+      "title": "How the model of the atom changed",
+      "deck": 2,
+      "steps": [
+        "Dalton: solid indivisible atoms (1810)",
+        "Thomson: electrons, plum pudding (1897)",
+        "Rutherford: dense positive nucleus (1911)",
+        "Bohr: electrons in fixed orbits (1913)",
+        "Chadwick: the neutron (1932)",
+        "Modern: electrons in orbitals"
+      ]
+    },
+    {
+      "id": "F2",
+      "title": "From atoms to an ionic compound",
+      "deck": 5,
+      "steps": [
+        "Metal atom loses electrons",
+        "Cation forms",
+        "Nonmetal atom gains electrons",
+        "Anion forms",
+        "Opposite charges attract (ionic bond)",
+        "Neutral formula, charges sum to zero"
+      ]
+    },
+    {
+      "id": "F3",
+      "title": "Counting particles from a symbol",
+      "deck": 3,
+      "steps": [
+        "Protons = atomic number (Z)",
+        "Neutrons = mass number (A) - Z",
+        "Electrons = Z - charge"
+      ]
+    },
+    {
+      "id": "F4",
+      "title": "Weighted average atomic mass",
+      "deck": 4,
+      "steps": [
+        "Turn each percent into a decimal",
+        "Multiply each decimal by that isotope's mass",
+        "Add the products",
+        "Check: the answer lands near the most common isotope"
+      ]
+    },
+    {
+      "id": "F5",
+      "title": "Grams to atoms",
+      "deck": 6,
+      "steps": [
+        "Grams of compound",
+        "÷ molar mass = moles of compound",
+        "× subscript = moles of one element",
+        "× 6.022 × 10²³ = number of atoms"
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "title": "Ion charges by group",
+      "rows": [
+        [
+          "Group",
+          "Name",
+          "Ion charge",
+          "Example"
+        ],
+        [
+          "1",
+          "Alkali metals",
+          "+1",
+          "Na⁺"
+        ],
+        [
+          "2",
+          "Alkaline earth metals",
+          "+2",
+          "Mg²⁺"
+        ],
+        [
+          "3-12",
+          "Transition metals",
+          "Varies",
+          "Fe²⁺ or Fe³⁺"
+        ],
+        [
+          "13",
+          "Boron family",
+          "+3",
+          "Al³⁺"
+        ],
+        [
+          "14",
+          "Carbon family",
+          "4+ or 4-",
+          "none to memorize"
+        ],
+        [
+          "15",
+          "Nitrogen family",
+          "-3",
+          "N³⁻"
+        ],
+        [
+          "16",
+          "Oxygen family",
+          "-2",
+          "O²⁻"
+        ],
+        [
+          "17",
+          "Halogens",
+          "-1",
+          "Cl⁻"
+        ],
+        [
+          "18",
+          "Noble gases",
+          "No ion",
+          "Ne"
+        ]
+      ]
+    },
+    {
+      "title": "The subatomic particles",
+      "rows": [
+        [
+          "Particle",
+          "Charge",
+          "Location",
+          "Mass",
+          "What it decides"
+        ],
+        [
+          "Proton",
+          "Positive",
+          "Nucleus",
+          "Has mass",
+          "The element (atomic number)"
+        ],
+        [
+          "Neutron",
+          "Neutral",
+          "Nucleus",
+          "Has mass (about a proton's)",
+          "The isotope"
+        ],
+        [
+          "Electron",
+          "Negative",
+          "Outside the nucleus",
+          "Nearly massless",
+          "Chemical behavior and charge"
+        ]
+      ]
+    },
+    {
+      "title": "Ionic versus covalent",
+      "rows": [
+        [
+          "",
+          "Ionic",
+          "Covalent"
+        ],
+        [
+          "Electrons",
+          "Transferred (given and taken)",
+          "Shared, never fully transferred"
+        ],
+        [
+          "Elements",
+          "Metal + nonmetal",
+          "Nonmetal + nonmetal"
+        ],
+        [
+          "Held together by",
+          "Attraction between cation and anion",
+          "Shared electrons"
+        ],
+        [
+          "Example",
+          "NaCl, MgCl₂",
+          "CH₄, CO₂, CF₄"
+        ]
+      ]
+    },
+    {
+      "title": "Common polyatomic ions",
+      "rows": [
+        [
+          "Charge",
+          "Ions"
+        ],
+        [
+          "+1",
+          "ammonium NH₄⁺"
+        ],
+        [
+          "-1",
+          "acetate C₂H₃O₂⁻, hydrogen carbonate HCO₃⁻, cyanide CN⁻, nitrate NO₃⁻, nitrite NO₂⁻, hydroxide OH⁻, hydrogen sulfate HSO₄⁻, hypochlorite ClO⁻, chlorite ClO₂⁻, chlorate ClO₃⁻, perchlorate ClO₄⁻, permanganate MnO₄⁻"
+        ],
+        [
+          "-2",
+          "carbonate CO₃²⁻, peroxide O₂²⁻, sulfite SO₃²⁻, sulfate SO₄²⁻, thiosulfate S₂O₃²⁻, chromate CrO₄²⁻, dichromate Cr₂O₇²⁻"
+        ],
+        [
+          "-3",
+          "phosphate PO₄³⁻"
+        ]
+      ]
+    }
+  ],
+  "cheat": [
+    {
+      "title": "Count the particles",
+      "kind": "list",
+      "items": [
+        "Protons = atomic number (Z).",
+        "Neutrons = mass number - Z. Round the atomic mass only when no isotope is named.",
+        "Electrons = Z - charge. Lost electrons give +; gained electrons give -.",
+        "Isotopic notation: mass number on top, atomic number on the bottom, charge at the upper right."
+      ]
+    },
+    {
+      "title": "Charges by group",
+      "kind": "table",
+      "rows": [
+        [
+          "Group",
+          "1",
+          "2",
+          "13",
+          "15",
+          "16",
+          "17",
+          "18"
+        ],
+        [
+          "Charge",
+          "+1",
+          "+2",
+          "+3",
+          "-3",
+          "-2",
+          "-1",
+          "none"
+        ]
+      ]
+    },
+    {
+      "title": "Write an ionic formula",
+      "kind": "list",
+      "items": [
+        "Cation (metal) first, anion (nonmetal) second.",
+        "Cross the charge numbers over to become subscripts, then reduce.",
+        "Check that the charges add to zero.",
+        "Keep polyatomic ions whole; use parentheses for more than one, as in Ca(CN)₂."
+      ]
+    },
+    {
+      "title": "Average atomic mass",
+      "kind": "list",
+      "items": [
+        "Sum of (abundance as a decimal × isotope mass).",
+        "Boron: 0.20(10) + 0.80(11) = 10.8.",
+        "The answer lands nearest the most common isotope."
+      ]
+    },
+    {
+      "title": "Molar mass and moles",
+      "kind": "list",
+      "items": [
+        "Molar mass = sum of all atomic masses in the formula, in g/mol.",
+        "grams ÷ molar mass = moles.",
+        "moles × subscript = moles of that element.",
+        "moles × 6.022 × 10²³ = particles."
+      ]
+    },
+    {
+      "title": "Who discovered what",
+      "kind": "table",
+      "rows": [
+        [
+          "Scientist",
+          "Discovery or model"
+        ],
+        [
+          "Dalton",
+          "Atomic theory: atoms regroup, never created or destroyed"
+        ],
+        [
+          "Thomson",
+          "Electron; plum pudding model"
+        ],
+        [
+          "Rutherford",
+          "Nucleus (gold foil, alpha particles)"
+        ],
+        [
+          "Bohr",
+          "Electrons in fixed orbits (energy levels)"
+        ],
+        [
+          "Chadwick",
+          "Neutron"
+        ],
+        [
+          "Modern model",
+          "Orbitals: likely regions, not exact paths"
+        ]
+      ]
+    }
+  ],
+  "topicDeck": {
+    "Periodic table": 1,
+    "History of the atom": 2,
+    "Subatomic particles": 3,
+    "Isotopes": 4,
+    "Average atomic mass": 4,
+    "Ions": 5,
+    "Ionic formulas": 5,
+    "Polyatomic ions": 5,
+    "Molar mass": 6,
+    "Mole conversions": 6
+  }
+}

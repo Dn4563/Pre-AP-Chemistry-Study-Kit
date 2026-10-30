@@ -13,7 +13,17 @@
       "label": "Chapter 3",
       "title": "Matter",
       "blurb": "States of matter, physical and chemical changes, elements, compounds and mixtures, and separating mixtures (sections 3.1 to 3.5).",
-      "legacyKeys": { "kit": "chem3_matter_kit_v1", "pt": "chem3_matter_pt_v1" }
+      "legacyKeys": {
+        "kit": "chem3_matter_kit_v1",
+        "pt": "chem3_matter_pt_v1"
+      }
+    },
+    {
+      "id": "ch04",
+      "dir": "ch04-atoms",
+      "label": "Chapter 4",
+      "title": "Elements, Atoms, and Ions",
+      "blurb": "The periodic table, the history of the atom, protons, neutrons and electrons, isotopes and average atomic mass, ions and ionic formulas, and molar mass and the mole (sections 4.3 to 4.11)."
     }
   ]
 }
