@@ -230,27 +230,6 @@
       "exp": "Group 18 already has a complete valence shell."
     }
   ],
-  "Boron, carbon, nitrogen and oxygen families": [
-    {
-      "q": "Phosphorus is in group 15. Which family is that?",
-      "right": "Nitrogen family",
-      "wrong": [
-        [
-          "Carbon family",
-          "The carbon family is group 14."
-        ],
-        [
-          "Oxygen family",
-          "The oxygen family is group 16."
-        ],
-        [
-          "Phosphorus family",
-          "Families are named for the top element of the group, and phosphorus is not at the top."
-        ]
-      ],
-      "exp": "Each family is named for the element at the top of its group."
-    }
-  ],
   "Inner transition metals": [
     {
       "q": "Where are the inner transition metals on the periodic table?",
@@ -986,27 +965,6 @@
       "exp": "Natural chlorine is a mixture of isotopes."
     }
   ],
-  "Hydrogen isotopes": [
-    {
-      "q": "How many neutrons are in tritium (hydrogen-3)?",
-      "right": "2",
-      "wrong": [
-        [
-          "3",
-          "3 is the mass number."
-        ],
-        [
-          "1",
-          "1 is in deuterium (hydrogen-2)."
-        ],
-        [
-          "0",
-          "0 is in ordinary hydrogen-1."
-        ]
-      ],
-      "exp": "3 - 1 = 2 neutrons."
-    }
-  ],
   "Isotopic notation": [
     {
       "q": "In ¹⁴₆C, what does the 6 tell you?",
@@ -1238,27 +1196,6 @@
       "exp": "Metals lose electrons; nonmetals gain them."
     }
   ],
-  "Group 1 and group 2 charges": [
-    {
-      "q": "What is the formula of the ion barium forms?",
-      "right": "Ba²⁺",
-      "wrong": [
-        [
-          "Ba⁺",
-          "1+ is for group 1; barium is in group 2."
-        ],
-        [
-          "Ba²⁻",
-          "Metals form positive ions."
-        ],
-        [
-          "Ba³⁺",
-          "3+ is for group 13."
-        ]
-      ],
-      "exp": "Group 2 forms 2+ ions."
-    }
-  ],
   "Group 13 charge": [
     {
       "q": "What ion does gallium (group 13) form?",
@@ -1278,27 +1215,6 @@
         ]
       ],
       "exp": "Group 13 forms 3+ ions."
-    }
-  ],
-  "Groups 15, 16 and 17 charges": [
-    {
-      "q": "What ion does nitrogen (group 15) form?",
-      "right": "N³⁻",
-      "wrong": [
-        [
-          "N⁵⁻",
-          "Nitrogen gains 3 to reach 8, not 5."
-        ],
-        [
-          "N³⁺",
-          "Nitrogen is a nonmetal; it gains electrons."
-        ],
-        [
-          "N⁻",
-          "1- is for group 17."
-        ]
-      ],
-      "exp": "Group 15 gains 3 electrons: 3-."
     }
   ],
   "Noble gas charge": [
@@ -1698,6 +1614,258 @@
         ]
       ],
       "exp": "Ionic compounds are counted in formula units."
+    }
+  ],
+  "Boron family": [
+    {
+      "q": "Gallium is in group 13. Which family is that?",
+      "right": "Boron family",
+      "wrong": [
+        [
+          "Carbon family",
+          "The carbon family is group 14."
+        ],
+        [
+          "Nitrogen family",
+          "The nitrogen family is group 15."
+        ],
+        [
+          "Aluminum family",
+          "Families are named for the top element; boron is at the top of group 13."
+        ]
+      ],
+      "exp": "Group 13 is the boron family."
+    }
+  ],
+  "Carbon family": [
+    {
+      "q": "Silicon is in group 14. Which family is that?",
+      "right": "Carbon family",
+      "wrong": [
+        [
+          "Boron family",
+          "The boron family is group 13."
+        ],
+        [
+          "Oxygen family",
+          "The oxygen family is group 16."
+        ],
+        [
+          "Silicon family",
+          "Families are named for the top element; carbon is at the top of group 14."
+        ]
+      ],
+      "exp": "Group 14 is the carbon family."
+    }
+  ],
+  "Nitrogen family": [
+    {
+      "q": "Phosphorus is in group 15. Which family is that?",
+      "right": "Nitrogen family",
+      "wrong": [
+        [
+          "Carbon family",
+          "The carbon family is group 14."
+        ],
+        [
+          "Oxygen family",
+          "The oxygen family is group 16."
+        ],
+        [
+          "Phosphorus family",
+          "Families are named for the top element; nitrogen is at the top of group 15."
+        ]
+      ],
+      "exp": "Group 15 is the nitrogen family."
+    }
+  ],
+  "Oxygen family": [
+    {
+      "q": "Sulfur is in group 16. Which family is that?",
+      "right": "Oxygen family",
+      "wrong": [
+        [
+          "Nitrogen family",
+          "The nitrogen family is group 15."
+        ],
+        [
+          "Halogen family",
+          "The halogens are group 17."
+        ],
+        [
+          "Sulfur family",
+          "Families are named for the top element; oxygen is at the top of group 16."
+        ]
+      ],
+      "exp": "Group 16 is the oxygen family."
+    }
+  ],
+  "Hydrogen-1": [
+    {
+      "q": "How many neutrons are in ordinary hydrogen-1?",
+      "right": "0",
+      "wrong": [
+        [
+          "1",
+          "1 is its number of protons."
+        ],
+        [
+          "2",
+          "2 neutrons is tritium, hydrogen-3."
+        ],
+        [
+          "3",
+          "3 would be mass number 4, not hydrogen-1."
+        ]
+      ],
+      "exp": "1 - 1 = 0 neutrons."
+    }
+  ],
+  "Deuterium": [
+    {
+      "q": "Deuterium is hydrogen-2. How many neutrons does it have?",
+      "right": "1",
+      "wrong": [
+        [
+          "2",
+          "2 is its mass number."
+        ],
+        [
+          "0",
+          "0 neutrons is hydrogen-1."
+        ],
+        [
+          "3",
+          "That adds instead of subtracting."
+        ]
+      ],
+      "exp": "2 - 1 = 1 neutron."
+    }
+  ],
+  "Tritium": [
+    {
+      "q": "How many neutrons are in tritium (hydrogen-3)?",
+      "right": "2",
+      "wrong": [
+        [
+          "3",
+          "3 is the mass number."
+        ],
+        [
+          "1",
+          "1 neutron is deuterium."
+        ],
+        [
+          "0",
+          "0 neutrons is hydrogen-1."
+        ]
+      ],
+      "exp": "3 - 1 = 2 neutrons."
+    }
+  ],
+  "Group 1 charge": [
+    {
+      "q": "Lithium is in group 1. What ion does it form?",
+      "right": "Li⁺",
+      "wrong": [
+        [
+          "Li²⁺",
+          "2+ is for group 2."
+        ],
+        [
+          "Li⁻",
+          "Metals lose electrons, so the ion is positive."
+        ],
+        [
+          "Li⁷⁻",
+          "Lithium loses 1 electron rather than gaining 7."
+        ]
+      ],
+      "exp": "Group 1 loses 1 electron: +1."
+    }
+  ],
+  "Group 2 charge": [
+    {
+      "q": "What is the formula of the ion barium forms?",
+      "right": "Ba²⁺",
+      "wrong": [
+        [
+          "Ba⁺",
+          "1+ is for group 1; barium is in group 2."
+        ],
+        [
+          "Ba²⁻",
+          "Metals form positive ions."
+        ],
+        [
+          "Ba³⁺",
+          "3+ is for group 13."
+        ]
+      ],
+      "exp": "Group 2 forms 2+ ions."
+    }
+  ],
+  "Group 15 charge": [
+    {
+      "q": "What ion does nitrogen (group 15) form?",
+      "right": "N³⁻",
+      "wrong": [
+        [
+          "N⁵⁻",
+          "Nitrogen gains 3 to reach 8, not 5."
+        ],
+        [
+          "N³⁺",
+          "Nitrogen is a nonmetal; it gains electrons."
+        ],
+        [
+          "N²⁻",
+          "2- is for group 16."
+        ]
+      ],
+      "exp": "Group 15 gains 3 electrons: 3-."
+    }
+  ],
+  "Group 16 charge": [
+    {
+      "q": "Selenium is in group 16. What ion does it form?",
+      "right": "Se²⁻",
+      "wrong": [
+        [
+          "Se⁶⁻",
+          "Selenium gains 2 to reach 8, not 6."
+        ],
+        [
+          "Se²⁺",
+          "Selenium is a nonmetal; it gains electrons."
+        ],
+        [
+          "Se⁻",
+          "1- is for group 17."
+        ]
+      ],
+      "exp": "Group 16 gains 2 electrons: 2-."
+    }
+  ],
+  "Group 17 charge": [
+    {
+      "q": "What ion does iodine (group 17) form?",
+      "right": "I⁻",
+      "wrong": [
+        [
+          "I⁷⁻",
+          "Iodine gains 1 to reach 8, not 7."
+        ],
+        [
+          "I⁺",
+          "Iodine is a nonmetal; it gains electrons."
+        ],
+        [
+          "I²⁻",
+          "2- is for group 16."
+        ]
+      ],
+      "exp": "Group 17 gains 1 electron: 1-."
     }
   ]
 }

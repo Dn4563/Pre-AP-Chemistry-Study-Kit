@@ -25,7 +25,10 @@
 
 | Term | Definition | Hook |
 |---|---|---|
-| Boron, carbon, nitrogen and oxygen families | Group 13 is the boron family, 14 the carbon family, 15 the nitrogen family and 16 the oxygen family. Each is named for its top element. | Named for the element on top. |
+| Boron family | Group 13, named for boron at the top of the group. These elements form +3 ions. | 13 = boron. |
+| Carbon family | Group 14, named for carbon at the top of the group. It has no single ion charge to memorize (4+ or 4-). | 14 = carbon. |
+| Nitrogen family | Group 15, named for nitrogen at the top of the group. These elements form -3 ions. | 15 = nitrogen. |
+| Oxygen family | Group 16, named for oxygen at the top of the group. These elements form -2 ions. | 16 = oxygen. |
 | Inner transition metals | The two rows set below the table: the lanthanide series (atomic numbers 58 to 71) and the actinide series (90 to 103). | The two rows at the bottom. |
 | Lanthanide series | Inner transition row of atomic numbers 58 to 71, named because it follows lanthanum (La, 57). | Follows La. |
 | Actinide series | Inner transition row of atomic numbers 90 to 103, named because it follows actinium (Ac, 89). | Follows Ac. |
@@ -102,7 +105,9 @@
 | Isotopes | Atoms of the same element with the same number of protons but different numbers of neutrons, so different mass numbers. | Same protons, different neutrons. |
 | Chemistry of isotopes | Isotopes of an element show almost identical chemical properties, because chemistry depends on electrons, not neutrons. | Same electrons, same chemistry. |
 | Isotopes in nature | Elements are usually found as a mixture of their isotopes. | Nature mixes them. |
-| Hydrogen isotopes | Hydrogen-1 (no neutrons), hydrogen-2 or deuterium (1 neutron) and hydrogen-3 or tritium (2 neutrons). | Protium, deuterium, tritium. |
+| Hydrogen-1 | The most common hydrogen isotope: 1 proton and no neutrons, mass number 1. | Plain hydrogen, no neutron. |
+| Deuterium | Hydrogen-2: 1 proton and 1 neutron, mass number 2. | Deu = two. |
+| Tritium | Hydrogen-3: 1 proton and 2 neutrons, mass number 3. | Tri = three. |
 
 ## Isotopic notation
 
@@ -136,9 +141,12 @@
 
 | Term | Definition | Hook |
 |---|---|---|
-| Group 1 and group 2 charges | Group 1 forms +1 ions; group 2 forms +2 ions. | Charge = group number. |
+| Group 1 charge | Alkali metals lose 1 valence electron and form +1 ions, such as Na⁺ and K⁺. | One electron out, +1. |
+| Group 2 charge | Alkaline earth metals lose 2 valence electrons and form +2 ions, such as Mg²⁺ and Ca²⁺. | Two electrons out, +2. |
 | Group 13 charge | Group 13 forms +3 ions (for example Al³⁺ and Ga³⁺). | Lose 3. |
-| Groups 15, 16 and 17 charges | Group 15 forms -3, group 16 forms -2, group 17 forms -1 ions. | 8 minus the group's last digit, negative. |
+| Group 15 charge | Nitrogen family nonmetals gain 3 electrons to complete the octet and form -3 ions, such as N³⁻ and P³⁻. | 5 + 3 = 8. |
+| Group 16 charge | Oxygen family nonmetals gain 2 electrons and form -2 ions, such as O²⁻ and S²⁻. | 6 + 2 = 8. |
+| Group 17 charge | Halogens gain 1 electron and form -1 ions, such as F⁻ and Cl⁻. | 7 + 1 = 8. |
 | Noble gas charge | Group 18 tends not to form ions because its valence shell is already complete. | Already done. |
 | Transition metal charges | Many transition metals have variable charges (for example Fe²⁺ or Fe³⁺, Cu⁺ or Cu²⁺), so the charge must be given. | Middle block: it varies. |
 
