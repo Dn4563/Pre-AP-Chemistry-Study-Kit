@@ -510,6 +510,22 @@
           "stem": "One mole of CCl₄ contains 4 moles of chlorine atoms.",
           "ans": true,
           "exp": "The subscript gives the mole ratio."
+        },
+        {
+          "id": "T19",
+          "type": "tf",
+          "topic": "Isotopes",
+          "stem": "Oxygen-17 has 9 neutrons.",
+          "ans": true,
+          "exp": "17 - 8 = 9."
+        },
+        {
+          "id": "T20",
+          "type": "tf",
+          "topic": "Isotopes",
+          "stem": "Oxygen-18 has more protons than oxygen-16.",
+          "ans": false,
+          "exp": "Both have 8 protons; oxygen-18 has 2 more neutrons."
         }
       ]
     },
@@ -856,6 +872,69 @@
               "t": "Discovery of the electron",
               "ans": 1,
               "exp": "Cathode ray tubes."
+            }
+          ]
+        },
+        {
+          "id": "L8",
+          "type": "label",
+          "topic": "Isotopes",
+          "stem": "How many neutrons does each isotope have?",
+          "labels": [
+            "0",
+            "1",
+            "2",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"
+          ],
+          "items": [
+            {
+              "t": "Carbon-12",
+              "ans": 3,
+              "exp": "12 - 6 = 6."
+            },
+            {
+              "t": "Carbon-13",
+              "ans": 4,
+              "exp": "13 - 6 = 7."
+            },
+            {
+              "t": "Carbon-14",
+              "ans": 5,
+              "exp": "14 - 6 = 8."
+            },
+            {
+              "t": "Hydrogen-1",
+              "ans": 0,
+              "exp": "1 - 1 = 0."
+            },
+            {
+              "t": "Hydrogen-2 (deuterium)",
+              "ans": 1,
+              "exp": "2 - 1 = 1."
+            },
+            {
+              "t": "Hydrogen-3 (tritium)",
+              "ans": 2,
+              "exp": "3 - 1 = 2."
+            },
+            {
+              "t": "Oxygen-16",
+              "ans": 5,
+              "exp": "16 - 8 = 8."
+            },
+            {
+              "t": "Oxygen-17",
+              "ans": 6,
+              "exp": "17 - 8 = 9."
+            },
+            {
+              "t": "Oxygen-18",
+              "ans": 7,
+              "exp": "18 - 8 = 10."
             }
           ]
         }

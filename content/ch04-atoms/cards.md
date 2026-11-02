@@ -125,6 +125,17 @@
 | Weighted average atomic mass | The sum of (each isotope's abundance as a decimal × how heavy that isotope is). This is the decimal value shown on the periodic table. | Like a weighted class average. |
 | Isotopic mass | How heavy one particular form of an element is. In the Candium lab each type of candy played the part of one form. | One isotope's mass. |
 
+## Isotope examples
+
+| Term | Definition | Hook |
+|---|---|---|
+| Carbon-12 | The most common form of element 6 (C): 6 protons and 6 neutrons, mass number 12. | 6 + 6. |
+| Carbon-13 | A form of element 6 (C) with 6 protons and 7 neutrons, mass number 13. | 6 + 7. |
+| Carbon-14 | A form of element 6 (C) with 6 protons and 8 neutrons, mass number 14. | 6 + 8. |
+| Oxygen-16 | A form of element 8 (O) with 8 protons, 8 neutrons and 8 electrons, mass number 16. | 8 + 8. |
+| Oxygen-17 | A form of element 8 (O) with 8 protons, 9 neutrons and 8 electrons, mass number 17. | 8 + 9. |
+| Oxygen-18 | A form of element 8 (O) with 8 protons, 10 neutrons and 8 electrons, mass number 18. | 8 + 10. |
+
 # Deck 5: Ions and Ionic Compounds
 
 ## Forming ions

@@ -1867,5 +1867,131 @@
       ],
       "exp": "Group 17 gains 1 electron: 1-."
     }
+  ],
+  "Carbon-12": [
+    {
+      "q": "A carbon atom has 6 neutrons. Which isotope is it?",
+      "right": "Carbon-12",
+      "wrong": [
+        [
+          "Carbon-6",
+          "The name uses the mass number (6 + 6 = 12), not the neutron count."
+        ],
+        [
+          "Carbon-13",
+          "Carbon-13 has 7 neutrons."
+        ],
+        [
+          "Carbon-14",
+          "Carbon-14 has 8 neutrons."
+        ]
+      ],
+      "exp": "Mass number = 6 protons + 6 neutrons = 12."
+    }
+  ],
+  "Carbon-13": [
+    {
+      "q": "How many neutrons are in carbon-13?",
+      "right": "7",
+      "wrong": [
+        [
+          "13",
+          "13 is the mass number."
+        ],
+        [
+          "6",
+          "6 is the number of protons."
+        ],
+        [
+          "19",
+          "That adds 13 and 6 instead of subtracting."
+        ]
+      ],
+      "exp": "13 - 6 = 7 neutrons."
+    }
+  ],
+  "Carbon-14": [
+    {
+      "q": "How many neutrons are in carbon-14?",
+      "right": "8",
+      "wrong": [
+        [
+          "14",
+          "14 is the mass number."
+        ],
+        [
+          "6",
+          "6 is the number of protons."
+        ],
+        [
+          "20",
+          "That adds 14 and 6 instead of subtracting."
+        ]
+      ],
+      "exp": "14 - 6 = 8 neutrons."
+    }
+  ],
+  "Oxygen-16": [
+    {
+      "q": "How many neutrons are in oxygen-16?",
+      "right": "8",
+      "wrong": [
+        [
+          "16",
+          "16 is the mass number."
+        ],
+        [
+          "10",
+          "10 neutrons is oxygen-18."
+        ],
+        [
+          "9",
+          "9 neutrons is oxygen-17."
+        ]
+      ],
+      "exp": "16 - 8 = 8 neutrons."
+    }
+  ],
+  "Oxygen-17": [
+    {
+      "q": "An oxygen atom has 9 neutrons. Which isotope is it?",
+      "right": "Oxygen-17",
+      "wrong": [
+        [
+          "Oxygen-9",
+          "The name uses the mass number (8 + 9 = 17), not the neutron count."
+        ],
+        [
+          "Oxygen-16",
+          "Oxygen-16 has 8 neutrons."
+        ],
+        [
+          "Oxygen-18",
+          "Oxygen-18 has 10 neutrons."
+        ]
+      ],
+      "exp": "Mass number = 8 protons + 9 neutrons = 17."
+    }
+  ],
+  "Oxygen-18": [
+    {
+      "q": "What do oxygen-16 and oxygen-18 have different numbers of?",
+      "right": "Neutrons",
+      "wrong": [
+        [
+          "Protons",
+          "Both have 8 protons; that's what makes them oxygen."
+        ],
+        [
+          "Electrons",
+          "Both neutral atoms have 8 electrons."
+        ],
+        [
+          "Atomic number",
+          "Both have atomic number 8."
+        ]
+      ],
+      "exp": "Oxygen-18 has 10 neutrons; oxygen-16 has 8."
+    }
   ]
 }

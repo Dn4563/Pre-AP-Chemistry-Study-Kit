@@ -187,6 +187,81 @@
           "CH₄, CO₂, CF₄"
         ]
       ]
+    },
+    {
+      "title": "Isotope examples",
+      "rows": [
+        [
+          "Isotope",
+          "Protons",
+          "Neutrons",
+          "Electrons (neutral)",
+          "Mass number"
+        ],
+        [
+          "Carbon-12",
+          "6",
+          "6",
+          "6",
+          "12"
+        ],
+        [
+          "Carbon-13",
+          "6",
+          "7",
+          "6",
+          "13"
+        ],
+        [
+          "Carbon-14",
+          "6",
+          "8",
+          "6",
+          "14"
+        ],
+        [
+          "Hydrogen-1",
+          "1",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "Hydrogen-2 (deuterium)",
+          "1",
+          "1",
+          "1",
+          "2"
+        ],
+        [
+          "Hydrogen-3 (tritium)",
+          "1",
+          "2",
+          "1",
+          "3"
+        ],
+        [
+          "Oxygen-16",
+          "8",
+          "8",
+          "8",
+          "16"
+        ],
+        [
+          "Oxygen-17",
+          "8",
+          "9",
+          "8",
+          "17"
+        ],
+        [
+          "Oxygen-18",
+          "8",
+          "10",
+          "8",
+          "18"
+        ]
+      ]
     }
   ],
   "cheat": [

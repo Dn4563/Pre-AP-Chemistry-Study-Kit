@@ -10,3 +10,4 @@ Places where the review sheet, slides or worksheets are wrong or easy to misread
 - (deck 5) The review sheet says "a positive atom is called a cation." A charged atom is an ion: a cation is a positive ion and an anion is a negative ion. A neutral atom has no charge.
 - (deck 5) The review sheet lists charges for groups 1, 2, 13, 15, 16 and 17 but skips group 14. The slide's charge chart shows group 14 as 4+ or 4-, so it has no single charge to memorize.
 - (deck 3) Long answer problem 4 asks about "Pb-297." Real lead isotopes are around Pb-204 to Pb-208, so this is probably a typo for Pb-207 (VERIFY with your teacher). The method is the same: lead always has 82 protons; neutrons = mass number - 82; a 2+ ion has 80 electrons.
+- (deck 4) The isotope slides say "Nuclear number = 6 + 6 = 12." That is the mass number: protons plus neutrons. Use "mass number" on the test, as the review sheet and the other slides do.
