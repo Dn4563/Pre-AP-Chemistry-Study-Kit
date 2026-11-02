@@ -187,31 +187,6 @@
           "CH₄, CO₂, CF₄"
         ]
       ]
-    },
-    {
-      "title": "Common polyatomic ions",
-      "rows": [
-        [
-          "Charge",
-          "Ions"
-        ],
-        [
-          "+1",
-          "ammonium NH₄⁺"
-        ],
-        [
-          "-1",
-          "acetate C₂H₃O₂⁻, hydrogen carbonate HCO₃⁻, cyanide CN⁻, nitrate NO₃⁻, nitrite NO₂⁻, hydroxide OH⁻, hydrogen sulfate HSO₄⁻, hypochlorite ClO⁻, chlorite ClO₂⁻, chlorate ClO₃⁻, perchlorate ClO₄⁻, permanganate MnO₄⁻"
-        ],
-        [
-          "-2",
-          "carbonate CO₃²⁻, peroxide O₂²⁻, sulfite SO₃²⁻, sulfate SO₄²⁻, thiosulfate S₂O₃²⁻, chromate CrO₄²⁻, dichromate Cr₂O₇²⁻"
-        ],
-        [
-          "-3",
-          "phosphate PO₄³⁻"
-        ]
-      ]
     }
   ],
   "cheat": [
@@ -323,7 +298,6 @@
     "Average atomic mass": 4,
     "Ions": 5,
     "Ionic formulas": 5,
-    "Polyatomic ions": 5,
     "Molar mass": 6,
     "Mole conversions": 6
   }

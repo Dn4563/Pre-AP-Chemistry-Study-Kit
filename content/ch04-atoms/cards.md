@@ -152,24 +152,8 @@
 | Chemical formula | Shows the types of atoms and the number of each in one unit of a compound, using element symbols and subscripts. A subscript of 1 is not written. | Symbols plus subscripts. |
 | Ionic formula rule | Write the cation first, then the anion, with enough of each that the charges add to zero. Ionic compounds are electrically neutral. | Charges sum to zero. |
 | Crossover method | Swap each ion's charge number to become the other ion's subscript, then reduce to the lowest ratio. Ba²⁺ and P³⁻ give Ba₃P₂. | Cross the charges. |
-| Properties of ionic compounds | Strong and brittle, with high melting points. They conduct electricity when melted or dissolved in water, not as solids. | Hard, high-melting, conduct when free to move. |
-
-## Common polyatomic ions
-
-| Term | Definition | Hook |
-|---|---|---|
 | Polyatomic ion | A charged group of two or more atoms covalently bonded together. It stays together as one unit in a formula; use parentheses if you need more than one, as in Ca(CN)₂. | One ion, many atoms. |
-| Ammonium | NH₄⁺, the common positive polyatomic ion. | The one plus. |
-| Hydroxide and peroxide | Hydroxide is OH⁻; peroxide is O₂²⁻. | OH one minus. |
-| Cyanide and acetate | Cyanide is CN⁻; acetate is C₂H₃O₂⁻. | Both -1. |
-| Nitrate and nitrite | Nitrate is NO₃⁻; nitrite is NO₂⁻. | -ate has one more O than -ite. |
-| Carbonate and hydrogen carbonate | Carbonate is CO₃²⁻; hydrogen carbonate (bicarbonate) is HCO₃⁻. | Add H, charge goes up by 1. |
-| Sulfate, sulfite and hydrogen sulfate | Sulfate is SO₄²⁻, sulfite is SO₃²⁻, hydrogen sulfate is HSO₄⁻. | -ate 4 O, -ite 3 O. |
-| Thiosulfate | S₂O₃²⁻. | Thio = an extra S. |
-| Phosphate | PO₄³⁻. | Phosphate, -3. |
-| Chlorine oxyanions | Hypochlorite ClO⁻, chlorite ClO₂⁻, chlorate ClO₃⁻, perchlorate ClO₄⁻. All -1. | Hypo 1, ite 2, ate 3, per 4. |
-| Chromate and dichromate | Chromate is CrO₄²⁻; dichromate is Cr₂O₇²⁻. | Both -2. |
-| Permanganate | MnO₄⁻. | Purple ion, -1. |
+| Properties of ionic compounds | Strong and brittle, with high melting points. They conduct electricity when melted or dissolved in water, not as solids. | Hard, high-melting, conduct when free to move. |
 
 # Deck 6: Molar Mass and the Mole
 

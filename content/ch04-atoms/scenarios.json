@@ -3,17 +3,17 @@
     "deck": 1,
     "q": "A student finds an element that is shiny, can be drawn into wire, and conducts electricity. Where is it most likely on the periodic table?",
     "opts": [
+      "Left of the staircase",
       "Right of the staircase",
       "On the staircase itself",
-      "Left of the staircase",
       "In group 18"
     ],
-    "ans": 2,
+    "ans": 0,
     "exp": "Conductive, ductile and shiny are metal properties; metals sit left of the staircase.",
     "why": [
+      "",
       "Elements there are nonmetals: brittle and poor conductors.",
       "Metalloids have mixed properties; this sample shows only metallic ones.",
-      "",
       "Noble gases are gases, not shiny conductors you can draw into wire."
     ]
   },
@@ -22,34 +22,34 @@
     "q": "Element Q is in period 3 and group 2. Which statement about Q is true?",
     "opts": [
       "It has 3 valence electrons",
+      "It has 2 valence electrons",
       "It forms a 2- ion",
-      "It is a halogen",
-      "It has 2 valence electrons"
+      "It is a halogen"
     ],
-    "ans": 3,
+    "ans": 1,
     "exp": "Group number gives valence electrons for representative elements; period gives energy levels.",
     "why": [
       "3 is the period, which gives energy levels, not valence electrons.",
+      "",
       "Group 2 metals lose electrons and form 2+ ions.",
-      "Halogens are group 17. Group 2 is the alkaline earth metals.",
-      ""
+      "Halogens are group 17. Group 2 is the alkaline earth metals."
     ]
   },
   {
     "deck": 1,
     "q": "Which element is a nonmetal even though it is on the left side of the table?",
     "opts": [
-      "Hydrogen",
       "Lithium",
       "Aluminum",
+      "Hydrogen",
       "Beryllium"
     ],
-    "ans": 0,
+    "ans": 2,
     "exp": "Hydrogen sits in group 1 but is a nonmetal.",
     "why": [
-      "",
       "Lithium is an alkali metal.",
       "Aluminum touches the staircase but is a metal.",
+      "",
       "Beryllium is an alkaline earth metal."
     ]
   },
@@ -58,34 +58,34 @@
     "q": "A model shows electrons scattered through a sphere of positive charge. Which result later disproved it?",
     "opts": [
       "Atoms emit negative particles",
-      "Alpha particles bounced back",
       "Beryllium emitted neutral rays",
-      "Electrons occupy orbitals"
+      "Electrons occupy orbitals",
+      "Alpha particles bounced back"
     ],
-    "ans": 1,
+    "ans": 3,
     "exp": "Rutherford's bouncing alpha particles showed a dense nucleus, which plum pudding could not explain.",
     "why": [
       "That result supported the model; it is how Thomson found electrons.",
-      "",
       "That discovery (the neutron) came after the model was already replaced.",
-      "The orbital model came later still and replaced Bohr's orbits."
+      "The orbital model came later still and replaced Bohr's orbits.",
+      ""
     ]
   },
   {
     "deck": 2,
     "q": "Which scientist would say electrons travel in fixed orbits like planets?",
     "opts": [
+      "Niels Bohr",
       "J. J. Thomson",
       "Ernest Rutherford",
-      "Niels Bohr",
       "James Chadwick"
     ],
-    "ans": 2,
+    "ans": 0,
     "exp": "Bohr's 1913 model put electrons in fixed orbits, or energy levels.",
     "why": [
+      "",
       "Thomson placed electrons inside a ball of positive charge.",
       "Rutherford found the nucleus but could not locate the electrons.",
-      "",
       "Chadwick discovered the neutron."
     ]
   },
@@ -94,34 +94,34 @@
     "q": "Why was the neutron the last of the three particles to be found?",
     "opts": [
       "It is far lighter than a proton",
+      "It has no charge to detect",
       "It is found outside the nucleus",
-      "It only exists in ions",
-      "It has no charge to detect"
+      "It only exists in ions"
     ],
-    "ans": 3,
+    "ans": 1,
     "exp": "Chadwick detected it as neutral radiation; with no charge, it was hard to find.",
     "why": [
       "Neutrons have about the same mass as protons.",
+      "",
       "Neutrons are inside the nucleus.",
-      "Neutrons are in nearly every nucleus, ion or not.",
-      ""
+      "Neutrons are in nearly every nucleus, ion or not."
     ]
   },
   {
     "deck": 3,
     "q": "An atom has 17 protons, 18 neutrons and 18 electrons. What is it?",
     "opts": [
-      "A chloride ion, Cl⁻",
       "An argon atom",
       "A neutral chlorine atom",
+      "A chloride ion, Cl⁻",
       "A Cl⁺ cation"
     ],
-    "ans": 0,
+    "ans": 2,
     "exp": "17 protons make it chlorine; 18 electrons give a 1- charge.",
     "why": [
-      "",
       "Argon has 18 protons. This particle has 17, so it is chlorine.",
       "A neutral atom would have 17 electrons, not 18.",
+      "",
       "One extra electron gives a negative charge, not positive."
     ]
   },
@@ -130,34 +130,34 @@
     "q": "Which particle count tells you an atom's chemical behavior?",
     "opts": [
       "Its number of neutrons",
-      "Its number of electrons",
       "Its mass number",
-      "Its number of energy levels"
+      "Its number of energy levels",
+      "Its number of electrons"
     ],
-    "ans": 1,
+    "ans": 3,
     "exp": "The chemistry of an atom arises from its electrons.",
     "why": [
       "Neutrons change the isotope; isotopes behave almost the same.",
-      "",
       "Mass number counts nucleus particles, which do not bond.",
-      "Energy levels matter, but the electrons in them do the bonding."
+      "Energy levels matter, but the electrons in them do the bonding.",
+      ""
     ]
   },
   {
     "deck": 3,
     "q": "How many rings should a Bohr model of sulfur (period 3, group 16) have, and how many electrons on the outer ring?",
     "opts": [
+      "3 rings, 6 outer electrons",
       "6 rings, 3 outer electrons",
       "3 rings, 16 outer electrons",
-      "3 rings, 6 outer electrons",
       "2 rings, 6 outer electrons"
     ],
-    "ans": 2,
+    "ans": 0,
     "exp": "Period 3 gives 3 energy levels; group 16 gives 6 valence electrons.",
     "why": [
+      "",
       "Swapped: the period gives rings and the group gives valence electrons.",
       "An outer ring holds at most 8; group 16 means 6 valence electrons.",
-      "",
       "Sulfur is in period 3, so it has 3 energy levels."
     ]
   },
@@ -166,34 +166,34 @@
     "q": "Two atoms both have 8 protons; one has 8 neutrons and the other 10. What are they?",
     "opts": [
       "Two different elements",
+      "Isotopes of oxygen",
       "Two ions of oxygen",
-      "Two compounds",
-      "Isotopes of oxygen"
+      "Two compounds"
     ],
-    "ans": 3,
+    "ans": 1,
     "exp": "Same protons, different neutrons: oxygen-16 and oxygen-18.",
     "why": [
       "Both have 8 protons, so both are oxygen.",
+      "",
       "Ions differ in electrons, not neutrons.",
-      "These are single atoms, not bonded compounds.",
-      ""
+      "These are single atoms, not bonded compounds."
     ]
   },
   {
     "deck": 4,
     "q": "Chlorine's atomic mass is 35.45. Which isotope is most common?",
     "opts": [
-      "Chlorine-35",
       "Chlorine-37",
       "Chlorine-36",
+      "Chlorine-35",
       "They are equally common"
     ],
-    "ans": 0,
+    "ans": 2,
     "exp": "A weighted average lands closest to the most abundant isotope.",
     "why": [
-      "",
       "If Cl-37 were most common, the average would be closer to 37.",
       "The average is closest to 35, not 36.",
+      "",
       "Equal amounts would give an average of 36."
     ]
   },
@@ -202,34 +202,34 @@
     "q": "In the Candium lab, what did each type of candy represent?",
     "opts": [
       "One element in a compound",
-      "One isotope of an element",
       "One subatomic particle",
-      "One energy level"
+      "One energy level",
+      "One isotope of an element"
     ],
-    "ans": 1,
+    "ans": 3,
     "exp": "Each candy type was an isotope with its own mass and abundance.",
     "why": [
       "All the candies were one 'element', Candium.",
-      "",
       "Each candy type stood for a whole isotope, not a particle.",
-      "The lab was about masses and abundance, not energy levels."
+      "The lab was about masses and abundance, not energy levels.",
+      ""
     ]
   },
   {
     "deck": 5,
     "q": "Magnesium and nitrogen react. What is the formula of the compound?",
     "opts": [
+      "Mg₃N₂",
       "Mg₂N₃",
       "MgN",
-      "Mg₃N₂",
       "MgN₂"
     ],
-    "ans": 2,
+    "ans": 0,
     "exp": "Mg²⁺ and N³⁻ cross over to Mg₃N₂.",
     "why": [
+      "",
       "Subscripts crossed onto the wrong ions: 2(+2) + 3(-3) = -5.",
       "Mg²⁺ and N³⁻ do not cancel one to one.",
-      "",
       "1(+2) + 2(-3) = -4, not zero."
     ]
   },
@@ -238,53 +238,35 @@
     "q": "Why does sodium form Na⁺ instead of Na⁷⁻?",
     "opts": [
       "Sodium has no valence electrons",
+      "Losing 1 electron is easier",
       "Sodium is a nonmetal",
-      "Na⁷⁻ would have too many protons",
-      "Losing 1 electron is easier"
+      "Na⁷⁻ would have too many protons"
     ],
-    "ans": 3,
+    "ans": 1,
     "exp": "With 1 valence electron, losing it reaches a complete shell faster than gaining 7.",
     "why": [
       "Sodium has 1 valence electron, which it loses.",
+      "",
       "Sodium is an alkali metal; metals lose electrons.",
-      "Gaining electrons never changes protons.",
-      ""
+      "Gaining electrons never changes protons."
     ]
   },
   {
     "deck": 5,
     "q": "A compound is hard, brittle, melts at 800 °C and conducts when dissolved. What kind of compound is it?",
     "opts": [
-      "Ionic",
       "Covalent",
       "A pure metal",
+      "Ionic",
       "A noble gas"
     ],
-    "ans": 0,
+    "ans": 2,
     "exp": "These are the properties of ionic compounds.",
     "why": [
-      "",
       "Covalent compounds usually have low melting points and do not conduct when dissolved.",
       "A metal is an element, not a compound, and it conducts as a solid.",
-      "Noble gases are elements and rarely form compounds."
-    ]
-  },
-  {
-    "deck": 5,
-    "q": "Which formula correctly uses a polyatomic ion?",
-    "opts": [
-      "MgNO₃₂",
-      "Mg(NO₃)₂",
-      "Mg₂NO₃",
-      "MgNO₃"
-    ],
-    "ans": 1,
-    "exp": "Mg²⁺ needs two nitrate ions, kept whole in parentheses.",
-    "why": [
-      "Without parentheses the subscripts blur together; two whole NO₃⁻ ions need parentheses.",
       "",
-      "2(+2) + (-1) = +3; the charges do not cancel.",
-      "Mg²⁺ and one NO₃⁻ leave a +1 charge."
+      "Noble gases are elements and rarely form compounds."
     ]
   },
   {
@@ -293,50 +275,50 @@
     "opts": [
       "Used the wrong mass for sulfur",
       "Added an extra sulfur",
-      "Counted only one sodium",
-      "Nothing; that is correct"
+      "Nothing; that is correct",
+      "Counted only one sodium"
     ],
-    "ans": 2,
+    "ans": 3,
     "exp": "The subscript 2 on sodium must be counted.",
     "why": [
       "22.99 + 32.07 = 55.06 uses the right masses; the 2 on Na was skipped.",
       "Two sulfurs would make it much heavier.",
-      "",
-      "The correct molar mass is 2(22.99) + 32.07 = 78.05 g/mol."
+      "The correct molar mass is 2(22.99) + 32.07 = 78.05 g/mol.",
+      ""
     ]
   },
   {
     "deck": 6,
     "q": "Which needs Avogadro's number to solve?",
     "opts": [
+      "Moles of CO₂ to molecules",
       "Grams of CO₂ to moles",
       "Moles of CO₂ to moles of O",
-      "Formula to molar mass",
-      "Moles of CO₂ to molecules"
+      "Formula to molar mass"
     ],
-    "ans": 3,
+    "ans": 0,
     "exp": "Avogadro's number converts between moles and particles.",
     "why": [
+      "",
       "That uses the molar mass, not Avogadro's number.",
       "That uses the subscript ratio.",
-      "That only adds atomic masses.",
-      ""
+      "That only adds atomic masses."
     ]
   },
   {
     "deck": 6,
     "q": "Which sample has the most atoms in total?",
     "opts": [
-      "1 mol of CH₄",
       "1 mol of He",
+      "1 mol of CH₄",
       "1 mol of CO₂",
       "1 mol of NaCl"
     ],
-    "ans": 0,
+    "ans": 1,
     "exp": "CH₄ has 5 atoms per molecule, more than the others.",
     "why": [
-      "",
       "1 mol of He has 1 mol of atoms; 1 mol of CH₄ has 5.",
+      "",
       "1 mol of CO₂ has 3 mol of atoms.",
       "1 mol of NaCl has 2 mol of ions."
     ]

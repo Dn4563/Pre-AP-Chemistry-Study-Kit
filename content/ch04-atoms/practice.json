@@ -875,17 +875,17 @@
           "topic": "Ionic formulas",
           "stem": "Use the crossover method: what compound forms from Li and O?",
           "options": [
+            "Li₂O",
             "LiO₂",
             "LiO",
-            "Li₂O",
             "No compound forms"
           ],
-          "ans": 2,
+          "ans": 0,
           "exp": "Write each ion's charge, cross the numbers over as subscripts, and reduce. Formula: Li₂O.",
           "why": [
+            "",
             "The subscripts are crossed onto the wrong ions, so the charges do not add to zero.",
             "The charges of these two ions are not equal in size, so one of each does not balance.",
-            "",
             "A metal and a nonmetal form an ionic compound."
           ]
         },
@@ -896,17 +896,17 @@
           "stem": "Use the crossover method: what compound forms from Mg and Cl?",
           "options": [
             "Mg₂Cl",
+            "MgCl₂",
             "MgCl",
-            "No compound forms",
-            "MgCl₂"
+            "No compound forms"
           ],
-          "ans": 3,
+          "ans": 1,
           "exp": "Write each ion's charge, cross the numbers over as subscripts, and reduce. Formula: MgCl₂.",
           "why": [
             "The subscripts are crossed onto the wrong ions, so the charges do not add to zero.",
+            "",
             "The charges of these two ions are not equal in size, so one of each does not balance.",
-            "A metal and a nonmetal form an ionic compound.",
-            ""
+            "A metal and a nonmetal form an ionic compound."
           ]
         },
         {
@@ -915,17 +915,17 @@
           "topic": "Ionic formulas",
           "stem": "Use the crossover method: what compound forms from Al and F?",
           "options": [
-            "AlF₃",
             "Al₃F",
             "AlF",
+            "AlF₃",
             "No compound forms"
           ],
-          "ans": 0,
+          "ans": 2,
           "exp": "Write each ion's charge, cross the numbers over as subscripts, and reduce. Formula: AlF₃.",
           "why": [
-            "",
             "The subscripts are crossed onto the wrong ions, so the charges do not add to zero.",
             "The charges of these two ions are not equal in size, so one of each does not balance.",
+            "",
             "A metal and a nonmetal form an ionic compound."
           ]
         },
@@ -936,17 +936,17 @@
           "stem": "Use the crossover method: what compound forms from Ba and N?",
           "options": [
             "Ba₂N₃",
-            "Ba₃N₂",
             "BaN",
-            "No compound forms"
+            "No compound forms",
+            "Ba₃N₂"
           ],
-          "ans": 1,
+          "ans": 3,
           "exp": "Write each ion's charge, cross the numbers over as subscripts, and reduce. Formula: Ba₃N₂.",
           "why": [
             "The subscripts are crossed onto the wrong ions, so the charges do not add to zero.",
-            "",
             "The charges of these two ions are not equal in size, so one of each does not balance.",
-            "A metal and a nonmetal form an ionic compound."
+            "A metal and a nonmetal form an ionic compound.",
+            ""
           ]
         },
         {
@@ -955,17 +955,17 @@
           "topic": "Ionic formulas",
           "stem": "Use the crossover method: what compound forms from K and S?",
           "options": [
+            "K₂S",
             "KS₂",
             "KS",
-            "K₂S",
             "No compound forms"
           ],
-          "ans": 2,
+          "ans": 0,
           "exp": "Write each ion's charge, cross the numbers over as subscripts, and reduce. Formula: K₂S.",
           "why": [
+            "",
             "The subscripts are crossed onto the wrong ions, so the charges do not add to zero.",
             "The charges of these two ions are not equal in size, so one of each does not balance.",
-            "",
             "A metal and a nonmetal form an ionic compound."
           ]
         },
@@ -976,17 +976,17 @@
           "stem": "Use the crossover method: what compound forms from Sr and O?",
           "options": [
             "Sr₂O₂",
+            "SrO",
             "SrO₂",
-            "No compound forms",
-            "SrO"
+            "No compound forms"
           ],
-          "ans": 3,
+          "ans": 1,
           "exp": "Write each ion's charge, cross the numbers over as subscripts, and reduce. Formula: SrO.",
           "why": [
             "Sr²⁺ and O²⁻ already balance one to one; reduce 2:2 to 1:1.",
+            "",
             "That needs Sr⁴⁺. Strontium forms 2+ ions.",
-            "A metal and a nonmetal form an ionic compound.",
-            ""
+            "A metal and a nonmetal form an ionic compound."
           ]
         },
         {
@@ -995,17 +995,17 @@
           "topic": "Ionic formulas",
           "stem": "Use the crossover method: what compound forms from Na and P?",
           "options": [
-            "Na₃P",
             "NaP₃",
             "NaP",
+            "Na₃P",
             "No compound forms"
           ],
-          "ans": 0,
+          "ans": 2,
           "exp": "Write each ion's charge, cross the numbers over as subscripts, and reduce. Formula: Na₃P.",
           "why": [
-            "",
             "The subscripts are crossed onto the wrong ions, so the charges do not add to zero.",
             "The charges of these two ions are not equal in size, so one of each does not balance.",
+            "",
             "A metal and a nonmetal form an ionic compound."
           ]
         },
@@ -1016,17 +1016,17 @@
           "stem": "Use the crossover method: what compound forms from Ga and Cl?",
           "options": [
             "Ga₃Cl",
-            "GaCl₃",
             "GaCl",
-            "No compound forms"
+            "No compound forms",
+            "GaCl₃"
           ],
-          "ans": 1,
+          "ans": 3,
           "exp": "Write each ion's charge, cross the numbers over as subscripts, and reduce. Formula: GaCl₃.",
           "why": [
             "The subscripts are crossed onto the wrong ions, so the charges do not add to zero.",
-            "",
             "The charges of these two ions are not equal in size, so one of each does not balance.",
-            "A metal and a nonmetal form an ionic compound."
+            "A metal and a nonmetal form an ionic compound.",
+            ""
           ]
         }
       ]
@@ -1514,63 +1514,23 @@
           ]
         },
         {
-          "id": "B11",
-          "type": "mcq",
-          "topic": "Polyatomic ions",
-          "stem": "What is the formula of calcium cyanide?",
-          "options": [
-            "CaCN₂",
-            "Ca₂CN",
-            "CaCN",
-            "Ca(CN)₂"
-          ],
-          "ans": 3,
-          "exp": "Ca²⁺ needs two CN⁻ ions. Parentheses keep each cyanide ion together: Ca(CN)₂.",
-          "why": [
-            "Without parentheses the 2 applies only to N. Two whole CN⁻ ions are needed.",
-            "2(+2) + (-1) = +3, not zero.",
-            "Ca²⁺ with one CN⁻ leaves a +1 charge.",
-            ""
-          ]
-        },
-        {
           "id": "B12",
           "type": "mcq",
           "topic": "Ions",
           "stem": "Which ion has the same number of electrons as a neutral neon atom?",
           "options": [
-            "Mg²⁺",
             "Ca²⁺",
             "Cl⁻",
-            "S²⁻"
+            "S²⁻",
+            "Mg²⁺"
           ],
-          "ans": 0,
+          "ans": 3,
           "exp": "Neon has 10 electrons. Mg has 12 protons; losing 2 leaves 10.",
           "why": [
-            "",
             "Calcium has 20 protons, so Ca²⁺ has 18 electrons, like argon.",
             "Chlorine has 17 protons, so Cl⁻ has 18 electrons.",
-            "Sulfur has 16 protons, so S²⁻ has 18 electrons."
-          ]
-        },
-        {
-          "id": "B13",
-          "type": "mcq",
-          "topic": "Polyatomic ions",
-          "stem": "What is the formula of sodium phosphate?",
-          "options": [
-            "NaPO₄",
-            "Na₃PO₄",
-            "Na₂PO₄",
-            "Na(PO₄)₃"
-          ],
-          "ans": 1,
-          "exp": "Phosphate is PO₄³⁻, so three Na⁺ balance it: Na₃PO₄.",
-          "why": [
-            "Na⁺ and PO₄³⁻ do not cancel one to one: +1 - 3 = -2.",
-            "",
-            "2(+1) + (-3) = -1. Three Na⁺ are needed.",
-            "That puts the 3 on phosphate. Sodium is the ion that needs three."
+            "Sulfur has 16 protons, so S²⁻ has 18 electrons.",
+            ""
           ]
         }
       ]
@@ -1591,17 +1551,17 @@
           "topic": "Molar mass",
           "stem": "What is the molar mass of calcium cyanide, Ca(CN)₂?",
           "options": [
+            "92.12 g/mol",
             "66.10 g/mol",
             "80.11 g/mol",
-            "92.12 g/mol",
             "132.20 g/mol"
           ],
-          "ans": 2,
+          "ans": 0,
           "exp": "40.08 + 2(12.01) + 2(14.01) = 92.12 g/mol.",
           "why": [
+            "",
             "That counts only one C and one N. The 2 outside the parentheses doubles both.",
             "That doubles only N. The 2 applies to everything inside the parentheses.",
-            "",
             "That doubles calcium too. Only the CN inside the parentheses is doubled."
           ]
         },
@@ -1612,17 +1572,17 @@
           "stem": "What is the molar mass of carbonic acid, H₂CO₃?",
           "options": [
             "61.02 g/mol",
+            "62.03 g/mol",
             "30.03 g/mol",
-            "63.03 g/mol",
-            "62.03 g/mol"
+            "63.03 g/mol"
           ],
-          "ans": 3,
+          "ans": 1,
           "exp": "2(1.008) + 12.01 + 3(16.00) = 62.03 g/mol.",
           "why": [
             "That counts only one hydrogen. The subscript 2 means two H.",
+            "",
             "That counts only one oxygen. The subscript 3 means three O.",
-            "That counts three hydrogens. The formula has two.",
-            ""
+            "That counts three hydrogens. The formula has two."
           ]
         },
         {
@@ -1631,17 +1591,17 @@
           "topic": "Molar mass",
           "stem": "What is the molar mass of aluminum oxide, Al₂O₃?",
           "options": [
-            "101.96 g/mol",
             "42.98 g/mol",
             "74.98 g/mol",
+            "101.96 g/mol",
             "69.96 g/mol"
           ],
-          "ans": 0,
+          "ans": 2,
           "exp": "2(26.98) + 3(16.00) = 101.96 g/mol.",
           "why": [
-            "",
             "That ignores both subscripts.",
             "That counts only one aluminum. The formula has two.",
+            "",
             "That counts only one oxygen. The formula has three."
           ]
         },
@@ -1652,17 +1612,17 @@
           "stem": "How many moles of MgCl₂ are in 45.8 g? (Molar mass 95.21 g/mol.)",
           "options": [
             "2.08 mol",
-            "0.481 mol",
             "0.962 mol",
-            "0.240 mol"
+            "0.240 mol",
+            "0.481 mol"
           ],
-          "ans": 1,
+          "ans": 3,
           "exp": "45.8 g ÷ 95.21 g/mol = 0.481 mol MgCl₂.",
           "why": [
             "That divides the molar mass by the grams. Divide grams by molar mass.",
-            "",
             "That is the moles of Cl atoms, not of MgCl₂.",
-            "That halves the answer. Nothing in this step uses the subscript."
+            "That halves the answer. Nothing in this step uses the subscript.",
+            ""
           ]
         },
         {
@@ -1671,17 +1631,17 @@
           "topic": "Mole conversions",
           "stem": "How many chlorine atoms are in 45.8 g of MgCl₂?",
           "options": [
+            "5.79 × 10²³ atoms",
             "2.90 × 10²³ atoms",
             "0.962 atoms",
-            "5.79 × 10²³ atoms",
             "2.76 × 10²⁵ atoms"
           ],
-          "ans": 2,
+          "ans": 0,
           "exp": "45.8 ÷ 95.21 × 2 × 6.022 × 10²³ = 5.79 × 10²³ Cl atoms.",
           "why": [
+            "",
             "That skips the subscript: each MgCl₂ has 2 Cl atoms.",
             "That stops at moles of Cl. Multiply by 6.022 × 10²³ to count atoms.",
-            "",
             "That multiplies by the molar mass instead of dividing by it."
           ]
         },
@@ -1692,17 +1652,17 @@
           "stem": "How many hydrogen atoms are in 2.50 mol of methane, CH₄?",
           "options": [
             "1.51 × 10²⁴",
+            "6.02 × 10²⁴",
             "2.41 × 10²⁴",
-            "10.0",
-            "6.02 × 10²⁴"
+            "10.0"
           ],
-          "ans": 3,
+          "ans": 1,
           "exp": "2.50 mol × 4 × 6.022 × 10²³ = 6.02 × 10²⁴ H atoms.",
           "why": [
             "That counts molecules, not H atoms. Each CH₄ has 4 H.",
+            "",
             "That is the H count for 1 mol of CH₄, not 2.50 mol.",
-            "10.0 is the moles of H. Multiply by 6.022 × 10²³ to count atoms.",
-            ""
+            "10.0 is the moles of H. Multiply by 6.022 × 10²³ to count atoms."
           ]
         },
         {
@@ -1711,17 +1671,17 @@
           "topic": "Mole conversions",
           "stem": "A sample holds 1.25 × 10²² formula units of Al₂S₃. How many aluminum atoms does it contain?",
           "options": [
-            "2.50 × 10²²",
             "1.25 × 10²²",
             "3.75 × 10²²",
+            "2.50 × 10²²",
             "6.25 × 10²²"
           ],
-          "ans": 0,
+          "ans": 2,
           "exp": "1.25 × 10²² × 2 = 2.50 × 10²² Al atoms.",
           "why": [
-            "",
             "That is the number of formula units. Each has 2 Al atoms.",
             "That uses sulfur's subscript (3). Aluminum's subscript is 2.",
+            "",
             "That counts all 5 atoms in each formula unit, not just aluminum."
           ]
         },
@@ -1732,17 +1692,17 @@
           "stem": "How many atoms in total (P and Cl) are in 15.0 g of PCl₃?",
           "options": [
             "6.58 × 10²²",
-            "2.63 × 10²³",
             "1.97 × 10²³",
-            "4.37 × 10⁻¹"
+            "4.37 × 10⁻¹",
+            "2.63 × 10²³"
           ],
-          "ans": 1,
+          "ans": 3,
           "exp": "15.0 ÷ 137.32 × 4 × 6.022 × 10²³ = 2.63 × 10²³ atoms.",
           "why": [
             "That is the number of PCl₃ molecules. Each has 4 atoms.",
-            "",
             "That counts only chlorine atoms. Phosphorus adds one more per molecule.",
-            "That stops at moles of atoms. Multiply by 6.022 × 10²³."
+            "That stops at moles of atoms. Multiply by 6.022 × 10²³.",
+            ""
           ]
         },
         {
@@ -1751,17 +1711,17 @@
           "topic": "Mole conversions",
           "stem": "A sample of SiO₂ contains 4.82 × 10²³ oxygen atoms. What is the sample's mass?",
           "options": [
+            "24.0 g",
             "48.1 g",
             "12.8 g",
-            "24.0 g",
             "11.2 g"
           ],
-          "ans": 2,
+          "ans": 0,
           "exp": "4.82 × 10²³ ÷ 6.022 × 10²³ = 0.8004 mol O; ÷ 2 = 0.4002 mol SiO₂; × 60.09 = 24.0 g.",
           "why": [
+            "",
             "That skips dividing by 2: each SiO₂ has 2 O atoms.",
             "That is the mass of the oxygen only, not the whole SiO₂.",
-            "",
             "That uses silicon's mass instead of the molar mass of SiO₂."
           ]
         },
@@ -1772,17 +1732,17 @@
           "stem": "Which statement fits the law of constant composition?",
           "options": [
             "Water's ratio depends on its source",
+            "Water is always 2 H to 1 O",
             "A compound's ratio changes when heated",
-            "Mixtures always have fixed ratios",
-            "Water is always 2 H to 1 O"
+            "Mixtures always have fixed ratios"
           ],
-          "ans": 3,
+          "ans": 1,
           "exp": "A compound always has the same elements bonded in the same ratio.",
           "why": [
             "Every sample of a compound has the same ratio, wherever it comes from.",
+            "",
             "Heating can change state, but the compound's atom ratio stays the same.",
-            "Mixtures have variable composition. The law is about compounds.",
-            ""
+            "Mixtures have variable composition. The law is about compounds."
           ]
         },
         {
@@ -1791,17 +1751,17 @@
           "topic": "Mole conversions",
           "stem": "What does one mole of any substance contain?",
           "options": [
-            "6.022 × 10²³ particles",
             "6.022 × 10²³ grams",
             "Exactly 1 gram of matter",
+            "6.022 × 10²³ particles",
             "One atom of each element"
           ],
-          "ans": 0,
+          "ans": 2,
           "exp": "One mole = 6.022 × 10²³ particles (Avogadro's number).",
           "why": [
-            "",
             "A mole is a count of particles. Its mass is the molar mass, which differs by substance.",
             "The mass of a mole depends on the substance (its molar mass).",
+            "",
             "A mole is a huge count: 6.022 × 10²³ particles."
           ]
         },
@@ -1812,17 +1772,17 @@
           "stem": "What is the molar mass of sulfur hexafluoride, SF₆?",
           "options": [
             "51.07 g/mol",
-            "146.07 g/mol",
             "211.42 g/mol",
-            "165.07 g/mol"
+            "165.07 g/mol",
+            "146.07 g/mol"
           ],
-          "ans": 1,
+          "ans": 3,
           "exp": "32.07 + 6(19.00) = 146.07 g/mol.",
           "why": [
             "That ignores the subscript 6 on fluorine.",
-            "",
             "That puts the 6 on sulfur instead of fluorine.",
-            "That counts seven fluorines; the formula has six."
+            "That counts seven fluorines; the formula has six.",
+            ""
           ]
         }
       ]
@@ -2183,18 +2143,18 @@
           "topic": "Ions",
           "stem": "Which ion has the same number of electrons as a neutral neon atom?",
           "options": [
-            "Mg²⁺",
             "Ca²⁺",
             "Cl⁻",
-            "S²⁻"
+            "S²⁻",
+            "Mg²⁺"
           ],
-          "ans": 0,
+          "ans": 3,
           "exp": "Neon has 10 electrons. Mg has 12 protons; losing 2 leaves 10.",
           "why": [
-            "",
             "Calcium has 20 protons, so Ca²⁺ has 18 electrons, like argon.",
             "Chlorine has 17 protons, so Cl⁻ has 18 electrons.",
-            "Sulfur has 16 protons, so S²⁻ has 18 electrons."
+            "Sulfur has 16 protons, so S²⁻ has 18 electrons.",
+            ""
           ]
         },
         {
@@ -2203,17 +2163,17 @@
           "topic": "Molar mass",
           "stem": "What is the molar mass of calcium cyanide, Ca(CN)₂?",
           "options": [
+            "92.12 g/mol",
             "66.10 g/mol",
             "80.11 g/mol",
-            "92.12 g/mol",
             "132.20 g/mol"
           ],
-          "ans": 2,
+          "ans": 0,
           "exp": "40.08 + 2(12.01) + 2(14.01) = 92.12 g/mol.",
           "why": [
+            "",
             "That counts only one C and one N. The 2 outside the parentheses doubles both.",
             "That doubles only N. The 2 applies to everything inside the parentheses.",
-            "",
             "That doubles calcium too. Only the CN inside the parentheses is doubled."
           ]
         },
@@ -2223,17 +2183,17 @@
           "topic": "Mole conversions",
           "stem": "How many chlorine atoms are in 45.8 g of MgCl₂?",
           "options": [
+            "5.79 × 10²³ atoms",
             "2.90 × 10²³ atoms",
             "0.962 atoms",
-            "5.79 × 10²³ atoms",
             "2.76 × 10²⁵ atoms"
           ],
-          "ans": 2,
+          "ans": 0,
           "exp": "45.8 ÷ 95.21 × 2 × 6.022 × 10²³ = 5.79 × 10²³ Cl atoms.",
           "why": [
+            "",
             "That skips the subscript: each MgCl₂ has 2 Cl atoms.",
             "That stops at moles of Cl. Multiply by 6.022 × 10²³ to count atoms.",
-            "",
             "That multiplies by the molar mass instead of dividing by it."
           ]
         },
@@ -2243,38 +2203,38 @@
           "topic": "Mole conversions",
           "stem": "A sample of SiO₂ contains 4.82 × 10²³ oxygen atoms. What is the sample's mass?",
           "options": [
+            "24.0 g",
             "48.1 g",
             "12.8 g",
-            "24.0 g",
             "11.2 g"
           ],
-          "ans": 2,
+          "ans": 0,
           "exp": "4.82 × 10²³ ÷ 6.022 × 10²³ = 0.8004 mol O; ÷ 2 = 0.4002 mol SiO₂; × 60.09 = 24.0 g.",
           "why": [
+            "",
             "That skips dividing by 2: each SiO₂ has 2 O atoms.",
             "That is the mass of the oxygen only, not the whole SiO₂.",
-            "",
             "That uses silicon's mass instead of the molar mass of SiO₂."
           ]
         },
         {
           "id": "MK13",
           "type": "mcq",
-          "topic": "Polyatomic ions",
-          "stem": "What is the formula of calcium cyanide?",
+          "topic": "Molar mass",
+          "stem": "What is the molar mass of carbonic acid, H₂CO₃?",
           "options": [
-            "CaCN₂",
-            "Ca₂CN",
-            "CaCN",
-            "Ca(CN)₂"
+            "61.02 g/mol",
+            "62.03 g/mol",
+            "30.03 g/mol",
+            "63.03 g/mol"
           ],
-          "ans": 3,
-          "exp": "Ca²⁺ needs two CN⁻ ions. Parentheses keep each cyanide ion together: Ca(CN)₂.",
+          "ans": 1,
+          "exp": "2(1.008) + 12.01 + 3(16.00) = 62.03 g/mol.",
           "why": [
-            "Without parentheses the 2 applies only to N. Two whole CN⁻ ions are needed.",
-            "2(+2) + (-1) = +3, not zero.",
-            "Ca²⁺ with one CN⁻ leaves a +1 charge.",
-            ""
+            "That counts only one hydrogen. The subscript 2 means two H.",
+            "",
+            "That counts only one oxygen. The subscript 3 means three O.",
+            "That counts three hydrogens. The formula has two."
           ]
         }
       ]

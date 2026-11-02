@@ -26,10 +26,6 @@ THE PERIODIC TABLE
 
 ```
 IONS
-├─ Monatomic ions (one atom)
-│  ├─ Cations: metals lose electrons (Na⁺, Mg²⁺, Al³⁺)
-│  └─ Anions: nonmetals gain electrons (Cl⁻, O²⁻, N³⁻)
-└─ Polyatomic ions (a bonded group with a charge)
-   ├─ Positive: ammonium NH₄⁺
-   └─ Negative: nitrate NO₃⁻, sulfate SO₄²⁻, phosphate PO₄³⁻, ...
+├─ Cations: metals lose electrons (Na⁺, Mg²⁺, Al³⁺)
+└─ Anions: nonmetals gain electrons (Cl⁻, O²⁻, N³⁻)
 ```
