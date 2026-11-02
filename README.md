@@ -89,3 +89,7 @@ npm test
 
 1. Commit `index.html` together with your content changes, and merge into `main`.
 2. Pages is already on (Settings → Pages, branch `main`, folder `/ (root)`). The site updates about a minute after the merge.
+
+## How new units should be built
+
+See `CLAUDE.md`. In short: set `"learnMix": true` for the unit, write an applied question for every card in `asks.json`, keep one fact per card, and leave units classmates already studied alone until a review before the midterm, final or AP exam.
