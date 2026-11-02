@@ -24,7 +24,8 @@
       "label": "Chapter 4",
       "title": "Elements, Atoms, and Ions",
       "blurb": "The periodic table, the history of the atom, protons, neutrons and electrons, isotopes and average atomic mass, ions and ionic formulas, and molar mass and the mole (sections 4.3 to 4.11).",
-      "learnMix": true
+      "learnMix": true,
+      "recall": true
     }
   ]
 }
