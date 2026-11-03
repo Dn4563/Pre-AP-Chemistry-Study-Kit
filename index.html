@@ -195,7 +195,13 @@ input[type="checkbox"] { width: 18px; height: 18px; accent-color: var(--accent);
 .fterm { font: 600 2rem/1.15 var(--serif); }
 .fdef { font-size: 1.15rem; max-width: 50ch; }
 .fcard small { color: var(--ink-2); }
-.fcnav .btn { flex: 1 1 10rem; }
+.fcnav .btn { flex: 1 1 8rem; }
+.fctools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+.fctools [aria-pressed="true"] { color: var(--accent); border-color: var(--accent); }
+.fcprog { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin-bottom: 12px; }
+.fcprog .muted { flex: none; font-size: .92rem; }
+.fcprog .bar { flex: 1 1 140px; }
+.srb { margin-left: 8px; padding: 1px 7px; border-radius: 999px; background: color-mix(in srgb, var(--accent) 14%, transparent); color: var(--accent); font-size: .8rem; font-weight: 600; white-space: nowrap; }
 
 /* forms */
 .form fieldset { border: 0; padding: 0; margin: 18px 0 0; }
@@ -499,6 +505,7 @@ const DEF = {
   fcPool: "unknown",
   fcOrder: "shuffle",
   fcFirst: "term",
+  fcMode: "sort",
   qType: "mixed",
   dir: "both",
   focus: "unknown",
@@ -508,7 +515,7 @@ const DEF = {
 let SAVE, ALL, BYID, LESSONS, UI, TABS;
 
 function loadSave() {
-  SAVE = { settings: Object.assign({}, DEF), known: {}, trouble: {}, done: {}, li: 0 };
+  SAVE = { settings: Object.assign({}, DEF), known: {}, trouble: {}, done: {}, li: 0, revHist: [], secRev: {}, star: {} };
   const o = readJSON(LSK);
   if (!o) return;
   SAVE.known = o.known || {};
@@ -516,6 +523,9 @@ function loadSave() {
   SAVE.done = o.done || {};
   SAVE.li = o.li || 0;
   SAVE.ui = o.ui || null;
+  SAVE.revHist = o.revHist || [];
+  SAVE.secRev = o.secRev || {};
+  SAVE.star = o.star || {};
   const s = o.settings || {};
   /* Older kits kept theme and size per kit; carry them over once. */
   if (!readJSON(PREFK) && (s.theme || s.size !== undefined)) {
@@ -565,6 +575,10 @@ function rebuild() {
         LESSONS.push({
           id: dk.id + "." + si + "." + p,
           deck: dk.id,
+          sec: dk.id + "." + si,
+          secName: sc.name,
+          part: p,
+          parts: parts,
           title: sc.name + (parts > 1 ? " (part " + (p + 1) + " of " + parts + ")" : ""),
           cards: sc.cards.slice(i, i + sz),
         });
@@ -719,6 +733,8 @@ ACT.resetprog = () => {
   SAVE.trouble = {};
   SAVE.done = {};
   SAVE.li = 0;
+  SAVE.secRev = {};
+  SAVE.revHist = [];
   UI.L = null;
   save();
   FC = null;
@@ -1168,6 +1184,11 @@ const isLastOfDeck = (l) => {
   return ls[ls.length - 1] === l;
 };
 const isFirstOfDeck = (l) => LESSONS.filter((x) => x.deck === l.deck)[0] === l;
+/* A section split into 2+ lessons ends with a short section review (5 questions on the whole section). */
+const SR_N = 5;
+const hasSecReview = (l) => l.parts > 1 && l.part === l.parts - 1;
+const secCards = (sec) => LESSONS.filter((x) => x.sec === sec).reduce((a, x) => a.concat(x.cards), []);
+const srBadge = (sec) => (SAVE.secRev && SAVE.secRev[sec] ? '<span class="srb">review ' + SAVE.secRev[sec].best + "/" + SAVE.secRev[sec].n + "</span>" : "");
 function setKnown(id, v) {
   if (v) SAVE.known[id] = true;
   else delete SAVE.known[id];
@@ -1226,6 +1247,7 @@ function learnHTML() {
                   ">" +
                   (SAVE.done[l.id] ? ICON.check : "") +
                   esc(l.title) +
+                  (hasSecReview(l) ? srBadge(l.sec) : "") +
                   "</button>"
                 : "",
             ).join("") +
@@ -1263,7 +1285,7 @@ function learnHTML() {
       left = L.queue.length + (answered ? 0 : 1);
     h +=
       '<section class="panel"><div class="rtop"><span class="muted">' +
-      esc(lesson.title) +
+      esc(L.sr ? "Section review: " + lesson.secName : lesson.title) +
       '</span><span class="muted">' +
       left +
       " left</span></div>" +
@@ -1297,6 +1319,32 @@ function learnHTML() {
         (q.kind === "tf" ? "" : whyHTML(q.options, L.picked, "")) +
         '<div class="qnav"><button class="btn" data-act="lnext">Next</button></div>';
     h += '</section><p class="kbd">Keys: A to D or 1 to 4 picks a choice. Enter locks it in, then goes to the next question.</p>';
+  } else if (L.phase === "srsum") {
+    const missed = [...L.missed].map((id) => BYID[id]),
+      last = li >= LESSONS.length - 1,
+      nxt = LESSONS[li + 1],
+      best = SAVE.secRev[lesson.sec];
+    h +=
+      '<section class="panel"><p class="deckname">' +
+      dot(lesson.deck) +
+      esc(dk.name) +
+      "</p><h2>Section review: " +
+      esc(lesson.secName) +
+      '</h2><p class="scorebig">' +
+      L.first +
+      " of " +
+      L.firstTotal +
+      '</p><p class="muted">right on the first try' +
+      (best ? ". Your best on this section: " + best.best + " of " + best.n + "." : ".") +
+      (missed.length ? " Look at these again:" : " The whole section is solid.") +
+      "</p>";
+    if (missed.length) h += '<ul class="missed">' + missed.map((c) => "<li><b>" + esc(c.term) + "</b> " + esc(c.def) + "</li>").join("") + "</ul>";
+    h +=
+      '<div class="qnav"><button class="btn sec" data-act="srstart">Redo the section review</button>' +
+      (last
+        ? '<button class="btn" data-act="lfinal">Take the final mixed quiz</button>'
+        : '<button class="btn" data-act="lgo" data-i="' + (li + 1) + '">Next lesson: ' + esc(nxt.title) + "</button>") +
+      "</div></section>";
   } else {
     const missed = [...L.missed].map((id) => BYID[id]),
       allDone = nDone === LESSONS.length,
@@ -1324,12 +1372,29 @@ function learnHTML() {
         L.recallMiss.map((q) => "<li><b>" + esc(q.recall.term) + "</b> (" + esc(q.recall.label) + "). " + q.explain + "</li>").join("") +
         "</ul>";
     if (allDone) h += '<aside class="watch"><b>Every lesson done</b> Take the 40-question mixed quiz on everything and retry what you miss.</aside>';
-    h +=
-      '<div class="qnav"><button class="btn sec" data-act="lredo">Redo this lesson</button>' +
-      (last
-        ? '<button class="btn" data-act="lfinal">Take the final mixed quiz</button>'
-        : '<button class="btn" data-act="lgo" data-i="' + (li + 1) + '">Next lesson: ' + esc(nxt.title) + "</button>") +
-      "</div></section>";
+    if (hasSecReview(lesson))
+      h +=
+        '<aside class="watch"><b>Section review: ' +
+        esc(lesson.secName) +
+        "</b> You finished every part of this section. Take " +
+        SR_N +
+        " quick questions on all of it before moving on.</aside>" +
+        '<div class="qnav"><button class="btn sec" data-act="lredo">Redo this lesson</button><button class="btn sec" data-act="' +
+        (last ? "lfinal" : "lgo") +
+        '" data-i="' +
+        (li + 1) +
+        '">' +
+        (last ? "Skip to the final mixed quiz" : "Skip to next lesson") +
+        '</button><button class="btn" data-act="srstart">Section review: ' +
+        SR_N +
+        " questions</button></div></section>";
+    else
+      h +=
+        '<div class="qnav"><button class="btn sec" data-act="lredo">Redo this lesson</button>' +
+        (last
+          ? '<button class="btn" data-act="lfinal">Take the final mixed quiz</button>'
+          : '<button class="btn" data-act="lgo" data-i="' + (li + 1) + '">Next lesson: ' + esc(nxt.title) + "</button>") +
+        "</div></section>";
   }
   return h;
 }
@@ -1455,7 +1520,16 @@ function startLesson(i) {
 function nextLearnQ() {
   const L = UI.L;
   if (!L.queue.length) {
-    SAVE.done[LESSONS[LI()].id] = true;
+    const lesson = LESSONS[LI()];
+    if (L.sr) {
+      const prev = SAVE.secRev[lesson.sec];
+      if (!prev || L.first >= prev.best) SAVE.secRev[lesson.sec] = { best: L.first, n: L.firstTotal };
+      save();
+      L.phase = "srsum";
+      render();
+      return;
+    }
+    SAVE.done[lesson.id] = true;
     save();
     L.phase = "summary";
     render();
@@ -1473,6 +1547,17 @@ ACT.lmap = () => {
 };
 ACT.lgo = (t) => startLesson(Number(t.dataset.i));
 ACT.lredo = () => startLesson(LI());
+/* Section review: SR_N cards from the whole section, trouble terms first (in random order), then the rest. */
+ACT.srstart = () => {
+  const lesson = LESSONS[LI()];
+  const cards = secCards(lesson.sec);
+  const weak = shuf(cards.filter((c) => SAVE.trouble[c.id] > 0)),
+    other = shuf(cards.filter((c) => !(SAVE.trouble[c.id] > 0)));
+  const q = shuf(weak.concat(other).slice(0, Math.min(SR_N, cards.length))).map((c) => ({ type: "card", id: c.id }));
+  UI.L = { phase: "quiz", sr: true, queue: q, cur: null, picked: null, first: 0, firstTotal: q.length, missed: new Set(), scenMiss: [], scenMissIdx: [], recallMiss: [], tried: new Set() };
+  window.scrollTo(0, 0);
+  nextLearnQ();
+};
 ACT.lquiz = () => {
   const li = LI(),
     lesson = LESSONS[li];
@@ -1595,7 +1680,7 @@ function packL() {
   const L = UI.L;
   if (!L) return null;
   if (L.phase === "teach") return { phase: "teach" };
-  const o = { phase: L.phase, first: L.first, firstTotal: L.firstTotal, missed: [...L.missed], tried: [...L.tried], scen: L.scenMissIdx || [] };
+  const o = { phase: L.phase, sr: !!L.sr, first: L.first, firstTotal: L.firstTotal, missed: [...L.missed], tried: [...L.tried], scen: L.scenMissIdx || [] };
   if (L.phase === "quiz") {
     const q = L.queue.slice();
     if (L.item && L.picked === null) q.unshift(L.item);
@@ -1613,6 +1698,7 @@ function restoreL() {
     }
     const L = {
       phase: p.phase,
+      sr: !!p.sr,
       queue: (p.queue || []).filter((it) =>
         it.type === "sc" ? D.sq[it.idx] : it.type === "recall" ? COURSE.units.some((u) => u.id === it.unit && UNITDATA[u.id]) : BYID[it.id],
       ),
@@ -1711,15 +1797,24 @@ function cheatHTML() {
 ACT.cheatprint = () => window.print();
 
 /* 60-flash.js */
-/* Flashcards: pool (not known yet / all / trouble terms), order, which side first. "Not yet" returns the card
-   about 4 cards later. Keys: Space flips, 1 = Not yet, 2 = Got it. */
-function fcBuild() {
+/* Flashcards, modeled on Quizlet's flashcard mode.
+   Pool: not known yet / all / trouble terms / starred. Order: shuffled or section order. Side first: term or definition
+   (the Swap sides button flips it in one tap).
+   Two modes:
+   - Sort: Not yet / Got it. "Not yet" returns the card about 4 cards later. Back undoes the last choice,
+     including its Got it / trouble change. The round ends with a results screen.
+   - Browse: Previous / Next through the pool, no sorting.
+   Keys: Space or Up/Down flips, Right = Got it (Sort) or Next (Browse), Left = Back (Sort) or Previous (Browse),
+   1 = Not yet, 2 = Got it, S = star. */
+function fcBuild(onlyIds) {
   let pool = deckCards().slice();
   const p = SAVE.settings.fcPool;
-  if (p === "unknown") pool = pool.filter((c) => !SAVE.known[c.id]);
+  if (onlyIds) pool = pool.filter((c) => onlyIds.indexOf(c.id) >= 0);
+  else if (p === "unknown") pool = pool.filter((c) => !SAVE.known[c.id]);
   else if (p === "trouble") pool = pool.filter((c) => SAVE.trouble[c.id] > 0);
+  else if (p === "starred") pool = pool.filter((c) => SAVE.star[c.id]);
   if (SAVE.settings.fcOrder === "shuffle") pool = shuf(pool);
-  FC = { q: pool.map((c) => c.id), flip: false, total: pool.length };
+  FC = { q: pool.map((c) => c.id), list: pool.map((c) => c.id), i: 0, flip: false, total: pool.length, hist: [], got: [], learning: [] };
 }
 function selHTML(key, label, opts) {
   const v = SAVE.settings[key];
@@ -1734,10 +1829,15 @@ function selHTML(key, label, opts) {
   );
 }
 const FC_CTL = () =>
+  selHTML("fcMode", "Mode", [
+    ["sort", "Sort (Got it / Not yet)"],
+    ["browse", "Browse (Previous / Next)"],
+  ]) +
   selHTML("fcPool", "Pool", [
     ["unknown", "Not known yet"],
     ["all", "All"],
     ["trouble", "Trouble terms"],
+    ["starred", "Starred"],
   ]) +
   selHTML("fcOrder", "Order", [
     ["shuffle", "Shuffled"],
@@ -1747,23 +1847,93 @@ const FC_CTL = () =>
     ["term", "Term"],
     ["def", "Definition"],
   ]);
+const fcBrowse = () => SAVE.settings.fcMode === "browse";
+const fcCur = () => (fcBrowse() ? FC.list[FC.i] : FC.q[0]);
+
+function fcCardHTML(c) {
+  const showTerm = SAVE.settings.fcFirst === "term" ? !FC.flip : FC.flip,
+    starred = !!SAVE.star[c.id];
+  return (
+    '<div class="fctools"><button class="btn sec small" data-act="fcstar" aria-pressed="' +
+    starred +
+    '">' +
+    (starred ? "★ Starred" : "☆ Star") +
+    '</button><button class="btn sec small" data-act="fcswap">⇄ Swap sides</button><button class="btn sec small" data-act="fcshuf">Shuffle</button><button class="btn sec small" data-act="fcagain">Restart</button></div>' +
+    '<button class="fcard" data-act="fcflip" aria-label="Flip card">' +
+    (showTerm ? '<span class="fterm">' + esc(c.term) + "</span>" : '<span class="fdef">' + esc(c.def) + "</span>" + hookLine(c)) +
+    "<small>Tap or press Space to flip</small></button>"
+  );
+}
 function fcHTML() {
   if (!FC) fcBuild();
   let h = '<div class="ctl">' + FC_CTL() + "</div>";
-  if (!FC.q.length)
-    return (
-      h +
-      '<section class="panel"><p class="big">Nothing left in this pool.</p><p class="muted">Switch the pool to All to review everything, or pick another deck.</p><button class="btn" data-act="fcagain">Start again</button></section>'
-    );
-  const c = BYID[FC.q[0]],
-    showTerm = SAVE.settings.fcFirst === "term" ? !FC.flip : FC.flip;
+  const empty =
+    '<section class="panel"><p class="big">Nothing in this pool.</p><p class="muted">' +
+    (SAVE.settings.fcPool === "starred" ? "Star cards with the ☆ button, or switch the pool to All." : "Switch the pool to All to review everything, or pick another deck.") +
+    '</p><button class="btn" data-act="fcagain">Start again</button></section>';
+  if (fcBrowse()) {
+    if (!FC.list.length) return h + empty;
+    const n = FC.list.length,
+      i = FC.i;
+    h +=
+      '<div class="fcprog"><span class="muted">Card ' +
+      (i + 1) +
+      " of " +
+      n +
+      '</span><span class="bar" aria-hidden="true"><i style="width:' +
+      Math.round((100 * (i + 1)) / n) +
+      '%"></i></span></div>' +
+      fcCardHTML(BYID[FC.list[i]]) +
+      '<div class="qnav fcnav"><button class="btn sec" data-act="fcprev"' +
+      (i === 0 ? " disabled" : "") +
+      '>← Previous</button><button class="btn" data-act="fcnext"' +
+      (i === n - 1 ? " disabled" : "") +
+      '>Next →</button></div><p class="muted">Keys: Space flips · ← and → move · S star.</p>';
+    return h;
+  }
+  if (!FC.q.length) {
+    if (!FC.total) return h + empty;
+    const learning = FC.learning.length;
+    h +=
+      '<section class="panel"><h2>Round done</h2><p class="scorebig">' +
+      FC.got.length +
+      " of " +
+      FC.total +
+      '</p><p class="muted">known on the first try. ' +
+      (learning ? "Still learning: " + plural(learning, "card") + "." : "Every card on the first try.") +
+      "</p>" +
+      (learning ? '<ul class="missed">' + FC.learning.map((id) => "<li><b>" + esc(BYID[id].term) + "</b> " + esc(BYID[id].def) + "</li>").join("") + "</ul>" : "") +
+      '<div class="qnav">' +
+      (FC.hist.length ? '<button class="btn sec" data-act="fcback">← Back</button>' : "") +
+      '<button class="btn sec" data-act="fcagain">Restart</button>' +
+      (learning ? '<button class="btn" data-act="fclearn">Keep reviewing the ' + learning + "</button>" : "") +
+      "</div></section>";
+    return h;
+  }
+  const done = FC.total - FC.q.length;
   h +=
-    '<button class="fcard" data-act="fcflip" aria-label="Flip card">' +
-    (showTerm ? '<span class="fterm">' + esc(c.term) + "</span>" : '<span class="fdef">' + esc(c.def) + "</span>" + hookLine(c)) +
-    '<small>Tap or press Space to flip</small></button><div class="qnav fcnav"><button class="btn sec" data-act="fcnot">Not yet</button><button class="btn" data-act="fcgot">Got it</button></div><p class="muted">' +
+    '<div class="fcprog"><span class="muted">' +
+    done +
+    " of " +
+    FC.total +
+    " sorted · Know " +
+    FC.got.length +
+    " · Still learning " +
+    FC.learning.length +
+    '</span><span class="bar" aria-hidden="true"><i style="width:' +
+    Math.round((100 * done) / FC.total) +
+    '%"></i></span></div>' +
+    fcCardHTML(BYID[FC.q[0]]) +
+    '<div class="qnav fcnav"><button class="btn sec" data-act="fcback"' +
+    (FC.hist.length ? "" : " disabled") +
+    '>← Back</button><button class="btn sec" data-act="fcnot">Not yet</button><button class="btn" data-act="fcgot">Got it</button></div><p class="muted">' +
     plural(FC.q.length, "card") +
-    ' left this round. Keys: Space flips, 1 is Not yet, 2 is Got it.</p>';
+    " left this round. Keys: Space flips · 1 Not yet · 2 or → Got it · ← Back · S star.</p>";
   return h;
+}
+/* Every sort records enough to undo it exactly. */
+function fcPush(id) {
+  FC.hist.push({ q: FC.q.slice(), got: FC.got.slice(), learning: FC.learning.slice(), known: !!SAVE.known[id], trouble: SAVE.trouble[id], id: id });
 }
 ACT.fcflip = () => {
   FC.flip = !FC.flip;
@@ -1774,29 +1944,97 @@ ACT.fcagain = () => {
   render();
 };
 ACT.fcgot = () => {
-  const id = FC.q.shift();
+  if (fcBrowse() || !FC.q.length) return;
+  const id = FC.q[0];
+  fcPush(id);
+  FC.q.shift();
   setKnown(id, true);
+  if (FC.learning.indexOf(id) < 0 && FC.got.indexOf(id) < 0) FC.got.push(id);
   FC.flip = false;
   render();
 };
 ACT.fcnot = () => {
-  const id = FC.q.shift();
+  if (fcBrowse() || !FC.q.length) return;
+  const id = FC.q[0];
+  fcPush(id);
+  FC.q.shift();
   delete SAVE.known[id];
   SAVE.trouble[id] = (SAVE.trouble[id] || 0) + 1;
+  if (FC.learning.indexOf(id) < 0) FC.learning.push(id);
   FC.q.splice(Math.min(FC.q.length, 4), 0, id);
   FC.flip = false;
   save();
   render();
 };
+ACT.fcback = () => {
+  const h = FC && FC.hist.pop();
+  if (!h) return;
+  FC.q = h.q;
+  FC.got = h.got;
+  FC.learning = h.learning;
+  if (h.known) SAVE.known[h.id] = true;
+  else delete SAVE.known[h.id];
+  if (h.trouble === undefined) delete SAVE.trouble[h.id];
+  else SAVE.trouble[h.id] = h.trouble;
+  FC.flip = false;
+  save();
+  render();
+};
+ACT.fclearn = () => {
+  const ids = FC.learning.slice();
+  fcBuild(ids);
+  render();
+};
+ACT.fcprev = () => {
+  if (FC.i > 0) FC.i--;
+  FC.flip = false;
+  render();
+};
+ACT.fcnext = () => {
+  if (FC.i < FC.list.length - 1) FC.i++;
+  FC.flip = false;
+  render();
+};
+ACT.fcswap = () => {
+  SAVE.settings.fcFirst = SAVE.settings.fcFirst === "term" ? "def" : "term";
+  FC.flip = false;
+  save();
+  render();
+};
+ACT.fcshuf = () => {
+  if (fcBrowse()) {
+    FC.list = shuf(FC.list);
+    FC.i = 0;
+  } else FC.q = shuf(FC.q);
+  FC.flip = false;
+  render();
+};
+ACT.fcstar = () => {
+  const id = fcCur();
+  if (!id) return;
+  if (SAVE.star[id]) delete SAVE.star[id];
+  else SAVE.star[id] = true;
+  save();
+  render();
+};
 document.addEventListener("keydown", (e) => {
-  if (!UNIT || UI.tab !== "flash" || UI.run || !FC || !FC.q.length) return;
+  if (!UNIT || UI.tab !== "flash" || UI.run || !FC) return;
   const tg = e.target && e.target.tagName;
   if (tg === "INPUT" || tg === "TEXTAREA" || tg === "SELECT") return;
-  if (e.key === " ") {
+  if (e.ctrlKey || e.metaKey || e.altKey) return;
+  const browse = fcBrowse();
+  if (!(browse ? FC.list.length : FC.q.length)) {
+    if (!browse && e.key === "ArrowLeft") ACT.fcback();
+    return;
+  }
+  if (e.key === " " || e.key === "ArrowUp" || e.key === "ArrowDown") {
     e.preventDefault();
     ACT.fcflip();
-  } else if (e.key === "1") ACT.fcnot();
-  else if (e.key === "2") ACT.fcgot();
+  } else if (e.key === "ArrowRight") browse ? ACT.fcnext() : ACT.fcgot();
+  else if (e.key === "ArrowLeft") browse ? ACT.fcprev() : ACT.fcback();
+  else if (e.key === "s" || e.key === "S") ACT.fcstar();
+  else if (!browse && e.key === "1") ACT.fcnot();
+  else if (!browse && e.key === "2") ACT.fcgot();
 });
 
 /* 70-quiz.js */
@@ -1989,7 +2227,7 @@ function SET(t) {
     SAVE.li = Math.min(SAVE.li || 0, LESSONS.length - 1);
   }
   save();
-  if (["fcPool", "fcOrder", "fcFirst", "optDeck"].indexOf(k) >= 0) FC = null;
+  if (["fcPool", "fcOrder", "fcFirst", "fcMode", "optDeck"].indexOf(k) >= 0) FC = null;
   render();
 }
 document.addEventListener("change", (e) => {
@@ -2009,7 +2247,7 @@ document.addEventListener("input", (e) => {
 });
 ACT.exp = () => {
   const e = document.getElementById("xport");
-  e.value = JSON.stringify({ course: COURSE.id, unit: UNIT.id, known: SAVE.known, trouble: SAVE.trouble, done: SAVE.done, li: SAVE.li, settings: SAVE.settings, pt: PTpack() });
+  e.value = JSON.stringify({ course: COURSE.id, unit: UNIT.id, known: SAVE.known, trouble: SAVE.trouble, done: SAVE.done, li: SAVE.li, secRev: SAVE.secRev, star: SAVE.star, settings: SAVE.settings, pt: PTpack() });
   e.select();
 };
 ACT.imp = () => {
@@ -2021,6 +2259,8 @@ ACT.imp = () => {
     SAVE.trouble = o.trouble || {};
     SAVE.done = o.done || {};
     SAVE.li = o.li || 0;
+    SAVE.secRev = o.secRev || {};
+    SAVE.star = o.star || {};
     const s = Object.assign({}, o.settings || {});
     delete s.theme;
     delete s.size;
@@ -2043,6 +2283,8 @@ ACT.resetall = () => {
   SAVE.trouble = {};
   SAVE.done = {};
   SAVE.li = 0;
+  SAVE.secRev = {};
+  SAVE.revHist = [];
   UI.L = null;
   FC = null;
   PTreset();
