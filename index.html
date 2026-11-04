@@ -51,6 +51,9 @@ button { cursor: pointer; }
 .topbar { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 22px; }
 .hublink { display: inline-flex; align-items: center; gap: 4px; color: var(--ink-2); text-decoration: none; font-weight: 600; font-size: .95rem; }
 .hublink:hover { color: var(--accent); }
+.credit { margin: 40px 0 8px; text-align: center; font-size: .85rem; color: var(--ink-2); }
+.credit a { color: inherit; }
+.credit a:hover { color: var(--accent); }
 .kicker { margin: 0 0 6px; color: var(--accent); font-weight: 600; }
 .lede { color: var(--ink-2); max-width: 60ch; }
 .meter { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin-top: 16px; color: var(--ink-2); font-size: .95rem; }
@@ -432,6 +435,12 @@ function hubLink() {
   return COURSE.hub ? '<a class="hublink" href="' + esc(COURSE.hub) + '">' + ICON.back + "Study Hub</a>" : "<span></span>";
 }
 
+/* Credit line on every kit page. The engine is MIT-licensed (kit-core/LICENSE): copies must keep this line. */
+const CREDIT_URL = "https://dn4563.github.io/Study-Hub-by-David/";
+function creditLine() {
+  return '<footer class="credit">Study kit engine by <a href="' + CREDIT_URL + '">David Noskow</a></footer>';
+}
+
 function unitProgress(u) {
   const data = UNITDATA[u.id],
     saved = readJSON(keyOf(u, "kit")) || {},
@@ -489,7 +498,7 @@ function homeHTML() {
       ICON.chev +
       "</span></a></li>";
   });
-  return h + "</ul></main>";
+  return h + "</ul></main>" + creditLine();
 }
 
 function renderHome() {
@@ -700,7 +709,7 @@ function render() {
         )
         .join("") +
       "</div>";
-  h += '<main id="main">' + view() + "</main>";
+  h += '<main id="main">' + view() + "</main>" + creditLine();
   document.getElementById("app").innerHTML = h;
   persistUI();
 }
