@@ -328,6 +328,15 @@ textarea { width: 100%; background: var(--sheet); border: 1px solid var(--rule);
   .panel, .deckblock { border: 0; padding: 0; }
 }
 
+/* Plain-language intros (deck big picture, section story) */
+.intro { margin: 12px 0 16px; padding: 12px 16px; border-left: 4px solid var(--accent); background: var(--sunk); border-radius: var(--r-sm); }
+.intro p { margin: 0 0 8px; line-height: 1.6; }
+.intro p:last-child { margin-bottom: 0; }
+.intro .introhead { font-weight: 700; font-size: .92rem; color: var(--accent); margin-bottom: 6px; }
+.intro.bigpic { background: transparent; border: 1px solid var(--rule); border-left: 4px solid var(--accent); }
+.introfold { margin: 8px 0 12px; }
+.introfold summary { cursor: pointer; font-weight: 600; color: var(--accent); }
+
 </style></head>
 <body><div id="app"></div>
 <noscript>This study kit needs JavaScript.</noscript>
@@ -1192,6 +1201,21 @@ const isLastOfDeck = (l) => {
   const ls = LESSONS.filter((x) => x.deck === l.deck);
   return ls[ls.length - 1] === l;
 };
+/* Plain-language intros from cards.md ("> " lines): the deck's big picture and each section's story. */
+function storyHTML(paras, title, cls) {
+  const ps = (paras || []).filter(Boolean);
+  if (!ps.length) return "";
+  return '<div class="intro ' + (cls || "") + '"><p class="introhead">' + esc(title) + "</p>" + ps.map((p) => "<p>" + esc(p) + "</p>").join("") + "</div>";
+}
+function secObj(l) {
+  const dk = D.decks.find((d) => d.id === l.deck),
+    si = Number(String(l.sec).split(".").pop());
+  return dk ? dk.sections[si] : null;
+}
+const sc0 = (l) => {
+  const sc = secObj(l);
+  return (sc && sc.intro && sc.intro.some(Boolean) && !l.part) || (isFirstOfDeck(l) && (D.decks.find((d) => d.id === l.deck).intro || []).some(Boolean));
+};
 const isFirstOfDeck = (l) => LESSONS.filter((x) => x.deck === l.deck)[0] === l;
 /* A section split into 2+ lessons ends with a short section review (5 questions on the whole section). */
 const SR_N = 5;
@@ -1271,11 +1295,18 @@ function learnHTML() {
     h +=
       '<section class="panel">' +
       head +
-      '<p class="muted">Read these ' +
+      '<p class="muted">' +
+      (sc0(lesson) ? "Read the story first, then these " : "Read these ") +
       lesson.cards.length +
       " terms. Cover each definition and explain it out loud. Then you get one question at a time" +
       (nDone ? ", with a few review questions from earlier lessons mixed in" : "") +
       ".</p>";
+    if (isFirstOfDeck(lesson)) h += storyHTML(dk.intro, "The big picture: " + dk.name, "bigpic");
+    const sc = secObj(lesson);
+    if (sc && sc.intro && sc.intro.some(Boolean)) {
+      if (!lesson.part) h += storyHTML(sc.intro, "Read this first: " + lesson.secName);
+      else h += '<details class="introfold"><summary>Section story: ' + esc(lesson.secName) + "</summary>" + storyHTML(sc.intro, "Read this first: " + lesson.secName) + "</details>";
+    }
     if (isFirstOfDeck(lesson)) D.flows.filter((f) => f.deck === lesson.deck).forEach((f) => (h += chainHTML(f)));
     h +=
       '<dl class="terms">' +
@@ -1750,12 +1781,14 @@ function guideHTML() {
   D.decks
     .filter((d) => !UI.deck || d.id === UI.deck)
     .forEach((dk) => {
-      h += '<section class="deckblock"><h2>' + dot(dk.id) + esc(dk.name) + "</h2>";
+      h += '<section class="deckblock"><h2>' + dot(dk.id) + esc(dk.name) + "</h2>" + storyHTML(dk.intro, "The big picture", "bigpic");
       dk.sections.forEach((sc) => {
         h +=
           "<h3>" +
           esc(sc.name) +
-          '</h3><dl class="terms guide">' +
+          "</h3>" +
+          storyHTML(sc.intro, "The story") +
+          '<dl class="terms guide">' +
           sc.cards
             .map(
               (c) =>
