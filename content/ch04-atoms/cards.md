@@ -1,6 +1,10 @@
 # Deck 1: The Periodic Table
 
+> The periodic table is a map: where an element sits tells you what kind of element it is and how it will behave. This deck covers the three kinds of elements, the names of the columns and rows, and what each location tells you.
+
 ## Metals, nonmetals and metalloids
+
+> The staircase line on the right side of the table splits the elements. Left of it are metals: shiny, good conductors, easy to hammer into sheets or draw into wires. Right of it are nonmetals: brittle and poor conductors (hydrogen counts as one even though it sits on the left). The elements right on the staircase are metalloids, with some of each. Aluminum touches the staircase but is a metal.
 
 | Term | Definition | Hook |
 |---|---|---|
@@ -12,6 +16,8 @@
 
 ## Group names
 
+> Each column is a group, and elements in one column have the same number of valence electrons, so they act alike. The big families have names: alkali metals (group 1), alkaline earth metals (group 2), transition metals (3 to 12), halogens (17) and noble gases (18). Most names come with an ion charge you'll use in Deck 5.
+
 | Term | Definition | Hook |
 |---|---|---|
 | Group | A vertical column of the periodic table. Elements in one column share the same number of valence electrons, so they have similar properties and bonding tendencies. | Group = column = same valence electrons. |
@@ -22,6 +28,8 @@
 | Noble gases | Column 18, also called the inert elements. Their valence shell is already full, so they tend not to form ions. | Noble = already complete. |
 
 ## Families and rows
+
+> Columns 13 to 16 are named after the element at the top: the boron, carbon, nitrogen and oxygen families. The two rows below the table are the inner transition metals (lanthanides and actinides). A row across is a period, and the period number tells how many electron shells an atom has.
 
 | Term | Definition | Hook |
 |---|---|---|
@@ -37,7 +45,11 @@
 
 # Deck 2: History of the Atom
 
+> Nobody can see an atom, so its picture was built up one experiment at a time. This deck follows that story from a Greek idea to the modern model, and what each scientist added or proved wrong.
+
 ## Early ideas
+
+> Leucippus first proposed that matter is made of tiny particles. Lavoisier showed matter isn't created or destroyed. Dalton turned these into a theory: elements are made of atoms, atoms of one element are identical, and reactions only regroup atoms. The law of constant composition says a compound always has the same ratio of atoms.
 
 | Term | Definition | Hook |
 |---|---|---|
@@ -47,6 +59,8 @@
 | Law of constant composition | A given compound always has the same relative numbers and types of atoms, bonded in the same ratio. | Same compound, same ratio. |
 
 ## Finding the particles
+
+> Thomson found the electron and pictured the atom as a positive sphere with electrons scattered in it (plum pudding). Rutherford's gold foil test proved that wrong: most of the atom is empty space, with a tiny dense positive nucleus. Chadwick then found the neutron, the last piece of the nucleus.
 
 | Term | Definition | Hook |
 |---|---|---|
@@ -58,6 +72,8 @@
 
 ## Where the electrons are
 
+> Bohr put the electrons in fixed orbits (energy levels) around the nucleus, like planets. The problem: electrons don't follow exact paths. The modern model uses orbitals instead, regions where an electron is likely to be.
+
 | Term | Definition | Hook |
 |---|---|---|
 | Niels Bohr (1913) | Proposed that electrons travel around the nucleus in orbits that are fixed energy levels, like planets around the sun. | Bohr = planetary orbits. |
@@ -67,7 +83,11 @@
 
 # Deck 3: Inside the Atom
 
+> Every atom is built from three particles. This deck is about what each one does and how to count them from the periodic table, which is the math behind most of the chapter's problems.
+
 ## Subatomic particles
+
+> Protons (positive) and neutrons (neutral) sit in the nucleus and hold almost all the mass. Electrons (negative, nearly massless) sit outside. Two rules matter most: the proton count decides which element it is, and the electrons decide how it bonds.
 
 | Term | Definition | Hook |
 |---|---|---|
@@ -79,6 +99,8 @@
 
 ## Counting particles
 
+> Atomic number = protons. Mass number = protons + neutrons, so neutrons = mass number − atomic number. A neutral atom has as many electrons as protons; an ion has protons minus its charge.
+
 | Term | Definition | Hook |
 |---|---|---|
 | Atomic number (Z) | How many protons an atom has: the whole value shown on each periodic table square. | Z = protons. |
@@ -89,6 +111,8 @@
 
 ## Bohr models and valence electrons
 
+> To draw a Bohr model, the period gives the number of rings and the group gives the electrons on the outer ring (the valence electrons). Atoms are most stable with 8 valence electrons, an octet. The decimal on each table square is the atomic mass, an average of the element's isotopes.
+
 | Term | Definition | Hook |
 |---|---|---|
 | Valence electrons | The negative particles in the outermost energy level. For representative elements the group tells how many (group 1 has 1, group 2 has 2, group 13 has 3, and so on through 18 with 8). | Outer shell = valence. |
@@ -98,7 +122,11 @@
 
 # Deck 4: Isotopes
 
+> Atoms of the same element don't all weigh the same. This deck explains why (different numbers of neutrons), how to write each version, and how the periodic table's decimal masses are worked out from them.
+
 ## What isotopes are
+
+> Isotopes are atoms of one element with different numbers of neutrons, so different mass numbers. They react the same way, because reactions depend on electrons. Most elements in nature are a mix of isotopes. Hydrogen's three are hydrogen-1, deuterium and tritium.
 
 | Term | Definition | Hook |
 |---|---|---|
@@ -111,6 +139,8 @@
 
 ## Isotopic notation
 
+> Two ways to write an isotope: isotopic notation puts the mass number on top and the atomic number at the bottom left of the symbol (¹³₆C), and hyphen notation writes the name and the mass number (carbon-13). To check if two symbols are the same element, compare the bottom numbers.
+
 | Term | Definition | Hook |
 |---|---|---|
 | Isotopic notation | Written with the mass number (A) as a superscript and the atomic number (Z) as a subscript to the left of the symbol, for example ¹³₆C. An ion's charge goes at the upper right. | Mass on top, protons on the bottom. |
@@ -119,6 +149,8 @@
 
 ## Average atomic mass
 
+> Each isotope has its own mass and its own relative abundance (how common it is). The atomic mass on the table is a weighted average: multiply each isotope's mass by its abundance as a decimal and add. Common isotopes pull the average toward them. The Candium lab modeled this with candy.
+
 | Term | Definition | Hook |
 |---|---|---|
 | Relative (percent) abundance | How common each isotope of an element is, as a share or decimal of all its atoms. | How many of each. |
@@ -126,6 +158,8 @@
 | Isotopic mass | How heavy one particular form of an element is. In the Candium lab each type of candy played the part of one form. | One isotope's mass. |
 
 ## Isotope examples
+
+> These are the isotopes from your slides. Carbon always has 6 protons and oxygen always has 8; only the neutrons change. For each one, subtract the atomic number from the mass number to get the neutrons.
 
 | Term | Definition | Hook |
 |---|---|---|
@@ -138,7 +172,11 @@
 
 # Deck 5: Ions and Ionic Compounds
 
+> Atoms gain or lose electrons to get a full outer shell, and the charged atoms that result stick together to form compounds like salt. This deck covers why ions form, what charge each group takes, and how to write the formulas.
+
 ## Forming ions
+
+> An ion is an atom that has gained or lost electrons; the nucleus stays the same. Metals (left of the staircase) lose electrons and become positive cations. Nonmetals (right) gain electrons and become negative anions. Both do it to complete an octet.
 
 | Term | Definition | Hook |
 |---|---|---|
@@ -149,6 +187,8 @@
 | Metals lose, nonmetals gain | Elements left of the staircase give up electrons and become cations; elements right of it take electrons and become anions. | Metals give, nonmetals take. |
 
 ## Charges by group
+
+> The group tells you the charge. Groups 1, 2 and 13 lose electrons: +1, +2, +3. Groups 15, 16 and 17 gain electrons: −3, −2, −1. Noble gases don't form ions. Transition metals can have more than one charge, so a problem has to tell you which.
 
 | Term | Definition | Hook |
 |---|---|---|
@@ -163,6 +203,8 @@
 
 ## Bonds and formulas
 
+> When a metal gives electrons to a nonmetal, the opposite charges attract: an ionic bond. Nonmetals share electrons instead: a covalent bond. To write an ionic formula, put the cation first and use the crossover method so the charges add to zero. Polyatomic ions stay together as one unit, in parentheses if you need more than one.
+
 | Term | Definition | Hook |
 |---|---|---|
 | Bond | The sharing or giving and taking of electrons between two atoms. | Share or swap. |
@@ -176,7 +218,11 @@
 
 # Deck 6: Molar Mass and the Mole
 
+> Atoms are too small to count one by one, so chemists count them by weighing. This deck covers the mole, molar mass, and the roadmap that turns grams into a number of atoms.
+
 ## Molar mass
+
+> Molar mass is the mass of one mole of a substance, in g/mol. Add up the atomic masses of every atom in the formula. A subscript multiplies the element before it; a subscript after parentheses multiplies everything inside.
 
 | Term | Definition | Hook |
 |---|---|---|
@@ -185,6 +231,8 @@
 | Molar mass with parentheses | A subscript after a bracketed group multiplies everything inside it. Ca(CN)₂ has 1 Ca, 2 C and 2 N. | The outside number multiplies the inside. |
 
 ## Mole conversions
+
+> One mole is 6.022 × 10²³ particles (Avogadro's number). To go from grams to atoms: divide by molar mass to get moles, multiply by the subscript to get moles of one element, then multiply by Avogadro's number. Ionic compounds are counted in formula units, not molecules.
 
 | Term | Definition | Hook |
 |---|---|---|

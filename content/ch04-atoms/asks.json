@@ -18,6 +18,25 @@
         ]
       ],
       "exp": "Shiny, bendable and conductive are metal properties."
+    },
+    {
+      "q": "Element Q sits to the left of the staircase in period 4. Which set of properties should it have?",
+      "right": "Shiny, bendable, conducts electricity",
+      "wrong": [
+        [
+          "Brittle, dull and a poor conductor of both heat and electricity",
+          "Those are nonmetal properties, found right of the staircase."
+        ],
+        [
+          "Some metal and some nonmetal traits",
+          "That's a metalloid, on the staircase."
+        ],
+        [
+          "A gas that forms no ions",
+          "That's a noble gas, in column 18."
+        ]
+      ],
+      "exp": "Left of the staircase means metal: good conductors that bend and draw into wires."
     }
   ],
   "Malleable": [
@@ -39,6 +58,25 @@
         ]
       ],
       "exp": "Being hammered or bent into shape is malleability."
+    },
+    {
+      "q": "A worker hammers a sample and it flattens into a sheet; a second sample shatters. What can you conclude?",
+      "right": "The first is likely a metal; the second a nonmetal",
+      "wrong": [
+        [
+          "Both are metals, since every element will change shape if it is hit hard",
+          "Nonmetals are brittle and shatter."
+        ],
+        [
+          "The first is a nonmetal",
+          "Nonmetals are brittle."
+        ],
+        [
+          "Both are noble gases",
+          "Noble gases aren't hammered solids."
+        ]
+      ],
+      "exp": "Malleability (hammered into sheets) is a metal property; nonmetals are brittle."
     }
   ],
   "Ductile": [
@@ -60,6 +98,25 @@
         ]
       ],
       "exp": "Being drawn out into wire is ductility."
+    },
+    {
+      "q": "Why are electrical wires made from metals and not from sulfur?",
+      "right": "Metals can be drawn into wires and conduct",
+      "wrong": [
+        [
+          "Sulfur is too heavy to hang from poles, even though it conducts well",
+          "Sulfur is a brittle nonmetal and a poor conductor."
+        ],
+        [
+          "Sulfur is a gas",
+          "Sulfur is a solid."
+        ],
+        [
+          "Metals are brittle",
+          "Metals are ductile, not brittle."
+        ]
+      ],
+      "exp": "Metals are ductile and good conductors; nonmetals like sulfur are brittle and poor conductors."
     }
   ],
   "Nonmetals": [
@@ -81,6 +138,25 @@
         ]
       ],
       "exp": "Brittle and nonconducting means nonmetal, right of the staircase."
+    },
+    {
+      "q": "Hydrogen sits on the left side of the table. Why is it still grouped with the nonmetals?",
+      "right": "It has nonmetal properties",
+      "wrong": [
+        [
+          "It is a metal, because every element on the left side of the table is a metal",
+          "Hydrogen is the exception."
+        ],
+        [
+          "It is a metalloid",
+          "Metalloids are on the staircase."
+        ],
+        [
+          "It is a noble gas",
+          "Noble gases are in column 18."
+        ]
+      ],
+      "exp": "Nonmetals sit right of the staircase, plus hydrogen, even though it's on the left."
     }
   ],
   "Metalloids": [
@@ -102,6 +178,25 @@
         ]
       ],
       "exp": "Silicon sits on the staircase: a metalloid."
+    },
+    {
+      "q": "Aluminum touches the staircase. A student calls it a metalloid. What's the correction?",
+      "right": "Aluminum is a metal",
+      "wrong": [
+        [
+          "The student is right, since anything touching the staircase is a metalloid",
+          "Your slide makes aluminum the exception."
+        ],
+        [
+          "Aluminum is a nonmetal",
+          "It's a metal."
+        ],
+        [
+          "Aluminum is a noble gas",
+          "It's a metal."
+        ]
+      ],
+      "exp": "Aluminum touches the staircase but is a metal; the metalloids on your slide are B, Si, Ge, As, Sb and Te."
     }
   ],
   "Group": [
@@ -123,6 +218,25 @@
         ]
       ],
       "exp": "Elements in the same group have the same number of valence electrons."
+    },
+    {
+      "q": "Why do fluorine and chlorine react in similar ways?",
+      "right": "Same column, same valence electrons",
+      "wrong": [
+        [
+          "They are in the same row, so they have the same number of electron shells",
+          "Same row means same shells, not similar behavior."
+        ],
+        [
+          "They have the same mass",
+          "They don't."
+        ],
+        [
+          "They have the same number of protons",
+          "Then they'd be the same element."
+        ]
+      ],
+      "exp": "Elements in one group share the same number of valence electrons, so they behave alike."
     }
   ],
   "Alkali metals": [
@@ -144,6 +258,25 @@
         ]
       ],
       "exp": "Potassium is in group 1, below hydrogen."
+    },
+    {
+      "q": "Hydrogen is at the top of column 1. Is it an alkali metal?",
+      "right": "No; group 1 doesn't include hydrogen",
+      "wrong": [
+        [
+          "Yes, because every element in the first column is counted as an alkali metal",
+          "Hydrogen is excluded."
+        ],
+        [
+          "Yes; it forms +2 ions",
+          "That's not true of hydrogen or group 1."
+        ],
+        [
+          "Only when it's a liquid",
+          "State doesn't decide this."
+        ]
+      ],
+      "exp": "Alkali metals are group 1, not counting hydrogen."
     }
   ],
   "Alkaline earth metals": [
@@ -165,6 +298,25 @@
         ]
       ],
       "exp": "Group 2 metals lose 2 electrons."
+    },
+    {
+      "q": "Element M forms an M²⁺ ion and sits on the left of the table. Which family is it most likely in?",
+      "right": "Alkaline earth metals",
+      "wrong": [
+        [
+          "Alkali metals, because they are the metals found on the far left of the table",
+          "Alkali metals form +1 ions."
+        ],
+        [
+          "Halogens",
+          "Halogens form -1 ions."
+        ],
+        [
+          "Oxygen family",
+          "That's -2, on the right."
+        ]
+      ],
+      "exp": "Column 2, the alkaline earth metals, form +2 ions."
     }
   ],
   "Transition metals": [
@@ -186,6 +338,25 @@
         ]
       ],
       "exp": "Transition metals in groups 3 to 12 often have variable charges."
+    },
+    {
+      "q": "Copper can form Cu⁺ or Cu²⁺. Where is copper on the table?",
+      "right": "Groups 3 to 12",
+      "wrong": [
+        [
+          "Group 1, since it can form a +1 ion just like sodium and potassium",
+          "Variable charges point to the transition metals."
+        ],
+        [
+          "Group 17",
+          "That's -1."
+        ],
+        [
+          "Column 18",
+          "Noble gases don't form ions."
+        ]
+      ],
+      "exp": "Transition metals (groups 3 to 12) often have variable charges."
     }
   ],
   "Halogens": [
@@ -207,6 +378,25 @@
         ]
       ],
       "exp": "Group 17 gains one electron to complete its octet."
+    },
+    {
+      "q": "Element X is in the same family as chlorine. What formula would its compound with sodium have?",
+      "right": "NaX",
+      "wrong": [
+        [
+          "Na₂X, because the halogen needs to take two electrons to fill its octet",
+          "Halogens form -1 ions, so one Na⁺ balances one."
+        ],
+        [
+          "NaX₂",
+          "That would need Na²⁺."
+        ],
+        [
+          "Na₃X",
+          "That would need a -3 ion."
+        ]
+      ],
+      "exp": "Halogens form -1 ions; Na⁺ and X⁻ combine 1:1."
     }
   ],
   "Noble gases": [
@@ -228,6 +418,25 @@
         ]
       ],
       "exp": "Group 18 already has a complete valence shell."
+    },
+    {
+      "q": "Which element would be least likely to appear in an ionic compound?",
+      "right": "Neon",
+      "wrong": [
+        [
+          "Sodium, because it has only a single electron in its outer energy level",
+          "Sodium readily forms Na⁺."
+        ],
+        [
+          "Chlorine",
+          "Chlorine readily forms Cl⁻."
+        ],
+        [
+          "Calcium",
+          "Calcium readily forms Ca²⁺."
+        ]
+      ],
+      "exp": "Noble gases already have a full valence shell, so they tend not to form ions."
     }
   ],
   "Inner transition metals": [
@@ -249,6 +458,25 @@
         ]
       ],
       "exp": "They are the lanthanide and actinide rows set below the table."
+    },
+    {
+      "q": "Why are two rows set apart below the main periodic table?",
+      "right": "They're the inner transition metals",
+      "wrong": [
+        [
+          "They are the noble gases, which are kept apart because they rarely react",
+          "Noble gases are column 18."
+        ],
+        [
+          "They are the metalloids",
+          "Metalloids are on the staircase."
+        ],
+        [
+          "They are the halogens",
+          "Halogens are group 17."
+        ]
+      ],
+      "exp": "The lanthanide and actinide series are the inner transition metals, set below the table."
     }
   ],
   "Lanthanide series": [
@@ -270,6 +498,25 @@
         ]
       ],
       "exp": "The lanthanides follow lanthanum (57)."
+    },
+    {
+      "q": "Element 63 is in which series?",
+      "right": "Lanthanide series",
+      "wrong": [
+        [
+          "Actinide series, because all of the elements below the main table are actinides",
+          "Actinides are 90 to 103."
+        ],
+        [
+          "Alkali metals",
+          "Those are group 1."
+        ],
+        [
+          "Halogens",
+          "Those are group 17."
+        ]
+      ],
+      "exp": "The lanthanide series runs from atomic number 58 to 71."
     }
   ],
   "Actinide series": [
@@ -291,6 +538,25 @@
         ]
       ],
       "exp": "It follows actinium, atomic number 89."
+    },
+    {
+      "q": "Element 92 is in which row below the table?",
+      "right": "The actinide series",
+      "wrong": [
+        [
+          "The lanthanide series, which holds the inner transition metals from 58 to 71",
+          "92 is outside 58 to 71."
+        ],
+        [
+          "Period 1",
+          "That holds only H and He."
+        ],
+        [
+          "Group 18",
+          "Those are noble gases."
+        ]
+      ],
+      "exp": "The actinide series runs from 90 to 103."
     }
   ],
   "Period": [
@@ -312,6 +578,25 @@
         ]
       ],
       "exp": "The period number gives the number of energy levels."
+    },
+    {
+      "q": "Potassium and bromine are in the same period. What do they share?",
+      "right": "The same number of electron shells",
+      "wrong": [
+        [
+          "The same number of valence electrons, so they react in very similar ways",
+          "That's shared by a group, not a period."
+        ],
+        [
+          "The same ion charge",
+          "K⁺ and Br⁻ differ."
+        ],
+        [
+          "The same number of protons",
+          "Then they'd be the same element."
+        ]
+      ],
+      "exp": "Elements in one row have the same number of electron shells."
     }
   ],
   "States at room temperature": [
@@ -333,6 +618,25 @@
         ]
       ],
       "exp": "11 gases, 2 liquids, everything else solid."
+    },
+    {
+      "q": "At 25 °C, how many elements on the periodic table are gases?",
+      "right": "11",
+      "wrong": [
+        [
+          "2, the same as the number of elements that are liquids at room temperature",
+          "2 is the liquid count."
+        ],
+        [
+          "7",
+          "Your card says 11."
+        ],
+        [
+          "18",
+          "Your card says 11."
+        ]
+      ],
+      "exp": "At 25 °C there are 11 gases and 2 liquids; everything else is solid."
     }
   ],
   "Leucippus": [
@@ -354,6 +658,25 @@
         ]
       ],
       "exp": "Leucippus and a partner proposed that matter is made of tiny particles."
+    },
+    {
+      "q": "Which later word comes from the idea Leucippus and his partner proposed?",
+      "right": "Atom",
+      "wrong": [
+        [
+          "Nucleus, since they said matter has a tiny dense center that holds its mass",
+          "The nucleus came from Rutherford."
+        ],
+        [
+          "Electron",
+          "That came from Thomson."
+        ],
+        [
+          "Neutron",
+          "That came from Chadwick."
+        ]
+      ],
+      "exp": "Leucippus proposed that matter is made of tiny particles, the idea behind the word atom."
     }
   ],
   "Antoine Lavoisier": [
@@ -375,6 +698,25 @@
         ]
       ],
       "exp": "Lavoisier: matter is not created or destroyed, only changed in form."
+    },
+    {
+      "q": "A sealed jar with steel wool is weighed before and after the steel wool burns. The mass doesn't change. Which idea does this support?",
+      "right": "Matter isn't created or destroyed",
+      "wrong": [
+        [
+          "Matter is made of electrons scattered through a sphere of positive charge",
+          "That's the plum pudding model."
+        ],
+        [
+          "Atoms are mostly empty space",
+          "That's Rutherford."
+        ],
+        [
+          "Electrons travel in fixed orbits",
+          "That's Bohr."
+        ]
+      ],
+      "exp": "Lavoisier: matter can't be created or destroyed, only change form (conservation of mass)."
     }
   ],
   "Dalton's atomic theory (1810)": [
@@ -396,6 +738,25 @@
         ]
       ],
       "exp": "Dalton said atoms are not created or destroyed, only regrouped."
+    },
+    {
+      "q": "Which statement is part of Dalton's theory?",
+      "right": "Atoms of one element are identical",
+      "wrong": [
+        [
+          "Atoms of one element can have different numbers of neutrons in the nucleus",
+          "That's isotopes, found later; Dalton said identical."
+        ],
+        [
+          "Atoms are mostly empty space",
+          "That's Rutherford."
+        ],
+        [
+          "Atoms contain electrons",
+          "That's Thomson."
+        ]
+      ],
+      "exp": "Dalton said atoms of a given element are identical (later revised by the discovery of isotopes)."
     }
   ],
   "Law of constant composition": [
@@ -417,6 +778,25 @@
         ]
       ],
       "exp": "A compound always has the same atoms in the same ratio."
+    },
+    {
+      "q": "A sample of carbon dioxide has 1 C for every 2 O. Another sample from a car's exhaust is tested. What will it show?",
+      "right": "1 C for every 2 O",
+      "wrong": [
+        [
+          "A different ratio, because the exhaust comes from a different source than the lab",
+          "A compound always has the same ratio."
+        ],
+        [
+          "Only carbon",
+          "It's still CO₂."
+        ],
+        [
+          "Only oxygen",
+          "It's still CO₂."
+        ]
+      ],
+      "exp": "A given compound always has the same relative numbers and types of atoms."
     }
   ],
   "J. J. Thomson (1897)": [
@@ -438,6 +818,25 @@
         ]
       ],
       "exp": "Thomson used cathode ray tubes to find tiny negative particles."
+    },
+    {
+      "q": "Thomson found negative particles in atoms. Why did he decide atoms must also hold positive charge?",
+      "right": "Atoms have zero overall charge",
+      "wrong": [
+        [
+          "He saw positive particles bounce off a gold foil target during an experiment",
+          "That was Rutherford, later."
+        ],
+        [
+          "He found the neutron",
+          "That was Chadwick."
+        ],
+        [
+          "Electrons are heavy",
+          "Electrons are nearly massless."
+        ]
+      ],
+      "exp": "To balance the electrons, so atoms are neutral overall."
     }
   ],
   "Plum pudding model": [
@@ -459,6 +858,25 @@
         ]
       ],
       "exp": "Negative electrons were scattered in a ball of positive charge."
+    },
+    {
+      "q": "Which experiment showed the plum pudding model was wrong?",
+      "right": "Rutherford's gold foil experiment",
+      "wrong": [
+        [
+          "Thomson's cathode ray tube experiment, which first found the electrons inside atoms",
+          "That led to the plum pudding model."
+        ],
+        [
+          "Chadwick's beryllium experiment",
+          "That found the neutron."
+        ],
+        [
+          "Dalton's theory",
+          "That came before electrons were known."
+        ]
+      ],
+      "exp": "Rutherford's results disproved the plum pudding model."
     }
   ],
   "Ernest Rutherford (1911)": [
@@ -480,6 +898,25 @@
         ]
       ],
       "exp": "Particles passing straight through means mostly empty space."
+    },
+    {
+      "q": "A few alpha particles bounced straight back from the foil. What did that show?",
+      "right": "A small, dense, positive center",
+      "wrong": [
+        [
+          "The atom is mostly empty space, so particles can pass through it freely",
+          "That came from the particles that went straight through."
+        ],
+        [
+          "Electrons travel in orbits",
+          "That's Bohr."
+        ],
+        [
+          "Neutrons exist",
+          "That's Chadwick."
+        ]
+      ],
+      "exp": "Particles bouncing back showed a small, dense, positive nucleus."
     }
   ],
   "Nucleus": [
@@ -501,6 +938,25 @@
         ]
       ],
       "exp": "Protons and neutrons, which have mass, are in the nucleus."
+    },
+    {
+      "q": "An atom's nucleus takes up a tiny space. Why is the atom's mass still mostly there?",
+      "right": "The protons and neutrons are there",
+      "wrong": [
+        [
+          "The electrons are in the nucleus, and they are the heaviest particles of all",
+          "Electrons are outside and nearly massless."
+        ],
+        [
+          "The nucleus is empty",
+          "It's densely packed."
+        ],
+        [
+          "Only protons have mass",
+          "Neutrons have about the same mass."
+        ]
+      ],
+      "exp": "The nucleus holds the protons and neutrons, so nearly all the mass."
     }
   ],
   "James Chadwick (1932)": [
@@ -522,6 +978,25 @@
         ]
       ],
       "exp": "Neutral particles with about a proton's mass: neutrons."
+    },
+    {
+      "q": "Before Chadwick, what was missing from the picture of the nucleus?",
+      "right": "The neutron",
+      "wrong": [
+        [
+          "The electron, which no one had yet found in any experiment on atoms",
+          "Thomson found it in 1897."
+        ],
+        [
+          "The proton",
+          "Rutherford had shown a positive center."
+        ],
+        [
+          "The orbit",
+          "Orbits are Bohr's idea, about electrons."
+        ]
+      ],
+      "exp": "Chadwick's neutron completed the picture of the nucleus."
     }
   ],
   "Niels Bohr (1913)": [
@@ -543,6 +1018,25 @@
         ]
       ],
       "exp": "Bohr placed electrons in fixed orbits."
+    },
+    {
+      "q": "How did Bohr's model differ from Rutherford's?",
+      "right": "Electrons in fixed energy-level orbits",
+      "wrong": [
+        [
+          "A uniform sphere of positive charge with the electrons scattered inside it",
+          "That's the plum pudding model."
+        ],
+        [
+          "It had no nucleus",
+          "Bohr kept the nucleus."
+        ],
+        [
+          "Neutrons orbit the nucleus",
+          "Neutrons are in the nucleus."
+        ]
+      ],
+      "exp": "Bohr placed electrons in orbits that are fixed energy levels."
     }
   ],
   "Energy level": [
@@ -564,6 +1058,25 @@
         ]
       ],
       "exp": "The period number gives the number of energy levels."
+    },
+    {
+      "q": "Potassium is in period 4. How many energy levels does its Bohr model have?",
+      "right": "4",
+      "wrong": [
+        [
+          "1, because potassium is in group 1 and has only one valence electron",
+          "The group gives valence electrons; the period gives levels."
+        ],
+        [
+          "19",
+          "That's its atomic number."
+        ],
+        [
+          "8",
+          "That's an octet."
+        ]
+      ],
+      "exp": "The period number tells how many energy levels an atom has."
     }
   ],
   "Problem with Bohr's model": [
@@ -585,6 +1098,25 @@
         ]
       ],
       "exp": "We cannot know exactly where an electron is."
+    },
+    {
+      "q": "Why was Bohr's model replaced by orbitals?",
+      "right": "We can't know an electron's exact path",
+      "wrong": [
+        [
+          "Electrons were found to sit inside the nucleus alongside the protons",
+          "Electrons are outside the nucleus."
+        ],
+        [
+          "Atoms have no electrons",
+          "They do."
+        ],
+        [
+          "Bohr forgot the protons",
+          "That isn't the problem."
+        ]
+      ],
+      "exp": "Electrons don't follow exact orbits; we can't know exactly where one is."
     }
   ],
   "Orbitals (modern model)": [
@@ -606,6 +1138,25 @@
         ]
       ],
       "exp": "Orbitals are regions where an electron is likely to be about 90% of the time."
+    },
+    {
+      "q": "In the modern model, what does an orbital show?",
+      "right": "Where an electron is likely to be",
+      "wrong": [
+        [
+          "The exact circular path that each electron always follows around the nucleus",
+          "That's Bohr's fixed orbit."
+        ],
+        [
+          "Where the protons are",
+          "Protons are in the nucleus."
+        ],
+        [
+          "The nucleus",
+          "Orbitals are around it."
+        ]
+      ],
+      "exp": "An orbital is a region where an electron is found about 90% of the time."
     }
   ],
   "Proton": [
@@ -627,6 +1178,25 @@
         ]
       ],
       "exp": ""
+    },
+    {
+      "q": "Two atoms each have 9 protons but different masses. What do you know for sure?",
+      "right": "They are the same element",
+      "wrong": [
+        [
+          "They are different elements, because atoms with different masses can't match",
+          "Proton count sets the element."
+        ],
+        [
+          "They have the same mass number",
+          "Their masses differ."
+        ],
+        [
+          "They have the same number of neutrons",
+          "Different masses mean different neutron counts."
+        ]
+      ],
+      "exp": "The number of protons decides the element."
     }
   ],
   "Neutron": [
@@ -648,6 +1218,25 @@
         ]
       ],
       "exp": ""
+    },
+    {
+      "q": "Adding a neutron to an atom changes which of these?",
+      "right": "Its mass number",
+      "wrong": [
+        [
+          "Its charge, because the neutron brings an extra positive charge into the nucleus",
+          "Neutrons are neutral."
+        ],
+        [
+          "Which element it is",
+          "Protons decide that."
+        ],
+        [
+          "Its electron count",
+          "Neutrons don't affect electrons."
+        ]
+      ],
+      "exp": "A neutron adds mass (about a proton's) but no charge."
     }
   ],
   "Electron": [
@@ -669,6 +1258,25 @@
         ]
       ],
       "exp": ""
+    },
+    {
+      "q": "An atom loses an electron. What happens to its mass?",
+      "right": "It barely changes",
+      "wrong": [
+        [
+          "It drops by about the same amount as losing one proton from the nucleus",
+          "Electrons are nearly massless."
+        ],
+        [
+          "It doubles",
+          "Electrons are nearly massless."
+        ],
+        [
+          "It drops to zero",
+          "The nucleus holds the mass."
+        ]
+      ],
+      "exp": "Electrons are nearly massless, so losing one barely changes the mass."
     }
   ],
   "Number of protons": [
@@ -690,6 +1298,25 @@
         ]
       ],
       "exp": "The number of protons sets which element it is."
+    },
+    {
+      "q": "A nucleus changes from 6 protons to 7. What has the atom become?",
+      "right": "Nitrogen",
+      "wrong": [
+        [
+          "A heavier isotope of carbon, since only the mass of the atom has changed",
+          "Changing protons changes the element."
+        ],
+        [
+          "A carbon ion",
+          "Ions change electrons, not protons."
+        ],
+        [
+          "Still carbon",
+          "Protons set the element."
+        ]
+      ],
+      "exp": "Change the proton count and you have a different element: 7 protons is nitrogen."
     }
   ],
   "Number of electrons": [
@@ -711,6 +1338,25 @@
         ]
       ],
       "exp": "Chemical behavior comes from the electrons."
+    },
+    {
+      "q": "Na and Na⁺ have the same nucleus. Why do they behave so differently?",
+      "right": "They have different numbers of electrons",
+      "wrong": [
+        [
+          "They have different numbers of protons, so they are really different elements",
+          "Both have 11 protons."
+        ],
+        [
+          "They have different numbers of neutrons",
+          "The nucleus is the same."
+        ],
+        [
+          "They have different masses",
+          "That barely differs."
+        ]
+      ],
+      "exp": "Electrons determine chemical behavior."
     }
   ],
   "Atomic number (Z)": [
@@ -732,6 +1378,25 @@
         ]
       ],
       "exp": "Atomic number = number of protons. 26 is iron."
+    },
+    {
+      "q": "An atom has atomic number 17. Which is true?",
+      "right": "It has 17 protons",
+      "wrong": [
+        [
+          "It has 17 neutrons, because the atomic number counts the particles in the nucleus",
+          "Z counts protons only."
+        ],
+        [
+          "Its mass number is 17",
+          "Mass number adds neutrons."
+        ],
+        [
+          "It has 17 valence electrons",
+          "Valence electrons max out at 8."
+        ]
+      ],
+      "exp": "The atomic number is the number of protons."
     }
   ],
   "Mass number (A)": [
@@ -753,6 +1418,25 @@
         ]
       ],
       "exp": "Mass number = protons + neutrons = 23."
+    },
+    {
+      "q": "An atom of mass number 40 has 20 neutrons. How many protons does it have?",
+      "right": "20",
+      "wrong": [
+        [
+          "60, because you add the neutrons to the mass number to get the protons",
+          "Mass number = protons + neutrons, so subtract."
+        ],
+        [
+          "40",
+          "That's the mass number."
+        ],
+        [
+          "2",
+          "Subtract, don't divide."
+        ]
+      ],
+      "exp": "Protons = mass number − neutrons = 40 − 20 = 20."
     }
   ],
   "Neutron count": [
@@ -774,6 +1458,25 @@
         ]
       ],
       "exp": "Neutrons = 35 - 17 = 18."
+    },
+    {
+      "q": "Sodium's atomic mass is 22.99 and Z = 11. If no isotope is given, how many neutrons does sodium have?",
+      "right": "12",
+      "wrong": [
+        [
+          "11.99, found by subtracting the atomic number from the atomic mass as written",
+          "Round the atomic mass first: 23 − 11 = 12."
+        ],
+        [
+          "23",
+          "That's the mass number."
+        ],
+        [
+          "11",
+          "That's the proton count."
+        ]
+      ],
+      "exp": "Round 22.99 to 23, then 23 − 11 = 12."
     }
   ],
   "Electrons in a neutral atom": [
@@ -795,6 +1498,25 @@
         ]
       ],
       "exp": "Neutral atoms have as many electrons as protons."
+    },
+    {
+      "q": "A neutral atom has 15 electrons. Which element is it? (P is Z = 15)",
+      "right": "Phosphorus",
+      "wrong": [
+        [
+          "Sulfur, because a neutral atom always has one more electron than protons",
+          "Neutral means electrons = protons."
+        ],
+        [
+          "Silicon",
+          "That's Z = 14."
+        ],
+        [
+          "Chlorine",
+          "That's Z = 17."
+        ]
+      ],
+      "exp": "In a neutral atom electrons = protons, so 15 electrons means Z = 15."
     }
   ],
   "Electrons in an ion": [
@@ -816,6 +1538,25 @@
         ]
       ],
       "exp": "Electrons = 8 + 2 = 10."
+    },
+    {
+      "q": "How many electrons are in Al³⁺ (Z = 13)?",
+      "right": "10",
+      "wrong": [
+        [
+          "16, because a positive ion gains three electrons to get its charge",
+          "Positive means electrons were lost."
+        ],
+        [
+          "13",
+          "That's a neutral atom."
+        ],
+        [
+          "3",
+          "That's the charge."
+        ]
+      ],
+      "exp": "Electrons = protons − charge = 13 − 3 = 10."
     }
   ],
   "Valence electrons": [
@@ -837,6 +1578,25 @@
         ]
       ],
       "exp": "Group 15 elements have 5 valence electrons."
+    },
+    {
+      "q": "Sulfur (group 16) and oxygen (group 16) have how many valence electrons each?",
+      "right": "6",
+      "wrong": [
+        [
+          "16, because the group number is the number of valence electrons for every element",
+          "For groups 13 to 18, subtract 10."
+        ],
+        [
+          "2",
+          "That's the electrons they gain."
+        ],
+        [
+          "8",
+          "That's a full octet."
+        ]
+      ],
+      "exp": "Group 16 elements have 6 valence electrons."
     }
   ],
   "Bohr model drawing": [
@@ -858,6 +1618,25 @@
         ]
       ],
       "exp": "Period 3 gives 3 rings; group 2 gives 2 valence electrons."
+    },
+    {
+      "q": "A Bohr model has 2 rings and 7 electrons on the outer ring. Which element is it?",
+      "right": "Fluorine",
+      "wrong": [
+        [
+          "Chlorine, because it is the halogen that has seven electrons in its outer ring",
+          "Chlorine needs 3 rings (period 3)."
+        ],
+        [
+          "Nitrogen",
+          "Nitrogen has 5 outer electrons."
+        ],
+        [
+          "Neon",
+          "Neon has 8 outer electrons."
+        ]
+      ],
+      "exp": "2 rings = period 2; 7 outer electrons = group 17: fluorine."
     }
   ],
   "Octet": [
@@ -879,6 +1658,25 @@
         ]
       ],
       "exp": "Chlorine has 7 valence electrons; one more completes the octet."
+    },
+    {
+      "q": "Oxygen has 6 valence electrons. What does it tend to do to complete its octet?",
+      "right": "Gain 2 electrons",
+      "wrong": [
+        [
+          "Lose 6 electrons, since losing them leaves an empty and stable outer shell",
+          "Gaining 2 is easier than losing 6."
+        ],
+        [
+          "Gain 6 electrons",
+          "That would give 12."
+        ],
+        [
+          "Lose 2 electrons",
+          "That gives 4, not 8."
+        ]
+      ],
+      "exp": "Oxygen gains 2 electrons to reach 8, forming O²⁻."
     }
   ],
   "Atomic mass": [
@@ -900,6 +1698,25 @@
         ]
       ],
       "exp": "Atomic mass is a weighted average of all of an element's isotopes."
+    },
+    {
+      "q": "Why does a periodic table square show 24.31 for magnesium instead of a whole number?",
+      "right": "It averages magnesium's isotopes",
+      "wrong": [
+        [
+          "It is the number of protons plus electrons in one magnesium atom",
+          "That would be a whole number."
+        ],
+        [
+          "It counts only neutrons",
+          "It's an average mass."
+        ],
+        [
+          "It's a rounding error",
+          "It's a weighted average."
+        ]
+      ],
+      "exp": "Atomic mass is the average of all isotopes, weighted by how common each is."
     }
   ],
   "Isotopes": [
@@ -921,6 +1738,25 @@
         ]
       ],
       "exp": "Isotopes have the same protons and different neutrons."
+    },
+    {
+      "q": "Which pair are isotopes of each other?",
+      "right": "Chlorine-35 and chlorine-37",
+      "wrong": [
+        [
+          "Argon-40 and calcium-40, since they have exactly the same mass number",
+          "Different elements, different proton counts."
+        ],
+        [
+          "Na and Na⁺",
+          "That's an atom and its ion."
+        ],
+        [
+          "O₂ and O₃",
+          "Those are molecules, not isotopes."
+        ]
+      ],
+      "exp": "Isotopes are the same element with different mass numbers."
     }
   ],
   "Chemistry of isotopes": [
@@ -942,6 +1778,25 @@
         ]
       ],
       "exp": "Chemistry depends on electrons, which isotopes share."
+    },
+    {
+      "q": "Water made with deuterium instead of hydrogen-1 still reacts like water. Why?",
+      "right": "Same electrons; only neutrons differ",
+      "wrong": [
+        [
+          "Deuterium has an extra proton, which keeps the charges and reactions the same",
+          "Deuterium has an extra neutron, not proton."
+        ],
+        [
+          "Deuterium has no electrons",
+          "It has 1 electron."
+        ],
+        [
+          "Neutrons control reactions",
+          "Electrons do."
+        ]
+      ],
+      "exp": "Reactions depend on electrons, not neutrons."
     }
   ],
   "Isotopes in nature": [
@@ -963,6 +1818,25 @@
         ]
       ],
       "exp": "Natural chlorine is a mixture of isotopes."
+    },
+    {
+      "q": "A sample of copper from a mine contains atoms of different mass numbers. Is that unusual?",
+      "right": "No; elements are usually mixtures of isotopes",
+      "wrong": [
+        [
+          "Yes, because every atom of one element must have exactly the same mass",
+          "Isotopes differ in mass."
+        ],
+        [
+          "Yes; it must be two elements",
+          "Same element, different neutrons."
+        ],
+        [
+          "Yes; it must be contaminated",
+          "Isotope mixtures are normal."
+        ]
+      ],
+      "exp": "Elements are usually found as a mixture of isotopes."
     }
   ],
   "Isotopic notation": [
@@ -984,6 +1858,25 @@
         ]
       ],
       "exp": "The bottom number is the atomic number: protons."
+    },
+    {
+      "q": "An isotope is written ⁵⁶₂₆Fe. How many neutrons does it have?",
+      "right": "30",
+      "wrong": [
+        [
+          "56, which is the top number and counts every particle in the nucleus",
+          "Subtract Z: 56 − 26 = 30."
+        ],
+        [
+          "26",
+          "That's the proton count."
+        ],
+        [
+          "82",
+          "Subtract, don't add."
+        ]
+      ],
+      "exp": "Neutrons = mass number − atomic number = 56 − 26 = 30."
     }
   ],
   "Hyphen notation": [
@@ -1005,6 +1898,25 @@
         ]
       ],
       "exp": "Name, dash, mass number."
+    },
+    {
+      "q": "\"Uranium-238\" tells you what number directly?",
+      "right": "The mass number",
+      "wrong": [
+        [
+          "The atomic number, which is the number of protons in each uranium atom",
+          "Hyphen notation gives the mass number."
+        ],
+        [
+          "The number of neutrons",
+          "You'd subtract Z to get that."
+        ],
+        [
+          "The charge",
+          "No charge is shown."
+        ]
+      ],
+      "exp": "Hyphen notation is the element name plus the mass number."
     }
   ],
   "Same element test": [
@@ -1026,6 +1938,25 @@
         ]
       ],
       "exp": "Same bottom number (Z = 7) means same element."
+    },
+    {
+      "q": "Do ⁴⁰₁₈X and ⁴⁰₂₀X show the same element?",
+      "right": "No; different atomic numbers",
+      "wrong": [
+        [
+          "Yes, because they have exactly the same mass number written on top",
+          "Equal mass numbers don't make the same element."
+        ],
+        [
+          "Yes; same symbol letter",
+          "X is a placeholder; Z decides."
+        ],
+        [
+          "Only if they're ions",
+          "Z still decides."
+        ]
+      ],
+      "exp": "Two symbols match only if they share an atomic number."
     }
   ],
   "Relative (percent) abundance": [
@@ -1047,6 +1978,25 @@
         ]
       ],
       "exp": "Abundance is how common each isotope is."
+    },
+    {
+      "q": "Element Y is 75% Y-35 and 25% Y-37. In 100 atoms of Y, about how many are Y-37?",
+      "right": "25",
+      "wrong": [
+        [
+          "37, since the mass number tells you how many of the hundred atoms there are",
+          "Abundance gives the share."
+        ],
+        [
+          "75",
+          "That's Y-35."
+        ],
+        [
+          "50",
+          "The share is 25%."
+        ]
+      ],
+      "exp": "Relative abundance is the share of atoms: 25% of 100 is 25."
     }
   ],
   "Weighted average atomic mass": [
@@ -1068,6 +2018,25 @@
         ]
       ],
       "exp": "0.90(20) + 0.10(22) = 20.2."
+    },
+    {
+      "q": "An element is 50% X-10 and 50% X-12. What is its average atomic mass?",
+      "right": "11",
+      "wrong": [
+        [
+          "12, because the heavier isotope always counts more toward the average",
+          "Equal shares give the midpoint."
+        ],
+        [
+          "10",
+          "That ignores X-12."
+        ],
+        [
+          "22",
+          "That's a sum, not an average."
+        ]
+      ],
+      "exp": "0.50 × 10 + 0.50 × 12 = 11."
     }
   ],
   "Isotopic mass": [
@@ -1089,6 +2058,25 @@
         ]
       ],
       "exp": "Each candy type was an isotope with its own mass."
+    },
+    {
+      "q": "In the Candium lab, why did each candy type get its own average mass?",
+      "right": "Each type stood for one isotope",
+      "wrong": [
+        [
+          "Each candy type stood for a different element in the periodic table",
+          "All candies were one element, Candium."
+        ],
+        [
+          "To find the number of protons",
+          "It was about mass."
+        ],
+        [
+          "To find the charge",
+          "It was about mass."
+        ]
+      ],
+      "exp": "Each candy type played one isotope, and its average mass stood for that isotope's mass."
     }
   ],
   "Ion": [
@@ -1110,6 +2098,25 @@
         ]
       ],
       "exp": "Unequal protons and electrons make an ion: Na⁺."
+    },
+    {
+      "q": "Which change turns a neutral atom into an ion?",
+      "right": "Gaining or losing electrons",
+      "wrong": [
+        [
+          "Gaining or losing protons in the nucleus, which changes the atom's charge",
+          "That changes the element; ions change electrons."
+        ],
+        [
+          "Gaining neutrons",
+          "That makes an isotope."
+        ],
+        [
+          "Losing neutrons",
+          "That makes an isotope."
+        ]
+      ],
+      "exp": "An ion has gained or lost electrons; the nucleus doesn't change."
     }
   ],
   "Cation": [
@@ -1131,6 +2138,25 @@
         ]
       ],
       "exp": "Losing electrons makes a positive ion."
+    },
+    {
+      "q": "An atom has 20 protons and 18 electrons. What is it?",
+      "right": "A cation with a 2+ charge",
+      "wrong": [
+        [
+          "An anion with a 2- charge, because it has two more protons than electrons",
+          "More protons than electrons means positive."
+        ],
+        [
+          "A neutral atom",
+          "Protons and electrons don't match."
+        ],
+        [
+          "An isotope",
+          "Isotopes differ in neutrons."
+        ]
+      ],
+      "exp": "20 positive − 18 negative = 2+, a cation."
     }
   ],
   "Anion": [
@@ -1152,6 +2178,25 @@
         ]
       ],
       "exp": "Gaining electrons makes a negative ion."
+    },
+    {
+      "q": "Which of these elements is most likely to form an anion?",
+      "right": "Bromine",
+      "wrong": [
+        [
+          "Potassium, since it is very reactive and easily changes its electron count",
+          "Metals form cations."
+        ],
+        [
+          "Calcium",
+          "A metal: forms a cation."
+        ],
+        [
+          "Aluminum",
+          "A metal: forms a cation."
+        ]
+      ],
+      "exp": "Nonmetals gain electrons and form anions."
     }
   ],
   "Why atoms ionize": [
@@ -1173,6 +2218,25 @@
         ]
       ],
       "exp": "Na loses 1, Cl gains 1, and both reach complete outer shells."
+    },
+    {
+      "q": "Magnesium gives 2 electrons to oxygen. What do both atoms gain from this?",
+      "right": "Both end up with complete octets",
+      "wrong": [
+        [
+          "Both end up with more protons, which makes them heavier and more stable",
+          "Protons don't change."
+        ],
+        [
+          "Both become noble gases",
+          "They only match a noble gas's electrons."
+        ],
+        [
+          "Both become neutral",
+          "They become ions."
+        ]
+      ],
+      "exp": "Atoms ionize to complete their valence shells."
     }
   ],
   "Metals lose, nonmetals gain": [
@@ -1194,6 +2258,25 @@
         ]
       ],
       "exp": "Metals lose electrons; nonmetals gain them."
+    },
+    {
+      "q": "Calcium and chlorine react. What happens to the electrons?",
+      "right": "Calcium loses; chlorine gains",
+      "wrong": [
+        [
+          "Chlorine loses electrons and calcium gains them, since chlorine is on the right",
+          "Elements right of the staircase gain."
+        ],
+        [
+          "Both lose electrons",
+          "One gives, one takes."
+        ],
+        [
+          "Both gain electrons",
+          "One gives, one takes."
+        ]
+      ],
+      "exp": "Metals (left) give up electrons; nonmetals (right) take them."
     }
   ],
   "Group 13 charge": [
@@ -1215,6 +2298,25 @@
         ]
       ],
       "exp": "Group 13 forms 3+ ions."
+    },
+    {
+      "q": "Aluminum and oxygen form a compound. What is its formula?",
+      "right": "Al₂O₃",
+      "wrong": [
+        [
+          "AlO, since both elements give or take the same number of electrons",
+          "Al³⁺ and O²⁻ need a 2:3 ratio."
+        ],
+        [
+          "Al₃O₂",
+          "Subscripts swapped."
+        ],
+        [
+          "AlO₃",
+          "Charges don't balance."
+        ]
+      ],
+      "exp": "Al³⁺ and O²⁻ cross over to Al₂O₃."
     }
   ],
   "Noble gas charge": [
@@ -1236,6 +2338,25 @@
         ]
       ],
       "exp": "Neon's valence shell is already full."
+    },
+    {
+      "q": "Which ion has the same electron arrangement as argon, and why doesn't argon itself form ions?",
+      "right": "Cl⁻; argon's shell is already full",
+      "wrong": [
+        [
+          "Na⁺, because argon gives away its electrons to sodium to fill its shell",
+          "Na⁺ matches neon, and argon doesn't give electrons."
+        ],
+        [
+          "Ne; argon is a metal",
+          "Argon is a noble gas."
+        ],
+        [
+          "O²⁻; argon is too heavy",
+          "O²⁻ matches neon; mass isn't the reason."
+        ]
+      ],
+      "exp": "Noble gases tend not to form ions because their valence shell is full; Cl⁻ reaches argon's arrangement."
     }
   ],
   "Transition metal charges": [
@@ -1257,6 +2378,25 @@
         ]
       ],
       "exp": "Transition metals like iron have variable charges."
+    },
+    {
+      "q": "A problem asks for the formula of iron chloride but doesn't give iron's charge. What's wrong?",
+      "right": "Iron can be 2+ or 3+",
+      "wrong": [
+        [
+          "Nothing, because iron always forms a +2 ion like the other group 2 metals",
+          "Iron is a transition metal with variable charges."
+        ],
+        [
+          "Iron doesn't form ions",
+          "It does."
+        ],
+        [
+          "Chlorine's charge varies",
+          "Chloride is always -1."
+        ]
+      ],
+      "exp": "Transition metals have variable charges, so a problem must say which one."
     }
   ],
   "Bond": [
@@ -1275,6 +2415,25 @@
         [
           "They become protons",
           "Electrons never turn into protons."
+        ]
+      ],
+      "exp": "A bond is the sharing or giving and taking of electrons."
+    },
+    {
+      "q": "In table salt, sodium gives an electron to chlorine. In water, H and O share electrons. What do both have in common?",
+      "right": "Both are bonds",
+      "wrong": [
+        [
+          "Both are ionic bonds, because electrons move between the atoms in each case",
+          "Sharing is covalent, not ionic."
+        ],
+        [
+          "Neither is a bond",
+          "Both are bonds."
+        ],
+        [
+          "Both are covalent",
+          "Salt's electrons are given, not shared."
         ]
       ],
       "exp": "A bond is the sharing or giving and taking of electrons."
@@ -1299,6 +2458,25 @@
         ]
       ],
       "exp": "The electrostatic attraction between a cation and an anion."
+    },
+    {
+      "q": "Which pair would form an ionic bond?",
+      "right": "Potassium and iodine",
+      "wrong": [
+        [
+          "Carbon and oxygen, since both are nonmetals that sit near each other",
+          "Two nonmetals share electrons: covalent."
+        ],
+        [
+          "Nitrogen and hydrogen",
+          "Two nonmetals: covalent."
+        ],
+        [
+          "Neon and argon",
+          "Noble gases don't bond this way."
+        ]
+      ],
+      "exp": "Ionic bonds form between a metal and a nonmetal."
     }
   ],
   "Covalent compound": [
@@ -1320,6 +2498,25 @@
         ]
       ],
       "exp": "Two nonmetals share electrons."
+    },
+    {
+      "q": "Why is CO₂ covalent but NaCl ionic?",
+      "right": "C and O are both nonmetals",
+      "wrong": [
+        [
+          "CO₂ is a gas and NaCl is a solid, and only solids can form ionic bonds",
+          "State doesn't decide bond type."
+        ],
+        [
+          "Carbon is a metal",
+          "Carbon is a nonmetal."
+        ],
+        [
+          "NaCl has more atoms",
+          "Number of atoms doesn't decide."
+        ]
+      ],
+      "exp": "Covalent compounds form between nonmetals; ionic between a metal and a nonmetal."
     }
   ],
   "Chemical formula": [
@@ -1341,6 +2538,25 @@
         ]
       ],
       "exp": "The subscript after O is 3."
+    },
+    {
+      "q": "How many atoms in total are in one unit of Ca(NO₃)₂?",
+      "right": "9",
+      "wrong": [
+        [
+          "5, counting one calcium, one nitrogen and three oxygen atoms in the unit",
+          "The 2 doubles everything in the parentheses."
+        ],
+        [
+          "6",
+          "That doubles the nitrogen but not the oxygen."
+        ],
+        [
+          "8",
+          "That doubles the oxygen but not the nitrogen."
+        ]
+      ],
+      "exp": "1 Ca + 2 N + 6 O = 9 atoms."
     }
   ],
   "Ionic formula rule": [
@@ -1362,6 +2578,25 @@
         ]
       ],
       "exp": "Mg²⁺ needs two Cl⁻: MgCl₂."
+    },
+    {
+      "q": "Which formula is written correctly?",
+      "right": "K₂O",
+      "wrong": [
+        [
+          "OK₂, because you can write the ions of an ionic compound in either order",
+          "The cation goes first."
+        ],
+        [
+          "KO",
+          "Charges don't add to zero."
+        ],
+        [
+          "KO₂",
+          "Charges don't add to zero."
+        ]
+      ],
+      "exp": "Cation first, and the charges must add to zero: two K⁺ and one O²⁻."
     }
   ],
   "Crossover method": [
@@ -1383,6 +2618,25 @@
         ]
       ],
       "exp": "Cross 3 and 2 over: Al₂O₃."
+    },
+    {
+      "q": "Use the crossover method for Ca²⁺ and O²⁻. What is the final formula?",
+      "right": "CaO",
+      "wrong": [
+        [
+          "Ca₂O₂, because each charge becomes the other ion's subscript exactly",
+          "Reduce to the lowest ratio."
+        ],
+        [
+          "CaO₂",
+          "Charges don't balance."
+        ],
+        [
+          "Ca₂O",
+          "Charges don't balance."
+        ]
+      ],
+      "exp": "Crossing gives Ca₂O₂, which reduces to CaO."
     }
   ],
   "Polyatomic ion": [
@@ -1404,6 +2658,25 @@
         ]
       ],
       "exp": "The 2 means two whole CN⁻ ions."
+    },
+    {
+      "q": "Why is Mg(OH)₂ written with parentheses?",
+      "right": "There are two OH units",
+      "wrong": [
+        [
+          "To show that the magnesium is bonded to the oxygen more strongly than hydrogen",
+          "Parentheses show a unit repeated."
+        ],
+        [
+          "Because Mg has 2 protons",
+          "It's about the OH count."
+        ],
+        [
+          "To show OH is an element",
+          "OH is a polyatomic ion."
+        ]
+      ],
+      "exp": "A polyatomic ion stays together; parentheses show more than one of it."
     }
   ],
   "Properties of ionic compounds": [
@@ -1425,6 +2698,25 @@
         ]
       ],
       "exp": "Dissolved or melted, the ions are free to move."
+    },
+    {
+      "q": "An unknown solid has a very high melting point, shatters when hit and conducts only when dissolved. What is it most likely?",
+      "right": "An ionic compound",
+      "wrong": [
+        [
+          "A metal, because metals melt at high temperatures and conduct electricity",
+          "Metals conduct as solids and bend."
+        ],
+        [
+          "A covalent gas",
+          "It's a solid."
+        ],
+        [
+          "A noble gas",
+          "Noble gases are gases."
+        ]
+      ],
+      "exp": "Ionic compounds are brittle, melt at high temperatures and conduct when melted or dissolved."
     }
   ],
   "Molar mass": [
@@ -1446,6 +2738,25 @@
         ]
       ],
       "exp": "2(1.008) + 16.00 = 18.02 g/mol."
+    },
+    {
+      "q": "What is the molar mass of NaCl? (Na = 22.99, Cl = 35.45)",
+      "right": "58.44 g/mol",
+      "wrong": [
+        [
+          "12.46 g/mol, found by subtracting the smaller mass from the larger one",
+          "Add the masses."
+        ],
+        [
+          "35.45 g/mol",
+          "That's chlorine only."
+        ],
+        [
+          "22.99 g/mol",
+          "That's sodium only."
+        ]
+      ],
+      "exp": "22.99 + 35.45 = 58.44 g/mol."
     }
   ],
   "Molar mass with subscripts": [
@@ -1467,6 +2778,25 @@
         ]
       ],
       "exp": "Multiply Cl's mass by its subscript, 2."
+    },
+    {
+      "q": "What is the molar mass of CO₂? (C = 12.01, O = 16.00)",
+      "right": "44.01 g/mol",
+      "wrong": [
+        [
+          "28.01 g/mol, adding the mass of one carbon and the mass of one oxygen",
+          "The 2 means two oxygens."
+        ],
+        [
+          "56.02 g/mol",
+          "Only oxygen gets the 2."
+        ],
+        [
+          "32.00 g/mol",
+          "That's only the oxygens."
+        ]
+      ],
+      "exp": "12.01 + 2(16.00) = 44.01 g/mol."
     }
   ],
   "Molar mass with parentheses": [
@@ -1488,6 +2818,25 @@
         ]
       ],
       "exp": "2 × 3 = 6 oxygen atoms."
+    },
+    {
+      "q": "What is the molar mass of Mg(OH)₂? (Mg = 24.31, O = 16.00, H = 1.008)",
+      "right": "58.33 g/mol",
+      "wrong": [
+        [
+          "41.32 g/mol, adding one magnesium, one oxygen and one hydrogen together",
+          "The 2 doubles O and H."
+        ],
+        [
+          "57.32 g/mol",
+          "Hydrogen is doubled too."
+        ],
+        [
+          "42.33 g/mol",
+          "Oxygen is doubled too."
+        ]
+      ],
+      "exp": "24.31 + 2(16.00) + 2(1.008) = 58.33 g/mol."
     }
   ],
   "Mole": [
@@ -1509,6 +2858,25 @@
         ]
       ],
       "exp": "One mole = 6.022 × 10²³ particles."
+    },
+    {
+      "q": "Which contains more particles: 1 mole of helium atoms or 1 mole of water molecules?",
+      "right": "The same: 6.022 × 10²³ each",
+      "wrong": [
+        [
+          "The water, because each water molecule is much heavier than a helium atom",
+          "Mass doesn't change the count in a mole."
+        ],
+        [
+          "The helium",
+          "A mole is the same count for anything."
+        ],
+        [
+          "Neither has a set count",
+          "A mole is 6.022 × 10²³."
+        ]
+      ],
+      "exp": "A mole is a counting unit: 6.022 × 10²³ particles of anything."
     }
   ],
   "Avogadro's number": [
@@ -1530,6 +2898,25 @@
         ]
       ],
       "exp": "2.00 × 6.022 × 10²³ = 1.20 × 10²⁴."
+    },
+    {
+      "q": "How many molecules are in 0.500 mol of CO₂?",
+      "right": "3.011 × 10²³",
+      "wrong": [
+        [
+          "1.204 × 10²⁴, multiplying Avogadro's number by two instead of by a half",
+          "Multiply by 0.500, not 2."
+        ],
+        [
+          "6.022 × 10²³",
+          "That's 1 mol."
+        ],
+        [
+          "0.500",
+          "That's moles, not molecules."
+        ]
+      ],
+      "exp": "0.500 × 6.022 × 10²³ = 3.011 × 10²³."
     }
   ],
   "Grams to moles": [
@@ -1551,6 +2938,25 @@
         ]
       ],
       "exp": "36.04 ÷ 18.02 = 2.000 mol."
+    },
+    {
+      "q": "How many moles are in 11.69 g of NaCl (58.44 g/mol)?",
+      "right": "0.2000 mol",
+      "wrong": [
+        [
+          "683.2 mol, multiplying the mass by the molar mass instead of dividing",
+          "Divide by molar mass."
+        ],
+        [
+          "5.000 mol",
+          "That's molar mass ÷ mass, upside down."
+        ],
+        [
+          "11.69 mol",
+          "Grams aren't moles."
+        ]
+      ],
+      "exp": "11.69 ÷ 58.44 = 0.2000 mol."
     }
   ],
   "Subscript ratio": [
@@ -1572,6 +2978,25 @@
         ]
       ],
       "exp": "3 mol × 4 H per CH₄ = 12 mol H."
+    },
+    {
+      "q": "How many moles of O atoms are in 2 mol of Al₂O₃?",
+      "right": "6 mol",
+      "wrong": [
+        [
+          "4 mol, because aluminum oxide has two aluminum atoms in each formula unit",
+          "That's aluminum; oxygen's subscript is 3."
+        ],
+        [
+          "3 mol",
+          "That's per 1 mol."
+        ],
+        [
+          "2 mol",
+          "Multiply by the subscript."
+        ]
+      ],
+      "exp": "2 mol × 3 O per unit = 6 mol O."
     }
   ],
   "Roadmap to atoms": [
@@ -1593,6 +3018,25 @@
         ]
       ],
       "exp": "Grams → moles → moles of atoms → atoms."
+    },
+    {
+      "q": "You know the moles of a compound and want the number of one element's atoms. Which steps come next?",
+      "right": "× subscript, then × 6.022 × 10²³",
+      "wrong": [
+        [
+          "÷ molar mass, then × 6.022 × 10²³, the same steps you use when starting from grams",
+          "You already have moles; no molar mass step."
+        ],
+        [
+          "× molar mass only",
+          "That gives grams."
+        ],
+        [
+          "÷ 6.022 × 10²³ only",
+          "That goes the wrong way."
+        ]
+      ],
+      "exp": "Moles of compound × subscript = moles of the element, then × Avogadro's number = atoms."
     }
   ],
   "Formula unit": [
@@ -1614,6 +3058,25 @@
         ]
       ],
       "exp": "Ionic compounds are counted in formula units."
+    },
+    {
+      "q": "Which substance is counted in formula units rather than molecules?",
+      "right": "CaCl₂",
+      "wrong": [
+        [
+          "H₂O, because it is made of more than one kind of atom bonded together",
+          "Water is covalent: molecules."
+        ],
+        [
+          "CO₂",
+          "Covalent: molecules."
+        ],
+        [
+          "O₂",
+          "Covalent: molecules."
+        ]
+      ],
+      "exp": "Ionic compounds like CaCl₂ are counted in formula units."
     }
   ],
   "Boron family": [
@@ -1635,6 +3098,25 @@
         ]
       ],
       "exp": "Group 13 is the boron family."
+    },
+    {
+      "q": "Aluminum is in the boron family. What compound does it form with chlorine?",
+      "right": "AlCl₃",
+      "wrong": [
+        [
+          "AlCl, because aluminum and chlorine each form an ion with a charge of one",
+          "Boron family elements form +3 ions."
+        ],
+        [
+          "Al₃Cl",
+          "That would need a -3 chloride."
+        ],
+        [
+          "AlCl₂",
+          "That would need Al²⁺."
+        ]
+      ],
+      "exp": "The boron family forms +3 ions, so Al³⁺ needs three Cl⁻."
     }
   ],
   "Carbon family": [
@@ -1656,6 +3138,25 @@
         ]
       ],
       "exp": "Group 14 is the carbon family."
+    },
+    {
+      "q": "A quiz asks for the ion charge of carbon-family elements. What does your card say?",
+      "right": "No single charge to memorize",
+      "wrong": [
+        [
+          "+3, the same as the boron family that sits right next to it on the table",
+          "That's column 13."
+        ],
+        [
+          "-3",
+          "That's the nitrogen family."
+        ],
+        [
+          "-2",
+          "That's the oxygen family."
+        ]
+      ],
+      "exp": "Column 14 has no single ion charge to memorize (4+ or 4-)."
     }
   ],
   "Nitrogen family": [
@@ -1677,6 +3178,25 @@
         ]
       ],
       "exp": "Group 15 is the nitrogen family."
+    },
+    {
+      "q": "Phosphorus and magnesium form an ionic compound. What is its formula?",
+      "right": "Mg₃P₂",
+      "wrong": [
+        [
+          "MgP, since both elements are close to each other in the third row of the table",
+          "Mg²⁺ and P³⁻ need a 3:2 ratio."
+        ],
+        [
+          "Mg₂P₃",
+          "The subscripts are swapped."
+        ],
+        [
+          "MgP₂",
+          "Charges don't balance."
+        ]
+      ],
+      "exp": "Nitrogen family forms -3 ions; Mg²⁺ and P³⁻ cross over to Mg₃P₂."
     }
   ],
   "Oxygen family": [
@@ -1698,6 +3218,25 @@
         ]
       ],
       "exp": "Group 16 is the oxygen family."
+    },
+    {
+      "q": "Sodium and sulfur form a compound. What is its formula?",
+      "right": "Na₂S",
+      "wrong": [
+        [
+          "NaS, because sodium and sulfur each give or take only one electron here",
+          "Sulfur forms -2 ions."
+        ],
+        [
+          "NaS₂",
+          "That would need Na²⁺."
+        ],
+        [
+          "Na₃S",
+          "That would need S³⁻."
+        ]
+      ],
+      "exp": "The oxygen family forms -2 ions, so two Na⁺ balance one S²⁻."
     }
   ],
   "Hydrogen-1": [
@@ -1719,6 +3258,25 @@
         ]
       ],
       "exp": "1 - 1 = 0 neutrons."
+    },
+    {
+      "q": "Hydrogen-1 is the only common atom with which feature?",
+      "right": "No neutrons",
+      "wrong": [
+        [
+          "No protons in its nucleus, so its mass comes from the electron alone",
+          "It has 1 proton."
+        ],
+        [
+          "No electrons",
+          "Neutral H-1 has 1 electron."
+        ],
+        [
+          "Two protons",
+          "It has 1."
+        ]
+      ],
+      "exp": "Hydrogen-1 has 1 proton and no neutrons."
     }
   ],
   "Deuterium": [
@@ -1740,6 +3298,25 @@
         ]
       ],
       "exp": "2 - 1 = 1 neutron."
+    },
+    {
+      "q": "Compare deuterium and tritium.",
+      "right": "Tritium has one more neutron",
+      "wrong": [
+        [
+          "Tritium has one more proton, which is why it has a higher mass number",
+          "Both have 1 proton."
+        ],
+        [
+          "They are different elements",
+          "Both are hydrogen."
+        ],
+        [
+          "Deuterium is heavier",
+          "Tritium is heavier."
+        ]
+      ],
+      "exp": "Deuterium: 1 p, 1 n (mass 2). Tritium: 1 p, 2 n (mass 3)."
     }
   ],
   "Tritium": [
@@ -1761,6 +3338,25 @@
         ]
       ],
       "exp": "3 - 1 = 2 neutrons."
+    },
+    {
+      "q": "What is the mass number of tritium?",
+      "right": "3",
+      "wrong": [
+        [
+          "2, because tritium has two particles in its nucleus besides its electron",
+          "1 proton + 2 neutrons = 3."
+        ],
+        [
+          "1",
+          "That's hydrogen-1."
+        ],
+        [
+          "4",
+          "Tritium has 3."
+        ]
+      ],
+      "exp": "Tritium is hydrogen-3: 1 proton + 2 neutrons."
     }
   ],
   "Group 1 charge": [
@@ -1782,6 +3378,25 @@
         ]
       ],
       "exp": "Group 1 loses 1 electron: +1."
+    },
+    {
+      "q": "Rubidium is in group 1. What compound does it form with chlorine?",
+      "right": "RbCl",
+      "wrong": [
+        [
+          "RbCl₂, because rubidium is a large atom and can hold more chlorine atoms",
+          "Group 1 forms +1, so 1:1 with Cl⁻."
+        ],
+        [
+          "Rb₂Cl",
+          "That would need Cl²⁻."
+        ],
+        [
+          "RbCl₃",
+          "That would need Rb³⁺."
+        ]
+      ],
+      "exp": "Group 1 forms +1 ions; Rb⁺ + Cl⁻ = RbCl."
     }
   ],
   "Group 2 charge": [
@@ -1803,6 +3418,25 @@
         ]
       ],
       "exp": "Group 2 forms 2+ ions."
+    },
+    {
+      "q": "How many electrons does a calcium atom lose when it forms its ion?",
+      "right": "2",
+      "wrong": [
+        [
+          "1, the same number that sodium and the other group 1 metals lose",
+          "Group 2 loses 2."
+        ],
+        [
+          "6",
+          "That's what oxygen-family atoms have."
+        ],
+        [
+          "8",
+          "That's a full octet."
+        ]
+      ],
+      "exp": "Alkaline earth metals lose 2 valence electrons to form +2 ions."
     }
   ],
   "Group 15 charge": [
@@ -1824,6 +3458,25 @@
         ]
       ],
       "exp": "Group 15 gains 3 electrons: 3-."
+    },
+    {
+      "q": "Nitrogen has 5 valence electrons. Why does it form N³⁻?",
+      "right": "Gaining 3 completes its octet",
+      "wrong": [
+        [
+          "It loses 3 electrons, which leaves it with a positive charge of three",
+          "It gains, so the charge is negative."
+        ],
+        [
+          "It gains 5 electrons",
+          "That would give 10."
+        ],
+        [
+          "It loses 5 electrons",
+          "That doesn't give N³⁻."
+        ]
+      ],
+      "exp": "5 + 3 = 8: gaining 3 electrons gives N³⁻."
     }
   ],
   "Group 16 charge": [
@@ -1845,6 +3498,25 @@
         ]
       ],
       "exp": "Group 16 gains 2 electrons: 2-."
+    },
+    {
+      "q": "Calcium and sulfur form a compound. What is its formula?",
+      "right": "CaS",
+      "wrong": [
+        [
+          "CaS₂, because sulfur needs two calcium atoms to balance its charge",
+          "Ca²⁺ and S²⁻ balance 1:1."
+        ],
+        [
+          "Ca₂S",
+          "Charges don't balance."
+        ],
+        [
+          "Ca₂S₂",
+          "Reduce to lowest ratio: CaS."
+        ]
+      ],
+      "exp": "Ca²⁺ and S²⁻ balance 1:1."
     }
   ],
   "Group 17 charge": [
@@ -1866,6 +3538,25 @@
         ]
       ],
       "exp": "Group 17 gains 1 electron: 1-."
+    },
+    {
+      "q": "Magnesium and fluorine form a compound. What is its formula?",
+      "right": "MgF₂",
+      "wrong": [
+        [
+          "MgF, since magnesium and fluorine each have a charge of one on their ions",
+          "Mg is 2+, so it needs two F⁻."
+        ],
+        [
+          "Mg₂F",
+          "Charges don't balance."
+        ],
+        [
+          "MgF₃",
+          "That would need Mg³⁺."
+        ]
+      ],
+      "exp": "Mg²⁺ needs two F⁻."
     }
   ],
   "Carbon-12": [
@@ -1887,6 +3578,25 @@
         ]
       ],
       "exp": "Mass number = 6 protons + 6 neutrons = 12."
+    },
+    {
+      "q": "Carbon-12 and carbon-14 differ in mass number by 2. Why?",
+      "right": "Carbon-14 has 2 more neutrons",
+      "wrong": [
+        [
+          "Carbon-14 has 2 more protons, so it is heavier than carbon-12 by two",
+          "Both have 6 protons."
+        ],
+        [
+          "Carbon-14 has 2 more electrons",
+          "Electrons don't add to mass number."
+        ],
+        [
+          "Carbon-12 lost 2 protons",
+          "Both have 6 protons."
+        ]
+      ],
+      "exp": "Carbon-12 has 6 neutrons; carbon-14 has 8."
     }
   ],
   "Carbon-13": [
@@ -1908,6 +3618,25 @@
         ]
       ],
       "exp": "13 - 6 = 7 neutrons."
+    },
+    {
+      "q": "Write carbon-13 in isotopic notation.",
+      "right": "¹³₆C",
+      "wrong": [
+        [
+          "⁶₁₃C, with the mass number written at the bottom and the atomic number on top",
+          "Mass number goes on top."
+        ],
+        [
+          "¹³₇C",
+          "Carbon's Z is 6."
+        ],
+        [
+          "⁷₆C",
+          "7 is the neutron count, not the mass number."
+        ]
+      ],
+      "exp": "Mass number 13 on top, atomic number 6 below."
     }
   ],
   "Carbon-14": [
@@ -1929,6 +3658,25 @@
         ]
       ],
       "exp": "14 - 6 = 8 neutrons."
+    },
+    {
+      "q": "A carbon atom has mass number 14. How many protons and neutrons does it have?",
+      "right": "6 protons, 8 neutrons",
+      "wrong": [
+        [
+          "8 protons and 6 neutrons, since the larger number is always the protons",
+          "Carbon always has 6 protons."
+        ],
+        [
+          "7 protons, 7 neutrons",
+          "Carbon has 6 protons."
+        ],
+        [
+          "14 protons, 0 neutrons",
+          "14 is the total."
+        ]
+      ],
+      "exp": "Carbon has 6 protons, so 14 − 6 = 8 neutrons."
     }
   ],
   "Oxygen-16": [
@@ -1950,6 +3698,25 @@
         ]
       ],
       "exp": "16 - 8 = 8 neutrons."
+    },
+    {
+      "q": "Write oxygen-16 in isotopic notation.",
+      "right": "¹⁶₈O",
+      "wrong": [
+        [
+          "⁸₁₆O, with the atomic number written on top and the mass number below",
+          "Mass number goes on top."
+        ],
+        [
+          "¹⁶₁₆O",
+          "Oxygen's Z is 8."
+        ],
+        [
+          "⁸₈O",
+          "Mass number is 16."
+        ]
+      ],
+      "exp": "Mass number 16 on top, atomic number 8 below."
     }
   ],
   "Oxygen-17": [
@@ -1971,6 +3738,25 @@
         ]
       ],
       "exp": "Mass number = 8 protons + 9 neutrons = 17."
+    },
+    {
+      "q": "How many electrons does a neutral oxygen-17 atom have?",
+      "right": "8",
+      "wrong": [
+        [
+          "9, the same as its neutron count, since neutrons and electrons are paired",
+          "Electrons equal protons."
+        ],
+        [
+          "17",
+          "That's the mass number."
+        ],
+        [
+          "10",
+          "That's O²⁻."
+        ]
+      ],
+      "exp": "A neutral atom has electrons equal to its protons: 8."
     }
   ],
   "Oxygen-18": [
@@ -1992,6 +3778,25 @@
         ]
       ],
       "exp": "Oxygen-18 has 10 neutrons; oxygen-16 has 8."
+    },
+    {
+      "q": "How many neutrons are in oxygen-18?",
+      "right": "10",
+      "wrong": [
+        [
+          "18, because the number after the hyphen counts the neutrons directly",
+          "18 is the mass number; subtract 8."
+        ],
+        [
+          "8",
+          "That's the proton count."
+        ],
+        [
+          "9",
+          "That's oxygen-17."
+        ]
+      ],
+      "exp": "18 − 8 = 10 neutrons."
     }
   ]
 }
