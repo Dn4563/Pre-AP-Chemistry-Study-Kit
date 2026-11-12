@@ -1,0 +1,4160 @@
+{
+ "Matter": [
+  {
+   "q": "Which of these is NOT matter?",
+   "right": "The light from a flashlight",
+   "wrong": [
+    [
+     "The air inside a balloon, even though you can't see it",
+     "Air has mass and takes up space, so it is matter."
+    ],
+    [
+     "A drop of water on a leaf",
+     "Water has mass and volume."
+    ],
+    [
+     "A grain of sand",
+     "Sand has mass and takes up space."
+    ]
+   ],
+   "exp": "Matter must have mass and take up space; light does neither."
+  },
+  {
+   "q": "A student says air isn't matter because you can't see it. What is the best reply?",
+   "right": "Air has mass and takes up space",
+   "wrong": [
+    [
+     "He is right, because matter must be something you can see or touch",
+     "Being visible is not part of the definition."
+    ],
+    [
+     "Air is matter only when it is cold",
+     "Temperature doesn't decide whether something is matter."
+    ],
+    [
+     "Air is matter only inside a container",
+     "Air has mass and volume anywhere."
+    ]
+   ],
+   "exp": "Anything with mass that takes up space is matter, visible or not."
+  }
+ ],
+ "Solid": [
+  {
+   "q": "You move an iron bar from a small box to a large box. What happens to its shape and volume?",
+   "right": "Both stay the same",
+   "wrong": [
+    [
+     "Its shape changes to fit the bigger box but its volume stays the same",
+     "That describes a liquid."
+    ],
+    [
+     "Both change to fill the box",
+     "That describes a gas."
+    ],
+    [
+     "Its volume grows but its shape stays",
+     "A solid's volume is fixed."
+    ]
+   ],
+   "exp": "A solid has a fixed shape and a fixed volume."
+  },
+  {
+   "q": "Why does a diamond keep its shape no matter what container it is in?",
+   "right": "Its particles are locked in rigid positions",
+   "wrong": [
+    [
+     "Its particles are far apart and move randomly around the container",
+     "That describes a gas."
+    ],
+    [
+     "Its particles have stopped moving completely",
+     "Solid particles still vibrate."
+    ],
+    [
+     "Its particles slide past each other",
+     "That describes a liquid."
+    ]
+   ],
+   "exp": "Solid particles are close together and locked in place, though they still vibrate."
+  }
+ ],
+ "Liquid": [
+  {
+   "q": "You pour 200 mL of water from a tall glass into a wide bowl. What happens?",
+   "right": "The shape changes; the volume stays 200 mL",
+   "wrong": [
+    [
+     "The shape stays the same and the volume spreads out to fill the bowl",
+     "A liquid takes its container's shape, and its volume is fixed."
+    ],
+    [
+     "Both the shape and the volume change",
+     "A liquid's volume is definite."
+    ],
+    [
+     "Neither changes",
+     "A liquid takes the shape of its container."
+    ]
+   ],
+   "exp": "A liquid has a definite volume but takes the shape of its container."
+  },
+  {
+   "q": "Blood flows through your blood vessels and fills whatever shape they have. Which particle picture explains this?",
+   "right": "Close together but able to move around",
+   "wrong": [
+    [
+     "Far apart and moving randomly, hitting the walls of the vessels",
+     "That is a gas; blood is a liquid."
+    ],
+    [
+     "Locked in rigid positions",
+     "That is a solid."
+    ],
+    [
+     "Not moving at all",
+     "Liquid particles move around."
+    ]
+   ],
+   "exp": "Liquid particles are close together but can move, so a liquid flows and takes its container's shape."
+  }
+ ],
+ "Gas": [
+  {
+   "q": "A small amount of helium is released into an empty room. What happens to it?",
+   "right": "It spreads to fill the whole room",
+   "wrong": [
+    [
+     "It stays in one small cloud near the tank, keeping its own volume",
+     "A gas has no fixed volume."
+    ],
+    [
+     "It sinks to the floor and forms a puddle",
+     "That is a liquid's behavior."
+    ],
+    [
+     "It keeps the shape of the tank",
+     "A gas has no fixed shape."
+    ]
+   ],
+   "exp": "A gas takes both the shape and the volume of its container."
+  },
+  {
+   "q": "Why can you squeeze a lot more air into a bike tire, but not more water into a full bottle?",
+   "right": "Gas particles are far apart",
+   "wrong": [
+    [
+     "Water particles are far apart and air particles are packed tightly",
+     "It's the reverse."
+    ],
+    [
+     "Air has no mass",
+     "Air is matter, so it has mass."
+    ],
+    [
+     "Water is a solid",
+     "Water in a bottle is a liquid."
+    ]
+   ],
+   "exp": "Gas particles are far apart with lots of empty space between them, so a gas has no fixed volume."
+  }
+ ],
+ "Ice (solid water)": [
+  {
+   "q": "An ice cube keeps its cube shape on a plate. What are its water molecules doing?",
+   "right": "Holding rigid positions, close together",
+   "wrong": [
+    [
+     "Moving far apart and hitting the plate and the air around it",
+     "That describes steam."
+    ],
+    [
+     "Sliding past each other",
+     "That describes liquid water."
+    ],
+    [
+     "Breaking apart into hydrogen and oxygen",
+     "The molecules stay intact."
+    ]
+   ],
+   "exp": "In ice the molecules are locked in rigid positions, close together."
+  },
+  {
+   "q": "Compare the spacing of the molecules in ice and in steam.",
+   "right": "Close together in ice, far apart in steam",
+   "wrong": [
+    [
+     "Far apart in ice and close together in steam, because steam is hotter",
+     "It's the reverse."
+    ],
+    [
+     "The same in both",
+     "The spacing changes between states."
+    ],
+    [
+     "There are no molecules in steam",
+     "Steam is still H₂O molecules."
+    ]
+   ],
+   "exp": "Ice molecules are close and locked in place; steam molecules are far apart."
+  }
+ ],
+ "Liquid water": [
+  {
+   "q": "How does liquid water differ from ice at the particle level?",
+   "right": "Its molecules can move around",
+   "wrong": [
+    [
+     "Its molecules are far apart and hit the walls of the container",
+     "That describes steam."
+    ],
+    [
+     "Its molecules are different from ice's",
+     "Both are intact H₂O molecules."
+    ],
+    [
+     "Its molecules are locked in place",
+     "That describes ice."
+    ]
+   ],
+   "exp": "Liquid water molecules are still close together, but they can move around to some extent."
+  },
+  {
+   "q": "Water poured on a table spreads out but stays as one puddle instead of filling the room. Why?",
+   "right": "Its molecules are close but can move",
+   "wrong": [
+    [
+     "Its molecules are far apart and move randomly in every direction",
+     "That would be a gas."
+    ],
+    [
+     "Its molecules are locked in rigid positions",
+     "Then it wouldn't spread out."
+    ],
+    [
+     "It has no mass",
+     "Water has mass."
+    ]
+   ],
+   "exp": "Close-together molecules that can still slide around give a liquid its definite volume and changing shape."
+  }
+ ],
+ "Steam (gaseous water)": [
+  {
+   "q": "Steam in a closed pot pushes on the lid. What are the water molecules doing?",
+   "right": "Moving randomly and hitting the walls",
+   "wrong": [
+    [
+     "Holding fixed positions close together against the lid",
+     "That is ice."
+    ],
+    [
+     "Sliding past each other at the bottom of the pot",
+     "That is liquid water."
+    ],
+    [
+     "Splitting into hydrogen and oxygen gas",
+     "The molecules stay intact."
+    ]
+   ],
+   "exp": "Steam molecules are far apart, moving randomly and hitting each other and the container walls."
+  },
+  {
+   "q": "Which state of water has its molecules farthest apart?",
+   "right": "Steam",
+   "wrong": [
+    [
+     "Ice, because it is the coldest of the three states of water",
+     "Ice molecules are close together."
+    ],
+    [
+     "Liquid water",
+     "Liquid molecules are close together."
+    ],
+    [
+     "All three are the same",
+     "Spacing changes from state to state."
+    ]
+   ],
+   "exp": "In steam the molecules are far apart and moving randomly."
+  }
+ ],
+ "Intact molecules": [
+  {
+   "q": "Ice melts into water and the water boils into steam. What happens to the H₂O molecules?",
+   "right": "They stay H₂O; only motion and spacing change",
+   "wrong": [
+    [
+     "They break into hydrogen and oxygen atoms when the water turns to steam",
+     "The molecules stay intact; boiling is physical."
+    ],
+    [
+     "They turn into a new substance",
+     "No new substance forms."
+    ],
+    [
+     "They get bigger",
+     "Only the spacing changes, not the molecules."
+    ]
+   ],
+   "exp": "In ice, liquid water and steam the H₂O molecules are intact; only their motion and distance apart change."
+  },
+  {
+   "q": "Why is boiling water a physical change and not a chemical one?",
+   "right": "The H₂O molecules stay intact",
+   "wrong": [
+    [
+     "Bubbles form, and bubbles always mean that a new substance was made",
+     "These bubbles are still water vapor."
+    ],
+    [
+     "Heat is added",
+     "Adding heat doesn't decide the type of change."
+    ],
+    [
+     "The water gets hotter",
+     "A temperature rise alone doesn't decide it."
+    ]
+   ],
+   "exp": "The molecules don't change; only their motion and spacing do, so no new substance forms."
+  }
+ ],
+ "Solid particles": [
+  {
+   "q": "A drawing shows particles in neat rows, touching, each with short wiggle lines. Which state is it?",
+   "right": "Solid",
+   "wrong": [
+    [
+     "Gas, because the particles are moving, as the wiggle lines show",
+     "Gas particles are far apart and not in rows."
+    ],
+    [
+     "Liquid",
+     "Liquid particles aren't in orderly rows."
+    ],
+    [
+     "No state; particles never vibrate",
+     "Solid particles vibrate in place."
+    ]
+   ],
+   "exp": "Closely packed, orderly particles that vibrate in place are a solid."
+  },
+  {
+   "q": "Do the particles in a solid move at all?",
+   "right": "Yes, they vibrate in fixed positions",
+   "wrong": [
+    [
+     "No, they are perfectly still until the solid melts into a liquid",
+     "Solid particles vibrate."
+    ],
+    [
+     "Yes, they slide past each other",
+     "That is a liquid."
+    ],
+    [
+     "Yes, they move fast and randomly",
+     "That is a gas."
+    ]
+   ],
+   "exp": "Solid particles vibrate in place; they are closely packed and orderly."
+  }
+ ],
+ "Liquid particles": [
+  {
+   "q": "Which drawing best shows a liquid?",
+   "right": "Particles touching but in no fixed pattern",
+   "wrong": [
+    [
+     "Particles far apart with long arrows pointing in random directions",
+     "That is a gas."
+    ],
+    [
+     "Particles in neat rows, touching",
+     "That is a solid."
+    ],
+    [
+     "A single large particle",
+     "A liquid is made of many particles."
+    ]
+   ],
+   "exp": "Liquid particles are close together but slide past each other, so they have no fixed pattern."
+  },
+  {
+   "q": "Why can you stir a liquid with a spoon but not a solid?",
+   "right": "Liquid particles slide past each other",
+   "wrong": [
+    [
+     "Liquid particles are far apart with empty space between them for the spoon",
+     "Liquid particles are close together."
+    ],
+    [
+     "Liquid particles don't move",
+     "They do move."
+    ],
+    [
+     "Solid particles are far apart",
+     "Solid particles are closely packed."
+    ]
+   ],
+   "exp": "In a liquid the particles are close together but can slide past each other."
+  }
+ ],
+ "Gas particles": [
+  {
+   "q": "Why can you smell perfume across a room a short time after it is sprayed?",
+   "right": "Gas particles move fast and randomly",
+   "wrong": [
+    [
+     "The perfume particles are locked in place and the smell travels as heat",
+     "Gas particles are not locked in place."
+    ],
+    [
+     "The particles slide slowly along the floor",
+     "That's not how a gas behaves."
+    ],
+    [
+     "Perfume is a solid",
+     "Sprayed perfume becomes a gas in the air."
+    ]
+   ],
+   "exp": "Gas particles are far apart and move fast and randomly, so they spread through the room."
+  },
+  {
+   "q": "Of the three states, which has the least order in its particles?",
+   "right": "Gas",
+   "wrong": [
+    [
+     "Solid, because its particles are always vibrating back and forth",
+     "Solid particles are the most orderly."
+    ],
+    [
+     "Liquid",
+     "Liquid particles are still close together."
+    ],
+    [
+     "All have the same order",
+     "Order drops from solid to gas."
+    ]
+   ],
+   "exp": "Gas particles are far apart and move randomly, the least ordered state."
+  }
+ ],
+ "Energy and state": [
+  {
+   "q": "Put the three states of the same substance in order from least to most energy.",
+   "right": "Solid, liquid, gas",
+   "wrong": [
+    [
+     "Gas, liquid, solid, since gas particles are the farthest apart",
+     "That's from most to least."
+    ],
+    [
+     "Liquid, solid, gas",
+     "Solid has the least energy."
+    ],
+    [
+     "Solid, gas, liquid",
+     "Gas has the most energy."
+    ]
+   ],
+   "exp": "Energy increases from solid to liquid to gas."
+  },
+  {
+   "q": "You add heat to a substance and it changes state. What happens to its particles?",
+   "right": "More motion, less order",
+   "wrong": [
+    [
+     "Less motion and more order, since heat makes them settle into place",
+     "Adding energy does the opposite."
+    ],
+    [
+     "No change in motion",
+     "More energy means more motion."
+    ],
+    [
+     "They turn into a new substance",
+     "A change of state is physical."
+    ]
+   ],
+   "exp": "More energy means more motion and less order."
+  }
+ ],
+ "Melting": [
+  {
+   "q": "Butter left in a hot pan turns from a solid into a liquid. What happens to its particles?",
+   "right": "They speed up and become less organized",
+   "wrong": [
+    [
+     "They slow down and settle into a more organized pattern than before",
+     "That is freezing."
+    ],
+    [
+     "They break apart into new substances",
+     "Melting is a physical change."
+    ],
+    [
+     "They stop moving",
+     "Particles speed up when something melts."
+    ]
+   ],
+   "exp": "Melting is solid to liquid: the particles speed up and become less organized."
+  },
+  {
+   "q": "A chocolate bar melts in your pocket. What kind of change is it?",
+   "right": "Physical: still chocolate",
+   "wrong": [
+    [
+     "Chemical, because it changed from a solid into a liquid",
+     "A change of state is physical."
+    ],
+    [
+     "Chemical, because it got warm",
+     "Warming alone doesn't make a change chemical."
+    ],
+    [
+     "Neither; nothing changed",
+     "Its state changed."
+    ]
+   ],
+   "exp": "Melting is a physical change: the substance stays the same."
+  },
+  {
+   "q": "Which of these is the same kind of change as melting ice?",
+   "right": "Melting a candle on a hot plate",
+   "wrong": [
+    [
+     "Burning a candle until the wax is used up and only smoke is left",
+     "Burning is chemical."
+    ],
+    [
+     "Rusting a nail",
+     "Rusting is chemical."
+    ],
+    [
+     "Fermenting sugar",
+     "Fermenting is chemical."
+    ]
+   ],
+   "exp": "Melting is always a physical change of state."
+  },
+  {
+   "q": "Ice is melted and the water is refrozen. What does this show about melting?",
+   "right": "It is physical; the water is still water",
+   "wrong": [
+    [
+     "It is chemical, because the ice can't come back after the water is frozen",
+     "It comes back; melting is physical."
+    ],
+    [
+     "It made a new substance",
+     "It's still water."
+    ],
+    [
+     "It broke the water molecules",
+     "Molecules stay intact."
+    ]
+   ],
+   "exp": "Melting is a physical change of state."
+  }
+ ],
+ "Freezing": [
+  {
+   "q": "Water in an ice tray turns to ice in the freezer. Which change is this, and what do the particles do?",
+   "right": "Freezing; they slow down",
+   "wrong": [
+    [
+     "Melting; the particles speed up and become less organized as they cool",
+     "That's the reverse process."
+    ],
+    [
+     "Condensation; they slow down",
+     "Condensation is gas to liquid."
+    ],
+    [
+     "Deposition; they speed up",
+     "Deposition is gas to solid, and particles slow down."
+    ]
+   ],
+   "exp": "Freezing is liquid to solid: the particles slow down and become more organized."
+  },
+  {
+   "q": "Melted candle wax hardens again as it cools. Is it a new substance?",
+   "right": "No, freezing is a physical change",
+   "wrong": [
+    [
+     "Yes, because hardening always means a chemical reaction has happened",
+     "Liquid to solid is freezing, a physical change."
+    ],
+    [
+     "Yes, because its shape changed",
+     "A change in shape is physical."
+    ],
+    [
+     "Yes, because it cooled",
+     "Cooling alone doesn't make a new substance."
+    ]
+   ],
+   "exp": "Freezing (liquid to solid) is a physical change."
+  }
+ ],
+ "Evaporation or boiling": [
+  {
+   "q": "A puddle disappears on a sunny day. Which change of state happened?",
+   "right": "Evaporation: liquid to gas",
+   "wrong": [
+    [
+     "Condensation, because the water moved from the ground into the air",
+     "Condensation is gas to liquid."
+    ],
+    [
+     "Sublimation",
+     "That is solid to gas."
+    ],
+    [
+     "A chemical change",
+     "The water is still water, now as a vapor."
+    ]
+   ],
+   "exp": "Evaporation is liquid to gas, a physical change."
+  },
+  {
+   "q": "When water boils, how do its particles change?",
+   "right": "They speed up and become less organized",
+   "wrong": [
+    [
+     "They slow down and become more organized as they leave the pot",
+     "That describes condensation or freezing."
+    ],
+    [
+     "They split into hydrogen and oxygen",
+     "Boiling doesn't break the molecules."
+    ],
+    [
+     "They stay exactly the same",
+     "They speed up and spread out."
+    ]
+   ],
+   "exp": "Boiling is liquid to gas: the particles speed up and become less organized."
+  }
+ ],
+ "Condensation": [
+  {
+   "q": "Drops of water form on the outside of a cold glass of lemonade. Which change of state is this?",
+   "right": "Condensation",
+   "wrong": [
+    [
+     "Evaporation of lemonade leaking out through tiny holes in the glass",
+     "The water comes from the air, gas to liquid."
+    ],
+    [
+     "Melting",
+     "Melting is solid to liquid."
+    ],
+    [
+     "Sublimation",
+     "Sublimation is solid to gas."
+    ]
+   ],
+   "exp": "Water vapor in the air turns to liquid on the cold glass: gas to liquid is condensation."
+  },
+  {
+   "q": "When steam hits a cold mirror and turns to liquid, what do the water particles do?",
+   "right": "Slow down and become more organized",
+   "wrong": [
+    [
+     "Speed up and become less organized as they touch the cold mirror",
+     "That's the opposite of condensation."
+    ],
+    [
+     "Break into hydrogen and oxygen",
+     "Condensation is physical."
+    ],
+    [
+     "Become a new substance",
+     "It is still water."
+    ]
+   ],
+   "exp": "Condensation is gas to liquid: the particles slow down and become more organized."
+  }
+ ],
+ "Sublimation": [
+  {
+   "q": "Dry ice (solid carbon dioxide) turns directly into gas without melting. Which change is this?",
+   "right": "Sublimation",
+   "wrong": [
+    [
+     "Evaporation, since a gas forms from the substance as it warms up",
+     "Evaporation starts from a liquid."
+    ],
+    [
+     "Deposition",
+     "Deposition is gas to solid."
+    ],
+    [
+     "Condensation",
+     "Condensation is gas to liquid."
+    ]
+   ],
+   "exp": "Solid straight to gas, skipping the liquid, is sublimation."
+  },
+  {
+   "q": "Which pair of changes both make the particles speed up and become less organized?",
+   "right": "Sublimation and melting",
+   "wrong": [
+    [
+     "Deposition and freezing, since both of them start from a gas or a liquid",
+     "Both of those slow particles down."
+    ],
+    [
+     "Condensation and freezing",
+     "Both slow particles down."
+    ],
+    [
+     "Deposition and condensation",
+     "Both slow particles down."
+    ]
+   ],
+   "exp": "Sublimation (solid to gas) and melting (solid to liquid) both speed particles up."
+  }
+ ],
+ "Deposition": [
+  {
+   "q": "On a cold night, water vapor in the air forms frost directly on a car window. Which change is this?",
+   "right": "Deposition",
+   "wrong": [
+    [
+     "Freezing, because the window is cold enough to turn the water into ice",
+     "Freezing starts from a liquid; this starts from a gas."
+    ],
+    [
+     "Sublimation",
+     "Sublimation is solid to gas."
+    ],
+    [
+     "Condensation",
+     "Condensation is gas to liquid."
+    ]
+   ],
+   "exp": "Gas straight to solid, skipping the liquid, is deposition."
+  },
+  {
+   "q": "Deposition is the reverse of which change?",
+   "right": "Sublimation",
+   "wrong": [
+    [
+     "Condensation, because both of them start with a gas and end with less motion",
+     "Condensation's reverse is evaporation."
+    ],
+    [
+     "Melting",
+     "Melting's reverse is freezing."
+    ],
+    [
+     "Freezing",
+     "Freezing's reverse is melting."
+    ]
+   ],
+   "exp": "Deposition is gas to solid; sublimation is solid to gas."
+  }
+ ],
+ "Speed up or slow down": [
+  {
+   "q": "In which group do ALL the changes make the particles slow down?",
+   "right": "Freezing, condensation, deposition",
+   "wrong": [
+    [
+     "Melting, boiling and sublimation, which all need heat to be added",
+     "Those speed particles up."
+    ],
+    [
+     "Freezing, melting, boiling",
+     "Melting and boiling speed particles up."
+    ],
+    [
+     "Condensation, evaporation, deposition",
+     "Evaporation speeds particles up."
+    ]
+   ],
+   "exp": "Freezing, condensation and deposition move to more organized states, so particles slow down."
+  },
+  {
+   "q": "A substance's particles slow down and become more organized. What can you conclude?",
+   "right": "It moved to a more ordered state",
+   "wrong": [
+    [
+     "A chemical reaction happened and the substance became something new",
+     "All six changes of state are physical."
+    ],
+    [
+     "It moved to a less ordered state",
+     "Slowing down means more order."
+    ],
+    [
+     "It must have boiled",
+     "Boiling speeds particles up."
+    ]
+   ],
+   "exp": "Slowing down means moving to a state with more organization, such as freezing, condensation or deposition."
+  }
+ ],
+ "Water at 0 °C": [
+  {
+   "q": "A glass of ice water sits at exactly 0 °C. Which states of water are present?",
+   "right": "Solid, liquid and some gas",
+   "wrong": [
+    [
+     "Only solid, because 0 °C is the temperature at which all water must freeze",
+     "At 0 °C ice and liquid water exist together."
+    ],
+    [
+     "Only liquid",
+     "Ice can stay at 0 °C."
+    ],
+    [
+     "Only solid and liquid",
+     "Some molecules escape as vapor too."
+    ]
+   ],
+   "exp": "At 0 °C ice and liquid water sit in equilibrium, and some molecules escape as vapor."
+  },
+  {
+   "q": "At 0 °C, how can water vapor be present even though water boils at 100 °C?",
+   "right": "Some molecules escape from the surface",
+   "wrong": [
+    [
+     "The ice is boiling, because 0 °C is the boiling point of solid water",
+     "0 °C is the melting/freezing point."
+    ],
+    [
+     "Water vapor can only exist at 100 °C",
+     "Vapor forms by evaporation and sublimation below boiling."
+    ],
+    [
+     "The vapor is a new substance",
+     "Vapor is still water."
+    ]
+   ],
+   "exp": "Some molecules escape into the air by evaporation from the liquid and sublimation from the ice."
+  }
+ ],
+ "Absolute zero (0 K)": [
+  {
+   "q": "Why are there no negative numbers on the Kelvin scale?",
+   "right": "It starts at the coldest possible temperature",
+   "wrong": [
+    [
+     "Kelvin only measures temperatures above the freezing point of water",
+     "Kelvin starts much lower, at absolute zero."
+    ],
+    [
+     "Negative numbers are rounded to zero",
+     "Nothing can be colder than 0 K."
+    ],
+    [
+     "Kelvin only measures hot objects",
+     "It measures any temperature."
+    ]
+   ],
+   "exp": "The Kelvin scale starts at absolute zero, the lowest possible temperature."
+  },
+  {
+   "q": "A sample is cooled to 0 K. What is true of its particles?",
+   "right": "They have their minimum possible motion",
+   "wrong": [
+    [
+     "They move faster than ever, because energy builds up when it is cold",
+     "Cooling lowers motion."
+    ],
+    [
+     "They turn into a gas",
+     "Gases have the most motion."
+    ],
+    [
+     "They have their maximum motion",
+     "0 K is the minimum."
+    ]
+   ],
+   "exp": "At absolute zero (−273.15 °C) particles have their minimum possible motion."
+  }
+ ],
+ "Physical property": [
+  {
+   "q": "Which of these is a physical property of copper?",
+   "right": "It is reddish-brown",
+   "wrong": [
+    [
+     "It turns green when it reacts with the air over many years",
+     "Reacting into something new is a chemical property."
+    ],
+    [
+     "It reacts with acid",
+     "That is a chemical property."
+    ],
+    [
+     "It can burn",
+     "Burning is a chemical property."
+    ]
+   ],
+   "exp": "Color can be observed without changing the copper into something else."
+  },
+  {
+   "q": "You measure a metal's density. Afterwards, is it still the same metal?",
+   "right": "Yes; density is a physical property",
+   "wrong": [
+    [
+     "No, because measuring a property always changes the substance a little bit",
+     "Physical properties are measured without changing the substance."
+    ],
+    [
+     "No; density is a chemical property",
+     "Density is physical."
+    ],
+    [
+     "Only if it is a liquid",
+     "State doesn't matter here."
+    ]
+   ],
+   "exp": "A physical property can be observed or measured without changing the substance."
+  }
+ ],
+ "Chemical property": [
+  {
+   "q": "Which statement describes a chemical property of wood?",
+   "right": "It can burn",
+   "wrong": [
+    [
+     "It floats in water because it is less dense than the water around it",
+     "Density is a physical property."
+    ],
+    [
+     "It is brown",
+     "Color is a physical property."
+    ],
+    [
+     "It is hard",
+     "Hardness is a physical property."
+    ]
+   ],
+   "exp": "Being able to change into new substances (burning) is a chemical property."
+  },
+  {
+   "q": "To find out a substance's chemical property, what usually has to happen?",
+   "right": "It has to change into a new substance",
+   "wrong": [
+    [
+     "You only need to look at it closely under a bright light or a microscope",
+     "Looking reveals physical properties."
+    ],
+    [
+     "You weigh it",
+     "Mass is physical."
+    ],
+    [
+     "You measure its volume",
+     "Volume is physical."
+    ]
+   ],
+   "exp": "A chemical property is the ability to change into a new substance, so you see it when that happens."
+  }
+ ],
+ "Intensive property": [
+  {
+   "q": "You cut a gold bar in half. Which property is the same for each half as for the whole bar?",
+   "right": "Density",
+   "wrong": [
+    [
+     "Mass, because both halves are made of exactly the same kind of gold",
+     "Mass halves; it depends on amount."
+    ],
+    [
+     "Volume",
+     "Volume halves."
+    ],
+    [
+     "Length",
+     "Length depends on amount."
+    ]
+   ],
+   "exp": "Density doesn't depend on how much you have, so it's intensive."
+  },
+  {
+   "q": "A teaspoon and a pot of the same water both boil at the same temperature. What does this show about boiling point?",
+   "right": "It doesn't depend on the amount",
+   "wrong": [
+    [
+     "It depends on how much water there is, so a bigger pot boils hotter",
+     "The two boil at the same temperature."
+    ],
+    [
+     "It is a chemical property",
+     "Boiling point is physical."
+    ],
+    [
+     "It is an extensive property",
+     "Extensive properties change with amount."
+    ]
+   ],
+   "exp": "Boiling point is an intensive property: it doesn't depend on amount."
+  }
+ ],
+ "Extensive property": [
+  {
+   "q": "Which of these would double if you doubled the amount of a substance?",
+   "right": "Volume",
+   "wrong": [
+    [
+     "Density, because there is twice as much matter packed into the sample",
+     "Density stays the same."
+    ],
+    [
+     "Color",
+     "Color doesn't change with amount."
+    ],
+    [
+     "Boiling point",
+     "Boiling point doesn't change with amount."
+    ]
+   ],
+   "exp": "Volume depends on the amount of substance, so it's extensive."
+  },
+  {
+   "q": "Why can't you identify a substance by its mass alone?",
+   "right": "Mass changes with how much you have",
+   "wrong": [
+    [
+     "Mass is a chemical property, so you would have to destroy the sample first",
+     "Mass is a physical property."
+    ],
+    [
+     "All substances have the same mass",
+     "They don't."
+    ],
+    [
+     "Mass can't be measured",
+     "It can, with a balance."
+    ]
+   ],
+   "exp": "Mass is extensive, so any substance can have any mass. Intensive properties like density help identify a substance."
+  }
+ ],
+ "Physical properties you observe": [
+  {
+   "q": "Which physical property can you find with your senses alone, without an instrument?",
+   "right": "Odor",
+   "wrong": [
+    [
+     "Boiling point, which you can feel when the liquid gets hot enough",
+     "Boiling point is measured."
+    ],
+    [
+     "Density",
+     "Density is measured."
+    ],
+    [
+     "Melting point",
+     "Melting point is measured."
+    ]
+   ],
+   "exp": "Odor, color and state are observed; density and melting and boiling points are measured."
+  },
+  {
+   "q": "A student notes that a sample is a yellow solid. What kind of properties did the student record?",
+   "right": "Observed physical properties",
+   "wrong": [
+    [
+     "Chemical properties, because the student is describing what the sample is like",
+     "Color and state don't involve a new substance."
+    ],
+    [
+     "Measured physical properties",
+     "Color and state need no instrument."
+    ],
+    [
+     "Extensive properties",
+     "Color and state don't depend on amount."
+    ]
+   ],
+   "exp": "Color and state are physical properties you observe."
+  }
+ ],
+ "Physical properties you measure": [
+  {
+   "q": "Which physical property needs an instrument to find?",
+   "right": "Melting point",
+   "wrong": [
+    [
+     "Color, which you have to see under the proper light to be sure of",
+     "Color is observed."
+    ],
+    [
+     "Odor",
+     "Odor is observed."
+    ],
+    [
+     "State",
+     "State is observed."
+    ]
+   ],
+   "exp": "Volume, density, melting point, boiling point and hardness are measured."
+  },
+  {
+   "q": "A student uses a graduated cylinder on a liquid. Which physical property is she most likely finding?",
+   "right": "Volume",
+   "wrong": [
+    [
+     "Flammability, by checking how quickly the liquid burns in the cylinder",
+     "Flammability is chemical."
+    ],
+    [
+     "Odor",
+     "Odor is observed, not measured."
+    ],
+    [
+     "Color",
+     "Color is observed."
+    ]
+   ],
+   "exp": "A graduated cylinder measures volume, a measured physical property."
+  }
+ ],
+ "Ethyl alcohol boiling at 78°C is an example of what change?": [
+  {
+   "q": "Water boils at 100 °C and ethyl alcohol at 78 °C. What do both boiling points describe?",
+   "right": "A physical property of each liquid",
+   "wrong": [
+    [
+     "A chemical property, because each liquid turns into something different",
+     "No new substance forms when a liquid boils."
+    ],
+    [
+     "Proof that the liquids react",
+     "Boiling isn't a reaction."
+    ],
+    [
+     "An extensive property",
+     "Boiling point doesn't depend on amount."
+    ]
+   ],
+   "exp": "Boiling point is a physical property; the boiling itself is a physical change."
+  },
+  {
+   "q": "Alcohol vapor from boiling is cooled and turns back into liquid alcohol. What does this show about the boiling?",
+   "right": "No new substance formed",
+   "wrong": [
+    [
+     "A new substance formed and then reacted back into alcohol when it cooled",
+     "Boiling is only a change of state."
+    ],
+    [
+     "Boiling is a chemical change",
+     "The alcohol is still alcohol."
+    ],
+    [
+     "Alcohol has no boiling point",
+     "It boils at 78 °C."
+    ]
+   ],
+   "exp": "Boiling is a change of state, a physical change; the vapor is still alcohol."
+  }
+ ],
+ "Sugar fermenting to form ethyl alcohol is an example of what change?": [
+  {
+   "q": "Yeast turns the sugar in grape juice into alcohol. Why is this a chemical change?",
+   "right": "A new substance forms",
+   "wrong": [
+    [
+     "The juice changes from a solid into a liquid as the sugar disappears",
+     "The juice is a liquid the whole time."
+    ],
+    [
+     "The juice gets warm",
+     "Warming alone doesn't make a change chemical."
+    ],
+    [
+     "The sugar dissolves",
+     "Dissolving doesn't make a new substance."
+    ]
+   ],
+   "exp": "Fermenting makes alcohol, a new substance, so it's chemical."
+  },
+  {
+   "q": "Which pair correctly classifies the two changes?",
+   "right": "Alcohol boiling: physical; sugar fermenting: chemical",
+   "wrong": [
+    [
+     "Alcohol boiling: chemical; sugar fermenting: physical, since no flame is involved",
+     "It's the reverse."
+    ],
+    [
+     "Both are physical",
+     "Fermenting makes a new substance."
+    ],
+    [
+     "Both are chemical",
+     "Boiling doesn't make a new substance."
+    ]
+   ],
+   "exp": "Boiling is a change of state; fermenting forms a new substance."
+  }
+ ],
+ "Flammability": [
+  {
+   "q": "Gasoline catches fire easily but water does not. What property is being compared?",
+   "right": "Flammability, a chemical property",
+   "wrong": [
+    [
+     "Boiling point, a physical property of the two liquids being compared",
+     "Catching fire is about burning, not boiling."
+    ],
+    [
+     "Flammability, a physical property",
+     "Burning makes new substances, so it's chemical."
+    ],
+    [
+     "Density",
+     "Density isn't about catching fire."
+    ]
+   ],
+   "exp": "Flammability is the ability to burn, a chemical property."
+  },
+  {
+   "q": "Why is flammability a chemical property and not a physical one?",
+   "right": "Burning makes new substances",
+   "wrong": [
+    [
+     "You can see a flame with your eyes, so it is observed without any instrument",
+     "Being visible doesn't make it physical."
+    ],
+    [
+     "It can be measured",
+     "Physical properties can also be measured."
+    ],
+    [
+     "It depends on the amount",
+     "That's about extensive properties."
+    ]
+   ],
+   "exp": "Flammability is chemical because burning turns a substance into new substances."
+  }
+ ],
+ "Rusting of steel": [
+  {
+   "q": "A steel bike left in the rain develops a flaky reddish coating. What happened?",
+   "right": "The steel reacted with oxygen to form rust",
+   "wrong": [
+    [
+     "The steel melted a little in the rain and then hardened again as a coating",
+     "Rust is a new substance, not melted steel."
+    ],
+    [
+     "The steel dissolved",
+     "Rust forms from a reaction."
+    ],
+    [
+     "Paint washed onto it",
+     "Rust comes from the steel itself."
+    ]
+   ],
+   "exp": "Steel reacting with oxygen to form rust is a chemical property in action."
+  },
+  {
+   "q": "Is steel's ability to rust a physical or chemical property?",
+   "right": "Chemical: rust is a new substance",
+   "wrong": [
+    [
+     "Physical, because you can see the color change from silver to reddish-brown",
+     "Seeing it doesn't make it physical; rust is new."
+    ],
+    [
+     "Physical: no new substance forms",
+     "Rust is a new substance."
+    ],
+    [
+     "Neither",
+     "It's a chemical property."
+    ]
+   ],
+   "exp": "Rusting forms a new substance, so it's a chemical property."
+  }
+ ],
+ "Digestion of food": [
+  {
+   "q": "Bread is chewed into smaller pieces and then broken down into new substances in your body. Which step is chemical?",
+   "right": "Breaking it down into new substances",
+   "wrong": [
+    [
+     "Chewing it into small pieces, since the bread becomes smaller and softer",
+     "Chewing only changes size, a physical change."
+    ],
+    [
+     "Neither step",
+     "Making new substances is chemical."
+    ],
+    [
+     "Both steps equally",
+     "Chewing alone doesn't make new substances."
+    ]
+   ],
+   "exp": "Digestion breaks food into new substances, a chemical process."
+  },
+  {
+   "q": "Why is digestion listed as a chemical property of food?",
+   "right": "Food becomes new substances",
+   "wrong": [
+    [
+     "Food changes shape and size as it moves through your stomach and intestines",
+     "Shape and size are physical."
+    ],
+    [
+     "Food gets warm in your body",
+     "Warming alone isn't chemical."
+    ],
+    [
+     "Food dissolves in water",
+     "Dissolving isn't the key point."
+    ]
+   ],
+   "exp": "Food is broken down into new substances, so digestion shows a chemical property."
+  }
+ ],
+ "Reacting with acid": [
+  {
+   "q": "Vinegar is poured on chalk and it bubbles. What does this show about chalk?",
+   "right": "It reacts with acid, a chemical property",
+   "wrong": [
+    [
+     "It dissolves in vinegar, which is a physical property of the chalk",
+     "The bubbles show a reaction, not just dissolving."
+    ],
+    [
+     "It has a low boiling point",
+     "Bubbles here come from a reaction, not boiling."
+    ],
+    [
+     "It is a gas",
+     "Chalk is a solid."
+    ]
+   ],
+   "exp": "Reacting with an acid such as vinegar is a chemical property."
+  },
+  {
+   "q": "Which property tells you something about how a substance reacts, rather than how it looks?",
+   "right": "Whether it reacts with acid",
+   "wrong": [
+    [
+     "Its color, which can change depending on what kind of light hits it",
+     "Color is physical."
+    ],
+    [
+     "Its hardness",
+     "Hardness is physical."
+    ],
+    [
+     "Its density",
+     "Density is physical."
+    ]
+   ],
+   "exp": "Reacting with an acid is a chemical property."
+  }
+ ],
+ "Other chemical properties": [
+  {
+   "q": "Which item from the review sheet's list is a chemical property?",
+   "right": "Being toxic",
+   "wrong": [
+    [
+     "Being shiny, like a metal that reflects light well",
+     "Luster is a physical property."
+    ],
+    [
+     "Being hard",
+     "Hardness is physical."
+    ],
+    [
+     "Having a high melting point",
+     "Melting point is physical."
+    ]
+   ],
+   "exp": "The review sheet lists corrosive, toxic, pH and reacting with oxygen or water as chemical properties."
+  },
+  {
+   "q": "A label says a cleaner is corrosive. What kind of property is that?",
+   "right": "A chemical property",
+   "wrong": [
+    [
+     "A physical property, because you can read it on the bottle without opening it",
+     "Where you read it doesn't matter; corrosive is chemical."
+    ],
+    [
+     "An extensive property",
+     "It doesn't depend on amount."
+    ],
+    [
+     "A change of state",
+     "It isn't a change of state."
+    ]
+   ],
+   "exp": "Being corrosive is on the review sheet's list of chemical properties."
+  }
+ ],
+ "Physical change": [
+  {
+   "q": "Which of these is a physical change?",
+   "right": "Crushing a can",
+   "wrong": [
+    [
+     "Burning a piece of paper until only ash and smoke are left behind",
+     "Burning makes new substances."
+    ],
+    [
+     "Rusting a nail",
+     "Rust is a new substance."
+    ],
+    [
+     "Digesting food",
+     "Digestion makes new substances."
+    ]
+   ],
+   "exp": "Crushing changes shape only; the metal's composition stays the same."
+  },
+  {
+   "q": "Water freezes into ice. What happens to its chemical bonds?",
+   "right": "They are not broken",
+   "wrong": [
+    [
+     "They break apart and then form again in a new way as the water cools",
+     "A physical change doesn't break bonds."
+    ],
+    [
+     "They all break",
+     "Bonds aren't broken."
+    ],
+    [
+     "New bonds form a new substance",
+     "Ice is still water."
+    ]
+   ],
+   "exp": "In a physical change, composition stays the same and bonds aren't broken."
+  }
+ ],
+ "Chemical change": [
+  {
+   "q": "Which of these is a chemical change?",
+   "right": "Baking a cake",
+   "wrong": [
+    [
+     "Melting butter in a pan so that it can be mixed into the batter",
+     "Melting is physical."
+    ],
+    [
+     "Cutting an apple",
+     "Cutting is physical."
+    ],
+    [
+     "Boiling water",
+     "Boiling is physical."
+    ]
+   ],
+   "exp": "Baking turns the ingredients into new substances."
+  },
+  {
+   "q": "In a chemical change, what happens to the atoms?",
+   "right": "They are reorganized into new substances",
+   "wrong": [
+    [
+     "They stay arranged the same way but move farther apart from each other",
+     "That describes a change of state."
+    ],
+    [
+     "They disappear",
+     "Atoms are reorganized, not lost."
+    ],
+    [
+     "Nothing happens to them",
+     "They are reorganized."
+    ]
+   ],
+   "exp": "In a chemical change the atoms are reorganized into new substances with different properties."
+  }
+ ],
+ "Reaction": [
+  {
+   "q": "A Bunsen burner burns methane with oxygen to make carbon dioxide and water. What is this?",
+   "right": "A reaction",
+   "wrong": [
+    [
+     "A physical change, because the methane only changes from one state to another",
+     "New substances form."
+    ],
+    [
+     "A mixture",
+     "New substances formed."
+    ],
+    [
+     "A change of state",
+     "Methane became new substances."
+    ]
+   ],
+   "exp": "A reaction is a chemical change; methane and oxygen become new substances."
+  },
+  {
+   "q": "A teacher says, \"This reaction makes a gas.\" What kind of change is she describing?",
+   "right": "A chemical change",
+   "wrong": [
+    [
+     "A physical change, because gases are always made by heating something up",
+     "Reaction means chemical change."
+    ],
+    [
+     "A change of state",
+     "A reaction is chemical."
+    ],
+    [
+     "A separation",
+     "A reaction makes new substances."
+    ]
+   ],
+   "exp": "Reaction is another name for a chemical change."
+  }
+ ],
+ "Precipitate": [
+  {
+   "q": "Two clear liquids are mixed and a cloudy solid appears. What does this solid suggest?",
+   "right": "A new substance formed",
+   "wrong": [
+    [
+     "One of the liquids froze when the two of them were poured together",
+     "A precipitate comes from a reaction."
+    ],
+    [
+     "The liquids didn't mix",
+     "They mixed and reacted."
+    ],
+    [
+     "Nothing changed",
+     "A new solid is a sign of change."
+    ]
+   ],
+   "exp": "A precipitate is a new solid, a sign of a chemical change."
+  },
+  {
+   "q": "Which observation is a precipitate?",
+   "right": "A solid forming when two liquids mix",
+   "wrong": [
+    [
+     "Ice forming when liquid water is put in a freezer overnight",
+     "That's freezing, a physical change."
+    ],
+    [
+     "Sand settling in water",
+     "Sand was already a solid."
+    ],
+    [
+     "Salt left after water evaporates",
+     "That's a physical separation."
+    ]
+   ],
+   "exp": "A precipitate is a solid that forms when substances react."
+  }
+ ],
+ "Gas given off": [
+  {
+   "q": "Baking soda and vinegar fizz when mixed. What does the fizzing show?",
+   "right": "A new gas formed",
+   "wrong": [
+    [
+     "The vinegar is boiling because the baking soda heated it up quickly",
+     "The bubbles are a new gas, not boiling."
+    ],
+    [
+     "Air was trapped in the powder",
+     "The gas is made by a reaction."
+    ],
+    [
+     "Nothing changed",
+     "Bubbles from mixing are a sign of a reaction."
+    ]
+   ],
+   "exp": "Bubbles of a new gas are a sign of a chemical change."
+  },
+  {
+   "q": "A student smells something sharp in a beaker and says a chemical change happened. What is wrong with this reasoning?",
+   "right": "Odor alone isn't a sign",
+   "wrong": [
+    [
+     "Nothing is wrong, since any smell always comes from a chemical reaction",
+     "Odor is a physical property."
+    ],
+    [
+     "Smells only come from gases",
+     "Odor alone still isn't a sign."
+    ],
+    [
+     "Chemical changes never smell",
+     "A smell just isn't enough evidence."
+    ]
+   ],
+   "exp": "Odor is a physical property, so a smell alone isn't a sign of a chemical change."
+  }
+ ],
+ "Color change": [
+  {
+   "q": "A cut apple turns brown in the air. Which sign suggests a chemical change?",
+   "right": "The new color",
+   "wrong": [
+    [
+     "The smaller size of the apple pieces after it has been cut up",
+     "Cutting is physical."
+    ],
+    [
+     "The apple stays solid",
+     "Staying solid isn't a sign of change."
+    ],
+    [
+     "Its shape",
+     "Shape is physical."
+    ]
+   ],
+   "exp": "A new color can show that a new substance was made."
+  },
+  {
+   "q": "Why is a color change only a possible sign of a chemical change, not proof?",
+   "right": "Color can change without a new substance",
+   "wrong": [
+    [
+     "A color change always means a new substance was made in a reaction",
+     "A color change alone isn't proof."
+    ],
+    [
+     "Color is a chemical property",
+     "Color is physical."
+    ],
+    [
+     "Colors never change in reactions",
+     "They often do."
+    ]
+   ],
+   "exp": "A new color can show a new substance, but it is a clue, not proof (adding food coloring changes color too)."
+  }
+ ],
+ "Temperature change": [
+  {
+   "q": "Two solutions are mixed and the beaker gets hot on its own. What does this suggest?",
+   "right": "A chemical change",
+   "wrong": [
+    [
+     "A physical change, because heating something only changes how fast it moves",
+     "Getting hot on its own is a sign of a reaction."
+    ],
+    [
+     "Nothing; beakers always warm up",
+     "A beaker doesn't warm up by itself."
+    ],
+    [
+     "Boiling",
+     "No boiling is described."
+    ]
+   ],
+   "exp": "A mixture getting hotter or colder on its own is a sign of a chemical change."
+  },
+  {
+   "q": "Two liquids are mixed in a test tube, and the tube turns cold by itself without being cooled. Which sign is this?",
+   "right": "A temperature change",
+   "wrong": [
+    [
+     "A precipitate, since a solid must form whenever two liquids are mixed",
+     "No solid forming is described."
+    ],
+    [
+     "A gas given off",
+     "No bubbles are described."
+    ],
+    [
+     "Light given off",
+     "No glow is described."
+    ]
+   ],
+   "exp": "Getting colder on its own is a temperature change, a sign of a reaction."
+  }
+ ],
+ "Light given off": [
+  {
+   "q": "A glow stick glows after you bend it. Which sign of a chemical change is this?",
+   "right": "Light given off",
+   "wrong": [
+    [
+     "A precipitate, because something inside the stick turns into a solid",
+     "Nothing solid is described."
+    ],
+    [
+     "A color change",
+     "It's a glow, light given off."
+    ],
+    [
+     "A gas given off",
+     "No bubbles."
+    ]
+   ],
+   "exp": "A glow shows a reaction giving off energy as light."
+  },
+  {
+   "q": "A light bulb glows when switched on. Why isn't that a sign of a chemical change?",
+   "right": "No new substance forms",
+   "wrong": [
+    [
+     "It is a chemical change, because any light means a reaction is happening",
+     "Light alone isn't proof; the bulb doesn't change."
+    ],
+    [
+     "Light bulbs don't give off light",
+     "They do."
+    ],
+    [
+     "It isn't hot",
+     "Heat isn't the point."
+    ]
+   ],
+   "exp": "A flame or glow from a reaction is a sign, but a bulb glowing makes no new substance."
+  }
+ ],
+ "Boiling": [
+  {
+   "q": "A student says boiling water is chemical because bubbles form. What is the best correction?",
+   "right": "The bubbles are water vapor",
+   "wrong": [
+    [
+     "The student is right, because bubbles always mean that a new gas was made",
+     "These bubbles are still water."
+    ],
+    [
+     "The bubbles are hydrogen gas",
+     "Boiling doesn't split water."
+    ],
+    [
+     "The bubbles are oxygen gas",
+     "Boiling doesn't split water."
+    ]
+   ],
+   "exp": "Boiling is a physical change: the bubbles are water as a gas."
+  },
+  {
+   "q": "Which pair contains one physical change and one chemical change?",
+   "right": "Boiling water; electrolysis of water",
+   "wrong": [
+    [
+     "Boiling water; melting ice, since both of them require heat to happen",
+     "Both are physical."
+    ],
+    [
+     "Rusting; combustion",
+     "Both are chemical."
+    ],
+    [
+     "Melting; freezing",
+     "Both are physical."
+    ]
+   ],
+   "exp": "Boiling is physical; electrolysis splits water into new substances."
+  }
+ ],
+ "Electrolysis of water (decomposition)": [
+  {
+   "q": "An electric current is passed through water and two gases bubble out. What are they?",
+   "right": "Hydrogen and oxygen",
+   "wrong": [
+    [
+     "Water vapor from both ends, since the current heats the water until it boils",
+     "Electrolysis splits water."
+    ],
+    [
+     "Carbon dioxide and water",
+     "Those come from burning methane."
+    ],
+    [
+     "Oxygen and rust",
+     "Rust is iron oxide."
+    ]
+   ],
+   "exp": "Electrolysis splits water (H₂O) into hydrogen (H₂) and oxygen (O₂)."
+  },
+  {
+   "q": "In electrolysis, 2 H₂O make 2 H₂ and 1 O₂. Why is this a decomposition?",
+   "right": "One substance breaks into two",
+   "wrong": [
+    [
+     "Two substances combine to form one new and different substance",
+     "That is synthesis."
+    ],
+    [
+     "One element pushes another out of a compound",
+     "That is single displacement."
+    ],
+    [
+     "Two compounds swap partners",
+     "That is double displacement."
+    ]
+   ],
+   "exp": "Decomposition breaks one substance into two or more; water becomes hydrogen and oxygen."
+  }
+ ],
+ "Combustion (burning)": [
+  {
+   "q": "Wood burns in a fireplace and leaves ash. Which change happened?",
+   "right": "A chemical change: new substances formed",
+   "wrong": [
+    [
+     "A physical change, because the wood only changed from a solid to a gas and ash",
+     "Ash and gases are new substances."
+    ],
+    [
+     "Melting",
+     "Wood doesn't melt into ash."
+    ],
+    [
+     "A separation",
+     "Burning makes new substances."
+    ]
+   ],
+   "exp": "Combustion reacts a substance with oxygen, giving off heat and light and forming new substances."
+  },
+  {
+   "q": "What does every combustion need, according to your card?",
+   "right": "Oxygen",
+   "wrong": [
+    [
+     "Water, because burning can't happen unless the fuel is wet enough first",
+     "Combustion uses oxygen."
+    ],
+    [
+     "An electric current",
+     "That's electrolysis."
+    ],
+    [
+     "An acid",
+     "That's not part of combustion."
+    ]
+   ],
+   "exp": "In combustion a substance reacts with oxygen."
+  }
+ ],
+ "Rusting": [
+  {
+   "q": "An iron gate rusts. Which substances combined?",
+   "right": "Iron and oxygen",
+   "wrong": [
+    [
+     "Iron and hydrogen, which come from the water that falls on the gate as rain",
+     "Rust is iron oxide."
+    ],
+    [
+     "Iron and carbon dioxide",
+     "Rust is iron oxide."
+    ],
+    [
+     "Steel and paint",
+     "Rust forms from iron and oxygen."
+    ]
+   ],
+   "exp": "Iron combines with oxygen to form rust (iron oxide)."
+  },
+  {
+   "q": "Rusting is iron + oxygen making one new substance. Which type of reaction is that?",
+   "right": "Synthesis",
+   "wrong": [
+    [
+     "Decomposition, because the iron breaks down and falls apart into flakes",
+     "Two substances combine into one."
+    ],
+    [
+     "Single displacement",
+     "No element is pushed out."
+    ],
+    [
+     "Double displacement",
+     "No two compounds swap."
+    ]
+   ],
+   "exp": "Two substances combining to form something new is synthesis."
+  }
+ ],
+ "Synthesis": [
+  {
+   "q": "Hydrogen and oxygen combine to form water. Which type of reaction is this?",
+   "right": "Synthesis",
+   "wrong": [
+    [
+     "Decomposition, because the hydrogen and oxygen are broken into water",
+     "Decomposition breaks one substance into two or more."
+    ],
+    [
+     "Single displacement",
+     "No element is pushed out."
+    ],
+    [
+     "Double displacement",
+     "No two compounds swap."
+    ]
+   ],
+   "exp": "Two or more substances combining to form something new is synthesis."
+  },
+  {
+   "q": "Synthesis is the reverse of which reaction type?",
+   "right": "Decomposition",
+   "wrong": [
+    [
+     "Double displacement, since both of them involve two substances at the start",
+     "Synthesis builds up; decomposition breaks down."
+    ],
+    [
+     "Single displacement",
+     "That's an element pushing another out."
+    ],
+    [
+     "Combustion",
+     "Combustion is reacting with oxygen."
+    ]
+   ],
+   "exp": "Synthesis builds something up; decomposition breaks something down."
+  }
+ ],
+ "Decomposition": [
+  {
+   "q": "Heating a compound breaks it into a metal and a gas. Which type of reaction is this?",
+   "right": "Decomposition",
+   "wrong": [
+    [
+     "Synthesis, because two products were made from the substance by heating it",
+     "Synthesis combines substances."
+    ],
+    [
+     "Single displacement",
+     "No element pushes another out."
+    ],
+    [
+     "Double displacement",
+     "No two compounds swap."
+    ]
+   ],
+   "exp": "One substance breaking into two or more is decomposition."
+  },
+  {
+   "q": "Which example from your cards is a decomposition?",
+   "right": "Electrolysis of water",
+   "wrong": [
+    [
+     "Rusting of iron, because the iron slowly falls apart into flakes of rust",
+     "Rusting combines iron and oxygen."
+    ],
+    [
+     "Melting ice",
+     "Melting is physical."
+    ],
+    [
+     "Filtering sand",
+     "Filtering is a physical separation."
+    ]
+   ],
+   "exp": "Electrolysis breaks water into hydrogen and oxygen."
+  }
+ ],
+ "Single displacement": [
+  {
+   "q": "Zinc is placed in a copper compound and pushes the copper out, taking its place. Which type of reaction is this?",
+   "right": "Single displacement",
+   "wrong": [
+    [
+     "Double displacement, since zinc and copper both end up in a different place",
+     "Only one element pushes another out of one compound."
+    ],
+    [
+     "Synthesis",
+     "Nothing simply combines."
+    ],
+    [
+     "Decomposition",
+     "Nothing simply breaks apart."
+    ]
+   ],
+   "exp": "One element pushing another out of a compound is single displacement."
+  },
+  {
+   "q": "How does single displacement differ from double displacement?",
+   "right": "One element replaces another",
+   "wrong": [
+    [
+     "Two compounds trade their positive elements with each other at the same time",
+     "That is double displacement."
+    ],
+    [
+     "Two substances combine",
+     "That is synthesis."
+    ],
+    [
+     "One substance breaks apart",
+     "That is decomposition."
+    ]
+   ],
+   "exp": "Single: one element is pushed out of a compound. Double: the positive elements of two compounds switch."
+  }
+ ],
+ "Double displacement": [
+  {
+   "q": "AB + CD → AD + CB. Which type of reaction is this?",
+   "right": "Double displacement",
+   "wrong": [
+    [
+     "Single displacement, because one element pushes another out of the compound",
+     "Here both compounds swap partners."
+    ],
+    [
+     "Synthesis",
+     "Nothing simply combines."
+    ],
+    [
+     "Decomposition",
+     "Nothing simply breaks apart."
+    ]
+   ],
+   "exp": "The positive elements switch places between the two compounds."
+  },
+  {
+   "q": "Two salt solutions are mixed, the partners swap, and a precipitate forms. Which reaction type best fits?",
+   "right": "Double displacement",
+   "wrong": [
+    [
+     "Decomposition, because the solid falls out of the solution as it breaks apart",
+     "Partners swapping is double displacement."
+    ],
+    [
+     "Synthesis",
+     "Partners swapping isn't synthesis."
+    ],
+    [
+     "Single displacement",
+     "Both compounds swap partners."
+    ]
+   ],
+   "exp": "When the positive elements of two compounds switch places, it's double displacement."
+  }
+ ],
+ "Element": [
+  {
+   "q": "A sample can't be broken into anything simpler, even by electrolysis or heating. What is it?",
+   "right": "An element",
+   "wrong": [
+    [
+     "A compound, since compounds always stay together no matter what you do",
+     "Compounds can be broken down chemically."
+    ],
+    [
+     "A mixture",
+     "Mixtures separate by physical means."
+    ],
+    [
+     "A solution",
+     "A solution is a mixture."
+    ]
+   ],
+   "exp": "An element can't be broken down into other substances by chemical methods."
+  },
+  {
+   "q": "Which of these is an element?",
+   "right": "O₂",
+   "wrong": [
+    [
+     "H₂O, because it is made of hydrogen and oxygen joined together",
+     "Two types of atoms make it a compound."
+    ],
+    [
+     "CO₂",
+     "Two types of atoms: a compound."
+    ],
+    [
+     "NaCl & H₂O",
+     "The & makes it a mixture."
+    ]
+   ],
+   "exp": "O₂ has only one type of atom (one capital letter), so it is an element."
+  }
+ ],
+ "Compound": [
+  {
+   "q": "Electrolysis breaks a pure liquid into two different gases. What was the liquid?",
+   "right": "A compound",
+   "wrong": [
+    [
+     "An element, because it was pure and had only one substance in it at the start",
+     "Elements can't be broken down chemically."
+    ],
+    [
+     "A mixture",
+     "It was pure."
+    ],
+    [
+     "A colloid",
+     "A colloid is a mixture."
+    ]
+   ],
+   "exp": "A compound can be broken into its elements by chemical methods."
+  },
+  {
+   "q": "Why is water always H₂O, whether it comes from a lake or a lab?",
+   "right": "A compound always has the same composition",
+   "wrong": [
+    [
+     "Water is a mixture, and all mixtures keep the same recipe wherever they are",
+     "Mixtures have variable composition."
+    ],
+    [
+     "Water is an element",
+     "It has two types of atoms."
+    ],
+    [
+     "Only lab water is H₂O",
+     "All water is H₂O."
+    ]
+   ],
+   "exp": "A compound has a fixed combination of elements."
+  }
+ ],
+ "Pure substance": [
+  {
+   "q": "Which list contains only pure substances?",
+   "right": "Gold, water, carbon dioxide",
+   "wrong": [
+    [
+     "Air, salt water and gold, since each of them looks the same throughout",
+     "Air and salt water are mixtures."
+    ],
+    [
+     "Wood, wine, coffee",
+     "All three are mixtures."
+    ],
+    [
+     "Soil, sand, water",
+     "Soil is a mixture."
+    ]
+   ],
+   "exp": "A pure substance is an element or a compound: it always has the same composition."
+  },
+  {
+   "q": "A sample always has exactly the same makeup, but electrolysis can split it. What is it?",
+   "right": "A compound, one kind of pure substance",
+   "wrong": [
+    [
+     "A mixture, because anything that can be split up must be a mixture",
+     "Mixtures split by physical means; this needed chemical means."
+    ],
+    [
+     "An element",
+     "Elements can't be split chemically."
+    ],
+    [
+     "A solution",
+     "Solutions are mixtures."
+    ]
+   ],
+   "exp": "A pure substance is either an element or a compound; one that splits chemically is a compound."
+  }
+ ],
+ "Mixture": [
+  {
+   "q": "Two cups of coffee from the same pot taste different: one has more sugar. What does this show?",
+   "right": "Coffee is a mixture",
+   "wrong": [
+    [
+     "Coffee is a compound, since every cup is made from the same coffee beans",
+     "A compound's composition never varies."
+    ],
+    [
+     "Coffee is an element",
+     "It has many substances in it."
+    ],
+    [
+     "Coffee is a pure substance",
+     "Its makeup varies."
+    ]
+   ],
+   "exp": "A mixture has variable composition."
+  },
+  {
+   "q": "How can you tell a mixture from a compound when separating it?",
+   "right": "A mixture separates by physical means",
+   "wrong": [
+    [
+     "A mixture needs electricity or another chemical method to be broken into its parts",
+     "That describes a compound."
+    ],
+    [
+     "A mixture can't be separated",
+     "Mixtures can be separated."
+    ],
+    [
+     "Only a compound can be separated",
+     "Mixtures can be, too."
+    ]
+   ],
+   "exp": "Mixtures separate physically; compounds need chemical methods."
+  }
+ ],
+ "Homogeneous mixture": [
+  {
+   "q": "Brass looks the same all the way through, but it's made of copper and zinc. What is it?",
+   "right": "A homogeneous mixture",
+   "wrong": [
+    [
+     "A heterogeneous mixture, because it is made of two different metals",
+     "You can't see separate parts in brass."
+    ],
+    [
+     "A compound",
+     "Brass is a mixture of two metals."
+    ],
+    [
+     "An element",
+     "It has two metals."
+    ]
+   ],
+   "exp": "A homogeneous mixture is the same throughout."
+  },
+  {
+   "q": "Salt is stirred into water until it disappears. What do you have?",
+   "right": "A homogeneous mixture",
+   "wrong": [
+    [
+     "A heterogeneous mixture, because two different substances were put together",
+     "It looks the same throughout."
+    ],
+    [
+     "A compound",
+     "Salt and water aren't bonded together."
+    ],
+    [
+     "A pure substance",
+     "It contains two substances."
+    ]
+   ],
+   "exp": "Table salt stirred into water is a homogeneous mixture (a solution)."
+  }
+ ],
+ "Heterogeneous mixture": [
+  {
+   "q": "In oil-and-vinegar dressing you can see two layers. What is it?",
+   "right": "A heterogeneous mixture",
+   "wrong": [
+    [
+     "A homogeneous mixture, because it is all poured from a single bottle",
+     "Visible layers mean heterogeneous."
+    ],
+    [
+     "A compound",
+     "Oil and vinegar aren't bonded."
+    ],
+    [
+     "A pure substance",
+     "It has two substances."
+    ]
+   ],
+   "exp": "A heterogeneous mixture has visibly different parts."
+  },
+  {
+   "q": "Which of these is heterogeneous?",
+   "right": "Soil",
+   "wrong": [
+    [
+     "Air, because it is made of many gases mixed together",
+     "Air is homogeneous."
+    ],
+    [
+     "Brass",
+     "Brass is homogeneous."
+    ],
+    [
+     "Gasoline",
+     "Gasoline is homogeneous."
+    ]
+   ],
+   "exp": "Soil has visibly different parts."
+  }
+ ],
+ "Solution": [
+  {
+   "q": "Which word could replace \"homogeneous mixture\" in a sentence?",
+   "right": "Solution",
+   "wrong": [
+    [
+     "Suspension, since both words describe something mixed into a liquid",
+     "A suspension is heterogeneous."
+    ],
+    [
+     "Compound",
+     "A compound is a pure substance."
+    ],
+    [
+     "Colloid",
+     "A colloid is heterogeneous."
+    ]
+   ],
+   "exp": "A solution is another name for a homogeneous mixture."
+  },
+  {
+   "q": "Is air a solution?",
+   "right": "Yes; it is homogeneous",
+   "wrong": [
+    [
+     "No, because a solution must always be a liquid like salt water",
+     "A solution is any homogeneous mixture."
+    ],
+    [
+     "No; air is a compound",
+     "Air is a mixture."
+    ],
+    [
+     "No; air is heterogeneous",
+     "Your card lists air as homogeneous."
+    ]
+   ],
+   "exp": "Air is a homogeneous mixture, so it is a solution."
+  }
+ ],
+ "Subscript": [
+  {
+   "q": "How many hydrogen atoms are in one molecule of H₂SO₄?",
+   "right": "2",
+   "wrong": [
+    [
+     "4, because the 4 is the biggest number written in the formula",
+     "The 4 belongs to O."
+    ],
+    [
+     "1",
+     "The 2 after H means two."
+    ],
+    [
+     "7",
+     "That's the total of all atoms."
+    ]
+   ],
+   "exp": "A subscript counts the atoms of the element just before it."
+  },
+  {
+   "q": "How many atoms in total are in one molecule of CO₂?",
+   "right": "3",
+   "wrong": [
+    [
+     "2, because the 2 at the end of the formula is the total number",
+     "The 2 only counts oxygen."
+    ],
+    [
+     "1",
+     "There's one C and two O."
+    ],
+    [
+     "4",
+     "C plus two O makes 3."
+    ]
+   ],
+   "exp": "One carbon plus two oxygen = 3 atoms."
+  }
+ ],
+ "The & symbol": [
+  {
+   "q": "A formula code reads \"Cu & Zn.\" What does it describe?",
+   "right": "A mixture",
+   "wrong": [
+    [
+     "A compound, because two different elements are written in the same code",
+     "The & means the two are just sitting together."
+    ],
+    [
+     "An element",
+     "There are two kinds of atoms."
+    ],
+    [
+     "A single molecule",
+     "& separates different substances."
+    ]
+   ],
+   "exp": "& separates substances that are just sitting together, so it signals a mixture."
+  },
+  {
+   "q": "How do NaCl and \"NaCl & H₂O\" differ?",
+   "right": "One is a compound; the other is a mixture",
+   "wrong": [
+    [
+     "Both are compounds, because both of them contain sodium chloride",
+     "The & makes the second a mixture."
+    ],
+    [
+     "Both are mixtures",
+     "NaCl alone is a compound."
+    ],
+    [
+     "Both are elements",
+     "NaCl has two types of atoms."
+    ]
+   ],
+   "exp": "NaCl alone is a compound; with & H₂O it's a mixture."
+  }
+ ],
+ "Element formula clue": [
+  {
+   "q": "Which formula is an element?",
+   "right": "P₄",
+   "wrong": [
+    [
+     "NaHCO₃, because it has more than one kind of atom bonded in it",
+     "Several capitals make it a compound."
+    ],
+    [
+     "CO₂",
+     "Two capitals: a compound."
+    ],
+    [
+     "Cu & Zn",
+     "The & makes it a mixture."
+    ]
+   ],
+   "exp": "One capital letter means one type of atom: an element."
+  },
+  {
+   "q": "A student says O₃ is a compound because it has a subscript. What's the best reply?",
+   "right": "One capital letter means it's an element",
+   "wrong": [
+    [
+     "He's right, since any formula with a subscript has to be a compound",
+     "A subscript alone doesn't make a compound."
+    ],
+    [
+     "It's a mixture",
+     "There's no &."
+    ],
+    [
+     "It's a compound because it has 3 atoms",
+     "All three are oxygen."
+    ]
+   ],
+   "exp": "O₃ has one type of atom, so it is an element; a subscript alone doesn't make a compound."
+  }
+ ],
+ "Compound formula clue": [
+  {
+   "q": "Which formula is a compound?",
+   "right": "H₂SO₄",
+   "wrong": [
+    [
+     "Br₂, because it has two atoms bonded together in the same molecule",
+     "One type of atom means element."
+    ],
+    [
+     "Al",
+     "One capital: an element."
+    ],
+    [
+     "C₆H₁₂O₆ & H₂O",
+     "The & makes it a mixture."
+    ]
+   ],
+   "exp": "Two or more capital letters bonded with no & means compound."
+  },
+  {
+   "q": "NaHCO₃ has how many types of atoms, and what is it?",
+   "right": "4 types; a compound",
+   "wrong": [
+    [
+     "1 type; an element, because it is written as a single formula",
+     "Na, H, C and O are four types."
+    ],
+    [
+     "2 types; a mixture",
+     "There's no &."
+    ],
+    [
+     "4 types; a mixture",
+     "No & means compound."
+    ]
+   ],
+   "exp": "Na, H, C and O are bonded in one formula with no &: a compound."
+  }
+ ],
+ "Mixture formula clue": [
+  {
+   "q": "Which formula code is a mixture?",
+   "right": "C₆H₁₂O₆ & H₂O",
+   "wrong": [
+    [
+     "C₁₂H₂₂O₁₁, because it has so many different atoms in a single formula",
+     "No & means compound."
+    ],
+    [
+     "H₂SO₄",
+     "A compound."
+    ],
+    [
+     "O₃",
+     "An element."
+    ]
+   ],
+   "exp": "The & between substances signals a mixture."
+  },
+  {
+   "q": "What should you look for first to sort a formula code into element, compound or mixture?",
+   "right": "An & symbol",
+   "wrong": [
+    [
+     "The size of the subscripts, since large numbers usually mean a compound",
+     "Subscripts don't decide the category."
+    ],
+    [
+     "The total number of atoms",
+     "That doesn't decide it."
+    ],
+    [
+     "Whether it has a subscript",
+     "A subscript alone doesn't decide it."
+    ]
+   ],
+   "exp": "Look for & first: it means mixture. Then count capital letters."
+  }
+ ],
+ "Atom": [
+  {
+   "q": "A drawing shows a single unbonded circle labeled Ne. What is it?",
+   "right": "An atom",
+   "wrong": [
+    [
+     "A molecule, because every particle in a drawing counts as a molecule",
+     "A molecule is two or more bonded atoms."
+    ],
+    [
+     "A compound",
+     "A compound has two or more types of atoms."
+    ],
+    [
+     "A mixture",
+     "One particle isn't a mixture."
+    ]
+   ],
+   "exp": "An atom is a single particle of an element."
+  },
+  {
+   "q": "Two oxygen atoms bond together. What do they form?",
+   "right": "A molecule",
+   "wrong": [
+    [
+     "A compound, because two atoms are now bonded together into one particle",
+     "Both atoms are oxygen, so it's an element."
+    ],
+    [
+     "A mixture",
+     "They are bonded."
+    ],
+    [
+     "A single atom",
+     "It's two bonded atoms."
+    ]
+   ],
+   "exp": "Atoms can be bonded together into molecules; O₂ is a molecule of an element."
+  }
+ ],
+ "Molecule": [
+  {
+   "q": "Which is a molecule but NOT a compound?",
+   "right": "Br₂",
+   "wrong": [
+    [
+     "H₂O, because it has fewer atoms than most of the compounds on your card",
+     "H₂O has two types of atoms: a compound."
+    ],
+    [
+     "CO₂",
+     "Two types: a compound."
+    ],
+    [
+     "Ne",
+     "A single atom isn't a molecule."
+    ]
+   ],
+   "exp": "Br₂ is two bonded atoms of one element: a molecule, but an element."
+  },
+  {
+   "q": "What do all molecules have in common?",
+   "right": "Two or more atoms bonded together",
+   "wrong": [
+    [
+     "Two or more different types of atoms, like hydrogen and oxygen in water",
+     "Br₂ is a molecule with one type."
+    ],
+    [
+     "Only one atom",
+     "A molecule has two or more."
+    ],
+    [
+     "They are always mixtures",
+     "A molecule is bonded."
+    ]
+   ],
+   "exp": "A molecule is two or more atoms held together by bonds, of one type or several."
+  }
+ ],
+ "Particle": [
+  {
+   "q": "A drawing shows 3 single He atoms and 2 O₂ molecules. How many particles are there?",
+   "right": "5",
+   "wrong": [
+    [
+     "7, because each O₂ is two atoms and every atom counts as its own particle",
+     "Each molecule counts as one particle."
+    ],
+    [
+     "3",
+     "The molecules are particles too."
+    ],
+    [
+     "2",
+     "The atoms are particles too."
+    ]
+   ],
+   "exp": "Each separate atom or molecule is one particle: 3 + 2 = 5."
+  },
+  {
+   "q": "Is a single H₂O molecule in a drawing a particle?",
+   "right": "Yes; any separate atom or molecule is",
+   "wrong": [
+    [
+     "No, because only single atoms count as particles in a drawing",
+     "Molecules count too."
+    ],
+    [
+     "No; only elements are particles",
+     "Compounds' molecules count too."
+    ],
+    [
+     "Only if it is a gas",
+     "State doesn't matter."
+    ]
+   ],
+   "exp": "A particle is any individual atom or molecule."
+  }
+ ],
+ "Bulk terms versus particle terms": [
+  {
+   "q": "Which word describes a whole sample, not a single particle?",
+   "right": "Mixture",
+   "wrong": [
+    [
+     "Molecule, since a molecule is made of many atoms put together",
+     "Molecule is a particle term."
+    ],
+    [
+     "Atom",
+     "Atom is a particle term."
+    ],
+    [
+     "Particle",
+     "That's a particle term."
+    ]
+   ],
+   "exp": "Element, compound and mixture describe bulk samples; atom and molecule describe particles."
+  },
+  {
+   "q": "A jar of pure nitrogen gas (N₂) is described as \"a compound because it has molecules.\" What's wrong?",
+   "right": "Molecule doesn't mean compound",
+   "wrong": [
+    [
+     "Nothing, because any substance made of molecules is a compound",
+     "N₂ is a molecule of an element."
+    ],
+    [
+     "It should say mixture",
+     "It's pure."
+    ],
+    [
+     "N₂ has no molecules",
+     "N₂ is a molecule."
+    ]
+   ],
+   "exp": "Molecule does NOT equal compound: N₂ molecules have one type of atom, so the sample is an element."
+  }
+ ],
+ "Solvent": [
+  {
+   "q": "In salt water, which part is the solvent?",
+   "right": "The water",
+   "wrong": [
+    [
+     "The salt, because it is the part that dissolves and spreads out",
+     "Salt is the solute."
+    ],
+    [
+     "Both equally",
+     "The water does the dissolving."
+    ],
+    [
+     "Neither",
+     "Water is the solvent."
+    ]
+   ],
+   "exp": "The solvent does the dissolving."
+  },
+  {
+   "q": "Sugar dissolves in tea. What is doing the dissolving?",
+   "right": "The water in the tea",
+   "wrong": [
+    [
+     "The sugar, because sugar crystals break down the tea leaves as they dissolve",
+     "Sugar is what gets dissolved."
+    ],
+    [
+     "The cup",
+     "The cup isn't part of the solution."
+    ],
+    [
+     "The spoon",
+     "Stirring helps, but water is the solvent."
+    ]
+   ],
+   "exp": "Water is the solvent: it does the dissolving."
+  }
+ ],
+ "Solute": [
+  {
+   "q": "In lemonade, which ingredient is a solute?",
+   "right": "Sugar",
+   "wrong": [
+    [
+     "Water, because it is the part that you can see and pour out of the glass",
+     "Water is the solvent."
+    ],
+    [
+     "The glass",
+     "The glass isn't part of the solution."
+    ],
+    [
+     "Ice cubes",
+     "Ice isn't dissolved."
+    ]
+   ],
+   "exp": "The solute is the part that is dissolved."
+  },
+  {
+   "q": "Which is the solute in salt water?",
+   "right": "Salt",
+   "wrong": [
+    [
+     "Water, since it is the larger part of the mixture in the glass",
+     "Water is the solvent."
+    ],
+    [
+     "Both",
+     "Only the salt is dissolved."
+    ],
+    [
+     "Neither",
+     "Salt is the solute."
+    ]
+   ],
+   "exp": "The solute is the dissolved part; the solvent is the part that dissolves it."
+  }
+ ],
+ "Suspension": [
+  {
+   "q": "Muddy water is left to stand and the dirt sinks to the bottom. What kind of mixture is it?",
+   "right": "A suspension",
+   "wrong": [
+    [
+     "A solution, since the dirt was mixed evenly into the water at first",
+     "Solutions don't settle."
+    ],
+    [
+     "A colloid",
+     "Colloids don't settle."
+    ],
+    [
+     "A compound",
+     "Mud and water aren't bonded."
+    ]
+   ],
+   "exp": "A suspension is a heterogeneous mixture that settles on standing."
+  },
+  {
+   "q": "How do a suspension and a colloid differ?",
+   "right": "A suspension settles; a colloid doesn't",
+   "wrong": [
+    [
+     "A colloid settles to the bottom over time but a suspension stays mixed",
+     "It's the reverse."
+    ],
+    [
+     "A suspension is homogeneous",
+     "Both are heterogeneous."
+    ],
+    [
+     "They are the same",
+     "Only one settles."
+    ]
+   ],
+   "exp": "A suspension settles on standing; colloids are stable."
+  }
+ ],
+ "Homogeneous examples": [
+  {
+   "q": "Which item from the review sheet is homogeneous?",
+   "right": "Tea",
+   "wrong": [
+    [
+     "A chocolate chip cookie, because it's all baked together into a single piece",
+     "You can see the chips."
+    ],
+    [
+     "Pizza",
+     "You can see the toppings."
+    ],
+    [
+     "Salad",
+     "You can see the parts."
+    ]
+   ],
+   "exp": "Tea is the same throughout."
+  },
+  {
+   "q": "18K gold and steel are on the same list. Why?",
+   "right": "Both are homogeneous mixtures",
+   "wrong": [
+    [
+     "Both are pure elements, since metals are always made of only one type of atom",
+     "Both are mixtures of metals."
+    ],
+    [
+     "Both are heterogeneous",
+     "They're the same throughout."
+    ],
+    [
+     "Both are compounds",
+     "They're mixtures."
+    ]
+   ],
+   "exp": "18K gold and steel are homogeneous mixtures."
+  }
+ ],
+ "Heterogeneous examples": [
+  {
+   "q": "Which pair from the review sheet are both heterogeneous?",
+   "right": "Pizza and sand in water",
+   "wrong": [
+    [
+     "Rain water and lemonade, because both of them have more than one substance",
+     "Both are homogeneous."
+    ],
+    [
+     "Air and steel",
+     "Both homogeneous."
+    ],
+    [
+     "Coffee and tea",
+     "Both homogeneous."
+    ]
+   ],
+   "exp": "Pizza and sand in water have visibly different parts."
+  },
+  {
+   "q": "A coke float has ice cream floating in soda. Why is it heterogeneous?",
+   "right": "You can see different parts",
+   "wrong": [
+    [
+     "It contains sugar, and anything with sugar in it counts as heterogeneous",
+     "Sugar water is homogeneous."
+    ],
+    [
+     "It is cold",
+     "Temperature doesn't decide it."
+    ],
+    [
+     "It is a liquid",
+     "Liquids can be homogeneous."
+    ]
+   ],
+   "exp": "Heterogeneous mixtures have visibly distinguishable parts."
+  }
+ ],
+ "Physical means": [
+  {
+   "q": "Which of these is NOT a physical means of separating a mixture?",
+   "right": "Electrolysis",
+   "wrong": [
+    [
+     "Filtration through filter paper to catch an undissolved solid",
+     "Filtration is physical."
+    ],
+    [
+     "Distillation",
+     "Distillation is physical."
+    ],
+    [
+     "Using a magnet",
+     "A magnet is physical."
+    ]
+   ],
+   "exp": "Electrolysis breaks bonds, so it's a chemical method."
+  },
+  {
+   "q": "After a mixture is separated by physical means, what is true of its parts?",
+   "right": "Each part is the same substance as before",
+   "wrong": [
+    [
+     "Each part has turned into a new substance with new properties of its own",
+     "Physical means don't change identity."
+    ],
+    [
+     "The parts have reacted together",
+     "No reaction happens."
+    ],
+    [
+     "Their bonds have broken",
+     "No bonds are broken."
+    ]
+   ],
+   "exp": "Physical means separate a mixture without changing the identity of its parts."
+  }
+ ],
+ "Distillation": [
+  {
+   "q": "A mixture of two liquids with different boiling points needs to be separated. Which method fits best?",
+   "right": "Distillation",
+   "wrong": [
+    [
+     "Filtration, since the filter paper will catch whichever liquid is thicker",
+     "Both are liquids; filtration separates solids from liquids."
+    ],
+    [
+     "Magnetism",
+     "Liquids aren't picked up by magnets here."
+    ],
+    [
+     "Picking pieces out",
+     "You can't pick out a liquid."
+    ]
+   ],
+   "exp": "Distillation separates substances by boiling point."
+  },
+  {
+   "q": "In distillation, after the liquid boils, what happens to the vapor?",
+   "right": "It is cooled and condensed",
+   "wrong": [
+    [
+     "It is burned off so that only the substance with a high boiling point is left",
+     "The vapor is collected, not burned."
+    ],
+    [
+     "It is filtered",
+     "It's condensed."
+    ],
+    [
+     "It is frozen",
+     "It's condensed into a liquid."
+    ]
+   ],
+   "exp": "Distillation boils, then condenses the vapor."
+  }
+ ],
+ "Filtration": [
+  {
+   "q": "Sand is stirred into water. Which method separates them most simply?",
+   "right": "Filtration",
+   "wrong": [
+    [
+     "Distillation, because the water has a much lower boiling point than sand does",
+     "That works but filtration is simpler for an undissolved solid."
+    ],
+    [
+     "Chromatography",
+     "That's for parts that stick differently."
+    ],
+    [
+     "A magnet",
+     "Sand isn't magnetic."
+    ]
+   ],
+   "exp": "Filtration separates an undissolved solid from a liquid."
+  },
+  {
+   "q": "Salt water is poured through filter paper. What comes out the other side?",
+   "right": "Salt water",
+   "wrong": [
+    [
+     "Pure water, because the salt is caught by the tiny holes in the paper",
+     "Dissolved salt passes through."
+    ],
+    [
+     "Pure salt",
+     "The salt is dissolved in the water."
+    ],
+    [
+     "Nothing",
+     "The liquid passes through."
+    ]
+   ],
+   "exp": "Dissolved salt or sugar passes through a filter."
+  }
+ ],
+ "Chromatography": [
+  {
+   "q": "A black marker's ink is separated into blue, red and yellow bands on paper. Which method was used?",
+   "right": "Chromatography",
+   "wrong": [
+    [
+     "Distillation, because the colors boiled away from the paper at different times",
+     "No boiling is involved."
+    ],
+    [
+     "Filtration",
+     "Filtration separates solids from liquids."
+    ],
+    [
+     "Magnetism",
+     "Ink isn't magnetic."
+    ]
+   ],
+   "exp": "Chromatography separates parts by how strongly they stick to a surface."
+  },
+  {
+   "q": "In chromatography, why do the parts end up at different distances?",
+   "right": "They stick to the surface by different amounts",
+   "wrong": [
+    [
+     "They have different boiling points, so some of them evaporate along the way",
+     "That's distillation's idea."
+    ],
+    [
+     "Some are magnetic",
+     "That's magnetism."
+    ],
+    [
+     "Some are bigger chunks",
+     "That's filtration's idea."
+    ]
+   ],
+   "exp": "Each part adheres differently, so the mobile phase carries each a different distance."
+  }
+ ],
+ "Evaporation": [
+  {
+   "q": "Salt water is left in an open dish until only salt crystals remain. Which method is this?",
+   "right": "Evaporation",
+   "wrong": [
+    [
+     "Filtration, because the salt was trapped and the water passed through",
+     "There's no filter."
+    ],
+    [
+     "Chromatography",
+     "No paper or mobile phase."
+    ],
+    [
+     "Distillation",
+     "In distillation the vapor is collected; here it just leaves."
+    ]
+   ],
+   "exp": "Evaporation separates by volatility: the volatile water leaves and the salt stays."
+  },
+  {
+   "q": "What property does evaporation use to separate a mixture?",
+   "right": "Volatility",
+   "wrong": [
+    [
+     "Magnetism, because some of the particles are pulled away from the others",
+     "That's the magnet method."
+    ],
+    [
+     "Particle size",
+     "That's filtration's idea."
+    ],
+    [
+     "How strongly parts stick to paper",
+     "That's chromatography."
+    ]
+   ],
+   "exp": "Evaporation uses volatility: the volatile part leaves as vapor."
+  }
+ ],
+ "Separating mixtures": [
+  {
+   "q": "Which pair of products could come out of separating a mixture physically?",
+   "right": "Pure water and salt",
+   "wrong": [
+    [
+     "Hydrogen gas and oxygen gas, which come from water when it is separated",
+     "That needs a chemical method."
+    ],
+    [
+     "Rust and iron",
+     "That's a chemical change."
+    ],
+    [
+     "Ash and smoke",
+     "Those come from burning."
+    ]
+   ],
+   "exp": "Mixtures separate physically into pure substances."
+  },
+  {
+   "q": "A sample is separated by filtration into two parts. What was the sample?",
+   "right": "A mixture",
+   "wrong": [
+    [
+     "A compound, since it came apart into two different substances in the end",
+     "Compounds need chemical methods."
+    ],
+    [
+     "An element",
+     "Elements can't be separated."
+    ],
+    [
+     "A single molecule",
+     "Filtration separates bulk parts."
+    ]
+   ],
+   "exp": "Filtration is physical, so the sample was a mixture."
+  }
+ ],
+ "Separating compounds": [
+  {
+   "q": "Why can't you separate water into hydrogen and oxygen by filtering it?",
+   "right": "Water is a compound",
+   "wrong": [
+    [
+     "Water is a mixture, but the hydrogen and oxygen are too small for filter paper",
+     "Water is a compound; its parts are bonded."
+    ],
+    [
+     "Water has no hydrogen",
+     "It does."
+    ],
+    [
+     "Filtering is chemical",
+     "Filtering is physical."
+    ]
+   ],
+   "exp": "Compounds need chemical methods, such as electrolysis, to break their bonds."
+  },
+  {
+   "q": "Which method can separate a compound into its elements?",
+   "right": "Electrolysis",
+   "wrong": [
+    [
+     "Distillation, since it uses heat and heat breaks substances apart",
+     "Distillation is physical."
+    ],
+    [
+     "Filtration",
+     "Physical."
+    ],
+    [
+     "Chromatography",
+     "Physical."
+    ]
+   ],
+   "exp": "Compounds need chemical methods like electrolysis or decomposition."
+  }
+ ],
+ "Distillation of salt water": [
+  {
+   "q": "After salt water is distilled, what is in the collecting flask, and what stays behind?",
+   "right": "Pure water collects; salt stays",
+   "wrong": [
+    [
+     "Salt collects in the second flask and pure water stays in the first one",
+     "The water boils off; the salt stays."
+    ],
+    [
+     "Hydrogen collects; oxygen stays",
+     "No chemical change happens."
+    ],
+    [
+     "Nothing collects",
+     "Water condenses into the flask."
+    ]
+   ],
+   "exp": "Distillation boils off the water and condenses it; the salt stays in the flask."
+  },
+  {
+   "q": "Distilling salt water gives salt and water. What kind of change is it?",
+   "right": "Physical: same salt, same water",
+   "wrong": [
+    [
+     "Chemical, because the salt water is broken down into two separate substances",
+     "Separating a mixture isn't a chemical change."
+    ],
+    [
+     "Chemical: new substances formed",
+     "Salt and water were there all along."
+    ],
+    [
+     "Neither",
+     "It's a physical change."
+    ]
+   ],
+   "exp": "Distillation of salt water is a physical method; no chemical change occurs."
+  }
+ ],
+ "Magnetism": [
+  {
+   "q": "Iron filings are mixed into sand. What is the quickest way to separate them?",
+   "right": "A magnet",
+   "wrong": [
+    [
+     "Distillation, because iron has a much higher boiling point than sand",
+     "There's no liquid to boil."
+    ],
+    [
+     "Filtration",
+     "Both are solids."
+    ],
+    [
+     "Chromatography",
+     "That's for parts carried by a liquid."
+    ]
+   ],
+   "exp": "A magnet picks out the magnetic iron filings."
+  },
+  {
+   "q": "Is pulling iron filings out of sand with a magnet a physical or chemical method?",
+   "right": "Physical",
+   "wrong": [
+    [
+     "Chemical, because the magnet changes the iron into a different form",
+     "The iron is unchanged."
+    ],
+    [
+     "Chemical, because the iron reacts",
+     "No reaction happens."
+    ],
+    [
+     "Neither",
+     "It's physical."
+    ]
+   ],
+   "exp": "Magnetism separates without changing the substances, so it's physical."
+  }
+ ],
+ "Mobile phase": [
+  {
+   "q": "In paper chromatography of ink, what is the mobile phase?",
+   "right": "The water moving up the paper",
+   "wrong": [
+    [
+     "The paper, because the colors move along it as they separate",
+     "The paper stays put: fixed phase."
+    ],
+    [
+     "The ink",
+     "The ink is the mixture."
+    ],
+    [
+     "The beaker",
+     "The beaker holds things."
+    ]
+   ],
+   "exp": "The mobile phase (such as water) carries the mixture's parts across the paper."
+  },
+  {
+   "q": "What would happen in chromatography with no mobile phase?",
+   "right": "The parts wouldn't move",
+   "wrong": [
+    [
+     "The parts would separate even faster because there is nothing to slow them",
+     "The mobile phase is what carries them."
+    ],
+    [
+     "The paper would move",
+     "The paper is fixed."
+    ],
+    [
+     "The ink would boil",
+     "Nothing boils here."
+    ]
+   ],
+   "exp": "The mobile phase moves the parts; without it they stay put."
+  }
+ ],
+ "Fixed phase": [
+  {
+   "q": "In paper chromatography, which part stays still?",
+   "right": "The paper",
+   "wrong": [
+    [
+     "The water, because it soaks in and stays in the bottom of the beaker",
+     "Water moves up: mobile phase."
+    ],
+    [
+     "The ink colors",
+     "They move different distances."
+    ],
+    [
+     "Nothing stays still",
+     "The paper is fixed."
+    ]
+   ],
+   "exp": "The fixed phase (such as paper) doesn't move."
+  },
+  {
+   "q": "A color that sticks strongly to the paper ends up where?",
+   "right": "Close to where it started",
+   "wrong": [
+    [
+     "Farthest from where it started, since it is held tightly by the moving water",
+     "Strong sticking to the paper holds it back."
+    ],
+    [
+     "Off the paper",
+     "It sticks to the paper."
+    ],
+    [
+     "In the water at the bottom",
+     "It stays on the paper."
+    ]
+   ],
+   "exp": "Parts that stick more to the fixed phase travel less far."
+  }
+ ],
+ "Picking pieces out": [
+  {
+   "q": "Which mixture could you separate just by picking pieces out by hand?",
+   "right": "A salad",
+   "wrong": [
+    [
+     "Salt water, since salt crystals are big enough to see and pick out",
+     "Dissolved salt can't be picked out."
+    ],
+    [
+     "Air",
+     "Gases can't be picked out."
+    ],
+    [
+     "Brass",
+     "Brass is the same throughout."
+    ]
+   ],
+   "exp": "The simplest physical means is picking out pieces by hand, as with a salad."
+  },
+  {
+   "q": "Why can you pick the parts out of a jar of jelly beans but not out of salt water?",
+   "right": "Jelly beans are heterogeneous",
+   "wrong": [
+    [
+     "Salt water is a compound, so its parts are bonded and can't be picked",
+     "Salt water is a mixture, but a homogeneous one."
+    ],
+    [
+     "Jelly beans are a compound",
+     "They're a mixture."
+    ],
+    [
+     "Salt water is an element",
+     "It's a mixture."
+    ]
+   ],
+   "exp": "You can pick out visibly separate pieces; a homogeneous mixture has none."
+  }
+ ],
+ "Station 1: paper": [
+  {
+   "q": "At Station 1 you tear paper and then ignite it. Which step makes new substances?",
+   "right": "Igniting it",
+   "wrong": [
+    [
+     "Tearing it, because the paper ends up in smaller and different pieces",
+     "Tearing is physical."
+    ],
+    [
+     "Both",
+     "Only burning makes new substances."
+    ],
+    [
+     "Neither",
+     "Burning makes ash and gases."
+    ]
+   ],
+   "exp": "Tearing is physical; igniting is chemical (flame, heat, ash and gases)."
+  },
+  {
+   "q": "Which observation from burning the paper shows a chemical change?",
+   "right": "Ash and gases form",
+   "wrong": [
+    [
+     "The paper gets smaller as it tears into pieces before it is lit",
+     "Size change is physical."
+    ],
+    [
+     "The paper is white",
+     "That's a property, not a change."
+    ],
+    [
+     "The paper is thin",
+     "That's a property, not a change."
+    ]
+   ],
+   "exp": "Flame, heat, ash and gases are signs of a chemical change."
+  }
+ ],
+ "Station 2: tea lights": [
+  {
+   "q": "A tea light melts on a hot plate, then another is lit and burns. How do the changes compare?",
+   "right": "Melting is physical; burning is chemical",
+   "wrong": [
+    [
+     "Both are chemical, because heat is used to change the wax in each case",
+     "Melting doesn't make a new substance."
+    ],
+    [
+     "Both are physical",
+     "Burning makes new substances."
+    ],
+    [
+     "Melting is chemical; burning is physical",
+     "It's the reverse."
+    ]
+   ],
+   "exp": "Melting changes state; burning reacts the wax with oxygen."
+  },
+  {
+   "q": "When a tea light burns, what does the wax react with?",
+   "right": "Oxygen",
+   "wrong": [
+    [
+     "The hot plate, since it gives off heat that changes the wax into a new substance",
+     "Burning wax reacts with oxygen."
+    ],
+    [
+     "Water",
+     "Burning uses oxygen."
+    ],
+    [
+     "Nothing; it just melts",
+     "It reacts with oxygen."
+    ]
+   ],
+   "exp": "Burning wax reacts with oxygen and gives off heat and light."
+  }
+ ],
+ "Station 3: steel wool": [
+  {
+   "q": "Steel wool is weighed, burned and weighed again. What happens to its mass?",
+   "right": "It increases",
+   "wrong": [
+    [
+     "It decreases, because burning always turns some of the material into smoke",
+     "Steel wool gains oxygen."
+    ],
+    [
+     "It stays the same",
+     "Oxygen is added."
+    ],
+    [
+     "It drops to zero",
+     "The iron is still there."
+    ]
+   ],
+   "exp": "Iron combines with oxygen to form iron(III) oxide, so the mass goes up."
+  },
+  {
+   "q": "Burning wood loses mass but burning steel wool gains mass. Why?",
+   "right": "The iron combines with oxygen and keeps it",
+   "wrong": [
+    [
+     "Steel wool doesn't actually burn; it only melts and absorbs some heat",
+     "It burns, a chemical change."
+    ],
+    [
+     "Wood gains mass too",
+     "Wood leaves ash and gases."
+    ],
+    [
+     "The scale was wrong",
+     "The gain is real."
+    ]
+   ],
+   "exp": "The iron combines with oxygen to form iron(III) oxide, so the solid gains mass."
+  }
+ ],
+ "Station 4: vinegar and chalk (TUMS)": [
+  {
+   "q": "At Station 4, chalk fizzes in vinegar, and then the leftover solid is filtered. Which step is chemical?",
+   "right": "The fizzing",
+   "wrong": [
+    [
+     "The filtering, because the solid is separated from the leftover liquid",
+     "Filtering is physical."
+    ],
+    [
+     "Both",
+     "Filtering is physical."
+    ],
+    [
+     "Neither",
+     "The bubbles show a new gas."
+    ]
+   ],
+   "exp": "The bubbles show a chemical change; filtering is a physical separation."
+  },
+  {
+   "q": "What compound in the chalk (TUMS) reacts with vinegar?",
+   "right": "Calcium carbonate",
+   "wrong": [
+    [
+     "Sodium chloride, the same compound that is found in ordinary table salt",
+     "Chalk is calcium carbonate."
+    ],
+    [
+     "Iron oxide",
+     "That's rust."
+    ],
+    [
+     "Zinc",
+     "That's the penny station."
+    ]
+   ],
+   "exp": "Calcium carbonate reacts with vinegar, forming bubbles of gas."
+  }
+ ],
+ "Station 5: zinc in hydrochloric acid": [
+  {
+   "q": "A cut post-1982 penny is placed in hydrochloric acid. Why do bubbles form?",
+   "right": "The zinc core reacts with the acid",
+   "wrong": [
+    [
+     "The copper coating boils away because the acid is so much hotter than the penny",
+     "It's a reaction, not boiling."
+    ],
+    [
+     "Air leaks out of the penny",
+     "Bubbles come from the reaction."
+    ],
+    [
+     "The acid freezes",
+     "No freezing happens."
+    ]
+   ],
+   "exp": "The zinc core reacts with hydrochloric acid, a chemical change."
+  },
+  {
+   "q": "Why must the penny be cut before it reacts?",
+   "right": "To expose the zinc core",
+   "wrong": [
+    [
+     "To let the copper coating melt into the acid so that it can react faster",
+     "The zinc core is what reacts."
+    ],
+    [
+     "To make it lighter",
+     "Cutting is to reach the zinc."
+    ],
+    [
+     "To make it magnetic",
+     "Magnetism isn't involved."
+    ]
+   ],
+   "exp": "A post-1982 penny has a zinc core; once cut, the zinc reacts and the penny loses mass."
+  }
+ ],
+ "Station 6: nail and peroxide": [
+  {
+   "q": "At Station 6, hydrogen peroxide is put on an iron nail. What kind of change is this?",
+   "right": "Chemical",
+   "wrong": [
+    [
+     "Physical, because the nail keeps its same size and shape the whole time",
+     "The peroxide reacts with the iron."
+    ],
+    [
+     "A change of state",
+     "It's a reaction."
+    ],
+    [
+     "A separation",
+     "It's a reaction."
+    ]
+   ],
+   "exp": "Hydrogen peroxide reacts with the iron nail, a chemical change."
+  },
+  {
+   "q": "Why do the safety rules matter at Station 6?",
+   "right": "Hydrogen peroxide is a dangerous material",
+   "wrong": [
+    [
+     "The iron nail is magnetic and can pull other metal objects off the table",
+     "The danger is the peroxide."
+    ],
+    [
+     "The nail is hot",
+     "The card names the peroxide."
+    ],
+    [
+     "It makes a loud noise",
+     "The card names the peroxide."
+    ]
+   ],
+   "exp": "Hydrogen peroxide is a dangerous material, so the safety rules apply."
+  }
+ ],
+ "Colloid": [
+  {
+   "q": "Milk looks smooth and uniform, but it's classified as heterogeneous. How can that be?",
+   "right": "It's a colloid",
+   "wrong": [
+    [
+     "It's a solution, and solutions can be either homogeneous or heterogeneous",
+     "Solutions are homogeneous."
+    ],
+    [
+     "It's a compound",
+     "Milk is a mixture."
+    ],
+    [
+     "It's an element",
+     "Milk is a mixture."
+    ]
+   ],
+   "exp": "A colloid is a heterogeneous mixture that may look homogeneous."
+  },
+  {
+   "q": "Which description fits a colloid?",
+   "right": "Looks uniform but is heterogeneous",
+   "wrong": [
+    [
+     "Has visible layers that separate from each other when it is left to stand",
+     "That's a suspension."
+    ],
+    [
+     "Is a pure substance",
+     "A colloid is a mixture."
+    ],
+    [
+     "Is truly homogeneous",
+     "A colloid is heterogeneous."
+    ]
+   ],
+   "exp": "A colloid may appear homogeneous to the naked eye."
+  }
+ ],
+ "Colloid particle size": [
+  {
+   "q": "A mixture's particles are about 500 nm across. Which kind of mixture is it most likely?",
+   "right": "A colloid",
+   "wrong": [
+    [
+     "A suspension, because any particles bigger than 100 nm must settle out",
+     "Colloid particles run up to 1000 nm."
+    ],
+    [
+     "A pure substance",
+     "It's a mixture."
+    ],
+    [
+     "An element",
+     "It's a mixture."
+    ]
+   ],
+   "exp": "Colloid particles are about 1 to 1000 nm across."
+  },
+  {
+   "q": "Which size range belongs to colloid particles?",
+   "right": "About 1 to 1000 nm",
+   "wrong": [
+    [
+     "Larger than 1 cm, big enough to see with the naked eye and pick out",
+     "Colloids look smooth."
+    ],
+    [
+     "Exactly 1 nm",
+     "It's a range."
+    ],
+    [
+     "About 1000 to 5000 nm",
+     "That's above the range."
+    ]
+   ],
+   "exp": "Colloid particles are about 1 nm to 1000 nm across."
+  }
+ ],
+ "Colloid stability": [
+  {
+   "q": "A jar of milk and a jar of muddy water sit for a day. What do you expect?",
+   "right": "Mud settles; milk doesn't",
+   "wrong": [
+    [
+     "Both settle into layers, because all heterogeneous mixtures settle over time",
+     "Colloids like milk are stable."
+    ],
+    [
+     "Milk settles; mud doesn't",
+     "It's the reverse."
+    ],
+    [
+     "Neither settles",
+     "Mud is a suspension."
+    ]
+   ],
+   "exp": "Colloids are stable and don't settle; suspensions do."
+  },
+  {
+   "q": "Why can't you separate a colloid with filter paper?",
+   "right": "Its particles pass through simple filters",
+   "wrong": [
+    [
+     "Its particles are so large that they block the filter paper completely",
+     "Colloid particles are too small to catch."
+    ],
+    [
+     "It's a compound",
+     "A colloid is a mixture."
+    ],
+    [
+     "It boils too easily",
+     "Boiling isn't the issue."
+    ]
+   ],
+   "exp": "Colloids can't be separated by simple filtration."
+  }
+ ],
+ "Tyndall effect": [
+  {
+   "q": "A laser beam shines through two glasses. You can see the beam in one but not the other. Which one is the colloid?",
+   "right": "The one where the beam is visible",
+   "wrong": [
+    [
+     "The one where the beam is invisible, because colloids let all light pass straight through",
+     "Colloids scatter light."
+    ],
+    [
+     "Both are colloids",
+     "A solution doesn't scatter the beam."
+    ],
+    [
+     "Neither",
+     "Scattering shows a colloid."
+    ]
+   ],
+   "exp": "Colloid particles scatter light so the beam is visible (Tyndall effect)."
+  },
+  {
+   "q": "How could you tell salt water (a solution) from a colloid that looks just like it?",
+   "right": "Shine a light beam through each",
+   "wrong": [
+    [
+     "Pour each one through filter paper and see which one leaves something behind",
+     "Colloids pass through simple filters."
+    ],
+    [
+     "Let them sit to see which settles",
+     "Neither settles."
+    ],
+    [
+     "Taste them",
+     "Never taste lab samples."
+    ]
+   ],
+   "exp": "Only the colloid scatters a beam of light (the Tyndall effect)."
+  }
+ ],
+ "Brownian movement": [
+  {
+   "q": "Under a microscope, tiny particles in a colloid jiggle in random zigzag paths. What is this called?",
+   "right": "Brownian movement",
+   "wrong": [
+    [
+     "The Tyndall effect, because the particles move so fast that they scatter light",
+     "Tyndall is scattering light."
+    ],
+    [
+     "Sublimation",
+     "That's solid to gas."
+    ],
+    [
+     "Chromatography",
+     "That's a separation method."
+    ]
+   ],
+   "exp": "Brownian movement is the continuous, random zigzag motion of colloid particles."
+  },
+  {
+   "q": "Which describes the path of a colloid particle?",
+   "right": "A continuous, random zigzag",
+   "wrong": [
+    [
+     "A straight line down to the bottom of the container, where it settles",
+     "Colloids don't settle."
+    ],
+    [
+     "It doesn't move",
+     "It moves continuously."
+    ],
+    [
+     "A circle",
+     "The path is random."
+    ]
+   ],
+   "exp": "Colloid particles move in a continuous, random zigzag path."
+  }
+ ],
+ "Centrifuge": [
+  {
+   "q": "Cream needs to be separated from milk. Filtration doesn't work. What does?",
+   "right": "A high-speed centrifuge",
+   "wrong": [
+    [
+     "Distillation, because cream has a much higher boiling point than the rest of the milk",
+     "Your card names the centrifuge."
+    ],
+    [
+     "A magnet",
+     "Cream isn't magnetic."
+    ],
+    [
+     "Picking pieces out",
+     "The particles are too small."
+    ]
+   ],
+   "exp": "A high-speed centrifuge can separate a colloid, like cream from milk."
+  },
+  {
+   "q": "Why is a centrifuge needed for a colloid but not for sand in water?",
+   "right": "Colloid particles are too small to filter",
+   "wrong": [
+    [
+     "Sand dissolves in the water, so it can't be caught by a centrifuge at all",
+     "Sand doesn't dissolve; filtration catches it."
+    ],
+    [
+     "Colloids are compounds",
+     "They're mixtures."
+    ],
+    [
+     "Sand is a colloid",
+     "Sand in water is a suspension."
+    ]
+   ],
+   "exp": "Colloid particles pass through simple filters, so the colloid has to be spun."
+  }
+ ],
+ "Dispersed phase": [
+  {
+   "q": "In fog, tiny water droplets are spread through air. Which is the dispersed phase?",
+   "right": "The water droplets",
+   "wrong": [
+    [
+     "The air, because it surrounds the droplets and is spread all through the fog",
+     "Air is the larger amount: the dispersion medium."
+    ],
+    [
+     "Both equally",
+     "One is smaller in quantity."
+    ],
+    [
+     "Neither",
+     "The droplets are dispersed."
+    ]
+   ],
+   "exp": "The dispersed phase is the smaller amount spread through the mixture."
+  },
+  {
+   "q": "The dispersed phase in a colloid is most like which part of a solution?",
+   "right": "The solute",
+   "wrong": [
+    [
+     "The solvent, because it's the part that the other particles are spread through",
+     "That's the dispersion medium."
+    ],
+    [
+     "The container",
+     "Not part of the mixture."
+    ],
+    [
+     "The precipitate",
+     "Not part of a solution."
+    ]
+   ],
+   "exp": "The dispersed phase is the smaller amount, like a solute."
+  }
+ ],
+ "Dispersion medium": [
+  {
+   "q": "In whipped cream, gas bubbles are spread through a liquid. What is the dispersion medium?",
+   "right": "The liquid",
+   "wrong": [
+    [
+     "The gas bubbles, because they take up most of the space you see",
+     "The bubbles are the dispersed phase."
+    ],
+    [
+     "The bowl",
+     "Not part of the colloid."
+    ],
+    [
+     "Both equally",
+     "The liquid is the medium."
+    ]
+   ],
+   "exp": "The dispersion medium is the larger amount that the particles are spread through."
+  },
+  {
+   "q": "The dispersion medium of a colloid is most like which part of a solution?",
+   "right": "The solvent",
+   "wrong": [
+    [
+     "The solute, because it is the part of the colloid that gets spread around",
+     "That's the dispersed phase."
+    ],
+    [
+     "A precipitate",
+     "Not part of a solution."
+    ],
+    [
+     "A filter",
+     "Not part of a solution."
+    ]
+   ],
+   "exp": "The dispersion medium is the larger amount, like a solvent."
+  }
+ ],
+ "Aerosol": [
+  {
+   "q": "Smoke is solid particles in air, and fog is liquid droplets in air. What type of colloid are both?",
+   "right": "Aerosols",
+   "wrong": [
+    [
+     "Foams, because both of them have a gas as one of their two parts",
+     "A foam is gas in a liquid."
+    ],
+    [
+     "Emulsions",
+     "Emulsion is liquid in liquid."
+    ],
+    [
+     "Gels",
+     "Gel is liquid in a solid."
+    ]
+   ],
+   "exp": "An aerosol is a solid or liquid dispersed in a gas."
+  },
+  {
+   "q": "Insecticide spray and dust are both aerosols. What do they have in common?",
+   "right": "Both are dispersed in a gas",
+   "wrong": [
+    [
+     "Both are liquid droplets spread through a solid such as a wall or carpet",
+     "Aerosols are dispersed in a gas."
+    ],
+    [
+     "Both are solids",
+     "Spray is liquid; dust is solid."
+    ],
+    [
+     "Both are liquids",
+     "Dust is solid."
+    ]
+   ],
+   "exp": "An aerosol is any solid or liquid dispersed in a gas."
+  }
+ ],
+ "Foam": [
+  {
+   "q": "Soap lather is gas trapped in a liquid. What type of colloid is it?",
+   "right": "Foam",
+   "wrong": [
+    [
+     "Aerosol, because it has gas in it, like the air in the bubbles",
+     "An aerosol is dispersed IN a gas."
+    ],
+    [
+     "Emulsion",
+     "Liquid in liquid."
+    ],
+    [
+     "Sol",
+     "Solid in liquid."
+    ]
+   ],
+   "exp": "A foam is a gas dispersed in a liquid."
+  },
+  {
+   "q": "How is a foam the reverse of a liquid aerosol like fog?",
+   "right": "Foam is gas in liquid; fog is liquid in gas",
+   "wrong": [
+    [
+     "Foam is solid in gas and fog is gas in solid, so they swap their states",
+     "Check the states: foam is gas in a liquid."
+    ],
+    [
+     "They are the same",
+     "The parts are reversed."
+    ],
+    [
+     "Foam is liquid in liquid",
+     "That's an emulsion."
+    ]
+   ],
+   "exp": "Foam: gas dispersed in a liquid. Fog: liquid dispersed in a gas."
+  }
+ ],
+ "Emulsion": [
+  {
+   "q": "Milk is droplets of fat (a liquid) spread through water. What type of colloid is it?",
+   "right": "Emulsion",
+   "wrong": [
+    [
+     "Foam, because it is white and can be whipped into a fluffy mixture",
+     "Foam is gas in a liquid."
+    ],
+    [
+     "Sol",
+     "Solid in liquid."
+    ],
+    [
+     "Gel",
+     "Liquid in solid."
+    ]
+   ],
+   "exp": "An emulsion is a liquid dispersed in a liquid."
+  },
+  {
+   "q": "Which pair are both emulsions on your card?",
+   "right": "Milk and butter",
+   "wrong": [
+    [
+     "Whipped cream and soap lather, because both of them are white and fluffy",
+     "Those are foams."
+    ],
+    [
+     "Smoke and fog",
+     "Aerosols."
+    ],
+    [
+     "Paint and cell fluid",
+     "Sols."
+    ]
+   ],
+   "exp": "Milk, hair cream and butter are emulsions."
+  }
+ ],
+ "Sol": [
+  {
+   "q": "Paint is solid pigment particles spread through a liquid. What type of colloid is it?",
+   "right": "Sol",
+   "wrong": [
+    [
+     "Gel, because the paint becomes solid as it dries on the wall",
+     "Gel is liquid in a solid."
+    ],
+    [
+     "Foam",
+     "Gas in liquid."
+    ],
+    [
+     "Emulsion",
+     "Liquid in liquid."
+    ]
+   ],
+   "exp": "A sol is a solid dispersed in a liquid."
+  },
+  {
+   "q": "How does a sol differ from a gel?",
+   "right": "Sol: solid in liquid. Gel: liquid in solid",
+   "wrong": [
+    [
+     "Sol: liquid in solid, and gel: solid in liquid, the reverse of what most think",
+     "It's the other way round."
+    ],
+    [
+     "They are the same",
+     "The parts are reversed."
+    ],
+    [
+     "Both are gas in a solid",
+     "That's a solid sol."
+    ]
+   ],
+   "exp": "A sol is solid in liquid; a gel is liquid in solid."
+  }
+ ],
+ "Gel": [
+  {
+   "q": "Jelly is liquid held inside a solid network. What type of colloid is it?",
+   "right": "Gel",
+   "wrong": [
+    [
+     "Sol, because it contains a solid and a liquid mixed together evenly",
+     "Sol is solid in a liquid; jelly is liquid in a solid."
+    ],
+    [
+     "Foam",
+     "Gas in liquid."
+    ],
+    [
+     "Aerosol",
+     "Dispersed in a gas."
+    ]
+   ],
+   "exp": "A gel is a liquid dispersed in a solid."
+  },
+  {
+   "q": "Which example from your cards is a gel?",
+   "right": "Cheese",
+   "wrong": [
+    [
+     "Butter, because it is soft and contains water mixed into a solid",
+     "Your card lists butter as an emulsion."
+    ],
+    [
+     "Paint",
+     "A sol."
+    ],
+    [
+     "Fog",
+     "An aerosol."
+    ]
+   ],
+   "exp": "Cheese and jellies are gels."
+  }
+ ],
+ "Solid sol": [
+  {
+   "q": "Pumice stone is gas bubbles trapped in a solid. What type of colloid is it?",
+   "right": "Solid sol",
+   "wrong": [
+    [
+     "Foam, because foams are always made of gas bubbles trapped in something",
+     "Foam is gas in a liquid."
+    ],
+    [
+     "Aerosol",
+     "Dispersed in a gas."
+    ],
+    [
+     "Gel",
+     "Liquid in solid."
+    ]
+   ],
+   "exp": "A solid sol is a solid or gas dispersed in a solid; pumice is gas in a solid."
+  },
+  {
+   "q": "Colored glass and foam rubber are both solid sols. What do they share?",
+   "right": "Both are dispersed in a solid",
+   "wrong": [
+    [
+     "Both have liquid droplets spread through a gas, like a mist that hardened",
+     "That's an aerosol."
+    ],
+    [
+     "Both are gases",
+     "The medium is solid."
+    ],
+    [
+     "Both are liquids",
+     "The medium is solid."
+    ]
+   ],
+   "exp": "Solid sols have a solid or gas dispersed in a solid."
+  }
+ ]
+}

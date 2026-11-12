@@ -1670,7 +1670,7 @@
           "topic": "Molar mass",
           "stem": "What is the molar mass of aluminum oxide, Al₂O₃?",
           "options": [
-            "42.98 g/mol",
+            "112.94 g/mol",
             "74.98 g/mol",
             "101.96 g/mol",
             "69.96 g/mol"
@@ -1678,7 +1678,7 @@
           "ans": 2,
           "exp": "2(26.98) + 3(16.00) = 101.96 g/mol.",
           "why": [
-            "That ignores both subscripts.",
+            "That is 3 Al and 2 O: the subscripts were swapped. Al₂O₃ has 2 Al and 3 O.",
             "That counts only one aluminum. The formula has two.",
             "",
             "That counts only one oxygen. The formula has three."
@@ -2062,17 +2062,17 @@
           "topic": "Isotopes",
           "stem": "A certain isotope contains 23 protons and 28 neutrons. What are its mass number and identity?",
           "options": [
-            "51, vanadium",
-            "28, nickel",
             "23, vanadium",
+            "28, nickel",
+            "51, vanadium",
             "51, antimony"
           ],
-          "ans": 0,
+          "ans": 2,
           "exp": "Mass number = protons + neutrons = 23 + 28 = 51. Atomic number 23 is vanadium (V).",
           "why": [
-            "",
-            "28 is the neutron count, not the atomic number. The element is set by the 23 protons.",
             "23 is the atomic number. The mass number adds protons and neutrons: 23 + 28 = 51.",
+            "28 is the neutron count, not the atomic number. The element is set by the 23 protons.",
+            "",
             "Antimony has 51 protons. Here 51 is the mass number; the 23 protons make it vanadium."
           ]
         },
@@ -2124,16 +2124,16 @@
           "options": [
             "186.00 amu",
             "185.75 amu",
-            "187.00 amu",
-            "186.25 amu"
+            "186.25 amu",
+            "187.00 amu"
           ],
-          "ans": 3,
+          "ans": 2,
           "exp": "0.3740 × 185 + 0.6260 × 187 = 186.25 amu.",
           "why": [
             "That is the plain average of 185 and 187. Re-187 is more common, so the answer is above 186.",
             "The abundances are swapped. Re-187 is the 62.60% isotope.",
-            "That is only the most common isotope. The average must include Re-185 too.",
-            ""
+            "",
+            "That is only the most common isotope. The average must include Re-185 too."
           ]
         },
         {
@@ -2242,17 +2242,17 @@
           "topic": "Molar mass",
           "stem": "What is the molar mass of calcium cyanide, Ca(CN)₂?",
           "options": [
-            "92.12 g/mol",
-            "66.10 g/mol",
             "80.11 g/mol",
+            "66.10 g/mol",
+            "92.12 g/mol",
             "132.20 g/mol"
           ],
-          "ans": 0,
+          "ans": 2,
           "exp": "40.08 + 2(12.01) + 2(14.01) = 92.12 g/mol.",
           "why": [
-            "",
-            "That counts only one C and one N. The 2 outside the parentheses doubles both.",
             "That doubles only N. The 2 applies to everything inside the parentheses.",
+            "That counts only one C and one N. The 2 outside the parentheses doubles both.",
+            "",
             "That doubles calcium too. Only the CN inside the parentheses is doubled."
           ]
         },

@@ -16,7 +16,8 @@
       "legacyKeys": {
         "kit": "chem3_matter_kit_v1",
         "pt": "chem3_matter_pt_v1"
-      }
+      },
+      "learnMix": true
     },
     {
       "id": "ch04",

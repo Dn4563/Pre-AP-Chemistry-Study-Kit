@@ -1899,7 +1899,7 @@
           "stem": "A drawing shows three separate pairs of bonded identical R atoms and two separate single Sq atoms, none touching. Which code fits?",
           "options": [
             "R₂Sq",
-            "R₆Sq₂",
+            "R₆ & Sq₂",
             "R₃Sq₂",
             "R₂ & Sq"
           ],
@@ -1907,7 +1907,7 @@
           "exp": "Separate, non-touching particles of different substances are written with an &.",
           "why": [
             "No & would mean one molecule containing both kinds of atom.",
-            "That would be a single bonded molecule of eight atoms.",
+            "Each pair is its own R₂ molecule, so the code names the substance R₂, not R₆; count each kind of substance once.",
             "That would be one molecule with three R atoms and two Sq atoms bonded together.",
             ""
           ]
@@ -1919,7 +1919,7 @@
           "stem": "Which of the following is a mixture of two compounds?",
           "options": [
             "NaCl & H₂O",
-            "H₂ & O₂",
+            "H₂ & O₂ & N₂",
             "CO₂",
             "Cu & Zn"
           ],
@@ -1927,7 +1927,7 @@
           "exp": "NaCl and H₂O are both compounds sitting together, so the sample is a mixture of two compounds.",
           "why": [
             "",
-            "Both H₂ and O₂ are elements, so this is a mixture of two elements.",
+            "H₂, O₂ and N₂ each have one type of atom, so this is a mixture of three elements, not two compounds.",
             "This is one pure compound with no &.",
             "Both are elements, so this is a mixture of two elements."
           ]
@@ -2487,7 +2487,7 @@
             "Gel",
             "Foam",
             "Solid sol",
-            "Aerosol"
+            "Liquid aerosol"
           ],
           "ans": 2,
           "exp": "The medium is a solid and the dispersed part is a gas, so the sheet calls it a solid sol (colored glass is also a solid sol).",
@@ -2495,7 +2495,7 @@
             "A gel is a liquid dispersed in a solid, not a gas.",
             "A foam is a gas in a liquid; pumice has the gas inside a solid.",
             "",
-            "An aerosol is dispersed in a gas, and pumice is a solid medium."
+            "An aerosol is something dispersed in a gas; pumice is gas trapped in a solid."
           ]
         },
         {
@@ -2677,7 +2677,7 @@
           "topic": "Colloids",
           "stem": "Mayonnaise is tiny oil droplets spread through a water-based liquid. What is this type of colloid called?",
           "options": [
-            "Sol",
+            "Solid sol",
             "Foam",
             "Gel",
             "Emulsion"
@@ -2685,7 +2685,7 @@
           "ans": 3,
           "exp": "A liquid dispersed in a liquid is an emulsion. Milk and hair cream are other examples.",
           "why": [
-            "A sol is a solid in a liquid.",
+            "A solid sol is a solid or gas dispersed in a solid; mayonnaise is a liquid in a liquid.",
             "A foam is a gas in a liquid.",
             "A gel is a liquid in a solid.",
             ""
