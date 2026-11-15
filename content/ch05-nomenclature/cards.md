@@ -22,14 +22,14 @@
 | Ionic bond | The attraction between a cation and an anion, usually a metal with a nonmetal. | Metal + nonmetal. |
 | Covalent bond | Two nonmetals sharing electrons; no ions form. | Nonmetal + nonmetal. |
 | Electrostatic force of attraction | The pull between opposite charges that makes ionic bonds stronger than covalent bonds. | Opposites attract. |
-| Binary compound | A substance made of exactly two elements; Types I, II and III are all this kind. | Bi = two. |
+| Binary compound | A substance made of exactly two elements; metal + nonmetal pairs and two-nonmetal pairs (Types I, II and III) are this kind. | Bi = two. |
 | The five types | I: representative metal + nonmetal; II: transition metal + nonmetal; III: two nonmetals; IV: contains a polyatomic ion; V: acids. | Five naming systems. |
 
 # Deck 2: Main-Group Metal + Nonmetal (Type I, 5.2)
 
 > Type I compounds pair a representative (main-group) metal, which forms only one ion, with a nonmetal. Name the ions; ignore the subscripts.
 
-## Naming Type I
+## Naming main-group metal compounds
 
 > The cation comes first and keeps the element's name. The anion comes second: take the root of the element's name and add -ide. Ionic compounds are named for their ions, so subscripts never show up in the name: Na₂O is sodium oxide, not disodium oxide.
 
@@ -41,7 +41,7 @@
 | -ide ending | A one-atom anion is named with the root of the element plus this suffix: Cl⁻ is chloride, O²⁻ is oxide. | Chlorine → chloride. |
 | Subscripts stay out of ionic names | Compounds of ions are called by their ions only, so Mg₃N₂ is magnesium nitride, not trimagnesium dinitride. | No di-, no tri-. |
 
-## Writing Type I formulas
+## Writing their formulas
 
 > Find each ion's charge from its group (group 1 = 1+, group 2 = 2+, group 13 = 3+, group 15 = 3−, group 16 = 2−, group 17 = 1−). If the charges already add to zero, just write cation then anion. If not, crisscross: each ion's charge number becomes the other ion's subscript, then reduce.
 
@@ -139,7 +139,7 @@
 | Extra prefixes on oxyanions | per-…-ate has one more oxygen than -ate (perchlorate ClO₄⁻); hypo-…-ite has one fewer than -ite (hypochlorite ClO⁻). | Per = more, hypo = less. |
 | Ammonium | NH₄⁺, the common polyatomic cation; it goes first like a metal, as in NH₄Cl. | The positive one. |
 
-## Naming and writing Type IV
+## Naming and writing polyatomic compounds
 
 > Name the cation first (with a Roman numeral if it's a transition metal), then the polyatomic ion's name exactly as it appears on your sheet. To write the formula, balance the charges like before; if you need more than one polyatomic ion, put it in parentheses with the subscript outside.
 
@@ -149,7 +149,7 @@
 | Polyatomic name as given | The ion's label is copied unchanged from the sheet: Mg(NO₃)₂ is magnesium nitrate. | Copy it from the sheet. |
 | Parentheses for more than one | Wrap the ion in brackets with the subscript outside when you need two or more: Ca(OH)₂. | Ca(OH)₂, not CaOH₂. |
 | No parentheses for one | With only one polyatomic ion, skip the brackets: NaNO₃, not Na(NO₃). | One unit, no brackets. |
-| Variable metals in Type IV | A compound with a polyatomic ion still shows iron's or copper's charge in Roman numerals: Fe₃(PO₄)₂ is iron(II) phosphate. | Check the metal. |
+| Variable metals with polyatomic ions | A compound with a charged group like phosphate still shows iron's or copper's charge in Roman numerals: Fe₃(PO₄)₂ is iron(II) phosphate. | Check the metal. |
 
 # Deck 6: Acids (Type V, 5.6)
 
