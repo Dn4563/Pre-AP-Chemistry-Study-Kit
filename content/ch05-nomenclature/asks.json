@@ -300,87 +300,87 @@
    "exp": "Exactly two elements."
   },
   {
-   "q": "Which types of compounds are always binary?",
-   "right": "Types I, II and III",
+   "q": "Which kinds of compounds are always binary?",
+   "right": "Metal + nonmetal, or two nonmetals",
    "wrong": [
     [
-     "Types IV and V, because both of them can contain hydrogen and oxygen together in a formula",
-     "Type IV has polyatomic ions."
+     "Compounds with a polyatomic ion, because they are made of a metal bonded to an ion",
+     "Polyatomic ions add more elements."
     ],
     [
-     "Only Type V",
-     "Some acids aren't binary."
+     "Only acids",
+     "Many acids have three elements."
     ],
     [
-     "Only Type IV",
-     "Not binary."
+     "Only hydrates",
+     "Hydrates add water."
     ]
    ],
-   "exp": "Your notes: Types I, II and III are binary."
+   "exp": "Your notes: Types I, II and III (metal + nonmetal, two nonmetals) are binary."
   }
  ],
  "The five types": [
   {
-   "q": "FeCl₃ is which type?",
-   "right": "Type II",
+   "q": "What kind of compound is FeCl₃?",
+   "right": "Variable-charge metal + nonmetal (Type II)",
    "wrong": [
     [
-     "Type I, because it is made of a metal and a nonmetal, which is always named the same way",
-     "Iron is a transition metal: needs a numeral."
+     "Main-group metal + nonmetal (Type I), since FeCl₃ is a metal joined to a nonmetal",
+     "Iron can be 2+ or 3+: it needs a numeral."
     ],
     [
-     "Type III",
-     "Has a metal."
+     "Two nonmetals (Type III)",
+     "Iron is a metal."
     ],
     [
-     "Type V",
+     "Acid, starts with H (Type V)",
      "Doesn't start with H."
     ]
    ],
    "exp": "Transition metal + nonmetal = Type II."
   },
   {
-   "q": "K₂SO₄ is which type?",
-   "right": "Type IV",
+   "q": "What kind of compound is K₂SO₄?",
+   "right": "Has a polyatomic ion (Type IV)",
    "wrong": [
     [
-     "Type I, because potassium is a representative metal that only ever forms one ion",
+     "Main-group metal + nonmetal (Type I), because potassium is a main-group metal with one charge",
      "It contains sulfate, a polyatomic ion."
     ],
     [
-     "Type II",
+     "Variable-charge metal + nonmetal (Type II)",
      "K has one charge."
     ],
     [
-     "Type III",
+     "Two nonmetals (Type III)",
      "Has a metal."
     ]
    ],
    "exp": "Contains a polyatomic ion."
   }
  ],
- "Type I compound": [
+ "Type I: main-group metal + nonmetal": [
   {
-   "q": "Which compound is Type I?",
+   "q": "Which compound is a main-group metal with a nonmetal (Type I)?",
    "right": "Li₃N",
    "wrong": [
     [
      "CuCl₂, because copper and chlorine are a metal and a nonmetal joined by an ionic bond",
-     "Copper needs a numeral: Type II."
+     "Copper can be 1+ or 2+, so it needs a numeral (Type II)."
     ],
     [
      "SO₂",
-     "Covalent."
+     "Two nonmetals."
     ],
     [
      "Fe₂O₃",
-     "Type II."
+     "Iron needs a numeral."
     ]
    ],
-   "exp": "Lithium forms only Li⁺: Type I."
+   "exp": "Lithium forms only Li⁺: main-group metal + nonmetal."
   },
   {
-   "q": "Why does Type I naming work for MgBr₂ but not for FeBr₂?",
+   "q": "Why can MgBr₂ be named without a Roman numeral, but FeBr₂ can't?",
    "right": "Mg forms only one ion",
    "wrong": [
     [
@@ -396,7 +396,7 @@
      "It's a metal."
     ]
    ],
-   "exp": "Type I metals have a single possible charge."
+   "exp": "Main-group metals like Mg have one possible charge; iron has two."
   }
  ],
  "Cation first": [
@@ -679,7 +679,7 @@
    "exp": "Tin(IV) oxide is SnO₂."
   }
  ],
- "Type II compound": [
+ "Type II: variable metal + nonmetal": [
   {
    "q": "Which compound must be named with a Roman numeral?",
    "right": "CuO",
@@ -1039,7 +1039,7 @@
    "exp": "Tin can be 2+ or 4+, so it needs a numeral."
   }
  ],
- "Type III compound": [
+ "Type III: two nonmetals": [
   {
    "q": "Which compound is named with prefixes?",
    "right": "SF₆",
@@ -1057,7 +1057,7 @@
      "Ionic."
     ]
    ],
-   "exp": "Two nonmetals = Type III = prefixes."
+   "exp": "Two nonmetals: prefixes (Type III)."
   },
   {
    "q": "Name SF₆.",
@@ -2039,18 +2039,18 @@
    "exp": "Your practice test answer: (NH₄)₂SO₄."
   }
  ],
- "Type IV compound": [
+ "Type IV: contains a polyatomic ion": [
   {
-   "q": "Which compound is Type IV?",
+   "q": "Which compound contains a polyatomic ion (Type IV)?",
    "right": "Mg(OH)₂",
    "wrong": [
     [
      "MgO, because it contains the same metal and the same oxygen atom as magnesium hydroxide",
-     "Binary: Type I."
+     "Only two elements: metal + nonmetal."
     ],
     [
      "CO₂",
-     "Type III."
+     "Two nonmetals."
     ],
     [
      "HCl",
@@ -2060,12 +2060,12 @@
    "exp": "Hydroxide is a polyatomic ion."
   },
   {
-   "q": "How can you tell from the formula that NaHCO₃ is Type IV?",
+   "q": "How can you tell from the formula that NaHCO₃ contains a polyatomic ion?",
    "right": "It has more than two elements",
    "wrong": [
     [
-     "It has a metal, and every compound with a metal is named as a Type IV compound",
-     "Type I and II have metals too."
+     "It has a metal, and every compound with a metal contains a polyatomic ion",
+     "NaCl has a metal and no polyatomic ion."
     ],
     [
      "It starts with Na",
@@ -2239,7 +2239,7 @@
    "exp": "Your review key: manganese(IV) sulfite."
   }
  ],
- "Acid": [
+ "Type V: acid": [
   {
    "q": "Which formula is an acid?",
    "right": "HNO₃",
@@ -2641,19 +2641,19 @@
  ],
  "Starts with H": [
   {
-   "q": "H₃PO₄ is which type?",
-   "right": "Type V, an acid",
+   "q": "What kind of compound is H₃PO₄?",
+   "right": "Acid, starts with H (Type V)",
    "wrong": [
     [
-     "Type IV, because it contains phosphate, which is a polyatomic ion found on the sheet",
-     "Starts with H: acid first."
+     "Has a polyatomic ion (Type IV), since phosphate is on your ion sheet",
+     "Starts with H: it's an acid first."
     ],
     [
-     "Type III",
-     "Not binary covalent."
+     "Two nonmetals (Type III)",
+     "Not binary."
     ],
     [
-     "Type I",
+     "Main-group metal + nonmetal (Type I)",
      "No metal."
     ]
    ],
@@ -2681,19 +2681,19 @@
  ],
  "Two elements with a metal": [
   {
-   "q": "AlCl₃ is two elements, one a metal. Which type, and why?",
-   "right": "Type I: Al has one charge",
+   "q": "AlCl₃ is two elements, one a metal. What kind of compound is it?",
+   "right": "Main-group metal + nonmetal (Type I)",
    "wrong": [
     [
-     "Type II, because aluminum is a metal and every metal compound needs a Roman numeral",
+     "Variable-charge metal + nonmetal (Type II), since every metal needs a Roman numeral",
      "Al is always 3+."
     ],
     [
-     "Type III",
-     "Has a metal."
+     "Two nonmetals (Type III)",
+     "Al is a metal."
     ],
     [
-     "Type IV",
+     "Has a polyatomic ion (Type IV)",
      "Only two elements."
     ]
    ],
@@ -2716,7 +2716,7 @@
      "2 Cl⁻ means Ni²⁺."
     ]
    ],
-   "exp": "Transition metal → Type II."
+   "exp": "Nickel can carry more than one charge, so it needs a numeral."
   }
  ],
  "Two nonmetals": [
@@ -2737,7 +2737,7 @@
      "That's an ion."
     ]
    ],
-   "exp": "Type III: prefixes."
+   "exp": "Two nonmetals: prefixes."
   },
   {
    "q": "Your review asks if NO₂ is molecular or ionic. Answer and name:",

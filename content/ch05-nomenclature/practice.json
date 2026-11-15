@@ -1,12 +1,12 @@
 {
  "sections": [
   {
-   "name": "Name it: Types I and II",
+   "name": "Name it: metal + nonmetal",
    "mode": "practice",
    "tips": [
     "Ask the key's questions first: starts with H? Two elements? Metal or not? Polyatomic ion?",
-    "Type I and II: never prefixes. Type II: work out the charge from the anion and write it as a Roman numeral.",
-    "Type III: prefixes on both elements, but never mono- on the first.",
+    "Metal + nonmetal (ionic): never prefixes. If the metal can have more than one charge, work it out from the anion and write it as a Roman numeral.",
+    "Two nonmetals (covalent): prefixes on both elements, but never mono- on the first.",
     "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
     "Type your answer, then check it against the model answer."
    ],
@@ -14,8 +14,8 @@
     {
      "id": "N1",
      "type": "frq",
-     "topic": "Type I",
-     "title": "Type I names",
+     "topic": "One-charge metals",
+     "title": "Main-group metal + nonmetal (Type I)",
      "stem": "Write the name of each compound.",
      "data": [],
      "parts": [
@@ -54,8 +54,8 @@
     {
      "id": "N2",
      "type": "frq",
-     "topic": "Type II",
-     "title": "Type II names",
+     "topic": "Variable-charge metals",
+     "title": "Variable-charge metal + nonmetal (Type II)",
      "stem": "Write the name of each compound. Work out each metal's charge.",
      "data": [],
      "parts": [
@@ -104,12 +104,12 @@
    ]
   },
   {
-   "name": "Name it: covalent (Type III)",
+   "name": "Name it: two nonmetals (covalent)",
    "mode": "practice",
    "tips": [
     "Ask the key's questions first: starts with H? Two elements? Metal or not? Polyatomic ion?",
-    "Type I and II: never prefixes. Type II: work out the charge from the anion and write it as a Roman numeral.",
-    "Type III: prefixes on both elements, but never mono- on the first.",
+    "Metal + nonmetal (ionic): never prefixes. If the metal can have more than one charge, work it out from the anion and write it as a Roman numeral.",
+    "Two nonmetals (covalent): prefixes on both elements, but never mono- on the first.",
     "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
     "Type your answer, then check it against the model answer."
    ],
@@ -117,8 +117,8 @@
     {
      "id": "N3",
      "type": "frq",
-     "topic": "Type III",
-     "title": "Covalent names",
+     "topic": "Covalent",
+     "title": "Two nonmetals (Type III)",
      "stem": "Write the name of each compound.",
      "data": [],
      "parts": [
@@ -167,12 +167,12 @@
    ]
   },
   {
-   "name": "Name it: polyatomic ions (Type IV)",
+   "name": "Name it: polyatomic ions",
    "mode": "practice",
    "tips": [
     "Ask the key's questions first: starts with H? Two elements? Metal or not? Polyatomic ion?",
-    "Type I and II: never prefixes. Type II: work out the charge from the anion and write it as a Roman numeral.",
-    "Type III: prefixes on both elements, but never mono- on the first.",
+    "Metal + nonmetal (ionic): never prefixes. If the metal can have more than one charge, work it out from the anion and write it as a Roman numeral.",
+    "Two nonmetals (covalent): prefixes on both elements, but never mono- on the first.",
     "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
     "Type your answer, then check it against the model answer."
    ],
@@ -180,8 +180,8 @@
     {
      "id": "N4",
      "type": "frq",
-     "topic": "Type IV",
-     "title": "One-charge metals",
+     "topic": "Polyatomic ions",
+     "title": "Polyatomic ion with a one-charge metal (Type IV)",
      "stem": "Write the name of each compound. Use your ion sheet.",
      "data": [],
      "parts": [
@@ -220,8 +220,8 @@
     {
      "id": "N5",
      "type": "frq",
-     "topic": "Type IV",
-     "title": "Variable metals",
+     "topic": "Polyatomic ions",
+     "title": "Polyatomic ion with a variable-charge metal (Type IV)",
      "stem": "Write the name of each compound. Work out each metal's charge from the polyatomic ion.",
      "data": [],
      "parts": [
@@ -264,8 +264,8 @@
    "mode": "practice",
    "tips": [
     "Ask the key's questions first: starts with H? Two elements? Metal or not? Polyatomic ion?",
-    "Type I and II: never prefixes. Type II: work out the charge from the anion and write it as a Roman numeral.",
-    "Type III: prefixes on both elements, but never mono- on the first.",
+    "Metal + nonmetal (ionic): never prefixes. If the metal can have more than one charge, work it out from the anion and write it as a Roman numeral.",
+    "Two nonmetals (covalent): prefixes on both elements, but never mono- on the first.",
     "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
     "Type your answer, then check it against the model answer."
    ],
@@ -357,8 +357,8 @@
    "mode": "practice",
    "tips": [
     "Ask the key's questions first: starts with H? Two elements? Metal or not? Polyatomic ion?",
-    "Type I and II: never prefixes. Type II: work out the charge from the anion and write it as a Roman numeral.",
-    "Type III: prefixes on both elements, but never mono- on the first.",
+    "Metal + nonmetal (ionic): never prefixes. If the metal can have more than one charge, work it out from the anion and write it as a Roman numeral.",
+    "Two nonmetals (covalent): prefixes on both elements, but never mono- on the first.",
     "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
     "Type your answer, then check it against the model answer."
    ],
@@ -366,8 +366,8 @@
     {
      "id": "F1",
      "type": "frq",
-     "topic": "Types I and II",
-     "title": "Binary ionic formulas",
+     "topic": "Binary ionic",
+     "title": "Metal + nonmetal (Types I and II)",
      "stem": "Write the formula of each compound. Balance the charges, then reduce.",
      "data": [],
      "parts": [
@@ -406,8 +406,8 @@
     {
      "id": "F2",
      "type": "frq",
-     "topic": "Type III",
-     "title": "Covalent formulas",
+     "topic": "Covalent",
+     "title": "Two nonmetals (Type III)",
      "stem": "Write the formula of each compound. The prefixes are the subscripts.",
      "data": [],
      "parts": [
@@ -446,8 +446,8 @@
     {
      "id": "F3",
      "type": "frq",
-     "topic": "Type IV",
-     "title": "Polyatomic formulas",
+     "topic": "Polyatomic ions",
+     "title": "Polyatomic ions (Type IV)",
      "stem": "Write the formula of each compound. Use parentheses for more than one polyatomic ion.",
      "data": [],
      "parts": [
@@ -530,8 +530,8 @@
    "mode": "practice",
    "tips": [
     "Ask the key's questions first: starts with H? Two elements? Metal or not? Polyatomic ion?",
-    "Type I and II: never prefixes. Type II: work out the charge from the anion and write it as a Roman numeral.",
-    "Type III: prefixes on both elements, but never mono- on the first.",
+    "Metal + nonmetal (ionic): never prefixes. If the metal can have more than one charge, work it out from the anion and write it as a Roman numeral.",
+    "Two nonmetals (covalent): prefixes on both elements, but never mono- on the first.",
     "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
     "Type your answer, then check it against the model answer."
    ],
@@ -589,12 +589,12 @@
    ]
   },
   {
-   "name": "Which type?",
+   "name": "What kind of compound?",
    "mode": "practice",
    "tips": [
     "Ask the key's questions first: starts with H? Two elements? Metal or not? Polyatomic ion?",
-    "Type I and II: never prefixes. Type II: work out the charge from the anion and write it as a Roman numeral.",
-    "Type III: prefixes on both elements, but never mono- on the first.",
+    "Metal + nonmetal (ionic): never prefixes. If the metal can have more than one charge, work it out from the anion and write it as a Roman numeral.",
+    "Two nonmetals (covalent): prefixes on both elements, but never mono- on the first.",
     "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
     "Type your answer, then check it against the model answer."
    ],
@@ -602,20 +602,20 @@
     {
      "id": "L1",
      "type": "label",
-     "topic": "Types",
-     "stem": "Sort each compound into its naming type.",
+     "topic": "Kinds of compounds",
+     "stem": "What kind of compound is each one? (The type number your notes use is in parentheses.)",
      "labels": [
-      "Type I",
-      "Type II",
-      "Type III",
-      "Type IV",
-      "Type V (acid)"
+      "Main-group metal + nonmetal (Type I)",
+      "Variable-charge metal + nonmetal (Type II)",
+      "Two nonmetals (Type III)",
+      "Has a polyatomic ion (Type IV)",
+      "Acid, starts with H (Type V)"
      ],
      "items": [
       {
        "t": "NaBr",
        "ans": 0,
-       "exp": "Representative metal + nonmetal."
+       "exp": "Sodium has one charge."
       },
       {
        "t": "Fe₂O₃",
@@ -801,8 +801,8 @@
    ],
    "tips": [
     "Ask the key's questions first: starts with H? Two elements? Metal or not? Polyatomic ion?",
-    "Type I and II: never prefixes. Type II: work out the charge from the anion and write it as a Roman numeral.",
-    "Type III: prefixes on both elements, but never mono- on the first.",
+    "Metal + nonmetal (ionic): never prefixes. If the metal can have more than one charge, work it out from the anion and write it as a Roman numeral.",
+    "Two nonmetals (covalent): prefixes on both elements, but never mono- on the first.",
     "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
     "Type your answer, then check it against the model answer."
    ],
@@ -960,8 +960,8 @@
    ],
    "tips": [
     "Ask the key's questions first: starts with H? Two elements? Metal or not? Polyatomic ion?",
-    "Type I and II: never prefixes. Type II: work out the charge from the anion and write it as a Roman numeral.",
-    "Type III: prefixes on both elements, but never mono- on the first.",
+    "Metal + nonmetal (ionic): never prefixes. If the metal can have more than one charge, work it out from the anion and write it as a Roman numeral.",
+    "Two nonmetals (covalent): prefixes on both elements, but never mono- on the first.",
     "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
     "Type your answer, then check it against the model answer."
    ],
@@ -1119,8 +1119,8 @@
    ],
    "tips": [
     "Ask the key's questions first: starts with H? Two elements? Metal or not? Polyatomic ion?",
-    "Type I and II: never prefixes. Type II: work out the charge from the anion and write it as a Roman numeral.",
-    "Type III: prefixes on both elements, but never mono- on the first.",
+    "Metal + nonmetal (ionic): never prefixes. If the metal can have more than one charge, work it out from the anion and write it as a Roman numeral.",
+    "Two nonmetals (covalent): prefixes on both elements, but never mono- on the first.",
     "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
     "Type your answer, then check it against the model answer."
    ],

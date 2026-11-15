@@ -1,8 +1,8 @@
 A = [
-("Type III compound", "Which compound is named with prefixes?", "SF₆",
+("Type III: two nonmetals", "Which compound is named with prefixes?", "SF₆",
  [("FeCl₃, because the formula has three chlorine atoms that need to be counted in its name", "Ionic: uses a Roman numeral, not prefixes."),("MgO", "Ionic."),("NaCl", "Ionic.")],
- "Two nonmetals = Type III = prefixes."),
-("Type III compound", "Name SF₆.", "Sulfur hexafluoride",
+ "Two nonmetals: prefixes (Type III)."),
+("Type III: two nonmetals", "Name SF₆.", "Sulfur hexafluoride",
  [("Monosulfur hexafluoride, because each element in a covalent compound needs a prefix", "No mono- on the first element."),("Sulfur(VI) fluoride", "Numerals are for ionic."),("Sulfur fluoride", "Needs prefixes.")],
  "Your study guide answer: sulfur hexafluoride."),
 ("Naming the first nonmetal", "Name PCl₅.", "Phosphorus pentachloride",

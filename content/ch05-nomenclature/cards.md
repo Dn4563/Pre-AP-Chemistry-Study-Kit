@@ -25,7 +25,7 @@
 | Binary compound | A substance made of exactly two elements; Types I, II and III are all this kind. | Bi = two. |
 | The five types | I: representative metal + nonmetal; II: transition metal + nonmetal; III: two nonmetals; IV: contains a polyatomic ion; V: acids. | Five naming systems. |
 
-# Deck 2: Type I Ionic Compounds (5.2)
+# Deck 2: Main-Group Metal + Nonmetal (Type I, 5.2)
 
 > Type I compounds pair a representative (main-group) metal, which forms only one ion, with a nonmetal. Name the ions; ignore the subscripts.
 
@@ -35,7 +35,7 @@
 
 | Term | Definition | Hook |
 |---|---|---|
-| Type I compound | An ionic substance made of a representative metal (only one possible cation) and a nonmetal. | Main-group metal. |
+| Type I: main-group metal + nonmetal | An ionic compound whose cation has only one possible charge, such as Na⁺ or Mg²⁺; no numeral, no prefixes. | One-charge metal. |
 | Cation first | In every ionic name and formula, the positive ion comes before the negative one. | Metal first. |
 | Simple cation name | A main-group metal ion keeps the element's label unchanged: Na⁺ is sodium. | Name unchanged. |
 | -ide ending | A one-atom anion is named with the root of the element plus this suffix: Cl⁻ is chloride, O²⁻ is oxide. | Chlorine → chloride. |
@@ -51,7 +51,7 @@
 | Crisscross method | Each ion's charge number becomes the other ion's subscript: Al³⁺ and O²⁻ give Al₂O₃. | Criss-cross applesauce. |
 | Reduce after crossing | If the crossed subscripts share a factor, divide it out: Ca²⁺ and O²⁻ give CaO, not Ca₂O₂. | Simplest ratio. |
 
-# Deck 3: Type II Ionic Compounds (5.2)
+# Deck 3: Variable-Charge Metal + Nonmetal (Type II, 5.2)
 
 > Type II compounds contain a metal that can form more than one charge, usually a transition metal. The name has to say which charge, using a Roman numeral.
 
@@ -61,7 +61,7 @@
 
 | Term | Definition | Hook |
 |---|---|---|
-| Type II compound | An ionic substance whose metal can form two or more cations with different charges. | Metal with options. |
+| Type II: variable metal + nonmetal | An ionic compound whose cation can carry more than one charge, so the name gives it as a Roman numeral, such as iron(II) or iron(III). | Metal with options. |
 | Roman numeral | The metal's charge, written in parentheses right after its name: iron(III) is Fe³⁺. | Shows the charge. |
 | Working out the numeral | Total negative charge ÷ number of metal atoms = metal's charge: Fe₂O₃ has 3 × 2− = 6−, so each Fe is 3+. | Work backward. |
 | Numeral ≠ subscript | The Roman number in a name never tells how many atoms there are: CuCl₂ is copper(II) chloride because Cu is 2+. | Charge, not subscript. |
@@ -78,7 +78,7 @@
 | Lead | A representative metal with two possible charges (2+ or 4+), so it needs a numeral, as in PbS₂ (the 4+ form). | Needs a numeral. |
 | Tin | A representative metal with two possible charges (2+ or 4+), so it needs a numeral: SnCl₄ is tin(IV) chloride. | Needs a numeral. |
 
-# Deck 4: Type III Covalent Compounds (5.3)
+# Deck 4: Two Nonmetals, Covalent (Type III, 5.3)
 
 > Type III compounds are made of two nonmetals. Because nonmetals can combine in many ratios, the name uses prefixes to say exactly how many atoms of each element there are.
 
@@ -88,7 +88,7 @@
 
 | Term | Definition | Hook |
 |---|---|---|
-| Type III compound | A binary substance of two nonmetals, named with prefixes. | Nonmetal + nonmetal. |
+| Type III: two nonmetals | A covalent compound, named with prefixes that count each kind of atom. | Prefixes. |
 | Naming the first nonmetal | It is written out completely, unchanged: carbon, sulfur, nitrogen. | Full name first. |
 | Naming the second nonmetal | It takes an anion-style ending: oxygen becomes oxide, chlorine becomes chloride. | Ends in -ide. |
 | No mono- on the first element | If the formula starts with just one atom of something, that atom gets no prefix: CO₂ is carbon dioxide. | Never "monocarbon." |
@@ -122,7 +122,7 @@
 | No crisscross for covalent | Nonmetal-only compounds don't form ions, so charges are never crossed: sulfur trioxide is SO₃. | No charges to cross. |
 | Diatomic elements | H₂, N₂, O₂, F₂, Cl₂, Br₂ and I₂: substances too reactive to exist as single atoms. | Seven come in pairs. |
 
-# Deck 5: Type IV: Polyatomic Ions (5.5)
+# Deck 5: Polyatomic Ions (Type IV, 5.5)
 
 > Type IV compounds contain a polyatomic ion: a group of atoms with one overall charge. You'll have an ion sheet on the test, so the skill is using it: find the ion, use its charge, and never change it.
 
@@ -145,13 +145,13 @@
 
 | Term | Definition | Hook |
 |---|---|---|
-| Type IV compound | An ionic substance that contains at least one polyatomic ion. | More than two elements. |
+| Type IV: contains a polyatomic ion | A compound built around a charged group of atoms such as NO₃⁻, SO₄²⁻ or NH₄⁺. | More than two elements. |
 | Polyatomic name as given | The ion's label is copied unchanged from the sheet: Mg(NO₃)₂ is magnesium nitrate. | Copy it from the sheet. |
 | Parentheses for more than one | Wrap the ion in brackets with the subscript outside when you need two or more: Ca(OH)₂. | Ca(OH)₂, not CaOH₂. |
 | No parentheses for one | With only one polyatomic ion, skip the brackets: NaNO₃, not Na(NO₃). | One unit, no brackets. |
 | Variable metals in Type IV | A compound with a polyatomic ion still shows iron's or copper's charge in Roman numerals: Fe₃(PO₄)₂ is iron(II) phosphate. | Check the metal. |
 
-# Deck 6: Type V: Acids (5.6)
+# Deck 6: Acids (Type V, 5.6)
 
 > Acids are compounds that release H⁺ ions in water. You can spot them because H comes first in the formula. How you name one depends on whether the anion contains oxygen.
 
@@ -161,7 +161,7 @@
 
 | Term | Definition | Hook |
 |---|---|---|
-| Acid | A compound that produces H⁺ ions when dissolved in water; its formula starts with H. | H first. |
+| Type V: acid | A compound that produces H⁺ ions when dissolved in water; its formula starts with H. | H first. |
 | Binary acid | Hydrogen with a one-element anion (or cyanide); named hydro- + root + -ic: HBr is hydrobromic. | Hydro…ic. |
 | (aq) | The label showing a compound is dissolved in water; written after binary acid formulas such as HCl(aq). | Aqueous. |
 

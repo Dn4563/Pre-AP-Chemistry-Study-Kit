@@ -10,33 +10,33 @@ def lab(qid, topic, stem, labels, items):
     return {"id": qid, "type": "label", "topic": topic, "stem": stem, "labels": labels,
             "items": [{"t": f(t), "ans": a, "exp": f(e)} for t, a, e in items]}
 TIPS = ["Ask the key's questions first: starts with H? Two elements? Metal or not? Polyatomic ion?",
-        "Type I and II: never prefixes. Type II: work out the charge from the anion and write it as a Roman numeral.",
-        "Type III: prefixes on both elements, but never mono- on the first.",
+        "Metal + nonmetal (ionic): never prefixes. If the metal can have more than one charge, work it out from the anion and write it as a Roman numeral.",
+        "Two nonmetals (covalent): prefixes on both elements, but never mono- on the first.",
         "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
         "Type your answer, then check it against the model answer."]
 NAME = "Write the name of each compound."
 FORM = "Write the formula of each compound."
 S = []
-S.append(dict(name="Name it: Types I and II", mode="practice", tips=TIPS, questions=[
- frq("N1", "Type I", "Type I names", NAME, [
+S.append(dict(name="Name it: metal + nonmetal", mode="practice", tips=TIPS, questions=[
+ frq("N1", "One-charge metals", "Main-group metal + nonmetal (Type I)", NAME, [
   ("K2S", "Potassium sulfide"), ("CaI2", "Calcium iodide"), ("Ga2O3", "Gallium oxide"),
   ("SrF2", "Strontium fluoride"), ("Li2Se", "Lithium selenide"), ("Ba3N2", "Barium nitride (no prefixes for ionic compounds)")]),
- frq("N2", "Type II", "Type II names", NAME + " Work out each metal's charge.", [
+ frq("N2", "Variable-charge metals", "Variable-charge metal + nonmetal (Type II)", NAME + " Work out each metal's charge.", [
   ("CoCl2", "Cobalt(II) chloride: 2 Cl⁻ = 2−, so Co is 2+"), ("Fe2S3", "Iron(III) sulfide: 3 S²⁻ = 6−, ÷ 2 Fe = 3+"),
   ("MnO2", "Manganese(IV) oxide: 2 O²⁻ = 4−"), ("Cu3N", "Copper(I) nitride: N³⁻ ÷ 3 Cu = 1+ each"),
   ("SnBr4", "Tin(IV) bromide"), ("CrF3", "Chromium(III) fluoride"),
   ("ZnO", "Zinc oxide (zinc never gets a numeral)"), ("PbI2", "Lead(II) iodide (lead always needs one)")])]))
-S.append(dict(name="Name it: covalent (Type III)", mode="practice", tips=TIPS, questions=[
- frq("N3", "Type III", "Covalent names", NAME, [
+S.append(dict(name="Name it: two nonmetals (covalent)", mode="practice", tips=TIPS, questions=[
+ frq("N3", "Covalent", "Two nonmetals (Type III)", NAME, [
   ("PBr3", "Phosphorus tribromide"), ("SiCl4", "Silicon tetrachloride"), ("N2O", "Dinitrogen monoxide"),
   ("SO2", "Sulfur dioxide"), ("Cl2O7", "Dichlorine heptoxide (hepta + oxide → heptoxide)"),
   ("P4S10", "Tetraphosphorus decasulfide"), ("CF4", "Carbon tetrafluoride"), ("N2S5", "Dinitrogen pentasulfide")])]))
-S.append(dict(name="Name it: polyatomic ions (Type IV)", mode="practice", tips=TIPS, questions=[
- frq("N4", "Type IV", "One-charge metals", NAME + " Use your ion sheet.", [
+S.append(dict(name="Name it: polyatomic ions", mode="practice", tips=TIPS, questions=[
+ frq("N4", "Polyatomic ions", "Polyatomic ion with a one-charge metal (Type IV)", NAME + " Use your ion sheet.", [
   ("NaHCO3", "Sodium bicarbonate (or sodium hydrogen carbonate)"), ("Al(NO3)3", "Aluminum nitrate"),
   ("(NH4)3PO4", "Ammonium phosphate"), ("Mg(ClO4)2", "Magnesium perchlorate"),
   ("K2CrO4", "Potassium chromate"), ("LiC2H3O2", "Lithium acetate")]),
- frq("N5", "Type IV", "Variable metals", NAME + " Work out each metal's charge from the polyatomic ion.", [
+ frq("N5", "Polyatomic ions", "Polyatomic ion with a variable-charge metal (Type IV)", NAME + " Work out each metal's charge from the polyatomic ion.", [
   ("Fe(OH)3", "Iron(III) hydroxide: 3 OH⁻ = 3−"), ("CuSO4", "Copper(II) sulfate: SO₄²⁻ = 2−"),
   ("Pb(C2H3O2)4", "Lead(IV) acetate: 4 acetate = 4−"), ("Ni3(PO4)2", "Nickel(II) phosphate: 2 PO₄³⁻ = 6−, ÷ 3 Ni = 2+"),
   ("Sn(NO2)2", "Tin(II) nitrite"), ("Co(ClO3)3", "Cobalt(III) chlorate")])]))
@@ -50,13 +50,13 @@ S.append(dict(name="Name it: acids and hydrates", mode="practice", tips=TIPS, qu
   ("CuSO4*5H2O", "Copper(II) sulfate pentahydrate"), ("CaCl2*2H2O", "Calcium chloride dihydrate"),
   ("Na2CO3*10H2O", "Sodium carbonate decahydrate"), ("CoCl2*6H2O", "Cobalt(II) chloride hexahydrate")])]))
 S.append(dict(name="Write the formula", mode="practice", tips=TIPS, questions=[
- frq("F1", "Types I and II", "Binary ionic formulas", FORM + " Balance the charges, then reduce.", [
+ frq("F1", "Binary ionic", "Metal + nonmetal (Types I and II)", FORM + " Balance the charges, then reduce.", [
   ("magnesium iodide", "MgI2"), ("potassium nitride", "K3N"), ("aluminum sulfide", "Al2S3: Al³⁺ and S²⁻ crisscross"),
   ("iron(II) chloride", "FeCl2"), ("copper(II) oxide", "CuO: Cu²⁺ and O²⁻ cancel 1:1"), ("chromium(III) bromide", "CrBr3")]),
- frq("F2", "Type III", "Covalent formulas", FORM + " The prefixes are the subscripts.", [
+ frq("F2", "Covalent", "Two nonmetals (Type III)", FORM + " The prefixes are the subscripts.", [
   ("sulfur tetrafluoride", "SF4"), ("diboron trioxide", "B2O3"), ("carbon disulfide", "CS2"),
   ("tetraphosphorus heptasulfide", "P4S7"), ("nitrogen triiodide", "NI3"), ("dichlorine monoxide", "Cl2O")]),
- frq("F3", "Type IV", "Polyatomic formulas", FORM + " Use parentheses for more than one polyatomic ion.", [
+ frq("F3", "Polyatomic ions", "Polyatomic ions (Type IV)", FORM + " Use parentheses for more than one polyatomic ion.", [
   ("calcium phosphate", "Ca3(PO4)2: 3 Ca²⁺ = 6+, 2 PO₄³⁻ = 6−"), ("ammonium nitrate", "NH4NO3"),
   ("iron(III) sulfate", "Fe2(SO4)3"), ("zinc carbonate", "ZnCO3"), ("lead(II) chromate", "PbCrO4"),
   ("copper(I) sulfite", "Cu2SO3")]),
@@ -73,9 +73,9 @@ S.append(dict(name="Fix the error", mode="practice", tips=TIPS, questions=[
   ("barium hydroxide written Ba(OH)", "Ba(OH)2: Ba²⁺ needs two OH⁻"),
   ("chromium(II) oxide written Cr(II)O", "CrO: Roman numerals go in names, not formulas"),
   ("H2SO3 named \"sulfuric acid\"", "Sulfurous acid: H₂SO₃ comes from sulfite (-ite → -ous)")])]))
-S.append(dict(name="Which type?", mode="practice", tips=TIPS, questions=[
- lab("L1", "Types", "Sort each compound into its naming type.", ["Type I", "Type II", "Type III", "Type IV", "Type V (acid)"], [
-  ("NaBr", 0, "Representative metal + nonmetal."), ("Fe2O3", 1, "Iron needs a numeral."), ("N2O4", 2, "Two nonmetals."),
+S.append(dict(name="What kind of compound?", mode="practice", tips=TIPS, questions=[
+ lab("L1", "Kinds of compounds", "What kind of compound is each one? (The type number your notes use is in parentheses.)", ["Main-group metal + nonmetal (Type I)", "Variable-charge metal + nonmetal (Type II)", "Two nonmetals (Type III)", "Has a polyatomic ion (Type IV)", "Acid, starts with H (Type V)"], [
+  ("NaBr", 0, "Sodium has one charge."), ("Fe2O3", 1, "Iron needs a numeral."), ("N2O4", 2, "Two nonmetals."),
   ("KNO3", 3, "Nitrate is polyatomic."), ("HBr(aq)", 4, "Starts with H."), ("MgS", 0, "Mg has one charge."),
   ("SnCl2", 1, "Tin needs a numeral."), ("CCl4", 2, "Two nonmetals."), ("NH4Cl", 3, "Ammonium is polyatomic."),
   ("HNO2", 4, "Starts with H."), ("Al2O3", 0, "Al has one charge."), ("PbO", 1, "Lead needs a numeral.")]),
