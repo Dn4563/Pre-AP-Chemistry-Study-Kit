@@ -8,7 +8,7 @@
     "Metal + nonmetal (ionic): never prefixes. If the metal can have more than one charge, work it out from the anion and write it as a Roman numeral.",
     "Two nonmetals (covalent): prefixes on both elements, but never mono- on the first.",
     "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
-    "Type your answer, then check it against the model answer."
+    "Type each answer and press Check Answer: it is marked for you. If your answer is right but worded differently, use I got it."
    ],
    "questions": [
     {
@@ -22,32 +22,50 @@
       {
        "k": "a",
        "prompt": "K₂S",
-       "model": "Potassium sulfide"
+       "model": "Potassium sulfide",
+       "accept": [
+        "Potassium sulfide"
+       ]
       },
       {
        "k": "b",
        "prompt": "CaI₂",
-       "model": "Calcium iodide"
+       "model": "Calcium iodide",
+       "accept": [
+        "Calcium iodide"
+       ]
       },
       {
        "k": "c",
        "prompt": "Ga₂O₃",
-       "model": "Gallium oxide"
+       "model": "Gallium oxide",
+       "accept": [
+        "Gallium oxide"
+       ]
       },
       {
        "k": "d",
        "prompt": "SrF₂",
-       "model": "Strontium fluoride"
+       "model": "Strontium fluoride",
+       "accept": [
+        "Strontium fluoride"
+       ]
       },
       {
        "k": "e",
        "prompt": "Li₂Se",
-       "model": "Lithium selenide"
+       "model": "Lithium selenide",
+       "accept": [
+        "Lithium selenide"
+       ]
       },
       {
        "k": "f",
        "prompt": "Ba₃N₂",
-       "model": "Barium nitride (no prefixes for ionic compounds)"
+       "model": "Barium nitride (no prefixes for ionic compounds)",
+       "accept": [
+        "Barium nitride"
+       ]
       }
      ]
     },
@@ -62,42 +80,66 @@
       {
        "k": "a",
        "prompt": "CoCl₂",
-       "model": "Cobalt(II) chloride: 2 Cl⁻ = 2−, so Co is 2+"
+       "model": "Cobalt(II) chloride: 2 Cl⁻ = 2−, so Co is 2+",
+       "accept": [
+        "Cobalt(II) chloride"
+       ]
       },
       {
        "k": "b",
        "prompt": "Fe₂S₃",
-       "model": "Iron(III) sulfide: 3 S²⁻ = 6−, ÷ 2 Fe = 3+"
+       "model": "Iron(III) sulfide: 3 S²⁻ = 6−, ÷ 2 Fe = 3+",
+       "accept": [
+        "Iron(III) sulfide"
+       ]
       },
       {
        "k": "c",
        "prompt": "MnO₂",
-       "model": "Manganese(IV) oxide: 2 O²⁻ = 4−"
+       "model": "Manganese(IV) oxide: 2 O²⁻ = 4−",
+       "accept": [
+        "Manganese(IV) oxide"
+       ]
       },
       {
        "k": "d",
        "prompt": "Cu₃N",
-       "model": "Copper(I) nitride: N³⁻ ÷ 3 Cu = 1+ each"
+       "model": "Copper(I) nitride: N³⁻ ÷ 3 Cu = 1+ each",
+       "accept": [
+        "Copper(I) nitride"
+       ]
       },
       {
        "k": "e",
        "prompt": "SnBr₄",
-       "model": "Tin(IV) bromide"
+       "model": "Tin(IV) bromide",
+       "accept": [
+        "Tin(IV) bromide"
+       ]
       },
       {
        "k": "f",
        "prompt": "CrF₃",
-       "model": "Chromium(III) fluoride"
+       "model": "Chromium(III) fluoride",
+       "accept": [
+        "Chromium(III) fluoride"
+       ]
       },
       {
        "k": "g",
        "prompt": "ZnO",
-       "model": "Zinc oxide (zinc never gets a numeral)"
+       "model": "Zinc oxide (zinc never gets a numeral)",
+       "accept": [
+        "Zinc oxide"
+       ]
       },
       {
        "k": "h",
        "prompt": "PbI₂",
-       "model": "Lead(II) iodide (lead always needs one)"
+       "model": "Lead(II) iodide (lead always needs one)",
+       "accept": [
+        "Lead(II) iodide"
+       ]
       }
      ]
     }
@@ -111,7 +153,7 @@
     "Metal + nonmetal (ionic): never prefixes. If the metal can have more than one charge, work it out from the anion and write it as a Roman numeral.",
     "Two nonmetals (covalent): prefixes on both elements, but never mono- on the first.",
     "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
-    "Type your answer, then check it against the model answer."
+    "Type each answer and press Check Answer: it is marked for you. If your answer is right but worded differently, use I got it."
    ],
    "questions": [
     {
@@ -125,42 +167,66 @@
       {
        "k": "a",
        "prompt": "PBr₃",
-       "model": "Phosphorus tribromide"
+       "model": "Phosphorus tribromide",
+       "accept": [
+        "Phosphorus tribromide"
+       ]
       },
       {
        "k": "b",
        "prompt": "SiCl₄",
-       "model": "Silicon tetrachloride"
+       "model": "Silicon tetrachloride",
+       "accept": [
+        "Silicon tetrachloride"
+       ]
       },
       {
        "k": "c",
        "prompt": "N₂O",
-       "model": "Dinitrogen monoxide"
+       "model": "Dinitrogen monoxide",
+       "accept": [
+        "Dinitrogen monoxide"
+       ]
       },
       {
        "k": "d",
        "prompt": "SO₂",
-       "model": "Sulfur dioxide"
+       "model": "Sulfur dioxide",
+       "accept": [
+        "Sulfur dioxide"
+       ]
       },
       {
        "k": "e",
        "prompt": "Cl₂O₇",
-       "model": "Dichlorine heptoxide (hepta + oxide → heptoxide)"
+       "model": "Dichlorine heptoxide (hepta + oxide → heptoxide)",
+       "accept": [
+        "Dichlorine heptoxide"
+       ]
       },
       {
        "k": "f",
        "prompt": "P₄S₁₀",
-       "model": "Tetraphosphorus decasulfide"
+       "model": "Tetraphosphorus decasulfide",
+       "accept": [
+        "Tetraphosphorus decasulfide"
+       ]
       },
       {
        "k": "g",
        "prompt": "CF₄",
-       "model": "Carbon tetrafluoride"
+       "model": "Carbon tetrafluoride",
+       "accept": [
+        "Carbon tetrafluoride"
+       ]
       },
       {
        "k": "h",
        "prompt": "N₂S₅",
-       "model": "Dinitrogen pentasulfide"
+       "model": "Dinitrogen pentasulfide",
+       "accept": [
+        "Dinitrogen pentasulfide"
+       ]
       }
      ]
     }
@@ -174,7 +240,7 @@
     "Metal + nonmetal (ionic): never prefixes. If the metal can have more than one charge, work it out from the anion and write it as a Roman numeral.",
     "Two nonmetals (covalent): prefixes on both elements, but never mono- on the first.",
     "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
-    "Type your answer, then check it against the model answer."
+    "Type each answer and press Check Answer: it is marked for you. If your answer is right but worded differently, use I got it."
    ],
    "questions": [
     {
@@ -188,32 +254,51 @@
       {
        "k": "a",
        "prompt": "NaHCO₃",
-       "model": "Sodium bicarbonate (or sodium hydrogen carbonate)"
+       "model": "Sodium bicarbonate (or sodium hydrogen carbonate)",
+       "accept": [
+        "Sodium bicarbonate",
+        "Sodium hydrogen carbonate"
+       ]
       },
       {
        "k": "b",
        "prompt": "Al(NO₃)₃",
-       "model": "Aluminum nitrate"
+       "model": "Aluminum nitrate",
+       "accept": [
+        "Aluminum nitrate"
+       ]
       },
       {
        "k": "c",
        "prompt": "(NH₄)₃PO₄",
-       "model": "Ammonium phosphate"
+       "model": "Ammonium phosphate",
+       "accept": [
+        "Ammonium phosphate"
+       ]
       },
       {
        "k": "d",
        "prompt": "Mg(ClO₄)₂",
-       "model": "Magnesium perchlorate"
+       "model": "Magnesium perchlorate",
+       "accept": [
+        "Magnesium perchlorate"
+       ]
       },
       {
        "k": "e",
        "prompt": "K₂CrO₄",
-       "model": "Potassium chromate"
+       "model": "Potassium chromate",
+       "accept": [
+        "Potassium chromate"
+       ]
       },
       {
        "k": "f",
        "prompt": "LiC₂H₃O₂",
-       "model": "Lithium acetate"
+       "model": "Lithium acetate",
+       "accept": [
+        "Lithium acetate"
+       ]
       }
      ]
     },
@@ -228,32 +313,50 @@
       {
        "k": "a",
        "prompt": "Fe(OH)₃",
-       "model": "Iron(III) hydroxide: 3 OH⁻ = 3−"
+       "model": "Iron(III) hydroxide: 3 OH⁻ = 3−",
+       "accept": [
+        "Iron(III) hydroxide"
+       ]
       },
       {
        "k": "b",
        "prompt": "CuSO₄",
-       "model": "Copper(II) sulfate: SO₄²⁻ = 2−"
+       "model": "Copper(II) sulfate: SO₄²⁻ = 2−",
+       "accept": [
+        "Copper(II) sulfate"
+       ]
       },
       {
        "k": "c",
        "prompt": "Pb(C₂H₃O₂)₄",
-       "model": "Lead(IV) acetate: 4 acetate = 4−"
+       "model": "Lead(IV) acetate: 4 acetate = 4−",
+       "accept": [
+        "Lead(IV) acetate"
+       ]
       },
       {
        "k": "d",
        "prompt": "Ni₃(PO₄)₂",
-       "model": "Nickel(II) phosphate: 2 PO₄³⁻ = 6−, ÷ 3 Ni = 2+"
+       "model": "Nickel(II) phosphate: 2 PO₄³⁻ = 6−, ÷ 3 Ni = 2+",
+       "accept": [
+        "Nickel(II) phosphate"
+       ]
       },
       {
        "k": "e",
        "prompt": "Sn(NO₂)₂",
-       "model": "Tin(II) nitrite"
+       "model": "Tin(II) nitrite",
+       "accept": [
+        "Tin(II) nitrite"
+       ]
       },
       {
        "k": "f",
        "prompt": "Co(ClO₃)₃",
-       "model": "Cobalt(III) chlorate"
+       "model": "Cobalt(III) chlorate",
+       "accept": [
+        "Cobalt(III) chlorate"
+       ]
       }
      ]
     }
@@ -267,7 +370,7 @@
     "Metal + nonmetal (ionic): never prefixes. If the metal can have more than one charge, work it out from the anion and write it as a Roman numeral.",
     "Two nonmetals (covalent): prefixes on both elements, but never mono- on the first.",
     "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
-    "Type your answer, then check it against the model answer."
+    "Type each answer and press Check Answer: it is marked for you. If your answer is right but worded differently, use I got it."
    ],
    "questions": [
     {
@@ -281,42 +384,66 @@
       {
        "k": "a",
        "prompt": "HI(aq)",
-       "model": "Hydroiodic acid (no oxygen: hydro-…-ic)"
+       "model": "Hydroiodic acid (no oxygen: hydro-…-ic)",
+       "accept": [
+        "Hydroiodic acid"
+       ]
       },
       {
        "k": "b",
        "prompt": "HNO₃",
-       "model": "Nitric acid (nitrate → -ic)"
+       "model": "Nitric acid (nitrate → -ic)",
+       "accept": [
+        "Nitric acid"
+       ]
       },
       {
        "k": "c",
        "prompt": "H₂CO₃",
-       "model": "Carbonic acid (carbonate → -ic)"
+       "model": "Carbonic acid (carbonate → -ic)",
+       "accept": [
+        "Carbonic acid"
+       ]
       },
       {
        "k": "d",
        "prompt": "HClO₂",
-       "model": "Chlorous acid (chlorite → -ous)"
+       "model": "Chlorous acid (chlorite → -ous)",
+       "accept": [
+        "Chlorous acid"
+       ]
       },
       {
        "k": "e",
        "prompt": "H₃PO₄",
-       "model": "Phosphoric acid"
+       "model": "Phosphoric acid",
+       "accept": [
+        "Phosphoric acid"
+       ]
       },
       {
        "k": "f",
        "prompt": "HF(aq)",
-       "model": "Hydrofluoric acid"
+       "model": "Hydrofluoric acid",
+       "accept": [
+        "Hydrofluoric acid"
+       ]
       },
       {
        "k": "g",
        "prompt": "HC₂H₃O₂",
-       "model": "Acetic acid (acetate → -ic)"
+       "model": "Acetic acid (acetate → -ic)",
+       "accept": [
+        "Acetic acid"
+       ]
       },
       {
        "k": "h",
        "prompt": "HClO",
-       "model": "Hypochlorous acid (hypochlorite → hypo-…-ous)"
+       "model": "Hypochlorous acid (hypochlorite → hypo-…-ous)",
+       "accept": [
+        "Hypochlorous acid"
+       ]
       }
      ]
     },
@@ -331,22 +458,34 @@
       {
        "k": "a",
        "prompt": "CuSO₄·5H₂O",
-       "model": "Copper(II) sulfate pentahydrate"
+       "model": "Copper(II) sulfate pentahydrate",
+       "accept": [
+        "Copper(II) sulfate pentahydrate"
+       ]
       },
       {
        "k": "b",
        "prompt": "CaCl₂·2H₂O",
-       "model": "Calcium chloride dihydrate"
+       "model": "Calcium chloride dihydrate",
+       "accept": [
+        "Calcium chloride dihydrate"
+       ]
       },
       {
        "k": "c",
        "prompt": "Na₂CO₃·10H₂O",
-       "model": "Sodium carbonate decahydrate"
+       "model": "Sodium carbonate decahydrate",
+       "accept": [
+        "Sodium carbonate decahydrate"
+       ]
       },
       {
        "k": "d",
        "prompt": "CoCl₂·6H₂O",
-       "model": "Cobalt(II) chloride hexahydrate"
+       "model": "Cobalt(II) chloride hexahydrate",
+       "accept": [
+        "Cobalt(II) chloride hexahydrate"
+       ]
       }
      ]
     }
@@ -360,7 +499,7 @@
     "Metal + nonmetal (ionic): never prefixes. If the metal can have more than one charge, work it out from the anion and write it as a Roman numeral.",
     "Two nonmetals (covalent): prefixes on both elements, but never mono- on the first.",
     "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
-    "Type your answer, then check it against the model answer."
+    "Type each answer and press Check Answer: it is marked for you. If your answer is right but worded differently, use I got it."
    ],
    "questions": [
     {
@@ -374,32 +513,50 @@
       {
        "k": "a",
        "prompt": "magnesium iodide",
-       "model": "MgI₂"
+       "model": "MgI₂",
+       "accept": [
+        "MgI₂"
+       ]
       },
       {
        "k": "b",
        "prompt": "potassium nitride",
-       "model": "K₃N"
+       "model": "K₃N",
+       "accept": [
+        "K₃N"
+       ]
       },
       {
        "k": "c",
        "prompt": "aluminum sulfide",
-       "model": "Al₂S₃: Al³⁺ and S²⁻ crisscross"
+       "model": "Al₂S₃: Al³⁺ and S²⁻ crisscross",
+       "accept": [
+        "Al₂S₃"
+       ]
       },
       {
        "k": "d",
        "prompt": "iron(II) chloride",
-       "model": "FeCl₂"
+       "model": "FeCl₂",
+       "accept": [
+        "FeCl₂"
+       ]
       },
       {
        "k": "e",
        "prompt": "copper(II) oxide",
-       "model": "CuO: Cu²⁺ and O²⁻ cancel 1:1"
+       "model": "CuO: Cu²⁺ and O²⁻ cancel 1:1",
+       "accept": [
+        "CuO"
+       ]
       },
       {
        "k": "f",
        "prompt": "chromium(III) bromide",
-       "model": "CrBr₃"
+       "model": "CrBr₃",
+       "accept": [
+        "CrBr₃"
+       ]
       }
      ]
     },
@@ -414,32 +571,50 @@
       {
        "k": "a",
        "prompt": "sulfur tetrafluoride",
-       "model": "SF₄"
+       "model": "SF₄",
+       "accept": [
+        "SF₄"
+       ]
       },
       {
        "k": "b",
        "prompt": "diboron trioxide",
-       "model": "B₂O₃"
+       "model": "B₂O₃",
+       "accept": [
+        "B₂O₃"
+       ]
       },
       {
        "k": "c",
        "prompt": "carbon disulfide",
-       "model": "CS₂"
+       "model": "CS₂",
+       "accept": [
+        "CS₂"
+       ]
       },
       {
        "k": "d",
        "prompt": "tetraphosphorus heptasulfide",
-       "model": "P₄S₇"
+       "model": "P₄S₇",
+       "accept": [
+        "P₄S₇"
+       ]
       },
       {
        "k": "e",
        "prompt": "nitrogen triiodide",
-       "model": "NI₃"
+       "model": "NI₃",
+       "accept": [
+        "NI₃"
+       ]
       },
       {
        "k": "f",
        "prompt": "dichlorine monoxide",
-       "model": "Cl₂O"
+       "model": "Cl₂O",
+       "accept": [
+        "Cl₂O"
+       ]
       }
      ]
     },
@@ -454,32 +629,50 @@
       {
        "k": "a",
        "prompt": "calcium phosphate",
-       "model": "Ca₃(PO₄)₂: 3 Ca²⁺ = 6+, 2 PO₄³⁻ = 6−"
+       "model": "Ca₃(PO₄)₂: 3 Ca²⁺ = 6+, 2 PO₄³⁻ = 6−",
+       "accept": [
+        "Ca₃(PO₄)₂"
+       ]
       },
       {
        "k": "b",
        "prompt": "ammonium nitrate",
-       "model": "NH₄NO₃"
+       "model": "NH₄NO₃",
+       "accept": [
+        "NH₄NO₃"
+       ]
       },
       {
        "k": "c",
        "prompt": "iron(III) sulfate",
-       "model": "Fe₂(SO₄)₃"
+       "model": "Fe₂(SO₄)₃",
+       "accept": [
+        "Fe₂(SO₄)₃"
+       ]
       },
       {
        "k": "d",
        "prompt": "zinc carbonate",
-       "model": "ZnCO₃"
+       "model": "ZnCO₃",
+       "accept": [
+        "ZnCO₃"
+       ]
       },
       {
        "k": "e",
        "prompt": "lead(II) chromate",
-       "model": "PbCrO₄"
+       "model": "PbCrO₄",
+       "accept": [
+        "PbCrO₄"
+       ]
       },
       {
        "k": "f",
        "prompt": "copper(I) sulfite",
-       "model": "Cu₂SO₃"
+       "model": "Cu₂SO₃",
+       "accept": [
+        "Cu₂SO₃"
+       ]
       }
      ]
     },
@@ -494,32 +687,50 @@
       {
        "k": "a",
        "prompt": "hydrochloric acid",
-       "model": "HCl(aq)"
+       "model": "HCl(aq)",
+       "accept": [
+        "HCl(aq)"
+       ]
       },
       {
        "k": "b",
        "prompt": "sulfuric acid",
-       "model": "H₂SO₄"
+       "model": "H₂SO₄",
+       "accept": [
+        "H₂SO₄"
+       ]
       },
       {
        "k": "c",
        "prompt": "nitrous acid",
-       "model": "HNO₂"
+       "model": "HNO₂",
+       "accept": [
+        "HNO₂"
+       ]
       },
       {
        "k": "d",
        "prompt": "perchloric acid",
-       "model": "HClO₄"
+       "model": "HClO₄",
+       "accept": [
+        "HClO₄"
+       ]
       },
       {
        "k": "e",
        "prompt": "hydrocyanic acid",
-       "model": "HCN(aq)"
+       "model": "HCN(aq)",
+       "accept": [
+        "HCN(aq)"
+       ]
       },
       {
        "k": "f",
        "prompt": "barium chloride dihydrate",
-       "model": "BaCl₂·2H₂O"
+       "model": "BaCl₂·2H₂O",
+       "accept": [
+        "BaCl₂·2H₂O"
+       ]
       }
      ]
     }
@@ -533,7 +744,7 @@
     "Metal + nonmetal (ionic): never prefixes. If the metal can have more than one charge, work it out from the anion and write it as a Roman numeral.",
     "Two nonmetals (covalent): prefixes on both elements, but never mono- on the first.",
     "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
-    "Type your answer, then check it against the model answer."
+    "Type each answer and press Check Answer: it is marked for you. If your answer is right but worded differently, use I got it."
    ],
    "questions": [
     {
@@ -596,7 +807,7 @@
     "Metal + nonmetal (ionic): never prefixes. If the metal can have more than one charge, work it out from the anion and write it as a Roman numeral.",
     "Two nonmetals (covalent): prefixes on both elements, but never mono- on the first.",
     "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
-    "Type your answer, then check it against the model answer."
+    "Type each answer and press Check Answer: it is marked for you. If your answer is right but worded differently, use I got it."
    ],
    "questions": [
     {
@@ -804,7 +1015,7 @@
     "Metal + nonmetal (ionic): never prefixes. If the metal can have more than one charge, work it out from the anion and write it as a Roman numeral.",
     "Two nonmetals (covalent): prefixes on both elements, but never mono- on the first.",
     "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
-    "Type your answer, then check it against the model answer."
+    "Type each answer and press Check Answer: it is marked for you. If your answer is right but worded differently, use I got it."
    ],
    "questions": [
     {
@@ -818,32 +1029,50 @@
       {
        "k": "a",
        "prompt": "Na₃P",
-       "model": "Sodium phosphide"
+       "model": "Sodium phosphide",
+       "accept": [
+        "Sodium phosphide"
+       ]
       },
       {
        "k": "b",
        "prompt": "BaBr₂",
-       "model": "Barium bromide"
+       "model": "Barium bromide",
+       "accept": [
+        "Barium bromide"
+       ]
       },
       {
        "k": "c",
        "prompt": "Ni₂O₃",
-       "model": "Nickel(III) oxide"
+       "model": "Nickel(III) oxide",
+       "accept": [
+        "Nickel(III) oxide"
+       ]
       },
       {
        "k": "d",
        "prompt": "V₂O₅",
-       "model": "Vanadium(V) oxide"
+       "model": "Vanadium(V) oxide",
+       "accept": [
+        "Vanadium(V) oxide"
+       ]
       },
       {
        "k": "e",
        "prompt": "AgI",
-       "model": "Silver iodide"
+       "model": "Silver iodide",
+       "accept": [
+        "Silver iodide"
+       ]
       },
       {
        "k": "f",
        "prompt": "SnS₂",
-       "model": "Tin(IV) sulfide"
+       "model": "Tin(IV) sulfide",
+       "accept": [
+        "Tin(IV) sulfide"
+       ]
       }
      ]
     },
@@ -858,22 +1087,34 @@
       {
        "k": "a",
        "prompt": "S₂Cl₂",
-       "model": "Disulfur dichloride"
+       "model": "Disulfur dichloride",
+       "accept": [
+        "Disulfur dichloride"
+       ]
       },
       {
        "k": "b",
        "prompt": "SeO₂",
-       "model": "Selenium dioxide"
+       "model": "Selenium dioxide",
+       "accept": [
+        "Selenium dioxide"
+       ]
       },
       {
        "k": "c",
        "prompt": "PF₅",
-       "model": "Phosphorus pentafluoride"
+       "model": "Phosphorus pentafluoride",
+       "accept": [
+        "Phosphorus pentafluoride"
+       ]
       },
       {
        "k": "d",
        "prompt": "B₂H₆",
-       "model": "Diboron hexahydride"
+       "model": "Diboron hexahydride",
+       "accept": [
+        "Diboron hexahydride"
+       ]
       }
      ]
     },
@@ -888,37 +1129,59 @@
       {
        "k": "a",
        "prompt": "Ca(HCO₃)₂",
-       "model": "Calcium bicarbonate (calcium hydrogen carbonate)"
+       "model": "Calcium bicarbonate (calcium hydrogen carbonate)",
+       "accept": [
+        "Calcium bicarbonate",
+        "Calcium hydrogen carbonate"
+       ]
       },
       {
        "k": "b",
        "prompt": "(NH₄)₂Cr₂O₇",
-       "model": "Ammonium dichromate"
+       "model": "Ammonium dichromate",
+       "accept": [
+        "Ammonium dichromate"
+       ]
       },
       {
        "k": "c",
        "prompt": "Fe(C₂H₃O₂)₂",
-       "model": "Iron(II) acetate"
+       "model": "Iron(II) acetate",
+       "accept": [
+        "Iron(II) acetate"
+       ]
       },
       {
        "k": "d",
        "prompt": "Al₂(SO₃)₃",
-       "model": "Aluminum sulfite"
+       "model": "Aluminum sulfite",
+       "accept": [
+        "Aluminum sulfite"
+       ]
       },
       {
        "k": "e",
        "prompt": "Cu(ClO₄)₂",
-       "model": "Copper(II) perchlorate"
+       "model": "Copper(II) perchlorate",
+       "accept": [
+        "Copper(II) perchlorate"
+       ]
       },
       {
        "k": "f",
        "prompt": "Pb₃(PO₄)₄",
-       "model": "Lead(IV) phosphate: 4 PO₄³⁻ = 12−, ÷ 3 Pb = 4+"
+       "model": "Lead(IV) phosphate: 4 PO₄³⁻ = 12−, ÷ 3 Pb = 4+",
+       "accept": [
+        "Lead(IV) phosphate"
+       ]
       },
       {
        "k": "g",
        "prompt": "CoCO₃",
-       "model": "Cobalt(II) carbonate"
+       "model": "Cobalt(II) carbonate",
+       "accept": [
+        "Cobalt(II) carbonate"
+       ]
       }
      ]
     },
@@ -933,17 +1196,26 @@
       {
        "k": "a",
        "prompt": "H₃PO₃",
-       "model": "Phosphorous acid (phosphite → -ous)"
+       "model": "Phosphorous acid (phosphite → -ous)",
+       "accept": [
+        "Phosphorous acid"
+       ]
       },
       {
        "k": "b",
        "prompt": "H₂C₂O₄",
-       "model": "Oxalic acid (oxalate → -ic)"
+       "model": "Oxalic acid (oxalate → -ic)",
+       "accept": [
+        "Oxalic acid"
+       ]
       },
       {
        "k": "c",
        "prompt": "NiSO₄·7H₂O",
-       "model": "Nickel(II) sulfate heptahydrate"
+       "model": "Nickel(II) sulfate heptahydrate",
+       "accept": [
+        "Nickel(II) sulfate heptahydrate"
+       ]
       }
      ]
     }
@@ -963,7 +1235,7 @@
     "Metal + nonmetal (ionic): never prefixes. If the metal can have more than one charge, work it out from the anion and write it as a Roman numeral.",
     "Two nonmetals (covalent): prefixes on both elements, but never mono- on the first.",
     "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
-    "Type your answer, then check it against the model answer."
+    "Type each answer and press Check Answer: it is marked for you. If your answer is right but worded differently, use I got it."
    ],
    "questions": [
     {
@@ -977,37 +1249,58 @@
       {
        "k": "a",
        "prompt": "strontium chloride",
-       "model": "SrCl₂"
+       "model": "SrCl₂",
+       "accept": [
+        "SrCl₂"
+       ]
       },
       {
        "k": "b",
        "prompt": "aluminum nitride",
-       "model": "AlN: Al³⁺ and N³⁻ cancel 1:1"
+       "model": "AlN: Al³⁺ and N³⁻ cancel 1:1",
+       "accept": [
+        "AlN"
+       ]
       },
       {
        "k": "c",
        "prompt": "rubidium sulfide",
-       "model": "Rb₂S"
+       "model": "Rb₂S",
+       "accept": [
+        "Rb₂S"
+       ]
       },
       {
        "k": "d",
        "prompt": "iron(II) phosphide",
-       "model": "Fe₃P₂: 3 Fe²⁺ = 6+, 2 P³⁻ = 6−"
+       "model": "Fe₃P₂: 3 Fe²⁺ = 6+, 2 P³⁻ = 6−",
+       "accept": [
+        "Fe₃P₂"
+       ]
       },
       {
        "k": "e",
        "prompt": "chromium(VI) oxide",
-       "model": "CrO₃"
+       "model": "CrO₃",
+       "accept": [
+        "CrO₃"
+       ]
       },
       {
        "k": "f",
        "prompt": "copper(II) nitride",
-       "model": "Cu₃N₂"
+       "model": "Cu₃N₂",
+       "accept": [
+        "Cu₃N₂"
+       ]
       },
       {
        "k": "g",
        "prompt": "tin(II) fluoride",
-       "model": "SnF₂"
+       "model": "SnF₂",
+       "accept": [
+        "SnF₂"
+       ]
       }
      ]
     },
@@ -1022,17 +1315,26 @@
       {
        "k": "a",
        "prompt": "dinitrogen monoxide",
-       "model": "N₂O"
+       "model": "N₂O",
+       "accept": [
+        "N₂O"
+       ]
       },
       {
        "k": "b",
        "prompt": "tetrasulfur tetranitride",
-       "model": "S₄N₄ (covalent: don't reduce)"
+       "model": "S₄N₄ (covalent: don't reduce)",
+       "accept": [
+        "S₄N₄"
+       ]
       },
       {
        "k": "c",
        "prompt": "iodine heptafluoride",
-       "model": "IF₇"
+       "model": "IF₇",
+       "accept": [
+        "IF₇"
+       ]
       }
      ]
     },
@@ -1047,32 +1349,50 @@
       {
        "k": "a",
        "prompt": "sodium phosphate",
-       "model": "Na₃PO₄"
+       "model": "Na₃PO₄",
+       "accept": [
+        "Na₃PO₄"
+       ]
       },
       {
        "k": "b",
        "prompt": "magnesium nitrite",
-       "model": "Mg(NO₂)₂"
+       "model": "Mg(NO₂)₂",
+       "accept": [
+        "Mg(NO₂)₂"
+       ]
       },
       {
        "k": "c",
        "prompt": "ammonium sulfide",
-       "model": "(NH₄)₂S"
+       "model": "(NH₄)₂S",
+       "accept": [
+        "(NH₄)₂S"
+       ]
       },
       {
        "k": "d",
        "prompt": "iron(III) nitrate",
-       "model": "Fe(NO₃)₃"
+       "model": "Fe(NO₃)₃",
+       "accept": [
+        "Fe(NO₃)₃"
+       ]
       },
       {
        "k": "e",
        "prompt": "lead(II) carbonate",
-       "model": "PbCO₃"
+       "model": "PbCO₃",
+       "accept": [
+        "PbCO₃"
+       ]
       },
       {
        "k": "f",
        "prompt": "copper(II) hydrogen carbonate",
-       "model": "Cu(HCO₃)₂"
+       "model": "Cu(HCO₃)₂",
+       "accept": [
+        "Cu(HCO₃)₂"
+       ]
       }
      ]
     },
@@ -1087,22 +1407,35 @@
       {
        "k": "a",
        "prompt": "hydroiodic acid",
-       "model": "HI(aq)"
+       "model": "HI(aq)",
+       "accept": [
+        "HI(aq)"
+       ]
       },
       {
        "k": "b",
        "prompt": "chlorous acid",
-       "model": "HClO₂"
+       "model": "HClO₂",
+       "accept": [
+        "HClO₂"
+       ]
       },
       {
        "k": "c",
        "prompt": "acetic acid",
-       "model": "HC₂H₃O₂"
+       "model": "HC₂H₃O₂",
+       "accept": [
+        "HC₂H₃O₂",
+        "CH₃COOH"
+       ]
       },
       {
        "k": "d",
        "prompt": "zinc sulfate heptahydrate",
-       "model": "ZnSO₄·7H₂O"
+       "model": "ZnSO₄·7H₂O",
+       "accept": [
+        "ZnSO₄·7H₂O"
+       ]
       }
      ]
     }
@@ -1122,7 +1455,7 @@
     "Metal + nonmetal (ionic): never prefixes. If the metal can have more than one charge, work it out from the anion and write it as a Roman numeral.",
     "Two nonmetals (covalent): prefixes on both elements, but never mono- on the first.",
     "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
-    "Type your answer, then check it against the model answer."
+    "Type each answer and press Check Answer: it is marked for you. If your answer is right but worded differently, use I got it."
    ],
    "questions": [
     {

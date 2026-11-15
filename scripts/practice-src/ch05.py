@@ -3,9 +3,20 @@ import json, os, re
 SUB = str.maketrans("0123456789", "₀₁₂₃₄₅₆₇₈₉")
 def f(s):  # digits after a letter or ")" become subscripts; a hydrate's leading count stays normal
     return re.sub(r"(?<=[A-Za-z)])(\d+)", lambda m: m.group(1).translate(SUB), s).replace("*", "·")
+ALT = {"Sodium bicarbonate": ["Sodium hydrogen carbonate"], "Calcium bicarbonate": ["Calcium hydrogen carbonate"],
+       "Copper(II) hydrogen carbonate": ["Copper(II) bicarbonate"], "HC2H3O2": ["CH3COOH"]}
+def answer(m):  # the answer part of a model: drop " (comments)" and anything after ":"
+    return re.sub(r"\s+\([^)]*\)", "", m).split(":")[0].strip()
+TYPED = {"N1","N2","N3","N4","N5","N6","N7","F1","F2","F3","F4","M1","M2","M3","M4","M5","M6","M7","M8"}
 def frq(qid, topic, title, stem, parts):
-    return {"id": qid, "type": "frq", "topic": topic, "title": title, "stem": stem, "data": [],
-            "parts": [{"k": "abcdefghij"[i], "prompt": f(p), "model": f(m)} for i, (p, m) in enumerate(parts)]}
+    out = []
+    for i, (p, m) in enumerate(parts):
+        part = {"k": "abcdefghij"[i], "prompt": f(p), "model": f(m)}
+        if qid in TYPED:
+            main = answer(m)
+            part["accept"] = [f(main)] + [f(x) for x in ALT.get(main, [])]
+        out.append(part)
+    return {"id": qid, "type": "frq", "topic": topic, "title": title, "stem": stem, "data": [], "parts": out}
 def lab(qid, topic, stem, labels, items):
     return {"id": qid, "type": "label", "topic": topic, "stem": stem, "labels": labels,
             "items": [{"t": f(t), "ans": a, "exp": f(e)} for t, a, e in items]}
@@ -13,7 +24,7 @@ TIPS = ["Ask the key's questions first: starts with H? Two elements? Metal or no
         "Metal + nonmetal (ionic): never prefixes. If the metal can have more than one charge, work it out from the anion and write it as a Roman numeral.",
         "Two nonmetals (covalent): prefixes on both elements, but never mono- on the first.",
         "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
-        "Type your answer, then check it against the model answer."]
+        "Type each answer and press Check Answer: it is marked for you. If your answer is right but worded differently, use I got it."]
 NAME = "Write the name of each compound."
 FORM = "Write the formula of each compound."
 S = []

@@ -38,7 +38,7 @@
  ],
  "tables": [
   {
-   "title": "Polyatomic ion sheet (the ions in your worksheets; use your class sheet on the test)",
+   "title": "Polyatomic ion sheet (from your class's Polyatomic Ions Sheet)",
    "deck": 5,
    "rows": [
     [
@@ -62,28 +62,8 @@
      "1−"
     ],
     [
-     "Bisulfate (hydrogen sulfate)",
+     "Hydrogen sulfate",
      "HSO₄⁻",
-     "1−"
-    ],
-    [
-     "Chlorate",
-     "ClO₃⁻",
-     "1−"
-    ],
-    [
-     "Chlorite",
-     "ClO₂⁻",
-     "1−"
-    ],
-    [
-     "Hypochlorite",
-     "ClO⁻",
-     "1−"
-    ],
-    [
-     "Perchlorate",
-     "ClO₄⁻",
      "1−"
     ],
     [
@@ -92,18 +72,13 @@
      "1−"
     ],
     [
-     "Formate",
-     "HCOO⁻",
+     "Thiocyanate",
+     "SCN⁻",
      "1−"
     ],
     [
      "Hydroxide",
      "OH⁻",
-     "1−"
-    ],
-    [
-     "Iodate",
-     "IO₃⁻",
      "1−"
     ],
     [
@@ -122,28 +97,68 @@
      "1−"
     ],
     [
+     "Perchlorate",
+     "ClO₄⁻",
+     "1−"
+    ],
+    [
+     "Chlorate",
+     "ClO₃⁻",
+     "1−"
+    ],
+    [
+     "Chlorite",
+     "ClO₂⁻",
+     "1−"
+    ],
+    [
+     "Hypochlorite",
+     "ClO⁻",
+     "1−"
+    ],
+    [
+     "Perbromate",
+     "BrO₄⁻",
+     "1−"
+    ],
+    [
+     "Bromate",
+     "BrO₃⁻",
+     "1−"
+    ],
+    [
+     "Bromite",
+     "BrO₂⁻",
+     "1−"
+    ],
+    [
+     "Hypobromite",
+     "BrO⁻",
+     "1−"
+    ],
+    [
+     "Periodate",
+     "IO₄⁻",
+     "1−"
+    ],
+    [
+     "Iodate",
+     "IO₃⁻",
+     "1−"
+    ],
+    [
+     "Iodite",
+     "IO₂⁻",
+     "1−"
+    ],
+    [
+     "Hypoiodite",
+     "IO⁻",
+     "1−"
+    ],
+    [
      "Carbonate",
      "CO₃²⁻",
-     "2−"
-    ],
-    [
-     "Chromate",
-     "CrO₄²⁻",
-     "2−"
-    ],
-    [
-     "Dichromate",
-     "Cr₂O₇²⁻",
-     "2−"
-    ],
-    [
-     "Hydrogen phosphate",
-     "HPO₄²⁻",
-     "2−"
-    ],
-    [
-     "Oxalate",
-     "C₂O₄²⁻",
      "2−"
     ],
     [
@@ -157,9 +172,34 @@
      "2−"
     ],
     [
-     "Borate",
-     "BO₃³⁻",
-     "3−"
+     "Thiosulfate",
+     "S₂O₃²⁻",
+     "2−"
+    ],
+    [
+     "Chromate",
+     "CrO₄²⁻",
+     "2−"
+    ],
+    [
+     "Dichromate",
+     "Cr₂O₇²⁻",
+     "2−"
+    ],
+    [
+     "Oxalate",
+     "C₂O₄²⁻",
+     "2−"
+    ],
+    [
+     "Peroxide",
+     "O₂²⁻",
+     "2−"
+    ],
+    [
+     "Phthalate",
+     "C₈H₄O₄²⁻",
+     "2−"
     ],
     [
      "Phosphate",
@@ -170,6 +210,16 @@
      "Phosphite",
      "PO₃³⁻",
      "3−"
+    ],
+    [
+     "Arsenate",
+     "AsO₄³⁻",
+     "3−"
+    ],
+    [
+     "Hydrogen phosphate (not on your sheet; it's in your review)",
+     "HPO₄²⁻",
+     "2−"
     ]
    ]
   },

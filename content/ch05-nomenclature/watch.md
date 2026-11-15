@@ -9,5 +9,5 @@ Places where your sources disagree or the answer keys look wrong. Each starts wi
 - (deck 5) The review key calls ZnHPO₄ "zinc biphosphate." The ion HPO₄²⁻ is hydrogen phosphate (your practice test uses "aluminum hydrogen phosphate" for Al₂(HPO₄)₃). Use the name on your ion sheet.
 - (deck 5) Your study guide accepts both "bicarbonate" and "hydrogen carbonate" for HCO₃⁻.
 - (deck 3) The review key writes copper(I) as "copper (1)" and iron(III) as "Iron (111)" in places: those are Roman numerals I and III.
-- (deck 5) Polyatomic ion names come from your class sheet on the test. The table in the Study guide lists only the ions that appear in your worksheets; if your sheet uses a different name, use the sheet's.
+- (deck 5) The Study guide's ion table now matches your class's Polyatomic Ions Sheet (Chapter 4 folder). Two differences from your worksheets: the sheet calls HSO₄⁻ "hydrogen sulfate" (your mixed-naming key says "bisulfate"; both are used), and hydrogen phosphate (HPO₄²⁻) is in your review but not on the sheet. The acids page's boric acid (H₃BO₃) and formic acid (HCOOH) use ions that aren't on the sheet either.
 - (deck 1) The guided notes also mention "hyposulfite" as an example oxyanion but never give its formula, so it's left out.
