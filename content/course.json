@@ -27,6 +27,15 @@
       "blurb": "The periodic table, the history of the atom, protons, neutrons and electrons, isotopes and average atomic mass, ions and ionic formulas, and molar mass and the mole (sections 4.3 to 4.11).",
       "learnMix": true,
       "recall": true
+    },
+    {
+      "id": "ch05",
+      "dir": "ch05-nomenclature",
+      "label": "Chapter 5",
+      "title": "Nomenclature",
+      "blurb": "Naming compounds and writing formulas: Type I and II ionic compounds, covalent prefixes, polyatomic ions, acids and hydrates (sections 5.1 to 5.6).",
+      "learnMix": true,
+      "recall": true
     }
   ]
 }

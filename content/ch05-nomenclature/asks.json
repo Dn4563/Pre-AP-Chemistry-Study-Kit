@@ -1,0 +1,3042 @@
+{
+ "Empirical formula": [
+  {
+   "q": "Which formula is already an empirical formula?",
+   "right": "N₂O₅",
+   "wrong": [
+    [
+     "N₂O₄, because it is the formula chemists use most often for this nitrogen oxide",
+     "N₂O₄ reduces to NO₂."
+    ],
+    [
+     "C₂H₄",
+     "Reduces to CH₂."
+    ],
+    [
+     "H₂O₂",
+     "Reduces to HO."
+    ]
+   ],
+   "exp": "2 and 5 share no factor, so N₂O₅ is already in lowest terms."
+  },
+  {
+   "q": "What is the empirical formula of C₆H₁₂O₆?",
+   "right": "CH₂O",
+   "wrong": [
+    [
+     "C₆H₁₂O₆, because a formula is always already written in its simplest ratio",
+     "Divide by 6."
+    ],
+    [
+     "C₃H₆O₃",
+     "Still divisible by 3."
+    ],
+    [
+     "CHO",
+     "H is twice C."
+    ]
+   ],
+   "exp": "Divide every subscript by 6."
+  }
+ ],
+ "Molecular formula": [
+  {
+   "q": "Hydrogen peroxide molecules each contain 2 H and 2 O atoms. What is its molecular formula?",
+   "right": "H₂O₂",
+   "wrong": [
+    [
+     "HO, because a molecular formula is always reduced to the smallest whole-number ratio",
+     "That's the empirical formula."
+    ],
+    [
+     "H₂O",
+     "That's water."
+    ],
+    [
+     "2HO",
+     "Not a formula."
+    ]
+   ],
+   "exp": "A molecular formula shows every atom actually present."
+  },
+  {
+   "q": "N₂O₄ and NO₂ have the same empirical formula. What's different?",
+   "right": "Their molecular formulas",
+   "wrong": [
+    [
+     "Their empirical formulas, because N₂O₄ has twice as many atoms in each molecule as NO₂",
+     "Both reduce to NO₂."
+    ],
+    [
+     "Their elements",
+     "Both N and O."
+    ],
+    [
+     "Nothing",
+     "Different molecules."
+    ]
+   ],
+   "exp": "Same ratio, different real atom counts."
+  }
+ ],
+ "Ionic formulas are simplified": [
+  {
+   "q": "Calcium (Ca²⁺) and oxide (O²⁻) crisscross to Ca₂O₂. What do you write?",
+   "right": "CaO",
+   "wrong": [
+    [
+     "Ca₂O₂, because the crisscross method always gives the final formula without any changes",
+     "Ionic formulas must be reduced."
+    ],
+    [
+     "Ca₂O",
+     "Wrong ratio."
+    ],
+    [
+     "CaO₂",
+     "Wrong ratio."
+    ]
+   ],
+   "exp": "Ionic formulas are written in lowest terms."
+  },
+  {
+   "q": "Which formula breaks the rule for ionic compounds?",
+   "right": "Mg₂O₂",
+   "wrong": [
+    [
+     "MgCl₂, because it has a subscript of two on the chloride ion but not on magnesium",
+     "That's the correct 1:2 ratio."
+    ],
+    [
+     "Al₂O₃",
+     "Already lowest terms."
+    ],
+    [
+     "NaCl",
+     "Already lowest terms."
+    ]
+   ],
+   "exp": "Mg₂O₂ should be reduced to MgO."
+  }
+ ],
+ "Covalent formulas are not reduced": [
+  {
+   "q": "A student reduces dinitrogen tetroxide, N₂O₄, to NO₂. What's wrong?",
+   "right": "Covalent formulas keep exact counts",
+   "wrong": [
+    [
+     "Nothing is wrong, because every chemical formula must be written in its lowest whole-number ratio",
+     "Only ionic formulas reduce."
+    ],
+    [
+     "It should be N₄O₂",
+     "Wrong order."
+    ],
+    [
+     "It should be N₂O₂",
+     "Wrong count."
+    ]
+   ],
+   "exp": "Prefixes give exact atom counts; NO₂ is nitrogen dioxide, a different molecule."
+  },
+  {
+   "q": "Which formula should NOT be reduced, even though it could be?",
+   "right": "P₂O₄ (diphosphorus tetroxide)",
+   "wrong": [
+    [
+     "Ca₂O₂, because calcium and oxygen are both elements that form ions of the same size",
+     "Ionic: reduce to CaO."
+    ],
+    [
+     "Mg₂S₂",
+     "Ionic: reduce to MgS."
+    ],
+    [
+     "Ba₂O₂",
+     "Ionic: reduce to BaO."
+    ]
+   ],
+   "exp": "Covalent formulas keep the counts their prefixes give."
+  }
+ ],
+ "Ionic bond": [
+  {
+   "q": "Which pair of elements would form an ionic bond?",
+   "right": "Magnesium and sulfur",
+   "wrong": [
+    [
+     "Carbon and oxygen, because both of them are found in the air that people breathe every day",
+     "Two nonmetals: covalent."
+    ],
+    [
+     "Nitrogen and chlorine",
+     "Two nonmetals."
+    ],
+    [
+     "Sulfur and oxygen",
+     "Two nonmetals."
+    ]
+   ],
+   "exp": "Metal + nonmetal → ions → ionic bond."
+  },
+  {
+   "q": "When magnesium and sulfur combine, what forms?",
+   "right": "An ionic compound",
+   "wrong": [
+    [
+     "A covalent compound, because both elements are solids at room temperature and share electrons",
+     "Mg is a metal; it gives electrons."
+    ],
+    [
+     "Nothing",
+     "They react."
+    ],
+    [
+     "Two separate gases",
+     "No."
+    ]
+   ],
+   "exp": "Your practice test: Mg + S → ionic compound."
+  }
+ ],
+ "Covalent bond": [
+  {
+   "q": "Which compound is held together by covalent bonds?",
+   "right": "PCl₅",
+   "wrong": [
+    [
+     "NaCl, because table salt is one of the most common compounds that people use every day",
+     "Metal + nonmetal: ionic."
+    ],
+    [
+     "CaBr₂",
+     "Ionic."
+    ],
+    [
+     "K₂O",
+     "Ionic."
+    ]
+   ],
+   "exp": "Two nonmetals share electrons."
+  },
+  {
+   "q": "Why does CO₂ get prefixes in its name but CaCl₂ doesn't?",
+   "right": "CO₂ is two nonmetals sharing electrons",
+   "wrong": [
+    [
+     "CaCl₂ is a covalent compound, so the prefixes are left off of its name when it is written",
+     "CaCl₂ is ionic."
+    ],
+    [
+     "CO₂ is a gas",
+     "State doesn't decide."
+    ],
+    [
+     "CaCl₂ has more atoms",
+     "Not the reason."
+    ]
+   ],
+   "exp": "Covalent compounds use prefixes; ionic compounds don't."
+  }
+ ],
+ "Electrostatic force of attraction": [
+  {
+   "q": "Why are ionic bonds stronger than covalent bonds?",
+   "right": "Opposite charges attract",
+   "wrong": [
+    [
+     "Because ionic compounds always contain more atoms than any covalent compound does",
+     "Atom count isn't the reason."
+    ],
+    [
+     "Because metals are heavy",
+     "No."
+    ],
+    [
+     "Because nonmetals repel",
+     "No."
+    ]
+   ],
+   "exp": "Your notes: electrostatic attraction between cation and anion."
+  },
+  {
+   "q": "In NaCl, what holds Na⁺ and Cl⁻ together?",
+   "right": "Electrostatic attraction",
+   "wrong": [
+    [
+     "Shared pairs of electrons between the sodium atom and the chlorine atom, like in water",
+     "That's covalent."
+    ],
+    [
+     "Gravity",
+     "Far too weak."
+    ],
+    [
+     "Magnetism",
+     "No."
+    ]
+   ],
+   "exp": "The pull between opposite charges."
+  }
+ ],
+ "Binary compound": [
+  {
+   "q": "Which is a binary compound?",
+   "right": "Al₂S₃",
+   "wrong": [
+    [
+     "NaOH, because it has a metal and a nonmetal and those always form a binary compound",
+     "Three elements."
+    ],
+    [
+     "CaCO₃",
+     "Three elements."
+    ],
+    [
+     "NH₄Cl",
+     "Three elements."
+    ]
+   ],
+   "exp": "Exactly two elements."
+  },
+  {
+   "q": "Which types of compounds are always binary?",
+   "right": "Types I, II and III",
+   "wrong": [
+    [
+     "Types IV and V, because both of them can contain hydrogen and oxygen together in a formula",
+     "Type IV has polyatomic ions."
+    ],
+    [
+     "Only Type V",
+     "Some acids aren't binary."
+    ],
+    [
+     "Only Type IV",
+     "Not binary."
+    ]
+   ],
+   "exp": "Your notes: Types I, II and III are binary."
+  }
+ ],
+ "The five types": [
+  {
+   "q": "FeCl₃ is which type?",
+   "right": "Type II",
+   "wrong": [
+    [
+     "Type I, because it is made of a metal and a nonmetal, which is always named the same way",
+     "Iron is a transition metal: needs a numeral."
+    ],
+    [
+     "Type III",
+     "Has a metal."
+    ],
+    [
+     "Type V",
+     "Doesn't start with H."
+    ]
+   ],
+   "exp": "Transition metal + nonmetal = Type II."
+  },
+  {
+   "q": "K₂SO₄ is which type?",
+   "right": "Type IV",
+   "wrong": [
+    [
+     "Type I, because potassium is a representative metal that only ever forms one ion",
+     "It contains sulfate, a polyatomic ion."
+    ],
+    [
+     "Type II",
+     "K has one charge."
+    ],
+    [
+     "Type III",
+     "Has a metal."
+    ]
+   ],
+   "exp": "Contains a polyatomic ion."
+  }
+ ],
+ "Type I compound": [
+  {
+   "q": "Which compound is Type I?",
+   "right": "Li₃N",
+   "wrong": [
+    [
+     "CuCl₂, because copper and chlorine are a metal and a nonmetal joined by an ionic bond",
+     "Copper needs a numeral: Type II."
+    ],
+    [
+     "SO₂",
+     "Covalent."
+    ],
+    [
+     "Fe₂O₃",
+     "Type II."
+    ]
+   ],
+   "exp": "Lithium forms only Li⁺: Type I."
+  },
+  {
+   "q": "Why does Type I naming work for MgBr₂ but not for FeBr₂?",
+   "right": "Mg forms only one ion",
+   "wrong": [
+    [
+     "Because magnesium bromide has fewer atoms in its formula than iron(II) bromide does",
+     "Both have three atoms."
+    ],
+    [
+     "Fe isn't a metal",
+     "It is."
+    ],
+    [
+     "Mg is a nonmetal",
+     "It's a metal."
+    ]
+   ],
+   "exp": "Type I metals have a single possible charge."
+  }
+ ],
+ "Cation first": [
+  {
+   "q": "Which formula is written in the correct order?",
+   "right": "K₂S",
+   "wrong": [
+    [
+     "SK₂, because sulfur is the bigger atom, so it is always written first in the formula",
+     "The cation goes first."
+    ],
+    [
+     "S₂K",
+     "Anion first."
+    ],
+    [
+     "SK",
+     "Anion first and unbalanced."
+    ]
+   ],
+   "exp": "Cation first, then anion."
+  },
+  {
+   "q": "A student writes \"chloride sodium.\" What's the fix?",
+   "right": "Sodium chloride",
+   "wrong": [
+    [
+     "Sodium chlorine, because the element's full name should be used for the second part too",
+     "The anion takes -ide."
+    ],
+    [
+     "Chlorine sodium",
+     "Still backward."
+    ],
+    [
+     "Monosodium chloride",
+     "No prefixes on ionic names."
+    ]
+   ],
+   "exp": "Cation named first."
+  }
+ ],
+ "Simple cation name": [
+  {
+   "q": "What is the name of Ca²⁺?",
+   "right": "Calcium ion",
+   "wrong": [
+    [
+     "Calcide ion, because positive ions change their endings the same way negative ions do",
+     "Only anions get -ide."
+    ],
+    [
+     "Calcium(II) ion",
+     "Calcium has one charge."
+    ],
+    [
+     "Calcium oxide",
+     "That's a compound."
+    ]
+   ],
+   "exp": "A main-group cation keeps the element name."
+  },
+  {
+   "q": "In Al₂S₃, how is aluminum named?",
+   "right": "Aluminum",
+   "wrong": [
+    [
+     "Dialuminum, because there are two aluminum ions shown in the chemical formula",
+     "No prefixes for ions."
+    ],
+    [
+     "Aluminide",
+     "Cations don't take -ide."
+    ],
+    [
+     "Aluminum(III)",
+     "Al has one charge."
+    ]
+   ],
+   "exp": "Aluminum sulfide."
+  }
+ ],
+ "-ide ending": [
+  {
+   "q": "What is N³⁻ called?",
+   "right": "Nitride",
+   "wrong": [
+    [
+     "Nitrogen, because the name of an anion is always the same as the element's name",
+     "Anions take -ide."
+    ],
+    [
+     "Nitrate",
+     "That's NO₃⁻."
+    ],
+    [
+     "Nitrite",
+     "That's NO₂⁻."
+    ]
+   ],
+   "exp": "Root nitr- + -ide."
+  },
+  {
+   "q": "Name the compound of rubidium and selenium.",
+   "right": "Rubidium selenide",
+   "wrong": [
+    [
+     "Selenium rubidide, because the element lower on the periodic table is always named first",
+     "Cation first; cation keeps its name."
+    ],
+    [
+     "Rubidium selenium",
+     "Anion needs -ide."
+    ],
+    [
+     "Dirubidium selenide",
+     "No prefixes."
+    ]
+   ],
+   "exp": "Rb₂Se: rubidium selenide."
+  }
+ ],
+ "Subscripts stay out of ionic names": [
+  {
+   "q": "Name Mg₃P₂.",
+   "right": "Magnesium phosphide",
+   "wrong": [
+    [
+     "Trimagnesium diphosphide, because the prefixes show the number of each ion in the formula",
+     "No prefixes on ionic names."
+    ],
+    [
+     "Magnesium phosphate",
+     "Phosphate is PO₄³⁻."
+    ],
+    [
+     "Magnesium(II) phosphide",
+     "Mg has one charge."
+    ]
+   ],
+   "exp": "Ionic names ignore subscripts."
+  },
+  {
+   "q": "Your review key marks \"disodium monoxide\" for Na₂O as wrong. Why?",
+   "right": "Ionic names don't use prefixes",
+   "wrong": [
+    [
+     "Because the correct name is sodium dioxide, since there are two sodium atoms in it",
+     "Still prefixes, and wrong ones."
+    ],
+    [
+     "Because Na₂O is covalent",
+     "It's ionic."
+    ],
+    [
+     "Because oxygen is first",
+     "It isn't."
+    ]
+   ],
+   "exp": "Na₂O is sodium oxide."
+  }
+ ],
+ "Neutral compound": [
+  {
+   "q": "In Al₂O₃, what is the total positive charge?",
+   "right": "6+",
+   "wrong": [
+    [
+     "3+, because each aluminum ion has a charge of three plus in the compound",
+     "There are two of them."
+    ],
+    [
+     "2+",
+     "Wrong."
+    ],
+    [
+     "5+",
+     "Wrong."
+    ]
+   ],
+   "exp": "2 × 3+ = 6+, balancing 3 × 2− = 6−."
+  },
+  {
+   "q": "Sodium (Na⁺) and sulfur (S²⁻) form a compound. Which formula is neutral?",
+   "right": "Na₂S",
+   "wrong": [
+    [
+     "NaS, because one sodium ion and one sulfide ion combine to make the simplest compound",
+     "1+ and 2− don't cancel."
+    ],
+    [
+     "NaS₂",
+     "Even less balanced."
+    ],
+    [
+     "Na₂S₂",
+     "2(1+) + 2(2−) = 2−, not zero."
+    ]
+   ],
+   "exp": "2(1+) + 2− = 0. Your practice test: Na₂S."
+  }
+ ],
+ "Crisscross method": [
+  {
+   "q": "Use the crisscross method for aluminum and oxygen.",
+   "right": "Al₂O₃",
+   "wrong": [
+    [
+     "AlO, because aluminum and oxygen combine one to one just like sodium and chlorine do",
+     "3+ and 2− don't cancel 1:1."
+    ],
+    [
+     "Al₃O₂",
+     "Crossed backward."
+    ],
+    [
+     "Al₂O",
+     "Wrong."
+    ]
+   ],
+   "exp": "Al³⁺, O²⁻ → Al₂O₃."
+  },
+  {
+   "q": "Calcium (Ca²⁺) and nitrogen (N³⁻): what is the formula?",
+   "right": "Ca₃N₂",
+   "wrong": [
+    [
+     "Ca₂N₃, because each element keeps its own charge number as its subscript in the formula",
+     "Charges cross to the other ion."
+    ],
+    [
+     "CaN",
+     "Not neutral."
+    ],
+    [
+     "Ca₃N",
+     "Not neutral."
+    ]
+   ],
+   "exp": "Calcium nitride, Ca₃N₂."
+  }
+ ],
+ "Reduce after crossing": [
+  {
+   "q": "Barium (Ba²⁺) and sulfur (S²⁻) crisscross to Ba₂S₂. Final formula?",
+   "right": "BaS",
+   "wrong": [
+    [
+     "Ba₂S₂, because the subscripts from the crisscross method can never be changed afterward",
+     "Ionic formulas must be reduced."
+    ],
+    [
+     "BaS₂",
+     "Not neutral."
+    ],
+    [
+     "Ba₂S",
+     "Not neutral."
+    ]
+   ],
+   "exp": "Your practice test answer: BaS."
+  },
+  {
+   "q": "Tin(IV) and oxygen cross to Sn₂O₄. Final formula?",
+   "right": "SnO₂",
+   "wrong": [
+    [
+     "Sn₂O₄, since tin(IV) compounds are an exception and are never reduced like other compounds",
+     "Reduce to lowest terms."
+    ],
+    [
+     "SnO₄",
+     "Not neutral."
+    ],
+    [
+     "Sn₄O₂",
+     "Backward."
+    ]
+   ],
+   "exp": "Tin(IV) oxide is SnO₂."
+  }
+ ],
+ "Type II compound": [
+  {
+   "q": "Which compound must be named with a Roman numeral?",
+   "right": "CuO",
+   "wrong": [
+    [
+     "Na₂O, because sodium oxide is an ionic compound made of a metal and a nonmetal",
+     "Na has one charge."
+    ],
+    [
+     "CaCl₂",
+     "Ca has one charge."
+    ],
+    [
+     "ZnS",
+     "Zn has one charge."
+    ]
+   ],
+   "exp": "Copper can be 1+ or 2+."
+  },
+  {
+   "q": "Why is FeO named iron(II) oxide and not just iron oxide?",
+   "right": "Iron can form more than one ion",
+   "wrong": [
+    [
+     "Because iron oxide is a covalent compound and those always need a Roman numeral in their names",
+     "It's ionic; numerals aren't for covalent."
+    ],
+    [
+     "Because there are two atoms",
+     "The numeral isn't a count."
+    ],
+    [
+     "To show it's a gas",
+     "No."
+    ]
+   ],
+   "exp": "Fe²⁺ and Fe³⁺ both exist."
+  }
+ ],
+ "Roman numeral": [
+  {
+   "q": "What does the (III) in chromium(III) oxide tell you?",
+   "right": "Chromium is 3+",
+   "wrong": [
+    [
+     "There are three chromium atoms in each formula unit of the compound",
+     "The numeral is a charge."
+    ],
+    [
+     "There are three oxygens",
+     "No."
+    ],
+    [
+     "It's the third oxide",
+     "No."
+    ]
+   ],
+   "exp": "Cr³⁺ → Cr₂O₃."
+  },
+  {
+   "q": "Write the formula for iron(III) chloride.",
+   "right": "FeCl₃",
+   "wrong": [
+    [
+     "FeCl, because there is one iron and one chloride named in the compound's name",
+     "Fe³⁺ needs three Cl⁻."
+    ],
+    [
+     "Fe₃Cl",
+     "Numeral isn't a count."
+    ],
+    [
+     "FeCl₂",
+     "That's iron(II)."
+    ]
+   ],
+   "exp": "Fe³⁺ + 3 Cl⁻. Your practice test answer: FeCl₃."
+  }
+ ],
+ "Working out the numeral": [
+  {
+   "q": "Name Fe₂O₃.",
+   "right": "Iron(III) oxide",
+   "wrong": [
+    [
+     "Iron(II) oxide, because the formula shows two iron atoms, and the numeral counts them",
+     "3 O²⁻ = 6−, ÷ 2 Fe = 3+."
+    ],
+    [
+     "Diiron trioxide",
+     "No prefixes for ionic."
+    ],
+    [
+     "Iron oxide",
+     "Needs the charge."
+    ]
+   ],
+   "exp": "Your review key wrote iron(II) here: it's iron(III)."
+  },
+  {
+   "q": "Name PbS₂.",
+   "right": "Lead(IV) sulfide",
+   "wrong": [
+    [
+     "Lead(II) sulfide, because the formula has two sulfur atoms, so lead must have a charge of two",
+     "2 S²⁻ = 4−, so Pb is 4+."
+    ],
+    [
+     "Lead disulfide",
+     "Ionic: no prefixes."
+    ],
+    [
+     "Lead sulfide",
+     "Needs the charge."
+    ]
+   ],
+   "exp": "Your study guide answer: lead(IV) sulfide."
+  }
+ ],
+ "Numeral ≠ subscript": [
+  {
+   "q": "Name Cu₂O.",
+   "right": "Copper(I) oxide",
+   "wrong": [
+    [
+     "Copper(II) oxide, because the formula shows two copper atoms bonded to the oxygen atom",
+     "O²⁻ ÷ 2 Cu = 1+ each."
+    ],
+    [
+     "Dicopper oxide",
+     "No prefixes."
+    ],
+    [
+     "Copper oxide",
+     "Needs the charge."
+    ]
+   ],
+   "exp": "The numeral is the charge, not the count."
+  },
+  {
+   "q": "Name CuCl₂.",
+   "right": "Copper(II) chloride",
+   "wrong": [
+    [
+     "Copper(I) chloride, because there is only one copper atom shown in the chemical formula",
+     "2 Cl⁻ = 2−, so Cu is 2+."
+    ],
+    [
+     "Copper dichloride",
+     "No prefixes."
+    ],
+    [
+     "Copper(III) chloride",
+     "No."
+    ]
+   ],
+   "exp": "Your study guide answer: copper(II) chloride."
+  }
+ ],
+ "Zinc": [
+  {
+   "q": "Name ZnCl₂.",
+   "right": "Zinc chloride",
+   "wrong": [
+    [
+     "Zinc(II) chloride, because zinc is a transition metal and all transition metals need numerals",
+     "Zn is always 2+: no numeral."
+    ],
+    [
+     "Zinc dichloride",
+     "No prefixes."
+    ],
+    [
+     "Zinc chlorine",
+     "Needs -ide."
+    ]
+   ],
+   "exp": "Zinc is one of your three exceptions."
+  },
+  {
+   "q": "Your review lists \"zinc(II) hydroxide\" as an error. What's the fix?",
+   "right": "Zinc hydroxide",
+   "wrong": [
+    [
+     "Zinc(I) hydroxide, because the charge on zinc was written incorrectly in the original name",
+     "No numeral at all."
+    ],
+    [
+     "Zinc dihydroxide",
+     "No prefixes."
+    ],
+    [
+     "Zinc(III) hydroxide",
+     "No."
+    ]
+   ],
+   "exp": "Zinc only forms Zn²⁺."
+  }
+ ],
+ "Silver": [
+  {
+   "q": "Name AgBr.",
+   "right": "Silver bromide",
+   "wrong": [
+    [
+     "Silver(I) bromide, because the numeral is needed to show that silver has a charge of one",
+     "Ag is always 1+: no numeral."
+    ],
+    [
+     "Silver bromine",
+     "Needs -ide."
+    ],
+    [
+     "Monosilver bromide",
+     "No prefixes."
+    ]
+   ],
+   "exp": "Your study guide: no Roman numeral needed."
+  },
+  {
+   "q": "What is the formula for silver oxide?",
+   "right": "Ag₂O",
+   "wrong": [
+    [
+     "AgO, because silver and oxygen combine one to one in the same way as zinc and oxygen do",
+     "Ag⁺ needs two to balance O²⁻."
+    ],
+    [
+     "AgO₂",
+     "Not neutral."
+    ],
+    [
+     "Ag₃O",
+     "Not neutral."
+    ]
+   ],
+   "exp": "Your practice test answer: Ag₂O."
+  }
+ ],
+ "Cadmium": [
+  {
+   "q": "Name CdF₂.",
+   "right": "Cadmium fluoride",
+   "wrong": [
+    [
+     "Cadmium(II) fluoride, because cadmium is in the middle of the table with transition metals",
+     "Cd is always 2+: no numeral."
+    ],
+    [
+     "Cadmium difluoride",
+     "No prefixes."
+    ],
+    [
+     "Cadmium fluorine",
+     "Needs -ide."
+    ]
+   ],
+   "exp": "Cadmium is an exception."
+  },
+  {
+   "q": "Which group of three metals never gets a Roman numeral, even though they're transition metals?",
+   "right": "Zinc, silver, cadmium",
+   "wrong": [
+    [
+     "Iron, copper and chromium, because these are the most common transition metals in your worksheets",
+     "They need numerals."
+    ],
+    [
+     "Lead, tin, iron",
+     "Lead and tin need numerals."
+    ],
+    [
+     "Sodium, calcium, aluminum",
+     "Not transition metals."
+    ]
+   ],
+   "exp": "Your notes: you must know zinc, silver and cadmium."
+  }
+ ],
+ "Lead": [
+  {
+   "q": "Name PbO.",
+   "right": "Lead(II) oxide",
+   "wrong": [
+    [
+     "Lead oxide, because lead is a representative metal and those never get Roman numerals",
+     "Lead is an exception: it needs one."
+    ],
+    [
+     "Lead(I) oxide",
+     "O²⁻ means Pb²⁺."
+    ],
+    [
+     "Lead monoxide",
+     "No prefixes."
+    ]
+   ],
+   "exp": "Your mixed-naming key: lead(II) oxide."
+  },
+  {
+   "q": "Write the formula for lead(II) nitrate.",
+   "right": "Pb(NO₃)₂",
+   "wrong": [
+    [
+     "PbNO₃, because one lead ion and one nitrate ion combine to make lead(II) nitrate",
+     "Pb²⁺ needs two NO₃⁻."
+    ],
+    [
+     "Pb₂NO₃",
+     "Wrong."
+    ],
+    [
+     "PbN₂O₆",
+     "Keep the ion together in parentheses."
+    ]
+   ],
+   "exp": "Your study guide answer: Pb(NO₃)₂."
+  }
+ ],
+ "Tin": [
+  {
+   "q": "Write the formula for tin(IV) chloride.",
+   "right": "SnCl₄",
+   "wrong": [
+    [
+     "SnCl, because the numeral four refers to a tin atom and only one chloride is named",
+     "Sn⁴⁺ needs four Cl⁻."
+    ],
+    [
+     "Sn₄Cl",
+     "Numeral isn't a count."
+    ],
+    [
+     "SnCl₂",
+     "That's tin(II)."
+    ]
+   ],
+   "exp": "Your study guide answer: SnCl₄."
+  },
+  {
+   "q": "Your review lists \"tin hypochlorite\" as an error. Why?",
+   "right": "Tin needs its charge",
+   "wrong": [
+    [
+     "Because hypochlorite should be written as chlorite when it is bonded to a metal like tin",
+     "The ion name is fine."
+    ],
+    [
+     "Because tin goes second",
+     "Cation first is right."
+    ],
+    [
+     "Because tin is a nonmetal",
+     "It's a metal."
+    ]
+   ],
+   "exp": "Tin can be 2+ or 4+, so it needs a numeral."
+  }
+ ],
+ "Type III compound": [
+  {
+   "q": "Which compound is named with prefixes?",
+   "right": "SF₆",
+   "wrong": [
+    [
+     "FeCl₃, because the formula has three chlorine atoms that need to be counted in its name",
+     "Ionic: uses a Roman numeral, not prefixes."
+    ],
+    [
+     "MgO",
+     "Ionic."
+    ],
+    [
+     "NaCl",
+     "Ionic."
+    ]
+   ],
+   "exp": "Two nonmetals = Type III = prefixes."
+  },
+  {
+   "q": "Name SF₆.",
+   "right": "Sulfur hexafluoride",
+   "wrong": [
+    [
+     "Monosulfur hexafluoride, because each element in a covalent compound needs a prefix",
+     "No mono- on the first element."
+    ],
+    [
+     "Sulfur(VI) fluoride",
+     "Numerals are for ionic."
+    ],
+    [
+     "Sulfur fluoride",
+     "Needs prefixes."
+    ]
+   ],
+   "exp": "Your study guide answer: sulfur hexafluoride."
+  }
+ ],
+ "Naming the first nonmetal": [
+  {
+   "q": "Name PCl₅.",
+   "right": "Phosphorus pentachloride",
+   "wrong": [
+    [
+     "Phosphide pentachloride, because both elements in a covalent compound take the -ide ending",
+     "Only the second does."
+    ],
+    [
+     "Pentachlorine phosphide",
+     "Order follows the formula."
+    ],
+    [
+     "Phosphorus chloride",
+     "Needs a prefix."
+    ]
+   ],
+   "exp": "First element in full."
+  },
+  {
+   "q": "Name N₂O₄.",
+   "right": "Dinitrogen tetroxide",
+   "wrong": [
+    [
+     "Nitride tetroxide, because nitrogen is the first element so it takes the anion ending",
+     "The first element keeps its name."
+    ],
+    [
+     "Nitrogen tetroxide",
+     "Needs di-."
+    ],
+    [
+     "Dinitrogen tetraoxygen",
+     "Second element needs -ide."
+    ]
+   ],
+   "exp": "Your study guide answer: dinitrogen tetroxide."
+  }
+ ],
+ "Naming the second nonmetal": [
+  {
+   "q": "Name CCl₄.",
+   "right": "Carbon tetrachloride",
+   "wrong": [
+    [
+     "Carbon tetrachlorine, since the second element in a covalent compound keeps its full name",
+     "It takes -ide."
+    ],
+    [
+     "Carbide tetrachloride",
+     "First keeps its name."
+    ],
+    [
+     "Carbon chloride",
+     "Needs a prefix."
+    ]
+   ],
+   "exp": "Second element → chloride."
+  },
+  {
+   "q": "What does sulfur become as the second element in CS₂?",
+   "right": "Sulfide",
+   "wrong": [
+    [
+     "Sulfate, because sulfur that is bonded to another element always forms the sulfate ion",
+     "Sulfate is SO₄²⁻."
+    ],
+    [
+     "Sulfur",
+     "Needs -ide."
+    ],
+    [
+     "Sulfite",
+     "That's SO₃²⁻."
+    ]
+   ],
+   "exp": "CS₂ is carbon disulfide."
+  }
+ ],
+ "No mono- on the first element": [
+  {
+   "q": "Name CO.",
+   "right": "Carbon monoxide",
+   "wrong": [
+    [
+     "Monocarbon monoxide, because each element in a covalent compound needs its own prefix",
+     "Never mono- on the first element."
+    ],
+    [
+     "Carbon oxide",
+     "The second still needs mono-."
+    ],
+    [
+     "Carbonic oxide",
+     "Not a name."
+    ]
+   ],
+   "exp": "Mono- only on the second element."
+  },
+  {
+   "q": "Name NCl₃.",
+   "right": "Nitrogen trichloride",
+   "wrong": [
+    [
+     "Mononitrogen trichloride, because there is exactly one nitrogen atom in the molecule",
+     "No mono- on the first."
+    ],
+    [
+     "Trinitrogen chloride",
+     "Prefix on the wrong element."
+    ],
+    [
+     "Nitrogen chloride",
+     "Needs tri-."
+    ]
+   ],
+   "exp": "Your practice test answer: nitrogen trichloride."
+  }
+ ],
+ "Drop the vowel before a or o": [
+  {
+   "q": "Name N₂O₅.",
+   "right": "Dinitrogen pentoxide",
+   "wrong": [
+    [
+     "Dinitrogen pentaoxide, because the prefix for five is always written out in full as penta-",
+     "Drop the a before oxide."
+    ],
+    [
+     "Nitrogen pentoxide",
+     "Needs di-."
+    ],
+    [
+     "Dinitrogen pentoxygen",
+     "Needs -ide."
+    ]
+   ],
+   "exp": "Penta + oxide → pentoxide."
+  },
+  {
+   "q": "Which name is spelled correctly?",
+   "right": "Carbon monoxide",
+   "wrong": [
+    [
+     "Carbon monooxide, because the prefix mono- should always be written out with both of its o's",
+     "Drop the vowel."
+    ],
+    [
+     "Carbon monoxyde",
+     "Misspelled."
+    ],
+    [
+     "Carbon monoxid",
+     "Misspelled."
+    ]
+   ],
+   "exp": "Mono + oxide → monoxide."
+  }
+ ],
+ "Prefixes only for covalent": [
+  {
+   "q": "Which name uses prefixes incorrectly?",
+   "right": "Dipotassium sulfide",
+   "wrong": [
+    [
+     "Dinitrogen trioxide, because nitrogen and oxygen are both elements that form ions easily",
+     "Covalent: prefixes are correct."
+    ],
+    [
+     "Carbon dioxide",
+     "Correct."
+    ],
+    [
+     "Sulfur trioxide",
+     "Correct."
+    ]
+   ],
+   "exp": "K₂S is ionic: potassium sulfide."
+  },
+  {
+   "q": "Your review key says when NOT to use prefixes. What did it say?",
+   "right": "For ionic compounds",
+   "wrong": [
+    [
+     "For acids only, because acids are the one type of compound that never use any prefix",
+     "The key says ionic compounds."
+    ],
+    [
+     "For gases",
+     "Not the rule."
+    ],
+    [
+     "Never",
+     "Covalent uses them."
+    ]
+   ],
+   "exp": "Prefixes: covalent compounds and hydrates. Not ionic."
+  }
+ ],
+ "mono-": [
+  {
+   "q": "How many oxygens are in carbon monoxide?",
+   "right": "1",
+   "wrong": [
+    [
+     "2, because carbon always forms two bonds with oxygen in every one of its oxides",
+     "That's dioxide."
+    ],
+    [
+     "0",
+     "Mono = 1."
+    ],
+    [
+     "3",
+     "That's tri-."
+    ]
+   ],
+   "exp": "Mono- = 1."
+  },
+  {
+   "q": "Which compound's name contains mono-?",
+   "right": "NO",
+   "wrong": [
+    [
+     "NO₂, because nitrogen dioxide is the most common oxide of nitrogen in the air we breathe",
+     "That's dioxide."
+    ],
+    [
+     "N₂O₄",
+     "Dinitrogen tetroxide."
+    ],
+    [
+     "SO₃",
+     "Sulfur trioxide."
+    ]
+   ],
+   "exp": "NO is nitrogen monoxide."
+  }
+ ],
+ "di-": [
+  {
+   "q": "Write the formula for silicon dioxide.",
+   "right": "SiO₂",
+   "wrong": [
+    [
+     "Si₂O, because the prefix di- is written in front of the oxygen and applies to silicon",
+     "di- belongs to oxide."
+    ],
+    [
+     "SiO",
+     "Needs 2 O."
+    ],
+    [
+     "Si₂O₂",
+     "Wrong."
+    ]
+   ],
+   "exp": "Your review key: SiO₂."
+  },
+  {
+   "q": "Name CS₂.",
+   "right": "Carbon disulfide",
+   "wrong": [
+    [
+     "Carbon(II) sulfide, because the formula shows that carbon is bonded to two sulfur atoms",
+     "Numerals are for ionic metals."
+    ],
+    [
+     "Dicarbon sulfide",
+     "Wrong element."
+    ],
+    [
+     "Carbon sulfide",
+     "Needs di-."
+    ]
+   ],
+   "exp": "Di- = 2."
+  }
+ ],
+ "tri-": [
+  {
+   "q": "Write the formula for sulfur trioxide.",
+   "right": "SO₃",
+   "wrong": [
+    [
+     "S₃O, because tri- comes before oxide in the name and so the three goes on sulfur",
+     "tri- belongs to oxide."
+    ],
+    [
+     "SO₂",
+     "That's dioxide."
+    ],
+    [
+     "S₂O₃",
+     "Wrong."
+    ]
+   ],
+   "exp": "Your review key: SO₃."
+  },
+  {
+   "q": "Write the formula for dinitrogen trioxide.",
+   "right": "N₂O₃",
+   "wrong": [
+    [
+     "N₃O₂, because the first prefix tells you how many oxygen atoms are in the molecule",
+     "Each prefix goes with its own element."
+    ],
+    [
+     "NO₃",
+     "That's nitrate's formula."
+    ],
+    [
+     "N₂O",
+     "Missing tri-."
+    ]
+   ],
+   "exp": "Your review key: N₂O₃."
+  }
+ ],
+ "tetra-": [
+  {
+   "q": "Write the formula for carbon tetrachloride.",
+   "right": "CCl₄",
+   "wrong": [
+    [
+     "C₄Cl, because tetra- means four and it is written closest to the carbon in the name",
+     "tetra- belongs to chloride."
+    ],
+    [
+     "CCl₃",
+     "That's tri-."
+    ],
+    [
+     "CCl",
+     "Needs 4."
+    ]
+   ],
+   "exp": "Your study guide answer: CCl₄."
+  },
+  {
+   "q": "Name CI₄.",
+   "right": "Carbon tetraiodide",
+   "wrong": [
+    [
+     "Carbon tetriodide, because you should drop the last vowel of tetra- before every element",
+     "Only before a or o; iodide starts with i."
+    ],
+    [
+     "Carbon iodide",
+     "Needs tetra-."
+    ],
+    [
+     "Monocarbon tetraiodide",
+     "No mono- on the first."
+    ]
+   ],
+   "exp": "Your study guide answer: carbon tetraiodide."
+  }
+ ],
+ "penta-": [
+  {
+   "q": "Write the formula for phosphorus pentachloride.",
+   "right": "PCl₅",
+   "wrong": [
+    [
+     "P₅Cl, because penta- means five and it describes the phosphorus atom in the compound",
+     "penta- belongs to chloride."
+    ],
+    [
+     "PCl₃",
+     "That's tri-."
+    ],
+    [
+     "P₂Cl₅",
+     "No di- in the name."
+    ]
+   ],
+   "exp": "Penta- = 5."
+  },
+  {
+   "q": "Write the formula for diphosphorus pentoxide.",
+   "right": "P₂O₅",
+   "wrong": [
+    [
+     "P₅O₂, because the larger number in a covalent formula always goes on the first element",
+     "Each prefix stays with its element."
+    ],
+    [
+     "PO₅",
+     "Missing di-."
+    ],
+    [
+     "P₂O₄",
+     "That's tetroxide."
+    ]
+   ],
+   "exp": "Your review key: P₂O₅."
+  }
+ ],
+ "hexa-": [
+  {
+   "q": "Write the formula for sulfur hexafluoride.",
+   "right": "SF₆",
+   "wrong": [
+    [
+     "S₆F, because hexa- means six and it is attached to the first element in the name",
+     "hexa- belongs to fluoride."
+    ],
+    [
+     "SF₅",
+     "That's penta-."
+    ],
+    [
+     "S₂F₆",
+     "No di-."
+    ]
+   ],
+   "exp": "Hexa- = 6."
+  },
+  {
+   "q": "Write the formula for tetraphosphorus hexachloride.",
+   "right": "P₄Cl₆",
+   "wrong": [
+    [
+     "P₆Cl₄, because the last prefix in the name always goes on the first element in the formula",
+     "Each prefix stays with its element."
+    ],
+    [
+     "PCl₆",
+     "Missing tetra-."
+    ],
+    [
+     "P₄Cl₄",
+     "Wrong."
+    ]
+   ],
+   "exp": "Your review key: P₄Cl₆."
+  }
+ ],
+ "hepta-": [
+  {
+   "q": "Write the formula for dichlorine heptoxide.",
+   "right": "Cl₂O₇",
+   "wrong": [
+    [
+     "Cl₇O₂, because hepta- is the larger prefix and so it goes on the chlorine atom first",
+     "hepta- belongs to oxide."
+    ],
+    [
+     "ClO₇",
+     "Missing di-."
+    ],
+    [
+     "Cl₂O₆",
+     "That's hexa-."
+    ]
+   ],
+   "exp": "Your study guide: Cl₂O₇."
+  },
+  {
+   "q": "Write the formula for pentasulfur heptabromide.",
+   "right": "S₅Br₇",
+   "wrong": [
+    [
+     "S₇Br₅, because the bigger number in a covalent formula always goes with the first element",
+     "Each prefix stays with its element."
+    ],
+    [
+     "SBr₇",
+     "Missing penta-."
+    ],
+    [
+     "S₅Br",
+     "Missing hepta-."
+    ]
+   ],
+   "exp": "Your review key's answer is cut off; by the prefixes it's S₅Br₇."
+  }
+ ],
+ "octa-": [
+  {
+   "q": "Name S₇F₈.",
+   "right": "Heptasulfur octafluoride",
+   "wrong": [
+    [
+     "Octasulfur heptafluoride, because the bigger number is always named first in a covalent name",
+     "Each prefix matches its own element."
+    ],
+    [
+     "Sulfur octafluoride",
+     "Needs hepta-."
+    ],
+    [
+     "Heptasulfur octafluorine",
+     "Needs -ide."
+    ]
+   ],
+   "exp": "Your review key: heptasulfur octafluoride."
+  },
+  {
+   "q": "Which prefix means 8?",
+   "right": "octa-",
+   "wrong": [
+    [
+     "hepta-, because it comes right after hexa- in the list of prefixes from one to ten",
+     "Hepta- = 7."
+    ],
+    [
+     "nona-",
+     "9."
+    ],
+    [
+     "deca-",
+     "10."
+    ]
+   ],
+   "exp": "Octopus: 8 arms."
+  }
+ ],
+ "nona-": [
+  {
+   "q": "How many atoms of sulfur are in tetranitrogen nonasulfide?",
+   "right": "9",
+   "wrong": [
+    [
+     "4, because the prefix that comes first in the name tells you the number of sulfur atoms",
+     "tetra- belongs to nitrogen."
+    ],
+    [
+     "7",
+     "That's hepta-."
+    ],
+    [
+     "10",
+     "That's deca-."
+    ]
+   ],
+   "exp": "Nona- = 9."
+  },
+  {
+   "q": "Write the formula for diphosphorus nonoxide (drop the a before oxide).",
+   "right": "P₂O₉",
+   "wrong": [
+    [
+     "P₉O₂, because nona- is the larger prefix and the larger number goes on the first element",
+     "nona- belongs to oxide."
+    ],
+    [
+     "PO₉",
+     "Missing di-."
+    ],
+    [
+     "P₂O₈",
+     "That's octa-."
+    ]
+   ],
+   "exp": "Nona- = 9."
+  }
+ ],
+ "deca-": [
+  {
+   "q": "Name N₃Cl₁₀.",
+   "right": "Trinitrogen decachloride",
+   "wrong": [
+    [
+     "Nitrogen decachloride, because the prefix on the first element is left off in covalent names",
+     "Only mono- is left off."
+    ],
+    [
+     "Trinitrogen nonachloride",
+     "Nona = 9."
+    ],
+    [
+     "Decanitrogen trichloride",
+     "Prefixes swapped."
+    ]
+   ],
+   "exp": "Your review key's \"N₂C10\" is a scanning error: N₃Cl₁₀."
+  },
+  {
+   "q": "Write the formula for heptasulfur decaiodide.",
+   "right": "S₇I₁₀",
+   "wrong": [
+    [
+     "S₁₀I₇, because deca- is the larger prefix so it should go on the first element, sulfur",
+     "deca- belongs to iodide."
+    ],
+    [
+     "SI₁₀",
+     "Missing hepta-."
+    ],
+    [
+     "S₇I₉",
+     "Nona would be 9."
+    ]
+   ],
+   "exp": "Your review: heptasulfur decaiodide = S₇I₁₀."
+  }
+ ],
+ "Prefixes become subscripts": [
+  {
+   "q": "Write the formula for trinitrogen monoxide.",
+   "right": "N₃O",
+   "wrong": [
+    [
+     "NO₃, because the prefix tri- in the name tells you that there are three oxygen atoms",
+     "tri- goes with nitrogen."
+    ],
+    [
+     "N₃O₃",
+     "Mono = 1."
+    ],
+    [
+     "NO",
+     "Missing tri-."
+    ]
+   ],
+   "exp": "Your review key: N₃O."
+  },
+  {
+   "q": "Write the formula for disulfur pentafluoride.",
+   "right": "S₂F₅",
+   "wrong": [
+    [
+     "S₅F₂, because penta- is the larger prefix so its five goes on the first element written",
+     "Each prefix stays with its element."
+    ],
+    [
+     "SF₅",
+     "Missing di-."
+    ],
+    [
+     "S₂F₆",
+     "That's hexa-."
+    ]
+   ],
+   "exp": "Your review key: S₂F₅."
+  }
+ ],
+ "No crisscross for covalent": [
+  {
+   "q": "A student writes sulfur dioxide as S₂O by crisscrossing charges. What's correct?",
+   "right": "SO₂",
+   "wrong": [
+    [
+     "S₂O, because the crisscross method is used to write every formula from its compound name",
+     "Covalent: read the prefixes."
+    ],
+    [
+     "SO",
+     "Needs di-."
+    ],
+    [
+     "S₂O₂",
+     "Wrong."
+    ]
+   ],
+   "exp": "No charges to cross in covalent compounds."
+  },
+  {
+   "q": "Why can't you crisscross charges for PCl₃?",
+   "right": "Nonmetals share electrons; no ions form",
+   "wrong": [
+    [
+     "Because phosphorus and chlorine both have a charge of zero after they become ions",
+     "They don't become ions."
+    ],
+    [
+     "Because it's an acid",
+     "It isn't."
+    ],
+    [
+     "Because P is a metal",
+     "It's a nonmetal."
+    ]
+   ],
+   "exp": "Covalent compounds have no ion charges; prefixes give the counts."
+  }
+ ],
+ "Diatomic elements": [
+  {
+   "q": "Which element exists as a diatomic molecule?",
+   "right": "Bromine",
+   "wrong": [
+    [
+     "Sulfur, because it is a reactive nonmetal that sits right next to chlorine on the table",
+     "Not one of the seven."
+    ],
+    [
+     "Carbon",
+     "Not diatomic."
+    ],
+    [
+     "Neon",
+     "Noble gas, single atoms."
+    ]
+   ],
+   "exp": "H₂, N₂, O₂, F₂, Cl₂, Br₂, I₂."
+  },
+  {
+   "q": "How is pure nitrogen gas written?",
+   "right": "N₂",
+   "wrong": [
+    [
+     "N, because a pure element is always written as one single symbol with no subscript",
+     "Nitrogen is diatomic."
+    ],
+    [
+     "N₃",
+     "No."
+    ],
+    [
+     "N³⁻",
+     "That's the ion."
+    ]
+   ],
+   "exp": "Nitrogen is one of the seven diatomic elements."
+  }
+ ],
+ "Polyatomic ion": [
+  {
+   "q": "Which of these is a polyatomic ion?",
+   "right": "CO₃²⁻",
+   "wrong": [
+    [
+     "Cl⁻, because chloride is one of the most common ions found in compounds like table salt",
+     "One atom: monatomic."
+    ],
+    [
+     "Na⁺",
+     "One atom."
+    ],
+    [
+     "O²⁻",
+     "One atom."
+    ]
+   ],
+   "exp": "Several atoms, one overall charge."
+  },
+  {
+   "q": "How many atoms are in one sulfate ion, SO₄²⁻?",
+   "right": "5",
+   "wrong": [
+    [
+     "1, because sulfate is a single ion and so it only counts as one atom in a compound",
+     "1 S + 4 O."
+    ],
+    [
+     "4",
+     "Forgot sulfur."
+    ],
+    [
+     "2",
+     "No."
+    ]
+   ],
+   "exp": "A polyatomic ion is a group of atoms."
+  }
+ ],
+ "Never change the ion": [
+  {
+   "q": "To make magnesium phosphate neutral, a student changes PO₄³⁻ to PO₂. What's correct?",
+   "right": "Mg₃(PO₄)₂",
+   "wrong": [
+    [
+     "MgPO₂, because changing the subscripts inside the ion is the simplest way to balance it",
+     "Never change the ion."
+    ],
+    [
+     "Mg₂(PO₄)₃",
+     "Crossed backward."
+    ],
+    [
+     "MgPO₄",
+     "Not neutral."
+    ]
+   ],
+   "exp": "Change how many ions, not what's inside them. Your review key: Mg₃(PO₄)₂."
+  },
+  {
+   "q": "Your review lists \"Mg₂(PO₄)₃\" as an error. What is the correct formula?",
+   "right": "Mg₃(PO₄)₂",
+   "wrong": [
+    [
+     "Mg₂(PO₄)₃, because the formula is already balanced with two magnesium and three phosphate",
+     "2(2+) + 3(3−) = 5−."
+    ],
+    [
+     "MgPO₄",
+     "Not neutral."
+    ],
+    [
+     "Mg₃PO₄",
+     "Not neutral."
+    ]
+   ],
+   "exp": "3 Mg²⁺ (6+) and 2 PO₄³⁻ (6−)."
+  }
+ ],
+ "Oxyanion": [
+  {
+   "q": "Which pair are oxyanions of the same element?",
+   "right": "Sulfate and sulfite",
+   "wrong": [
+    [
+     "Sulfide and sulfate, because both of these ions have names that begin with the letters sulf-",
+     "Sulfide (S²⁻) has no oxygen."
+    ],
+    [
+     "Nitrate and phosphate",
+     "Different elements."
+    ],
+    [
+     "Hydroxide and cyanide",
+     "Not the same element with O."
+    ]
+   ],
+   "exp": "SO₄²⁻ and SO₃²⁻: same element, different numbers of oxygen."
+  },
+  {
+   "q": "What makes chlorate (ClO₃⁻) and chlorite (ClO₂⁻) different?",
+   "right": "The number of oxygens",
+   "wrong": [
+    [
+     "Their charges, because chlorate has a larger negative charge than chlorite does",
+     "Both are 1−."
+    ],
+    [
+     "The central element",
+     "Both chlorine."
+    ],
+    [
+     "Nothing",
+     "They differ."
+    ]
+   ],
+   "exp": "Oxyanions differ in oxygen count."
+  }
+ ],
+ "-ate vs. -ite": [
+  {
+   "q": "Nitrate is NO₃⁻. What is nitrite?",
+   "right": "NO₂⁻",
+   "wrong": [
+    [
+     "NO₄⁻, because the -ite ending always means the ion has one more oxygen than the -ate ion",
+     "-ite has one fewer."
+    ],
+    [
+     "NO₃²⁻",
+     "Same charge, fewer O."
+    ],
+    [
+     "N³⁻",
+     "That's nitride."
+    ]
+   ],
+   "exp": "-ite = one fewer oxygen, same charge."
+  },
+  {
+   "q": "Sulfite is SO₃²⁻. What is sulfate?",
+   "right": "SO₄²⁻",
+   "wrong": [
+    [
+     "SO₂²⁻, because sulfate is the smaller of the two ions and has fewer oxygen atoms",
+     "-ate has more O."
+    ],
+    [
+     "SO₄⁻",
+     "Same 2− charge."
+    ],
+    [
+     "S²⁻",
+     "That's sulfide."
+    ]
+   ],
+   "exp": "-ate = one more oxygen than -ite."
+  }
+ ],
+ "Extra prefixes on oxyanions": [
+  {
+   "q": "Chlorate is ClO₃⁻. What is perchlorate?",
+   "right": "ClO₄⁻",
+   "wrong": [
+    [
+     "ClO₂⁻, because the prefix per- is used to show that one oxygen atom has been removed",
+     "per- adds one."
+    ],
+    [
+     "ClO⁻",
+     "That's hypochlorite."
+    ],
+    [
+     "ClO₃²⁻",
+     "Same 1− charge."
+    ]
+   ],
+   "exp": "per-…-ate = one more O than -ate."
+  },
+  {
+   "q": "Chlorite is ClO₂⁻. What is hypochlorite?",
+   "right": "ClO⁻",
+   "wrong": [
+    [
+     "ClO₃⁻, because hypo- means that the ion has one more oxygen atom than the -ite ion has",
+     "hypo- means one fewer."
+    ],
+    [
+     "ClO₄⁻",
+     "Perchlorate."
+    ],
+    [
+     "Cl⁻",
+     "Chloride."
+    ]
+   ],
+   "exp": "hypo-…-ite = one fewer O than -ite."
+  }
+ ],
+ "Ammonium": [
+  {
+   "q": "Write the formula for ammonium chloride.",
+   "right": "NH₄Cl",
+   "wrong": [
+    [
+     "ClNH₄, because ammonium is not a metal, so it cannot be written first in the formula",
+     "Ammonium is the cation: it goes first."
+    ],
+    [
+     "(NH₄)₂Cl",
+     "Charges are 1+ and 1−."
+    ],
+    [
+     "NH₃Cl",
+     "Ammonium is NH₄⁺."
+    ]
+   ],
+   "exp": "Your review key: NH₄Cl."
+  },
+  {
+   "q": "Write the formula for ammonium sulfate.",
+   "right": "(NH₄)₂SO₄",
+   "wrong": [
+    [
+     "NH₄SO₄, because one ammonium ion and one sulfate ion are named in the compound's name",
+     "NH₄⁺ + SO₄²⁻ isn't neutral."
+    ],
+    [
+     "AmSO₄",
+     "Am isn't ammonium."
+    ],
+    [
+     "(NH₄)₂S",
+     "That's ammonium sulfide."
+    ]
+   ],
+   "exp": "Your practice test answer: (NH₄)₂SO₄."
+  }
+ ],
+ "Type IV compound": [
+  {
+   "q": "Which compound is Type IV?",
+   "right": "Mg(OH)₂",
+   "wrong": [
+    [
+     "MgO, because it contains the same metal and the same oxygen atom as magnesium hydroxide",
+     "Binary: Type I."
+    ],
+    [
+     "CO₂",
+     "Type III."
+    ],
+    [
+     "HCl",
+     "An acid."
+    ]
+   ],
+   "exp": "Hydroxide is a polyatomic ion."
+  },
+  {
+   "q": "How can you tell from the formula that NaHCO₃ is Type IV?",
+   "right": "It has more than two elements",
+   "wrong": [
+    [
+     "It has a metal, and every compound with a metal is named as a Type IV compound",
+     "Type I and II have metals too."
+    ],
+    [
+     "It starts with Na",
+     "Not the clue."
+    ],
+    [
+     "It has no oxygen",
+     "It does."
+    ]
+   ],
+   "exp": "Three or more elements (not an acid) → polyatomic ion."
+  }
+ ],
+ "Polyatomic name as given": [
+  {
+   "q": "Name KNO₃.",
+   "right": "Potassium nitrate",
+   "wrong": [
+    [
+     "Potassium nitride, because the anion in an ionic compound always takes the -ide ending",
+     "Polyatomic names stay as given."
+    ],
+    [
+     "Potassium trioxonitrate",
+     "Not a name you use."
+    ],
+    [
+     "Potassium nitrite",
+     "That's NO₂⁻."
+    ]
+   ],
+   "exp": "Copy the ion name from the sheet."
+  },
+  {
+   "q": "Name Ca(C₂H₃O₂)₂.",
+   "right": "Calcium acetate",
+   "wrong": [
+    [
+     "Calcium diacetate, because there are two acetate ions shown inside the parentheses",
+     "No prefixes on ionic names."
+    ],
+    [
+     "Calcium(II) acetate",
+     "Ca has one charge."
+    ],
+    [
+     "Calcium acetide",
+     "Keep acetate."
+    ]
+   ],
+   "exp": "Your review key: calcium acetate."
+  }
+ ],
+ "Parentheses for more than one": [
+  {
+   "q": "Write the formula for barium hydroxide.",
+   "right": "Ba(OH)₂",
+   "wrong": [
+    [
+     "BaOH₂, because the two applies to the hydroxide and does not need to be in parentheses",
+     "Without parentheses, the 2 applies only to H."
+    ],
+    [
+     "BaOH",
+     "Not neutral."
+    ],
+    [
+     "Ba₂OH",
+     "Wrong."
+    ]
+   ],
+   "exp": "Your study guide: Ba(OH)₂."
+  },
+  {
+   "q": "Write the formula for aluminum sulfate.",
+   "right": "Al₂(SO₄)₃",
+   "wrong": [
+    [
+     "Al₂SO₄₃, because the three applies to the sulfate and can be written after the four",
+     "Use parentheses."
+    ],
+    [
+     "Al₃(SO₄)₂",
+     "Crossed backward."
+    ],
+    [
+     "AlSO₄",
+     "Not neutral."
+    ]
+   ],
+   "exp": "2 Al³⁺ (6+), 3 SO₄²⁻ (6−). Your study guide: Al₂(SO₄)₃."
+  }
+ ],
+ "No parentheses for one": [
+  {
+   "q": "Your review lists \"Na(NO₃)\" as an error. What's correct?",
+   "right": "NaNO₃",
+   "wrong": [
+    [
+     "Na(NO₃)₁, because every polyatomic ion in a formula must always be put inside parentheses",
+     "Only when there's more than one."
+    ],
+    [
+     "Na₂NO₃",
+     "Not neutral."
+    ],
+    [
+     "NaNO",
+     "Changes the ion."
+    ]
+   ],
+   "exp": "One unit: no parentheses."
+  },
+  {
+   "q": "Write the formula for calcium carbonate.",
+   "right": "CaCO₃",
+   "wrong": [
+    [
+     "Ca(CO₃), because carbonate is a polyatomic ion, so it must always be put in parentheses",
+     "One carbonate: no parentheses."
+    ],
+    [
+     "Ca₂CO₃",
+     "Not neutral."
+    ],
+    [
+     "Ca(CO₃)₂",
+     "Not neutral."
+    ]
+   ],
+   "exp": "Your review key: CaCO₃."
+  }
+ ],
+ "Variable metals in Type IV": [
+  {
+   "q": "Name Fe₃(PO₄)₂.",
+   "right": "Iron(II) phosphate",
+   "wrong": [
+    [
+     "Iron(III) phosphate, because there are three iron ions in the formula of the compound",
+     "2 PO₄³⁻ = 6−, ÷ 3 Fe = 2+."
+    ],
+    [
+     "Iron phosphate",
+     "Needs the charge."
+    ],
+    [
+     "Triiron diphosphate",
+     "No prefixes."
+    ]
+   ],
+   "exp": "Work out the charge from the polyatomic ion."
+  },
+  {
+   "q": "Name Mn(SO₃)₂.",
+   "right": "Manganese(IV) sulfite",
+   "wrong": [
+    [
+     "Manganese(II) sulfite, because there are two sulfite ions written in the compound's formula",
+     "2 SO₃²⁻ = 4−, so Mn is 4+."
+    ],
+    [
+     "Manganese sulfate",
+     "Sulfite, and needs the charge."
+    ],
+    [
+     "Manganese(IV) sulfate",
+     "SO₃ is sulfite."
+    ]
+   ],
+   "exp": "Your review key: manganese(IV) sulfite."
+  }
+ ],
+ "Acid": [
+  {
+   "q": "Which formula is an acid?",
+   "right": "HNO₃",
+   "wrong": [
+    [
+     "NaOH, because it contains hydrogen, and every compound with hydrogen in it is an acid",
+     "H must come first."
+    ],
+    [
+     "NH₃",
+     "H isn't first."
+    ],
+    [
+     "CH₄",
+     "H isn't first."
+    ]
+   ],
+   "exp": "Acids start with H."
+  },
+  {
+   "q": "What do acids release when dissolved in water?",
+   "right": "H⁺ ions",
+   "wrong": [
+    [
+     "OH⁻ ions, because acids and bases both release hydroxide ions when they dissolve in water",
+     "Acids release H⁺."
+    ],
+    [
+     "Na⁺ ions",
+     "No."
+    ],
+    [
+     "Oxygen gas",
+     "No."
+    ]
+   ],
+   "exp": "Your notes: acids produce H⁺ in water."
+  }
+ ],
+ "Binary acid": [
+  {
+   "q": "Name HCl(aq).",
+   "right": "Hydrochloric acid",
+   "wrong": [
+    [
+     "Chloric acid, because chlorine is the element that is bonded to the hydrogen in the acid",
+     "Chloric acid is HClO₃."
+    ],
+    [
+     "Hydrogen chloride acid",
+     "Not the acid name."
+    ],
+    [
+     "Hydrochlorous acid",
+     "No -ous for binary acids."
+    ]
+   ],
+   "exp": "No oxygen: hydro- + root + -ic."
+  },
+  {
+   "q": "Name HCN(aq).",
+   "right": "Hydrocyanic acid",
+   "wrong": [
+    [
+     "Cyanic acid, because cyanide is a polyatomic ion and polyatomic acids never use hydro-",
+     "Cyanide has no oxygen: use hydro-."
+    ],
+    [
+     "Hydrogen cyanate",
+     "No."
+    ],
+    [
+     "Cyanous acid",
+     "No."
+    ]
+   ],
+   "exp": "Your key: cyanide (no O) is named like a binary acid."
+  }
+ ],
+ "(aq)": [
+  {
+   "q": "Why is hydrobromic acid written HBr(aq)?",
+   "right": "It's dissolved in water",
+   "wrong": [
+    [
+     "Because the (aq) shows that hydrogen and bromine share electrons in a covalent bond",
+     "It means aqueous."
+    ],
+    [
+     "It's a solid",
+     "No."
+    ],
+    [
+     "It's a gas",
+     "No."
+    ]
+   ],
+   "exp": "Your study guide answers write binary acids with (aq)."
+  },
+  {
+   "q": "Which formula from your study guide answers is labeled (aq)?",
+   "right": "H₂S(aq), hydrosulfuric acid",
+   "wrong": [
+    [
+     "Na₂S(aq), sodium sulfide, because it contains sulfur and is an ionic compound with a metal",
+     "Not an acid."
+    ],
+    [
+     "SO₂(aq)",
+     "Not an acid."
+    ],
+    [
+     "CS₂(aq)",
+     "Not an acid."
+    ]
+   ],
+   "exp": "Acids in water get (aq)."
+  }
+ ],
+ "-ate → -ic": [
+  {
+   "q": "Name H₂SO₄.",
+   "right": "Sulfuric acid",
+   "wrong": [
+    [
+     "Sulfurous acid, because the formula has four oxygen atoms bonded to the sulfur atom",
+     "Sulfate (-ate) → -ic."
+    ],
+    [
+     "Hydrosulfuric acid",
+     "Has oxygen: no hydro-."
+    ],
+    [
+     "Hydrogen sulfate",
+     "Not the acid name."
+    ]
+   ],
+   "exp": "Sulfate → sulfuric acid."
+  },
+  {
+   "q": "Write the formula for chloric acid.",
+   "right": "HClO₃",
+   "wrong": [
+    [
+     "HClO₂, because chloric acid comes from the chlorite ion, which has two oxygens",
+     "-ic comes from -ate (chlorate)."
+    ],
+    [
+     "HCl",
+     "That's hydrochloric."
+    ],
+    [
+     "HClO₄",
+     "That's perchloric."
+    ]
+   ],
+   "exp": "Chlorate ClO₃⁻ → chloric acid HClO₃."
+  }
+ ],
+ "-ite → -ous": [
+  {
+   "q": "Name H₂SO₃.",
+   "right": "Sulfurous acid",
+   "wrong": [
+    [
+     "Sulfuric acid, because it contains sulfur and oxygen together, like all sulfur oxyacids",
+     "Sulfite (-ite) → -ous."
+    ],
+    [
+     "Hydrosulfurous acid",
+     "No hydro-."
+    ],
+    [
+     "Sulfite acid",
+     "Change the ending."
+    ]
+   ],
+   "exp": "Sulfite → sulfurous acid."
+  },
+  {
+   "q": "Write the formula for nitrous acid.",
+   "right": "HNO₂",
+   "wrong": [
+    [
+     "HNO₃, because nitrous acid is the most common acid that is made from nitrogen and oxygen",
+     "That's nitric."
+    ],
+    [
+     "HN",
+     "No."
+    ],
+    [
+     "H₃N",
+     "No."
+    ]
+   ],
+   "exp": "Nitrite NO₂⁻ → nitrous acid. Your study guide: HNO₂ is nitrous acid."
+  }
+ ],
+ "per-ate → per-ic": [
+  {
+   "q": "Name HClO₄.",
+   "right": "Perchloric acid",
+   "wrong": [
+    [
+     "Chloric acid, because the acid contains chlorine and oxygen and comes from an -ate ion",
+     "ClO₄⁻ is perchlorate."
+    ],
+    [
+     "Hypochlorous acid",
+     "That's HClO."
+    ],
+    [
+     "Perchlorous acid",
+     "-ate → -ic."
+    ]
+   ],
+   "exp": "Perchlorate → perchloric acid."
+  },
+  {
+   "q": "Write the formula for perchloric acid.",
+   "right": "HClO₄",
+   "wrong": [
+    [
+     "HClO₃, because perchloric acid is just another name for chloric acid in your notes",
+     "That's chloric."
+    ],
+    [
+     "HClO",
+     "Hypochlorous."
+    ],
+    [
+     "HCl",
+     "Hydrochloric."
+    ]
+   ],
+   "exp": "Your review key: HClO₄."
+  }
+ ],
+ "hypo-ite → hypo-ous": [
+  {
+   "q": "Name HClO.",
+   "right": "Hypochlorous acid",
+   "wrong": [
+    [
+     "Hydrochloric acid, because it is made of hydrogen and chlorine and only one oxygen atom",
+     "It has oxygen: from hypochlorite."
+    ],
+    [
+     "Chlorous acid",
+     "That's HClO₂."
+    ],
+    [
+     "Hypochloric acid",
+     "-ite → -ous."
+    ]
+   ],
+   "exp": "Hypochlorite → hypochlorous acid."
+  },
+  {
+   "q": "Which ion makes hypochlorous acid?",
+   "right": "Hypochlorite, ClO⁻",
+   "wrong": [
+    [
+     "Perchlorate, ClO₄⁻, because it has the most oxygen atoms of any of the chlorine oxyanions",
+     "That makes perchloric."
+    ],
+    [
+     "Chlorite, ClO₂⁻",
+     "That makes chlorous."
+    ],
+    [
+     "Chloride, Cl⁻",
+     "That makes hydrochloric."
+    ]
+   ],
+   "exp": "hypo-ite → hypo-ous."
+  }
+ ],
+ "No hydro- for oxyacids": [
+  {
+   "q": "A student names HNO₃ \"hydronitric acid.\" What's correct?",
+   "right": "Nitric acid",
+   "wrong": [
+    [
+     "Hydronitrous acid, because nitrogen acids always need the prefix hydro- in their names",
+     "Has oxygen: no hydro-."
+    ],
+    [
+     "Nitrous acid",
+     "That's HNO₂."
+    ],
+    [
+     "Hydrogen nitrate",
+     "Not the acid name."
+    ]
+   ],
+   "exp": "Nitrate → nitric acid."
+  },
+  {
+   "q": "Your mixed-naming key fixes \"bromic acid\" for HBr. What's the right name?",
+   "right": "Hydrobromic acid",
+   "wrong": [
+    [
+     "Bromous acid, because bromine forms an -ite ion when it bonds with a hydrogen atom",
+     "No oxygen: hydro-…-ic."
+    ],
+    [
+     "Bromic acid",
+     "That needs oxygen (bromate)."
+    ],
+    [
+     "Hydrobromous acid",
+     "Binary acids end in -ic."
+    ]
+   ],
+   "exp": "No oxygen in the anion → hydro- prefix."
+  }
+ ],
+ "Hydrate": [
+  {
+   "q": "In CuSO₄·5H₂O, what does the ·5H₂O mean?",
+   "right": "Five water molecules are attached",
+   "wrong": [
+    [
+     "The compound has been dissolved in five liters of water to make a solution",
+     "That would be (aq)."
+    ],
+    [
+     "It has 5 hydrogens",
+     "10 H in 5 waters."
+    ],
+    [
+     "It's an acid",
+     "No."
+    ]
+   ],
+   "exp": "A hydrate has water molecules built in."
+  },
+  {
+   "q": "Write the formula for iron(III) oxide dihydrate.",
+   "right": "Fe₂O₃·2H₂O",
+   "wrong": [
+    [
+     "Fe₂O₃H₄O₂, because the two water molecules are added into the formula like other atoms",
+     "Water is written after a dot."
+    ],
+    [
+     "FeO·2H₂O",
+     "That's iron(II)."
+    ],
+    [
+     "Fe₂O₃(H₂O)",
+     "Needs 2 waters."
+    ]
+   ],
+   "exp": "Your review key: Fe₂O₃·2H₂O."
+  }
+ ],
+ "Naming hydrates": [
+  {
+   "q": "Name MgSO₄·7H₂O.",
+   "right": "Magnesium sulfate heptahydrate",
+   "wrong": [
+    [
+     "Magnesium sulfate hexahydrate, because hexa- is the prefix that is used for the number seven",
+     "Hexa = 6."
+    ],
+    [
+     "Magnesium sulfate seven water",
+     "Use the prefix."
+    ],
+    [
+     "Magnesium heptasulfate",
+     "Wrong place."
+    ]
+   ],
+   "exp": "Your notes' example."
+  },
+  {
+   "q": "Name FeBr₂·4H₂O.",
+   "right": "Iron(II) bromide tetrahydrate",
+   "wrong": [
+    [
+     "Iron(IV) bromide hydrate, because the four after the dot tells you the charge on the iron",
+     "The 4 counts waters; Br₂ means Fe²⁺."
+    ],
+    [
+     "Iron bromide tetrahydrate",
+     "Needs the charge."
+    ],
+    [
+     "Iron(II) bromide pentahydrate",
+     "Penta = 5."
+    ]
+   ],
+   "exp": "Your review key: iron(II) bromide tetrahydrate."
+  }
+ ],
+ "Starts with H": [
+  {
+   "q": "H₃PO₄ is which type?",
+   "right": "Type V, an acid",
+   "wrong": [
+    [
+     "Type IV, because it contains phosphate, which is a polyatomic ion found on the sheet",
+     "Starts with H: acid first."
+    ],
+    [
+     "Type III",
+     "Not binary covalent."
+    ],
+    [
+     "Type I",
+     "No metal."
+    ]
+   ],
+   "exp": "Phosphoric acid."
+  },
+  {
+   "q": "Which formula is NOT an acid?",
+   "right": "NaOH",
+   "wrong": [
+    [
+     "HF, because hydrogen fluoride is a binary compound and binary compounds are never acids",
+     "HF(aq) is hydrofluoric acid."
+    ],
+    [
+     "H₂CO₃",
+     "Carbonic acid."
+    ],
+    [
+     "HClO₂",
+     "Chlorous acid."
+    ]
+   ],
+   "exp": "NaOH doesn't start with H: it's sodium hydroxide."
+  }
+ ],
+ "Two elements with a metal": [
+  {
+   "q": "AlCl₃ is two elements, one a metal. Which type, and why?",
+   "right": "Type I: Al has one charge",
+   "wrong": [
+    [
+     "Type II, because aluminum is a metal and every metal compound needs a Roman numeral",
+     "Al is always 3+."
+    ],
+    [
+     "Type III",
+     "Has a metal."
+    ],
+    [
+     "Type IV",
+     "Only two elements."
+    ]
+   ],
+   "exp": "Aluminum chloride."
+  },
+  {
+   "q": "NiCl₂ is two elements, one a metal. Which name is right?",
+   "right": "Nickel(II) chloride",
+   "wrong": [
+    [
+     "Nickel chloride, because nickel is a metal that forms only one ion, like zinc and silver",
+     "Only Zn, Ag and Cd are exceptions."
+    ],
+    [
+     "Nickel dichloride",
+     "No prefixes."
+    ],
+    [
+     "Nickel(I) chloride",
+     "2 Cl⁻ means Ni²⁺."
+    ]
+   ],
+   "exp": "Transition metal → Type II."
+  }
+ ],
+ "Two nonmetals": [
+  {
+   "q": "P₂O₅ has no metal. How is it named?",
+   "right": "Diphosphorus pentoxide",
+   "wrong": [
+    [
+     "Phosphorus(V) oxide, because the oxygen atoms show that phosphorus has a charge of five plus",
+     "Numerals are for ionic metals."
+    ],
+    [
+     "Phosphorus oxide",
+     "Needs prefixes."
+    ],
+    [
+     "Phosphate",
+     "That's an ion."
+    ]
+   ],
+   "exp": "Type III: prefixes."
+  },
+  {
+   "q": "Your review asks if NO₂ is molecular or ionic. Answer and name:",
+   "right": "Molecular: nitrogen dioxide",
+   "wrong": [
+    [
+     "Ionic: nitrite, because NO₂ is the same set of atoms as the nitrite polyatomic ion",
+     "No charge shown: it's a molecule."
+    ],
+    [
+     "Ionic: nitrogen(IV) oxide",
+     "Two nonmetals: covalent."
+    ],
+    [
+     "Molecular: mononitrogen dioxide",
+     "No mono- first."
+    ]
+   ],
+   "exp": "Your review key: covalent, nitrogen dioxide."
+  }
+ ],
+ "More than two elements": [
+  {
+   "q": "Which compound must contain a polyatomic ion?",
+   "right": "K₂CO₃",
+   "wrong": [
+    [
+     "K₂O, because potassium is a reactive metal that usually bonds with polyatomic ions",
+     "Only two elements."
+    ],
+    [
+     "CO₂",
+     "Two elements."
+    ],
+    [
+     "KCl",
+     "Two elements."
+    ]
+   ],
+   "exp": "Three elements, not an acid → polyatomic."
+  },
+  {
+   "q": "Co₂(CO₃)₃ has three elements. Name it.",
+   "right": "Cobalt(III) carbonate",
+   "wrong": [
+    [
+     "Cobalt(II) carbonate, because the formula has two cobalt atoms, which tells you its charge",
+     "3 CO₃²⁻ = 6−, ÷ 2 = 3+."
+    ],
+    [
+     "Cobalt carbonate",
+     "Needs the charge."
+    ],
+    [
+     "Dicobalt tricarbonate",
+     "No prefixes."
+    ]
+   ],
+   "exp": "Your study guide answer: cobalt(III) carbonate."
+  }
+ ],
+ "Missing Roman numeral": [
+  {
+   "q": "Your review lists \"iron nitrate\" as an error. Why?",
+   "right": "Iron's charge isn't given",
+   "wrong": [
+    [
+     "Because nitrate should be written as nitride whenever it is bonded to any metal",
+     "Nitrate is correct."
+    ],
+    [
+     "Iron must go second",
+     "No."
+    ],
+    [
+     "Nitrate needs prefixes",
+     "No."
+    ]
+   ],
+   "exp": "Iron can be 2+ or 3+."
+  },
+  {
+   "q": "Which name is missing a Roman numeral?",
+   "right": "Copper sulfate",
+   "wrong": [
+    [
+     "Sodium sulfate, because sodium is a metal and every metal needs its charge in the name",
+     "Na has one charge."
+    ],
+    [
+     "Zinc sulfate",
+     "Zn: no numeral."
+    ],
+    [
+     "Silver sulfate",
+     "Ag: no numeral."
+    ]
+   ],
+   "exp": "Copper can be 1+ or 2+."
+  }
+ ],
+ "Extra Roman numeral": [
+  {
+   "q": "Which name has an unnecessary Roman numeral?",
+   "right": "Calcium(II) bisulfate",
+   "wrong": [
+    [
+     "Iron(III) oxide, because iron is a common metal that always forms an ion with a 3+ charge",
+     "Iron needs one."
+    ],
+    [
+     "Lead(II) oxide",
+     "Lead needs one."
+    ],
+    [
+     "Tin(IV) chloride",
+     "Tin needs one."
+    ]
+   ],
+   "exp": "Your mixed-naming key: calcium bisulfate."
+  },
+  {
+   "q": "Name Ag₂S correctly.",
+   "right": "Silver sulfide",
+   "wrong": [
+    [
+     "Silver(I) sulfide, because the Roman numeral is required for every transition metal",
+     "Ag is an exception."
+    ],
+    [
+     "Disilver sulfide",
+     "No prefixes."
+    ],
+    [
+     "Silver(II) sulfide",
+     "Ag is 1+."
+    ]
+   ],
+   "exp": "Silver: no numeral."
+  }
+ ],
+ "Prefixes on ionic names": [
+  {
+   "q": "Correct \"dipotassium chromate\" (K₂CrO₄).",
+   "right": "Potassium chromate",
+   "wrong": [
+    [
+     "Potassium dichromate, because the prefix should be moved onto the polyatomic ion instead",
+     "Dichromate is a different ion, Cr₂O₇²⁻."
+    ],
+    [
+     "Potassium(I) chromate",
+     "K: no numeral."
+    ],
+    [
+     "Dipotassium chromide",
+     "Worse."
+    ]
+   ],
+   "exp": "Your mixed-naming key: potassium chromate."
+  },
+  {
+   "q": "Which name is correct?",
+   "right": "Aluminum oxide",
+   "wrong": [
+    [
+     "Dialuminum trioxide, because the prefixes show the two aluminum and three oxygen atoms",
+     "Ionic: no prefixes."
+    ],
+    [
+     "Aluminum(III) oxide",
+     "Al: no numeral."
+    ],
+    [
+     "Aluminum trioxide",
+     "No prefixes."
+    ]
+   ],
+   "exp": "Your practice test answer: aluminum oxide."
+  }
+ ],
+ "Numeral in the formula": [
+  {
+   "q": "Correct the formula Fe(III)Cl₃.",
+   "right": "FeCl₃",
+   "wrong": [
+    [
+     "Fe₃Cl₃, because the Roman numeral three should become a subscript on the iron atom",
+     "The numeral is a charge."
+    ],
+    [
+     "Fe(III)Cl",
+     "Numerals don't go in formulas."
+    ],
+    [
+     "FeCl",
+     "Not neutral."
+    ]
+   ],
+   "exp": "Your review key: FeCl₃."
+  },
+  {
+   "q": "Where does the Roman numeral belong?",
+   "right": "In the name only",
+   "wrong": [
+    [
+     "In the formula only, written right after the metal's symbol in parentheses",
+     "Formulas use subscripts."
+    ],
+    [
+     "In both",
+     "Not in formulas."
+    ],
+    [
+     "In neither",
+     "Names need it."
+    ]
+   ],
+   "exp": "Iron(III) chloride → FeCl₃."
+  }
+ ],
+ "Anion first": [
+  {
+   "q": "Correct \"SO₄Cu.\"",
+   "right": "CuSO₄",
+   "wrong": [
+    [
+     "Cu(SO₄)₂, because copper needs two sulfate ions to balance its charge of two plus",
+     "Cu²⁺ + SO₄²⁻ is already neutral."
+    ],
+    [
+     "SCuO₄",
+     "No."
+    ],
+    [
+     "SO₄Cu₂",
+     "Still anion first."
+    ]
+   ],
+   "exp": "Your review key: CuSO₄."
+  },
+  {
+   "q": "Correct \"N₂Be₃.\"",
+   "right": "Be₃N₂",
+   "wrong": [
+    [
+     "Be₂N₃, because the subscripts also have to be swapped when you move the metal to the front",
+     "Be²⁺ and N³⁻ → Be₃N₂."
+    ],
+    [
+     "BeN",
+     "Not neutral."
+    ],
+    [
+     "N₂Be₃ is correct",
+     "Cation first."
+    ]
+   ],
+   "exp": "Your review key: metal first, Be₃N₂."
+  }
+ ],
+ "Missing parentheses": [
+  {
+   "q": "Correct \"CaOH₂.\"",
+   "right": "Ca(OH)₂",
+   "wrong": [
+    [
+     "CaO₂H₂, because both the oxygen and the hydrogen atoms need a subscript of two in it",
+     "Keep OH together in parentheses."
+    ],
+    [
+     "CaOH",
+     "Not neutral."
+    ],
+    [
+     "Ca₂OH",
+     "Wrong."
+    ]
+   ],
+   "exp": "Your review key: Ca(OH)₂."
+  },
+  {
+   "q": "Which formula for zinc acetate is correct?",
+   "right": "Zn(C₂H₃O₂)₂",
+   "wrong": [
+    [
+     "ZnC₄H₆O₄, because the atoms of both acetate ions can simply be added together into one",
+     "Keep each acetate as a unit."
+    ],
+    [
+     "ZnC₂H₃O₂",
+     "Not neutral."
+    ],
+    [
+     "Zn₂C₂H₃O₂",
+     "Wrong."
+    ]
+   ],
+   "exp": "Your review key corrects ZnC₄H₆O₂ to Zn(C₂H₃O₂)₂."
+  }
+ ]
+}

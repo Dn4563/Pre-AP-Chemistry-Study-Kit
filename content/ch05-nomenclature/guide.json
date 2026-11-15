@@ -1,0 +1,419 @@
+{
+ "flows": [
+  {
+   "id": "F1",
+   "title": "Which type is it? (your dichotomous key)",
+   "deck": 7,
+   "steps": [
+    "Starts with H? → Type V acid (no oxygen: hydro-…-ic; -ate → -ic; -ite → -ous)",
+    "Not an acid: more than two elements? → Type IV, polyatomic ion (name it as on your sheet)",
+    "Two elements, metal + nonmetal? → ionic: Type I (one-charge metal) or Type II (Roman numeral)",
+    "Two nonmetals? → Type III covalent: prefixes, no mono- on the first element"
+   ]
+  },
+  {
+   "id": "F2",
+   "title": "Writing an ionic formula",
+   "deck": 2,
+   "steps": [
+    "Write the cation's charge (group number, or the Roman numeral)",
+    "Write the anion's charge (group, or your ion sheet)",
+    "If the charges cancel, write cation then anion",
+    "If not, crisscross the charge numbers into subscripts",
+    "Polyatomic ion needed more than once? Put it in parentheses",
+    "Reduce to the lowest ratio"
+   ]
+  },
+  {
+   "id": "F3",
+   "title": "Naming a Type II compound",
+   "deck": 3,
+   "steps": [
+    "Find the anion's charge",
+    "Multiply by its subscript: total negative charge",
+    "Divide by the number of metal atoms: the metal's charge",
+    "Write the metal, its charge as a Roman numeral, then the anion"
+   ]
+  }
+ ],
+ "tables": [
+  {
+   "title": "Polyatomic ion sheet (the ions in your worksheets; use your class sheet on the test)",
+   "deck": 5,
+   "rows": [
+    [
+     "Ion",
+     "Formula",
+     "Charge"
+    ],
+    [
+     "Ammonium",
+     "NH₄⁺",
+     "1+"
+    ],
+    [
+     "Acetate",
+     "C₂H₃O₂⁻",
+     "1−"
+    ],
+    [
+     "Bicarbonate (hydrogen carbonate)",
+     "HCO₃⁻",
+     "1−"
+    ],
+    [
+     "Bisulfate (hydrogen sulfate)",
+     "HSO₄⁻",
+     "1−"
+    ],
+    [
+     "Chlorate",
+     "ClO₃⁻",
+     "1−"
+    ],
+    [
+     "Chlorite",
+     "ClO₂⁻",
+     "1−"
+    ],
+    [
+     "Hypochlorite",
+     "ClO⁻",
+     "1−"
+    ],
+    [
+     "Perchlorate",
+     "ClO₄⁻",
+     "1−"
+    ],
+    [
+     "Cyanide",
+     "CN⁻",
+     "1−"
+    ],
+    [
+     "Formate",
+     "HCOO⁻",
+     "1−"
+    ],
+    [
+     "Hydroxide",
+     "OH⁻",
+     "1−"
+    ],
+    [
+     "Iodate",
+     "IO₃⁻",
+     "1−"
+    ],
+    [
+     "Nitrate",
+     "NO₃⁻",
+     "1−"
+    ],
+    [
+     "Nitrite",
+     "NO₂⁻",
+     "1−"
+    ],
+    [
+     "Permanganate",
+     "MnO₄⁻",
+     "1−"
+    ],
+    [
+     "Carbonate",
+     "CO₃²⁻",
+     "2−"
+    ],
+    [
+     "Chromate",
+     "CrO₄²⁻",
+     "2−"
+    ],
+    [
+     "Dichromate",
+     "Cr₂O₇²⁻",
+     "2−"
+    ],
+    [
+     "Hydrogen phosphate",
+     "HPO₄²⁻",
+     "2−"
+    ],
+    [
+     "Oxalate",
+     "C₂O₄²⁻",
+     "2−"
+    ],
+    [
+     "Sulfate",
+     "SO₄²⁻",
+     "2−"
+    ],
+    [
+     "Sulfite",
+     "SO₃²⁻",
+     "2−"
+    ],
+    [
+     "Borate",
+     "BO₃³⁻",
+     "3−"
+    ],
+    [
+     "Phosphate",
+     "PO₄³⁻",
+     "3−"
+    ],
+    [
+     "Phosphite",
+     "PO₃³⁻",
+     "3−"
+    ]
+   ]
+  },
+  {
+   "title": "The five types at a glance",
+   "deck": 1,
+   "rows": [
+    [
+     "Type",
+     "What it is",
+     "How to name it",
+     "Example"
+    ],
+    [
+     "I",
+     "Representative metal + nonmetal",
+     "Metal, then root + -ide; no prefixes",
+     "Na₂O sodium oxide"
+    ],
+    [
+     "II",
+     "Variable metal + nonmetal",
+     "Metal (Roman numeral), then root + -ide",
+     "Fe₂O₃ iron(III) oxide"
+    ],
+    [
+     "III",
+     "Two nonmetals",
+     "Prefixes on both; -ide; no mono- first",
+     "N₂O₄ dinitrogen tetroxide"
+    ],
+    [
+     "IV",
+     "Contains a polyatomic ion",
+     "Cation (numeral if needed), then ion name as given",
+     "Mg(NO₃)₂ magnesium nitrate"
+    ],
+    [
+     "V",
+     "Acid (H first)",
+     "No O: hydro-…-ic; -ate → -ic; -ite → -ous",
+     "H₂SO₄ sulfuric acid"
+    ]
+   ]
+  },
+  {
+   "title": "Prefixes",
+   "deck": 4,
+   "rows": [
+    [
+     "Number",
+     "Prefix",
+     "Example"
+    ],
+    [
+     "1",
+     "mono-",
+     "CO carbon monoxide"
+    ],
+    [
+     "2",
+     "di-",
+     "CO₂ carbon dioxide"
+    ],
+    [
+     "3",
+     "tri-",
+     "SO₃ sulfur trioxide"
+    ],
+    [
+     "4",
+     "tetra-",
+     "CCl₄ carbon tetrachloride"
+    ],
+    [
+     "5",
+     "penta-",
+     "PCl₅ phosphorus pentachloride"
+    ],
+    [
+     "6",
+     "hexa-",
+     "SF₆ sulfur hexafluoride"
+    ],
+    [
+     "7",
+     "hepta-",
+     "Cl₂O₇ dichlorine heptoxide"
+    ],
+    [
+     "8",
+     "octa-",
+     "S₇F₈ heptasulfur octafluoride"
+    ],
+    [
+     "9",
+     "nona-",
+     "nonahydrate (9 waters)"
+    ],
+    [
+     "10",
+     "deca-",
+     "N₃Cl₁₀ trinitrogen decachloride"
+    ]
+   ]
+  },
+  {
+   "title": "Naming acids",
+   "deck": 6,
+   "rows": [
+    [
+     "Anion",
+     "Acid name",
+     "Example"
+    ],
+    [
+     "-ide (no oxygen)",
+     "hydro-…-ic acid",
+     "HCl hydrochloric acid; HCN hydrocyanic acid"
+    ],
+    [
+     "-ate",
+     "…-ic acid",
+     "HNO₃ nitric acid (nitrate)"
+    ],
+    [
+     "-ite",
+     "…-ous acid",
+     "HNO₂ nitrous acid (nitrite)"
+    ],
+    [
+     "per-…-ate",
+     "per-…-ic acid",
+     "HClO₄ perchloric acid"
+    ],
+    [
+     "hypo-…-ite",
+     "hypo-…-ous acid",
+     "HClO hypochlorous acid"
+    ]
+   ]
+  },
+  {
+   "title": "Metals that break the pattern",
+   "deck": 3,
+   "rows": [
+    [
+     "Metal",
+     "Charge",
+     "Numeral?"
+    ],
+    [
+     "Zinc",
+     "2+ only",
+     "No: zinc chloride"
+    ],
+    [
+     "Silver",
+     "1+ only",
+     "No: silver bromide"
+    ],
+    [
+     "Cadmium",
+     "2+ only",
+     "No: cadmium fluoride"
+    ],
+    [
+     "Lead",
+     "2+ or 4+",
+     "Yes: lead(IV) sulfide"
+    ],
+    [
+     "Tin",
+     "2+ or 4+",
+     "Yes: tin(IV) chloride"
+    ]
+   ]
+  }
+ ],
+ "cheat": [
+  {
+   "title": "Rules in one line each",
+   "kind": "list",
+   "items": [
+    "Cation first, anion second, always.",
+    "Ionic (Types I, II, IV): NO prefixes. Covalent (Type III): prefixes, never mono- first.",
+    "Roman numeral = the metal's charge, not a count. Zn, Ag, Cd never; Pb, Sn always.",
+    "Find the charge: total negative charge ÷ number of metal atoms.",
+    "Polyatomic ions never change; use parentheses for more than one.",
+    "Ionic formulas reduce (CaO); covalent formulas don't (N₂O₄).",
+    "Acids: no O → hydro-…-ic; -ate → -ic; -ite → -ous; keep per- and hypo-.",
+    "Hydrates: name + prefix + hydrate (CuSO₄·5H₂O copper(II) sulfate pentahydrate)."
+   ]
+  },
+  {
+   "title": "Mistakes the review asks you to fix",
+   "kind": "table",
+   "rows": [
+    [
+     "Wrong",
+     "Right",
+     "Why"
+    ],
+    [
+     "iron nitrate",
+     "iron(II) or iron(III) nitrate",
+     "Iron needs its charge"
+    ],
+    [
+     "zinc(II) hydroxide",
+     "zinc hydroxide",
+     "Zinc has one charge"
+    ],
+    [
+     "dipotassium chromate",
+     "potassium chromate",
+     "No prefixes on ionic"
+    ],
+    [
+     "Fe(III)Cl₃",
+     "FeCl₃",
+     "Numerals only in names"
+    ],
+    [
+     "SO₄Cu",
+     "CuSO₄",
+     "Cation first"
+    ],
+    [
+     "CaOH₂",
+     "Ca(OH)₂",
+     "Parentheses around the ion"
+    ],
+    [
+     "Mg₂(PO₄)₃",
+     "Mg₃(PO₄)₂",
+     "Charges must cancel"
+    ],
+    [
+     "bromic acid (HBr)",
+     "hydrobromic acid",
+     "No oxygen → hydro-"
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1211 @@
+{
+ "sections": [
+  {
+   "name": "Name it: Types I and II",
+   "mode": "practice",
+   "tips": [
+    "Ask the key's questions first: starts with H? Two elements? Metal or not? Polyatomic ion?",
+    "Type I and II: never prefixes. Type II: work out the charge from the anion and write it as a Roman numeral.",
+    "Type III: prefixes on both elements, but never mono- on the first.",
+    "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
+    "Type your answer, then check it against the model answer."
+   ],
+   "questions": [
+    {
+     "id": "N1",
+     "type": "frq",
+     "topic": "Type I",
+     "title": "Type I names",
+     "stem": "Write the name of each compound.",
+     "data": [],
+     "parts": [
+      {
+       "k": "a",
+       "prompt": "K₂S",
+       "model": "Potassium sulfide"
+      },
+      {
+       "k": "b",
+       "prompt": "CaI₂",
+       "model": "Calcium iodide"
+      },
+      {
+       "k": "c",
+       "prompt": "Ga₂O₃",
+       "model": "Gallium oxide"
+      },
+      {
+       "k": "d",
+       "prompt": "SrF₂",
+       "model": "Strontium fluoride"
+      },
+      {
+       "k": "e",
+       "prompt": "Li₂Se",
+       "model": "Lithium selenide"
+      },
+      {
+       "k": "f",
+       "prompt": "Ba₃N₂",
+       "model": "Barium nitride (no prefixes for ionic compounds)"
+      }
+     ]
+    },
+    {
+     "id": "N2",
+     "type": "frq",
+     "topic": "Type II",
+     "title": "Type II names",
+     "stem": "Write the name of each compound. Work out each metal's charge.",
+     "data": [],
+     "parts": [
+      {
+       "k": "a",
+       "prompt": "CoCl₂",
+       "model": "Cobalt(II) chloride: 2 Cl⁻ = 2−, so Co is 2+"
+      },
+      {
+       "k": "b",
+       "prompt": "Fe₂S₃",
+       "model": "Iron(III) sulfide: 3 S²⁻ = 6−, ÷ 2 Fe = 3+"
+      },
+      {
+       "k": "c",
+       "prompt": "MnO₂",
+       "model": "Manganese(IV) oxide: 2 O²⁻ = 4−"
+      },
+      {
+       "k": "d",
+       "prompt": "Cu₃N",
+       "model": "Copper(I) nitride: N³⁻ ÷ 3 Cu = 1+ each"
+      },
+      {
+       "k": "e",
+       "prompt": "SnBr₄",
+       "model": "Tin(IV) bromide"
+      },
+      {
+       "k": "f",
+       "prompt": "CrF₃",
+       "model": "Chromium(III) fluoride"
+      },
+      {
+       "k": "g",
+       "prompt": "ZnO",
+       "model": "Zinc oxide (zinc never gets a numeral)"
+      },
+      {
+       "k": "h",
+       "prompt": "PbI₂",
+       "model": "Lead(II) iodide (lead always needs one)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Name it: covalent (Type III)",
+   "mode": "practice",
+   "tips": [
+    "Ask the key's questions first: starts with H? Two elements? Metal or not? Polyatomic ion?",
+    "Type I and II: never prefixes. Type II: work out the charge from the anion and write it as a Roman numeral.",
+    "Type III: prefixes on both elements, but never mono- on the first.",
+    "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
+    "Type your answer, then check it against the model answer."
+   ],
+   "questions": [
+    {
+     "id": "N3",
+     "type": "frq",
+     "topic": "Type III",
+     "title": "Covalent names",
+     "stem": "Write the name of each compound.",
+     "data": [],
+     "parts": [
+      {
+       "k": "a",
+       "prompt": "PBr₃",
+       "model": "Phosphorus tribromide"
+      },
+      {
+       "k": "b",
+       "prompt": "SiCl₄",
+       "model": "Silicon tetrachloride"
+      },
+      {
+       "k": "c",
+       "prompt": "N₂O",
+       "model": "Dinitrogen monoxide"
+      },
+      {
+       "k": "d",
+       "prompt": "SO₂",
+       "model": "Sulfur dioxide"
+      },
+      {
+       "k": "e",
+       "prompt": "Cl₂O₇",
+       "model": "Dichlorine heptoxide (hepta + oxide → heptoxide)"
+      },
+      {
+       "k": "f",
+       "prompt": "P₄S₁₀",
+       "model": "Tetraphosphorus decasulfide"
+      },
+      {
+       "k": "g",
+       "prompt": "CF₄",
+       "model": "Carbon tetrafluoride"
+      },
+      {
+       "k": "h",
+       "prompt": "N₂S₅",
+       "model": "Dinitrogen pentasulfide"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Name it: polyatomic ions (Type IV)",
+   "mode": "practice",
+   "tips": [
+    "Ask the key's questions first: starts with H? Two elements? Metal or not? Polyatomic ion?",
+    "Type I and II: never prefixes. Type II: work out the charge from the anion and write it as a Roman numeral.",
+    "Type III: prefixes on both elements, but never mono- on the first.",
+    "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
+    "Type your answer, then check it against the model answer."
+   ],
+   "questions": [
+    {
+     "id": "N4",
+     "type": "frq",
+     "topic": "Type IV",
+     "title": "One-charge metals",
+     "stem": "Write the name of each compound. Use your ion sheet.",
+     "data": [],
+     "parts": [
+      {
+       "k": "a",
+       "prompt": "NaHCO₃",
+       "model": "Sodium bicarbonate (or sodium hydrogen carbonate)"
+      },
+      {
+       "k": "b",
+       "prompt": "Al(NO₃)₃",
+       "model": "Aluminum nitrate"
+      },
+      {
+       "k": "c",
+       "prompt": "(NH₄)₃PO₄",
+       "model": "Ammonium phosphate"
+      },
+      {
+       "k": "d",
+       "prompt": "Mg(ClO₄)₂",
+       "model": "Magnesium perchlorate"
+      },
+      {
+       "k": "e",
+       "prompt": "K₂CrO₄",
+       "model": "Potassium chromate"
+      },
+      {
+       "k": "f",
+       "prompt": "LiC₂H₃O₂",
+       "model": "Lithium acetate"
+      }
+     ]
+    },
+    {
+     "id": "N5",
+     "type": "frq",
+     "topic": "Type IV",
+     "title": "Variable metals",
+     "stem": "Write the name of each compound. Work out each metal's charge from the polyatomic ion.",
+     "data": [],
+     "parts": [
+      {
+       "k": "a",
+       "prompt": "Fe(OH)₃",
+       "model": "Iron(III) hydroxide: 3 OH⁻ = 3−"
+      },
+      {
+       "k": "b",
+       "prompt": "CuSO₄",
+       "model": "Copper(II) sulfate: SO₄²⁻ = 2−"
+      },
+      {
+       "k": "c",
+       "prompt": "Pb(C₂H₃O₂)₄",
+       "model": "Lead(IV) acetate: 4 acetate = 4−"
+      },
+      {
+       "k": "d",
+       "prompt": "Ni₃(PO₄)₂",
+       "model": "Nickel(II) phosphate: 2 PO₄³⁻ = 6−, ÷ 3 Ni = 2+"
+      },
+      {
+       "k": "e",
+       "prompt": "Sn(NO₂)₂",
+       "model": "Tin(II) nitrite"
+      },
+      {
+       "k": "f",
+       "prompt": "Co(ClO₃)₃",
+       "model": "Cobalt(III) chlorate"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Name it: acids and hydrates",
+   "mode": "practice",
+   "tips": [
+    "Ask the key's questions first: starts with H? Two elements? Metal or not? Polyatomic ion?",
+    "Type I and II: never prefixes. Type II: work out the charge from the anion and write it as a Roman numeral.",
+    "Type III: prefixes on both elements, but never mono- on the first.",
+    "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
+    "Type your answer, then check it against the model answer."
+   ],
+   "questions": [
+    {
+     "id": "N6",
+     "type": "frq",
+     "topic": "Acids",
+     "title": "Acid names",
+     "stem": "Write the name of each compound.",
+     "data": [],
+     "parts": [
+      {
+       "k": "a",
+       "prompt": "HI(aq)",
+       "model": "Hydroiodic acid (no oxygen: hydro-…-ic)"
+      },
+      {
+       "k": "b",
+       "prompt": "HNO₃",
+       "model": "Nitric acid (nitrate → -ic)"
+      },
+      {
+       "k": "c",
+       "prompt": "H₂CO₃",
+       "model": "Carbonic acid (carbonate → -ic)"
+      },
+      {
+       "k": "d",
+       "prompt": "HClO₂",
+       "model": "Chlorous acid (chlorite → -ous)"
+      },
+      {
+       "k": "e",
+       "prompt": "H₃PO₄",
+       "model": "Phosphoric acid"
+      },
+      {
+       "k": "f",
+       "prompt": "HF(aq)",
+       "model": "Hydrofluoric acid"
+      },
+      {
+       "k": "g",
+       "prompt": "HC₂H₃O₂",
+       "model": "Acetic acid (acetate → -ic)"
+      },
+      {
+       "k": "h",
+       "prompt": "HClO",
+       "model": "Hypochlorous acid (hypochlorite → hypo-…-ous)"
+      }
+     ]
+    },
+    {
+     "id": "N7",
+     "type": "frq",
+     "topic": "Hydrates",
+     "title": "Hydrate names",
+     "stem": "Write the name of each compound.",
+     "data": [],
+     "parts": [
+      {
+       "k": "a",
+       "prompt": "CuSO₄·5H₂O",
+       "model": "Copper(II) sulfate pentahydrate"
+      },
+      {
+       "k": "b",
+       "prompt": "CaCl₂·2H₂O",
+       "model": "Calcium chloride dihydrate"
+      },
+      {
+       "k": "c",
+       "prompt": "Na₂CO₃·10H₂O",
+       "model": "Sodium carbonate decahydrate"
+      },
+      {
+       "k": "d",
+       "prompt": "CoCl₂·6H₂O",
+       "model": "Cobalt(II) chloride hexahydrate"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Write the formula",
+   "mode": "practice",
+   "tips": [
+    "Ask the key's questions first: starts with H? Two elements? Metal or not? Polyatomic ion?",
+    "Type I and II: never prefixes. Type II: work out the charge from the anion and write it as a Roman numeral.",
+    "Type III: prefixes on both elements, but never mono- on the first.",
+    "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
+    "Type your answer, then check it against the model answer."
+   ],
+   "questions": [
+    {
+     "id": "F1",
+     "type": "frq",
+     "topic": "Types I and II",
+     "title": "Binary ionic formulas",
+     "stem": "Write the formula of each compound. Balance the charges, then reduce.",
+     "data": [],
+     "parts": [
+      {
+       "k": "a",
+       "prompt": "magnesium iodide",
+       "model": "MgI₂"
+      },
+      {
+       "k": "b",
+       "prompt": "potassium nitride",
+       "model": "K₃N"
+      },
+      {
+       "k": "c",
+       "prompt": "aluminum sulfide",
+       "model": "Al₂S₃: Al³⁺ and S²⁻ crisscross"
+      },
+      {
+       "k": "d",
+       "prompt": "iron(II) chloride",
+       "model": "FeCl₂"
+      },
+      {
+       "k": "e",
+       "prompt": "copper(II) oxide",
+       "model": "CuO: Cu²⁺ and O²⁻ cancel 1:1"
+      },
+      {
+       "k": "f",
+       "prompt": "chromium(III) bromide",
+       "model": "CrBr₃"
+      }
+     ]
+    },
+    {
+     "id": "F2",
+     "type": "frq",
+     "topic": "Type III",
+     "title": "Covalent formulas",
+     "stem": "Write the formula of each compound. The prefixes are the subscripts.",
+     "data": [],
+     "parts": [
+      {
+       "k": "a",
+       "prompt": "sulfur tetrafluoride",
+       "model": "SF₄"
+      },
+      {
+       "k": "b",
+       "prompt": "diboron trioxide",
+       "model": "B₂O₃"
+      },
+      {
+       "k": "c",
+       "prompt": "carbon disulfide",
+       "model": "CS₂"
+      },
+      {
+       "k": "d",
+       "prompt": "tetraphosphorus heptasulfide",
+       "model": "P₄S₇"
+      },
+      {
+       "k": "e",
+       "prompt": "nitrogen triiodide",
+       "model": "NI₃"
+      },
+      {
+       "k": "f",
+       "prompt": "dichlorine monoxide",
+       "model": "Cl₂O"
+      }
+     ]
+    },
+    {
+     "id": "F3",
+     "type": "frq",
+     "topic": "Type IV",
+     "title": "Polyatomic formulas",
+     "stem": "Write the formula of each compound. Use parentheses for more than one polyatomic ion.",
+     "data": [],
+     "parts": [
+      {
+       "k": "a",
+       "prompt": "calcium phosphate",
+       "model": "Ca₃(PO₄)₂: 3 Ca²⁺ = 6+, 2 PO₄³⁻ = 6−"
+      },
+      {
+       "k": "b",
+       "prompt": "ammonium nitrate",
+       "model": "NH₄NO₃"
+      },
+      {
+       "k": "c",
+       "prompt": "iron(III) sulfate",
+       "model": "Fe₂(SO₄)₃"
+      },
+      {
+       "k": "d",
+       "prompt": "zinc carbonate",
+       "model": "ZnCO₃"
+      },
+      {
+       "k": "e",
+       "prompt": "lead(II) chromate",
+       "model": "PbCrO₄"
+      },
+      {
+       "k": "f",
+       "prompt": "copper(I) sulfite",
+       "model": "Cu₂SO₃"
+      }
+     ]
+    },
+    {
+     "id": "F4",
+     "type": "frq",
+     "topic": "Acids and hydrates",
+     "title": "Acid and hydrate formulas",
+     "stem": "Write the formula of each compound.",
+     "data": [],
+     "parts": [
+      {
+       "k": "a",
+       "prompt": "hydrochloric acid",
+       "model": "HCl(aq)"
+      },
+      {
+       "k": "b",
+       "prompt": "sulfuric acid",
+       "model": "H₂SO₄"
+      },
+      {
+       "k": "c",
+       "prompt": "nitrous acid",
+       "model": "HNO₂"
+      },
+      {
+       "k": "d",
+       "prompt": "perchloric acid",
+       "model": "HClO₄"
+      },
+      {
+       "k": "e",
+       "prompt": "hydrocyanic acid",
+       "model": "HCN(aq)"
+      },
+      {
+       "k": "f",
+       "prompt": "barium chloride dihydrate",
+       "model": "BaCl₂·2H₂O"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Fix the error",
+   "mode": "practice",
+   "tips": [
+    "Ask the key's questions first: starts with H? Two elements? Metal or not? Polyatomic ion?",
+    "Type I and II: never prefixes. Type II: work out the charge from the anion and write it as a Roman numeral.",
+    "Type III: prefixes on both elements, but never mono- on the first.",
+    "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
+    "Type your answer, then check it against the model answer."
+   ],
+   "questions": [
+    {
+     "id": "E1",
+     "type": "frq",
+     "topic": "Errors",
+     "title": "Find and fix the mistake",
+     "stem": "Each name or formula has a mistake. Write the correct version and say what was wrong.",
+     "data": [],
+     "parts": [
+      {
+       "k": "a",
+       "prompt": "NaCl named \"sodium(I) chloride\"",
+       "model": "Sodium chloride: sodium has only one charge, so no numeral"
+      },
+      {
+       "k": "b",
+       "prompt": "CuCl named \"copper chloride\"",
+       "model": "Copper(I) chloride: copper can be 1+ or 2+, so it needs a numeral"
+      },
+      {
+       "k": "c",
+       "prompt": "MgBr₂ named \"magnesium dibromide\"",
+       "model": "Magnesium bromide: no prefixes on ionic names"
+      },
+      {
+       "k": "d",
+       "prompt": "CO₂ named \"carbon oxide\"",
+       "model": "Carbon dioxide: covalent names need prefixes"
+      },
+      {
+       "k": "e",
+       "prompt": "aluminum oxide written Al₃O₂",
+       "model": "Al₂O₃: Al³⁺ and O²⁻ crisscross to Al₂O₃"
+      },
+      {
+       "k": "f",
+       "prompt": "barium hydroxide written Ba(OH)",
+       "model": "Ba(OH)₂: Ba²⁺ needs two OH⁻"
+      },
+      {
+       "k": "g",
+       "prompt": "chromium(II) oxide written Cr(II)O",
+       "model": "CrO: Roman numerals go in names, not formulas"
+      },
+      {
+       "k": "h",
+       "prompt": "H₂SO₃ named \"sulfuric acid\"",
+       "model": "Sulfurous acid: H₂SO₃ comes from sulfite (-ite → -ous)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Which type?",
+   "mode": "practice",
+   "tips": [
+    "Ask the key's questions first: starts with H? Two elements? Metal or not? Polyatomic ion?",
+    "Type I and II: never prefixes. Type II: work out the charge from the anion and write it as a Roman numeral.",
+    "Type III: prefixes on both elements, but never mono- on the first.",
+    "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
+    "Type your answer, then check it against the model answer."
+   ],
+   "questions": [
+    {
+     "id": "L1",
+     "type": "label",
+     "topic": "Types",
+     "stem": "Sort each compound into its naming type.",
+     "labels": [
+      "Type I",
+      "Type II",
+      "Type III",
+      "Type IV",
+      "Type V (acid)"
+     ],
+     "items": [
+      {
+       "t": "NaBr",
+       "ans": 0,
+       "exp": "Representative metal + nonmetal."
+      },
+      {
+       "t": "Fe₂O₃",
+       "ans": 1,
+       "exp": "Iron needs a numeral."
+      },
+      {
+       "t": "N₂O₄",
+       "ans": 2,
+       "exp": "Two nonmetals."
+      },
+      {
+       "t": "KNO₃",
+       "ans": 3,
+       "exp": "Nitrate is polyatomic."
+      },
+      {
+       "t": "HBr(aq)",
+       "ans": 4,
+       "exp": "Starts with H."
+      },
+      {
+       "t": "MgS",
+       "ans": 0,
+       "exp": "Mg has one charge."
+      },
+      {
+       "t": "SnCl₂",
+       "ans": 1,
+       "exp": "Tin needs a numeral."
+      },
+      {
+       "t": "CCl₄",
+       "ans": 2,
+       "exp": "Two nonmetals."
+      },
+      {
+       "t": "NH₄Cl",
+       "ans": 3,
+       "exp": "Ammonium is polyatomic."
+      },
+      {
+       "t": "HNO₂",
+       "ans": 4,
+       "exp": "Starts with H."
+      },
+      {
+       "t": "Al₂O₃",
+       "ans": 0,
+       "exp": "Al has one charge."
+      },
+      {
+       "t": "PbO",
+       "ans": 1,
+       "exp": "Lead needs a numeral."
+      }
+     ]
+    },
+    {
+     "id": "L2",
+     "type": "label",
+     "topic": "Roman numerals",
+     "stem": "Does the name need a Roman numeral?",
+     "labels": [
+      "Needs a numeral",
+      "No numeral"
+     ],
+     "items": [
+      {
+       "t": "CoS",
+       "ans": 0,
+       "exp": "Cobalt(II) sulfide."
+      },
+      {
+       "t": "AgCl",
+       "ans": 1,
+       "exp": "Silver is always 1+."
+      },
+      {
+       "t": "ZnSO₄",
+       "ans": 1,
+       "exp": "Zinc is always 2+."
+      },
+      {
+       "t": "PbCl₄",
+       "ans": 0,
+       "exp": "Lead(IV) chloride."
+      },
+      {
+       "t": "CdS",
+       "ans": 1,
+       "exp": "Cadmium is always 2+."
+      },
+      {
+       "t": "SnO",
+       "ans": 0,
+       "exp": "Tin(II) oxide."
+      },
+      {
+       "t": "BaO",
+       "ans": 1,
+       "exp": "Barium is always 2+."
+      },
+      {
+       "t": "Fe(NO₃)₃",
+       "ans": 0,
+       "exp": "Iron(III) nitrate."
+      },
+      {
+       "t": "AlPO₄",
+       "ans": 1,
+       "exp": "Aluminum is always 3+."
+      },
+      {
+       "t": "CuBr",
+       "ans": 0,
+       "exp": "Copper(I) bromide."
+      }
+     ]
+    },
+    {
+     "id": "L3",
+     "type": "label",
+     "topic": "Bond type",
+     "stem": "Ionic or covalent?",
+     "labels": [
+      "Ionic",
+      "Covalent"
+     ],
+     "items": [
+      {
+       "t": "CaBr₂",
+       "ans": 0,
+       "exp": "Metal + nonmetal."
+      },
+      {
+       "t": "NO₂",
+       "ans": 1,
+       "exp": "Two nonmetals."
+      },
+      {
+       "t": "Fe₂O₃",
+       "ans": 0,
+       "exp": "Metal + nonmetal."
+      },
+      {
+       "t": "PCl₃",
+       "ans": 1,
+       "exp": "Two nonmetals."
+      },
+      {
+       "t": "K₂SO₄",
+       "ans": 0,
+       "exp": "Metal + polyatomic ion."
+      },
+      {
+       "t": "H₂O",
+       "ans": 1,
+       "exp": "Two nonmetals."
+      },
+      {
+       "t": "CS₂",
+       "ans": 1,
+       "exp": "Two nonmetals."
+      },
+      {
+       "t": "PbO₂",
+       "ans": 0,
+       "exp": "Metal + nonmetal."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Mock test: names",
+   "mode": "exam",
+   "exam": "Mock test",
+   "examTips": [
+    "Like your review packet: write names and formulas. There's no multiple choice.",
+    "Turn the Timer on and use only your polyatomic ion sheet (the table in the Study guide).",
+    "Finish every part, then compare with the model answers."
+   ],
+   "tips": [
+    "Ask the key's questions first: starts with H? Two elements? Metal or not? Polyatomic ion?",
+    "Type I and II: never prefixes. Type II: work out the charge from the anion and write it as a Roman numeral.",
+    "Type III: prefixes on both elements, but never mono- on the first.",
+    "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
+    "Type your answer, then check it against the model answer."
+   ],
+   "questions": [
+    {
+     "id": "M1",
+     "type": "frq",
+     "topic": "Binary ionic",
+     "title": "Part 1A: binary ionic",
+     "stem": "Write the name of each compound.",
+     "data": [],
+     "parts": [
+      {
+       "k": "a",
+       "prompt": "Na₃P",
+       "model": "Sodium phosphide"
+      },
+      {
+       "k": "b",
+       "prompt": "BaBr₂",
+       "model": "Barium bromide"
+      },
+      {
+       "k": "c",
+       "prompt": "Ni₂O₃",
+       "model": "Nickel(III) oxide"
+      },
+      {
+       "k": "d",
+       "prompt": "V₂O₅",
+       "model": "Vanadium(V) oxide"
+      },
+      {
+       "k": "e",
+       "prompt": "AgI",
+       "model": "Silver iodide"
+      },
+      {
+       "k": "f",
+       "prompt": "SnS₂",
+       "model": "Tin(IV) sulfide"
+      }
+     ]
+    },
+    {
+     "id": "M2",
+     "type": "frq",
+     "topic": "Covalent",
+     "title": "Part 1B: covalent",
+     "stem": "Write the name of each compound.",
+     "data": [],
+     "parts": [
+      {
+       "k": "a",
+       "prompt": "S₂Cl₂",
+       "model": "Disulfur dichloride"
+      },
+      {
+       "k": "b",
+       "prompt": "SeO₂",
+       "model": "Selenium dioxide"
+      },
+      {
+       "k": "c",
+       "prompt": "PF₅",
+       "model": "Phosphorus pentafluoride"
+      },
+      {
+       "k": "d",
+       "prompt": "B₂H₆",
+       "model": "Diboron hexahydride"
+      }
+     ]
+    },
+    {
+     "id": "M3",
+     "type": "frq",
+     "topic": "Polyatomic",
+     "title": "Part 1C: polyatomic ions",
+     "stem": "Write the name of each compound.",
+     "data": [],
+     "parts": [
+      {
+       "k": "a",
+       "prompt": "Ca(HCO₃)₂",
+       "model": "Calcium bicarbonate (calcium hydrogen carbonate)"
+      },
+      {
+       "k": "b",
+       "prompt": "(NH₄)₂Cr₂O₇",
+       "model": "Ammonium dichromate"
+      },
+      {
+       "k": "c",
+       "prompt": "Fe(C₂H₃O₂)₂",
+       "model": "Iron(II) acetate"
+      },
+      {
+       "k": "d",
+       "prompt": "Al₂(SO₃)₃",
+       "model": "Aluminum sulfite"
+      },
+      {
+       "k": "e",
+       "prompt": "Cu(ClO₄)₂",
+       "model": "Copper(II) perchlorate"
+      },
+      {
+       "k": "f",
+       "prompt": "Pb₃(PO₄)₄",
+       "model": "Lead(IV) phosphate: 4 PO₄³⁻ = 12−, ÷ 3 Pb = 4+"
+      },
+      {
+       "k": "g",
+       "prompt": "CoCO₃",
+       "model": "Cobalt(II) carbonate"
+      }
+     ]
+    },
+    {
+     "id": "M4",
+     "type": "frq",
+     "topic": "Acids and hydrates",
+     "title": "Part 1D: acids and hydrates",
+     "stem": "Write the name of each compound.",
+     "data": [],
+     "parts": [
+      {
+       "k": "a",
+       "prompt": "H₃PO₃",
+       "model": "Phosphorous acid (phosphite → -ous)"
+      },
+      {
+       "k": "b",
+       "prompt": "H₂C₂O₄",
+       "model": "Oxalic acid (oxalate → -ic)"
+      },
+      {
+       "k": "c",
+       "prompt": "NiSO₄·7H₂O",
+       "model": "Nickel(II) sulfate heptahydrate"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Mock test: formulas",
+   "mode": "exam",
+   "exam": "Mock test",
+   "examTips": [
+    "Like your review packet: write names and formulas. There's no multiple choice.",
+    "Turn the Timer on and use only your polyatomic ion sheet (the table in the Study guide).",
+    "Finish every part, then compare with the model answers."
+   ],
+   "tips": [
+    "Ask the key's questions first: starts with H? Two elements? Metal or not? Polyatomic ion?",
+    "Type I and II: never prefixes. Type II: work out the charge from the anion and write it as a Roman numeral.",
+    "Type III: prefixes on both elements, but never mono- on the first.",
+    "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
+    "Type your answer, then check it against the model answer."
+   ],
+   "questions": [
+    {
+     "id": "M5",
+     "type": "frq",
+     "topic": "Binary ionic",
+     "title": "Part 2A: binary ionic",
+     "stem": "Write the formula of each compound.",
+     "data": [],
+     "parts": [
+      {
+       "k": "a",
+       "prompt": "strontium chloride",
+       "model": "SrCl₂"
+      },
+      {
+       "k": "b",
+       "prompt": "aluminum nitride",
+       "model": "AlN: Al³⁺ and N³⁻ cancel 1:1"
+      },
+      {
+       "k": "c",
+       "prompt": "rubidium sulfide",
+       "model": "Rb₂S"
+      },
+      {
+       "k": "d",
+       "prompt": "iron(II) phosphide",
+       "model": "Fe₃P₂: 3 Fe²⁺ = 6+, 2 P³⁻ = 6−"
+      },
+      {
+       "k": "e",
+       "prompt": "chromium(VI) oxide",
+       "model": "CrO₃"
+      },
+      {
+       "k": "f",
+       "prompt": "copper(II) nitride",
+       "model": "Cu₃N₂"
+      },
+      {
+       "k": "g",
+       "prompt": "tin(II) fluoride",
+       "model": "SnF₂"
+      }
+     ]
+    },
+    {
+     "id": "M6",
+     "type": "frq",
+     "topic": "Covalent",
+     "title": "Part 2B: covalent",
+     "stem": "Write the formula of each compound.",
+     "data": [],
+     "parts": [
+      {
+       "k": "a",
+       "prompt": "dinitrogen monoxide",
+       "model": "N₂O"
+      },
+      {
+       "k": "b",
+       "prompt": "tetrasulfur tetranitride",
+       "model": "S₄N₄ (covalent: don't reduce)"
+      },
+      {
+       "k": "c",
+       "prompt": "iodine heptafluoride",
+       "model": "IF₇"
+      }
+     ]
+    },
+    {
+     "id": "M7",
+     "type": "frq",
+     "topic": "Polyatomic",
+     "title": "Part 2C: polyatomic ions",
+     "stem": "Write the formula of each compound.",
+     "data": [],
+     "parts": [
+      {
+       "k": "a",
+       "prompt": "sodium phosphate",
+       "model": "Na₃PO₄"
+      },
+      {
+       "k": "b",
+       "prompt": "magnesium nitrite",
+       "model": "Mg(NO₂)₂"
+      },
+      {
+       "k": "c",
+       "prompt": "ammonium sulfide",
+       "model": "(NH₄)₂S"
+      },
+      {
+       "k": "d",
+       "prompt": "iron(III) nitrate",
+       "model": "Fe(NO₃)₃"
+      },
+      {
+       "k": "e",
+       "prompt": "lead(II) carbonate",
+       "model": "PbCO₃"
+      },
+      {
+       "k": "f",
+       "prompt": "copper(II) hydrogen carbonate",
+       "model": "Cu(HCO₃)₂"
+      }
+     ]
+    },
+    {
+     "id": "M8",
+     "type": "frq",
+     "topic": "Acids and hydrates",
+     "title": "Part 2D: acids and hydrates",
+     "stem": "Write the formula of each compound.",
+     "data": [],
+     "parts": [
+      {
+       "k": "a",
+       "prompt": "hydroiodic acid",
+       "model": "HI(aq)"
+      },
+      {
+       "k": "b",
+       "prompt": "chlorous acid",
+       "model": "HClO₂"
+      },
+      {
+       "k": "c",
+       "prompt": "acetic acid",
+       "model": "HC₂H₃O₂"
+      },
+      {
+       "k": "d",
+       "prompt": "zinc sulfate heptahydrate",
+       "model": "ZnSO₄·7H₂O"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Mock test: fix and classify",
+   "mode": "exam",
+   "exam": "Mock test",
+   "examTips": [
+    "Like your review packet: write names and formulas. There's no multiple choice.",
+    "Turn the Timer on and use only your polyatomic ion sheet (the table in the Study guide).",
+    "Finish every part, then compare with the model answers."
+   ],
+   "tips": [
+    "Ask the key's questions first: starts with H? Two elements? Metal or not? Polyatomic ion?",
+    "Type I and II: never prefixes. Type II: work out the charge from the anion and write it as a Roman numeral.",
+    "Type III: prefixes on both elements, but never mono- on the first.",
+    "Polyatomic ions: copy the name and charge from your sheet; never change the ion.",
+    "Type your answer, then check it against the model answer."
+   ],
+   "questions": [
+    {
+     "id": "M9",
+     "type": "frq",
+     "topic": "Errors",
+     "title": "Part 3: fix the error",
+     "stem": "Write the correct version and say what was wrong.",
+     "data": [],
+     "parts": [
+      {
+       "k": "a",
+       "prompt": "FeO named \"iron oxide\"",
+       "model": "Iron(II) oxide: iron needs its charge"
+      },
+      {
+       "k": "b",
+       "prompt": "CaCl₂ named \"calcium dichloride\"",
+       "model": "Calcium chloride: no prefixes on ionic names"
+      },
+      {
+       "k": "c",
+       "prompt": "AgNO₃ named \"silver(I) nitrate\"",
+       "model": "Silver nitrate: silver never gets a numeral"
+      },
+      {
+       "k": "d",
+       "prompt": "sodium sulfate written NaSO₄",
+       "model": "Na₂SO₄: two Na⁺ balance SO₄²⁻"
+      },
+      {
+       "k": "e",
+       "prompt": "magnesium chloride written Mg(Cl)₂",
+       "model": "MgCl₂: parentheses are only for polyatomic ions"
+      },
+      {
+       "k": "f",
+       "prompt": "HNO₃ named \"nitrous acid\"",
+       "model": "Nitric acid: nitrate → -ic"
+      }
+     ]
+    },
+    {
+     "id": "M10",
+     "type": "frq",
+     "topic": "Bond type",
+     "title": "Part 4: ionic or covalent? Then name it.",
+     "stem": "Decide the bond type, then name the compound.",
+     "data": [],
+     "parts": [
+      {
+       "k": "a",
+       "prompt": "CS₂",
+       "model": "Covalent: carbon disulfide"
+      },
+      {
+       "k": "b",
+       "prompt": "MnCl₂",
+       "model": "Ionic: manganese(II) chloride"
+      },
+      {
+       "k": "c",
+       "prompt": "PCl₃",
+       "model": "Covalent: phosphorus trichloride"
+      },
+      {
+       "k": "d",
+       "prompt": "BaO",
+       "model": "Ionic: barium oxide"
+      },
+      {
+       "k": "e",
+       "prompt": "CuS",
+       "model": "Ionic: copper(II) sulfide"
+      },
+      {
+       "k": "f",
+       "prompt": "Cl₂O",
+       "model": "Covalent: dichlorine monoxide"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
