@@ -3038,5 +3038,245 @@
    ],
    "exp": "Your review key corrects ZnC₄H₆O₂ to Zn(C₂H₃O₂)₂."
   }
+ ],
+ "Anion charge = group − 8": [
+  {
+   "q": "Bromine is in group 7A. What charge does the bromide ion have?",
+   "right": "1−",
+   "wrong": [
+    [
+     "7+, because the group number tells you the charge of every ion an element forms",
+     "Nonmetals gain electrons: 7 − 8 = −1."
+    ],
+    [
+     "7−",
+     "Subtract 8."
+    ],
+    [
+     "2−",
+     "That's group 6A."
+    ]
+   ],
+   "exp": "7 − 8 = −1, so Br⁻."
+  },
+  {
+   "q": "Phosphorus is in group 5A. Using group − 8, what is the phosphide ion?",
+   "right": "P³⁻",
+   "wrong": [
+    [
+     "P⁵⁺, because phosphorus is in group five and so it gives away five electrons",
+     "Nonmetals gain electrons."
+    ],
+    [
+     "P⁵⁻",
+     "5 − 8 = −3."
+    ],
+    [
+     "P²⁻",
+     "That's group 6A."
+    ]
+   ],
+   "exp": "5 − 8 = −3."
+  }
+ ],
+ "Aluminum (one charge)": [
+  {
+   "q": "Name AlCl₃.",
+   "right": "Aluminum chloride",
+   "wrong": [
+    [
+     "Aluminum(III) chloride, because the three chloride ions show that aluminum has a charge of three",
+     "Al is always 3+: no numeral."
+    ],
+    [
+     "Aluminum trichloride",
+     "No prefixes on ionic names."
+    ],
+    [
+     "Aluminum chlorine",
+     "Needs -ide."
+    ]
+   ],
+   "exp": "Your OWL assignment lists Al³⁺ as a one-charge metal."
+  },
+  {
+   "q": "Which metal in this list never gets a Roman numeral?",
+   "right": "Aluminum",
+   "wrong": [
+    [
+     "Iron, because it is the most common metal and is found in most of the compounds on your worksheets",
+     "Iron can be 2+ or 3+."
+    ],
+    [
+     "Lead",
+     "Pb is 2+ or 4+."
+    ],
+    [
+     "Copper",
+     "Cu is 1+ or 2+."
+    ]
+   ],
+   "exp": "Al, Ag, Zn and Cd each have one charge."
+  }
+ ],
+ "Water": [
+  {
+   "q": "What name should you use for H₂O?",
+   "right": "Water",
+   "wrong": [
+    [
+     "Hydrogen oxide, because the compound is made of hydrogen and oxygen joined together",
+     "Not its name."
+    ],
+    [
+     "Hydroxic acid",
+     "Not an acid name."
+    ],
+    [
+     "Dihydrogen dioxide",
+     "That would be H₂O₂."
+    ]
+   ],
+   "exp": "Your OWL assignment: water is used instead of the formal name. Your worksheet also accepts dihydrogen monoxide."
+  },
+  {
+   "q": "Your worksheet answer for H₂O is \"dihydrogen monoxide (or water).\" Why are both accepted?",
+   "right": "Water is the well-known common name",
+   "wrong": [
+    [
+     "Because H₂O is an ionic compound, so it can be named in two different ways by the class",
+     "It's covalent."
+    ],
+    [
+     "Because water is an acid",
+     "No."
+    ],
+    [
+     "Because the prefixes are optional",
+     "Not in general."
+    ]
+   ],
+   "exp": "Prefix name and common name both describe H₂O."
+  }
+ ],
+ "Ammonia": [
+  {
+   "q": "What is NH₃ called?",
+   "right": "Ammonia",
+   "wrong": [
+    [
+     "Ammonium, because NH₃ and NH₄⁺ are both made of nitrogen and hydrogen atoms together",
+     "Ammonium is the NH₄⁺ ion."
+    ],
+    [
+     "Hydronitric acid",
+     "Your OWL assignment calls it ammonia."
+    ],
+    [
+     "Nitride",
+     "That's N³⁻."
+    ]
+   ],
+   "exp": "This settles the review key's \"H₃N\" item: it's ammonia."
+  },
+  {
+   "q": "How is ammonia (NH₃) different from ammonium?",
+   "right": "Ammonium has one more H and a + charge",
+   "wrong": [
+    [
+     "They are exactly the same particle, just written with two different spellings in books",
+     "NH₃ vs. NH₄⁺."
+    ],
+    [
+     "Ammonia is an ion",
+     "It's a neutral molecule."
+    ],
+    [
+     "Ammonium has no hydrogen",
+     "It has four."
+    ]
+   ],
+   "exp": "NH₃ + H⁺ → NH₄⁺."
+  }
+ ],
+ "Cyanide and hydroxide": [
+  {
+   "q": "Why isn't NaOH named like a binary compound, even though hydroxide ends in -ide?",
+   "right": "OH⁻ is a polyatomic ion",
+   "wrong": [
+    [
+     "Because sodium is a metal that only forms compounds with polyatomic ions, never one-atom ions",
+     "NaCl is binary."
+    ],
+    [
+     "Because it's an acid",
+     "It doesn't start with H."
+    ],
+    [
+     "Because it's covalent",
+     "It's ionic."
+    ]
+   ],
+   "exp": "NaOH has three elements: sodium hydroxide, Type IV-style naming."
+  },
+  {
+   "q": "Which ion ends in -ide but has more than one atom?",
+   "right": "CN⁻",
+   "wrong": [
+    [
+     "Cl⁻, because chloride is the most common ion with an -ide ending in your worksheets",
+     "One atom."
+    ],
+    [
+     "O²⁻",
+     "One atom."
+    ],
+    [
+     "S²⁻",
+     "One atom."
+    ]
+   ],
+   "exp": "Cyanide and hydroxide are the -ide exceptions."
+  }
+ ],
+ "Hydrogen chloride vs. hydrochloric acid": [
+  {
+   "q": "HBr is a gas when pure. What is it called before it's dissolved?",
+   "right": "Hydrogen bromide",
+   "wrong": [
+    [
+     "Hydrobromic acid, because any compound that starts with hydrogen must be named as an acid",
+     "The acid name is for HBr(aq)."
+    ],
+    [
+     "Hydrogen bromine",
+     "Needs -ide."
+    ],
+    [
+     "Bromic acid",
+     "That needs oxygen."
+    ]
+   ],
+   "exp": "Pure: hydrogen bromide. In water: hydrobromic acid."
+  },
+  {
+   "q": "What does HCl(aq) tell you about which name to use?",
+   "right": "It's dissolved, so use the acid name",
+   "wrong": [
+    [
+     "It's a pure gas, so use the molecular name hydrogen chloride for the substance",
+     "(aq) means dissolved."
+    ],
+    [
+     "It's ionic",
+     "No."
+    ],
+    [
+     "It needs a prefix",
+     "No."
+    ]
+   ],
+   "exp": "Aqueous binary acids get hydro-…-ic acid."
+  }
  ]
 }

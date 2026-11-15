@@ -386,7 +386,8 @@
        "prompt": "HI(aq)",
        "model": "Hydroiodic acid (no oxygen: hydro-…-ic)",
        "accept": [
-        "Hydroiodic acid"
+        "Hydroiodic acid",
+        "Hydriodic acid"
        ]
       },
       {
@@ -1409,7 +1410,8 @@
        "prompt": "hydroiodic acid",
        "model": "HI(aq)",
        "accept": [
-        "HI(aq)"
+        "HI(aq)",
+        "HI"
        ]
       },
       {

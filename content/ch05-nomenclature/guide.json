@@ -217,9 +217,14 @@
      "3−"
     ],
     [
-     "Hydrogen phosphate (not on your sheet; it's in your review)",
+     "Hydrogen phosphate (from your OWL assignment, not on the sheet)",
      "HPO₄²⁻",
      "2−"
+    ],
+    [
+     "Dihydrogen phosphate (from your OWL assignment, not on the sheet)",
+     "H₂PO₄⁻",
+     "1−"
     ]
    ]
   },
@@ -387,6 +392,11 @@
      "No: cadmium fluoride"
     ],
     [
+     "Aluminum",
+     "3+ only",
+     "No: aluminum chloride (your OWL list)"
+    ],
+    [
      "Lead",
      "2+ or 4+",
      "Yes: lead(IV) sulfide"
@@ -395,6 +405,37 @@
      "Tin",
      "2+ or 4+",
      "Yes: tin(IV) chloride"
+    ]
+   ]
+  },
+  {
+   "title": "Common names and two-name acids (from your OWL assignment)",
+   "deck": 4,
+   "rows": [
+    [
+     "Formula",
+     "Name to use",
+     "Note"
+    ],
+    [
+     "H₂O",
+     "Water",
+     "Prefix name: dihydrogen monoxide"
+    ],
+    [
+     "NH₃",
+     "Ammonia",
+     "Not ammonium (NH₄⁺)"
+    ],
+    [
+     "HCl",
+     "Hydrogen chloride (pure) / hydrochloric acid (in water)",
+     "Same idea for HBr, HI, HF, H₂S, HCN"
+    ],
+    [
+     "HI(aq)",
+     "Hydriodic or hydroiodic acid",
+     "Both spellings are used"
     ]
    ]
   }
@@ -411,7 +452,8 @@
     "Polyatomic ions never change; use parentheses for more than one.",
     "Ionic formulas reduce (CaO); covalent formulas don't (N₂O₄).",
     "Acids: no O → hydro-…-ic; -ate → -ic; -ite → -ous; keep per- and hypo-.",
-    "Hydrates: name + prefix + hydrate (CuSO₄·5H₂O copper(II) sulfate pentahydrate)."
+    "Hydrates: name + prefix + hydrate (CuSO₄·5H₂O copper(II) sulfate pentahydrate).",
+    "Anion charge = group number − 8 (S in 6A → 2−). H₂O = water, NH₃ = ammonia."
    ]
   },
   {

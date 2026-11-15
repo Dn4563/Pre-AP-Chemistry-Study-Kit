@@ -40,6 +40,7 @@
 | Simple cation name | A main-group metal ion keeps the element's label unchanged: Na⁺ is sodium. | Name unchanged. |
 | -ide ending | A one-atom anion is named with the root of the element plus this suffix: Cl⁻ is chloride, O²⁻ is oxide. | Chlorine → chloride. |
 | Subscripts stay out of ionic names | Compounds of ions are called by their ions only, so Mg₃N₂ is magnesium nitride, not trimagnesium dinitride. | No di-, no tri-. |
+| Anion charge = group − 8 | For a nonmetal, subtract 8 from its 1A–8A column number: sulfur in 6A gives 6 − 8 = −2, so S²⁻. | 6A → 2−, 7A → 1−. |
 
 ## Writing their formulas
 
@@ -68,7 +69,7 @@
 
 ## The exceptions
 
-> Not every transition metal needs a numeral, and not every numeral metal is a transition metal. Zinc, silver and cadmium form only one ion each, so they never get a numeral. Lead and tin are representative metals that can form two ions, so they always need one.
+> Not every transition metal needs a numeral, and not every numeral metal is a transition metal. Zinc, silver and cadmium form only one ion each, so they never get a numeral (your OWL assignment adds aluminum, Al³⁺, to that list). Lead and tin are representative metals that can form two ions, so they always need one.
 
 | Term | Definition | Hook |
 |---|---|---|
@@ -77,6 +78,7 @@
 | Cadmium | Always Cd²⁺, so its compounds never get a Roman numeral, as in CdF₂. | No numeral. |
 | Lead | A representative metal with two possible charges (2+ or 4+), so it needs a numeral, as in PbS₂ (the 4+ form). | Needs a numeral. |
 | Tin | A representative metal with two possible charges (2+ or 4+), so it needs a numeral: SnCl₄ is tin(IV) chloride. | Needs a numeral. |
+| Aluminum (one charge) | Always Al³⁺, so its compounds never get a Roman numeral, as in AlCl₃. | Fourth no-numeral metal. |
 
 # Deck 4: Two Nonmetals, Covalent (Type III, 5.3)
 
@@ -94,6 +96,8 @@
 | No mono- on the first element | If the formula starts with just one atom of something, that atom gets no prefix: CO₂ is carbon dioxide. | Never "monocarbon." |
 | Drop the vowel before a or o | When the element starts with a or o, the prefix loses its last a or o: CO is carbon monoxide, N₂O₅ is dinitrogen pentoxide. | Mono-oxide → monoxide. |
 | Prefixes only for covalent | Number words like di- and tri- are used for compounds of nonmetals (and for water in hydrates), never for ions: Na₂O is not "disodium oxide." | Ionic = no prefixes. |
+| Water | The everyday name used for H₂O instead of dihydrogen monoxide. | H₂O. |
+| Ammonia | The everyday name used for NH₃ instead of nitrogen trihydride. | NH₃. |
 
 ## The prefixes
 
@@ -138,6 +142,7 @@
 | -ate vs. -ite | The -ite ion has one fewer oxygen than the -ate ion with the same charge: nitrate NO₃⁻, nitrite NO₂⁻. | -ite = one less O. |
 | Extra prefixes on oxyanions | per-…-ate has one more oxygen than -ate (perchlorate ClO₄⁻); hypo-…-ite has one fewer than -ite (hypochlorite ClO⁻). | Per = more, hypo = less. |
 | Ammonium | NH₄⁺, the common polyatomic cation; it goes first like a metal, as in NH₄Cl. | The positive one. |
+| Cyanide and hydroxide | The two common polyatomic ions with an -ide ending (CN⁻ and OH⁻), even though -ide usually means a one-atom anion. | -ide exceptions. |
 
 ## Naming and writing polyatomic compounds
 
@@ -164,6 +169,7 @@
 | Type V: acid | A compound that produces H⁺ ions when dissolved in water; its formula starts with H. | H first. |
 | Binary acid | Hydrogen with a one-element anion (or cyanide); named hydro- + root + -ic: HBr is hydrobromic. | Hydro…ic. |
 | (aq) | The label showing a compound is dissolved in water; written after binary acid formulas such as HCl(aq). | Aqueous. |
+| Hydrogen chloride vs. hydrochloric acid | The same formula, HCl, gets the first label as a pure compound and the second when dissolved in water, HCl(aq). | Pure vs. dissolved. |
 
 ## Acids with oxygen
 

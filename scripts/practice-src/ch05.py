@@ -4,7 +4,7 @@ SUB = str.maketrans("0123456789", "₀₁₂₃₄₅₆₇₈₉")
 def f(s):  # digits after a letter or ")" become subscripts; a hydrate's leading count stays normal
     return re.sub(r"(?<=[A-Za-z)])(\d+)", lambda m: m.group(1).translate(SUB), s).replace("*", "·")
 ALT = {"Sodium bicarbonate": ["Sodium hydrogen carbonate"], "Calcium bicarbonate": ["Calcium hydrogen carbonate"],
-       "Copper(II) hydrogen carbonate": ["Copper(II) bicarbonate"], "HC2H3O2": ["CH3COOH"]}
+       "Copper(II) hydrogen carbonate": ["Copper(II) bicarbonate"], "HC2H3O2": ["CH3COOH"], "Hydroiodic acid": ["Hydriodic acid"], "HI(aq)": ["HI"], "LiC2H3O2": ["LiCH3COO"]}
 def answer(m):  # the answer part of a model: drop " (comments)" and anything after ":"
     return re.sub(r"\s+\([^)]*\)", "", m).split(":")[0].strip()
 TYPED = {"N1","N2","N3","N4","N5","N6","N7","F1","F2","F3","F4","M1","M2","M3","M4","M5","M6","M7","M8"}
