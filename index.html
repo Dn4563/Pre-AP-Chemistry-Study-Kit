@@ -411,6 +411,53 @@ textarea { width: 100%; background: var(--sheet); border: 1px solid var(--rule);
   .routebar .rbt { flex: 1 1 100%; }
 }
 
+/* AAQ / EBQ free response */
+.src .sblock { margin: 14px 0 2px; font-size: .95rem; }
+.wscore { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin: 18px 0 6px; padding: 14px 16px; border-radius: var(--r-sm); background: var(--sunk); }
+.wsl { font-weight: 600; color: var(--ink-2); }
+.wsn { font-family: var(--serif); font-size: 1.7rem; font-weight: 600; }
+.wscore p { flex-basis: 100%; margin: 0; }
+.wnote { margin: 12px 0; padding: 10px 14px; border-radius: var(--r-sm); background: var(--sunk); }
+.wnote.bad { background: var(--bad-wash); }
+.wpart { padding: 20px 0 6px; border-top: 1px solid var(--rule); }
+.wpart:first-of-type { margin-top: 10px; }
+.wph { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 14px; }
+.wpts { font-weight: 700; white-space: nowrap; color: var(--ink-2); }
+.wpts.ok { color: var(--ok); }
+.wpts.no { color: var(--bad); }
+.wpq { margin: 6px 0 10px; }
+.wpart textarea { min-height: 7.5em; field-sizing: content; max-height: 24em; width: 100%; box-sizing: border-box; font: inherit; line-height: 1.5; padding: 10px 12px; color: var(--ink); background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--r-sm); }
+.wchecks { list-style: none; padding: 0; margin: 12px 0 6px; display: grid; gap: 4px; }
+.wchecks li { display: flex; gap: 8px; }
+.wchecks li span { font-weight: 700; flex: none; }
+.wchecks li.ok span { color: var(--ok); }
+.wchecks li.no span { color: var(--bad); }
+.wtip { margin: 6px 0; color: var(--ink-2); }
+.wtip b { color: var(--ink); }
+.wpart details { margin: 8px 0; }
+.wpart details summary { cursor: pointer; font-weight: 600; color: var(--accent); }
+.wpart details p { margin: 6px 0 0; }
+.wpart .selfmark { margin: 8px 0 10px; }
+.intro .grows { margin: 6px 0 10px; }
+.grows div { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: 10px; padding: 6px 0; border-top: 1px solid var(--rule); }
+.grows dt { font-weight: 700; }
+.grows dd { margin: 0; }
+.tscroll { overflow-x: auto; margin: 8px 0 12px; }
+.gt { border-collapse: collapse; width: 100%; font-size: .94rem; }
+.gt th, .gt td { text-align: left; vertical-align: top; padding: 6px 10px; border: 1px solid var(--rule); }
+.gt th { background: var(--sunk); }
+.gemcard { max-width: 70ch; }
+.gemcard a { color: var(--accent); }
+.gemsteps, .gemnotes { padding-left: 22px; }
+.gemsteps li, .gemnotes li { margin: 4px 0; }
+.gemrow { display: flex; flex-wrap: wrap; gap: 10px 16px; margin: 12px 0 4px; }
+.gemrow label { display: grid; gap: 4px; font-weight: 600; flex: 1 1 14rem; }
+.gemrow input { font: inherit; font-weight: 400; padding: 8px 10px; color: var(--ink); background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--r-sm); }
+.gemmsg { font-weight: 600; }
+.gemgen { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 12px 0; padding: 10px 14px; border-radius: var(--r-sm); background: var(--sunk); }
+.gemgen label { display: inline-flex; align-items: center; gap: 6px; }
+@media (max-width: 640px) { .grows div { grid-template-columns: minmax(0, 1fr); gap: 2px; } }
+
 </style></head>
 <body><div id="app"></div>
 <noscript>This study kit needs JavaScript.</noscript>
@@ -588,7 +635,7 @@ function homeHTML() {
   h += '<main><ul class="unitlist">';
   COURSE.units.forEach((u) => {
     const p = unitProgress(u),
-      pct = p.tot ? Math.round((100 * p.got) / p.tot) : 0;
+      pct = p.tot ? Math.round((100 * p.got) / p.tot) : p.total ? Math.round((100 * p.answered) / p.total) : 0;
     h +=
       '<li><a class="unitrow" href="#' +
       esc(u.id) +
@@ -599,11 +646,9 @@ function homeHTML() {
       "</span>" +
       (u.blurb ? '<span class="ublurb">' + esc(u.blurb) + "</span>" : "") +
       '<span class="ustat">' +
-      p.got +
-      " of " +
-      p.tot +
-      " terms marked got it" +
-      (p.total ? ", " + p.answered + " of " + p.total + " practice questions answered" : "") +
+      /* A practice-only unit (no cards) shows only its practice count. */
+      (p.tot ? p.got + " of " + p.tot + " terms marked got it" + (p.total ? ", " : "") : "") +
+      (p.total ? p.answered + " of " + p.total + " practice questions answered" : "") +
       '</span><span class="bar" aria-hidden="true"><i style="width:' +
       pct +
       '%"></i></span></span><span class="ugo">Open' +
@@ -715,18 +760,21 @@ function initShell() {
   indexCards();
   rebuild();
   const secs = D.practice.sections;
-  TABS = [
-    ["plan", "Study plan"],
-    ["learn", "Learn"],
-    ["guide", "Study guide"],
-  ];
+  /* A unit with no cards is practice only: no Study plan, Learn, Study guide, Flashcards or Quiz. */
+  TABS = ALL.length
+    ? [
+        ["plan", "Study plan"],
+        ["learn", "Learn"],
+        ["guide", "Study guide"],
+      ]
+    : [];
   if (D.cheat && D.cheat.length) TABS.push(["cheat", "Cheat sheet"]);
-  TABS.push(["flash", "Flashcards"], ["quiz", "Quiz"]);
+  if (ALL.length) TABS.push(["flash", "Flashcards"], ["quiz", "Quiz"]);
   if (secs.some((s) => s.mode !== "exam")) TABS.push(["pt", "Practice Test"]);
   if (secs.some((s) => s.mode === "exam")) TABS.push(["exam", COURSE.examTab || "Full exam"]);
   if (secs.length) TABS.push(["prog", "Progress"]);
   TABS.push(["set", "Settings"]);
-  UI = { tab: "learn", deck: 0, run: null, q: null, qmsg: "" };
+  UI = { tab: TABS[0][0], deck: 0, run: null, q: null, qmsg: "" };
   const u = SAVE.ui;
   if (u) {
     if (TABS.some((t) => t[0] === u.tab)) UI.tab = u.tab;
@@ -788,13 +836,16 @@ function render() {
     "</p><h1>" +
     esc(UNIT.title) +
     "</h1>" +
-    '<div class="meter"><span>' +
-    got +
-    " of " +
-    tot +
-    ' terms marked got it</span><span class="bar" aria-hidden="true"><i style="width:' +
-    pct +
-    '%"></i></span><button class="lnk" data-act="resetprog">Reset progress</button></div></header>';
+    (tot
+      ? '<div class="meter"><span>' +
+        got +
+        " of " +
+        tot +
+        ' terms marked got it</span><span class="bar" aria-hidden="true"><i style="width:' +
+        pct +
+        '%"></i></span><button class="lnk" data-act="resetprog">Reset progress</button></div>'
+      : "") +
+    "</header>";
   h +=
     '<nav class="tabs" aria-label="Sections"><div class="tabrow">' +
     TABS.filter((t) => t[0] !== "set")
@@ -3122,14 +3173,16 @@ function setHTML() {
       [4, "Extra large"],
     ]) +
     "</div>" +
-    chk("hooks", "Show memory hooks") +
+    /* A practice-only unit has no cards, so no hooks, flashcard or quiz settings. */
+    (ALL.length ? chk("hooks", "Show memory hooks") : "") +
     (hasOpt ? chk("optDeck", "Include optional decks in All decks, the progress meter and the mixed quiz") : "") +
     (UNIT.recall && COURSE.units.indexOf(UNIT) > 0 ? chk("recall", "Recall questions from earlier units: now and then a Learn lesson asks one question from an earlier unit. It never counts against the lesson.") : "") +
     "<h3>Answering</h3>" +
     chk("confirm", "Lock in answers: pick a choice, then press Lock in answer, so a misclick does not count. Applies to Learn, Quiz and the Practice Test.") +
-    '<h3>Flashcards</h3><div class="ctl">' +
-    FC_CTL() +
-    '</div><h3>Quiz</h3><div class="ctl">' +
+    (ALL.length
+      ? '<h3>Flashcards</h3><div class="ctl">' +
+        FC_CTL() +
+        '</div><h3>Quiz</h3><div class="ctl">' +
     selHTML("qType", "Question types", [
       ["mixed", "Mixed"],
       ["terms", "Terms only"],
@@ -3145,7 +3198,10 @@ function setHTML() {
       ["random", "Random"],
       ["trouble", "Trouble terms first"],
     ]) +
-    '</div><h3>Saved progress</h3><p class="muted">Everything saves in this browser automatically. Export to move it to another device, then Import there.</p><div class="qnav"><button class="btn sec" data-act="exp">Export progress</button><button class="btn sec" data-act="imp">Import progress</button><button class="btn danger" data-act="resetall">Reset this unit</button></div><textarea id="xport" rows="4" aria-label="Exported progress" placeholder="Export fills this box. To import, paste exported text here and press Import progress."></textarea></section>'
+        "</div>"
+      : "") +
+    (typeof gemCardHTML === "function" ? gemCardHTML() : "") +
+    '<h3>Saved progress</h3><p class="muted">Everything saves in this browser automatically. Export to move it to another device, then Import there.</p><div class="qnav"><button class="btn sec" data-act="exp">Export progress</button><button class="btn sec" data-act="imp">Import progress</button><button class="btn danger" data-act="resetall">Reset this unit</button></div><textarea id="xport" rows="4" aria-label="Exported progress" placeholder="Export fills this box. To import, paste exported text here and press Import progress."></textarea></section>'
   );
 }
 function SET(t) {
@@ -3365,9 +3421,9 @@ document.addEventListener("change", (e) => {
    palette (gray = not visited, outlined = visited, green = correct, red = incorrect, amber = partly right,
    ring = current, corner mark = flagged). Question types: mcq, tf, label, diagram, frq, saq. */
 const PT = { sec: 0, secs: [], timerOn: false, elapsed: 0, iv: null, retest: null, msg: "", intro: {}, res: null };
-const TYPE_NAME = { mcq: "Multiple choice", tf: "True or false", label: "Labeling", diagram: "Diagram labeling", frq: "Free response", saq: "Short answer" };
+const TYPE_NAME = { mcq: "Multiple choice", tf: "True or false", label: "Labeling", diagram: "Diagram labeling", frq: "Free response", saq: "Short answer", wfr: "Free response" };
 const newSt = () => ({ elim: [], visited: false, checked: false, sel: null, correct: null, flag: false, items: {}, work: "", abox: "", ans: {}, revealed: false, mark: null, pm: {} });
-const isWritten = (q) => q.type === "frq" || q.type === "saq";
+const isWritten = (q) => q.type === "frq" || q.type === "saq" || q.type === "wfr";
 /* A free-response question whose every part lists accepted answers ("accept") is typed and marked automatically.
    Names ignore case and spacing; formulas keep case (Co is not CO) but accept plain digits, "(aq)" and any hydrate dot. */
 const isTyped = (q) => q.type === "frq" && q.parts.every((p) => Array.isArray(p.accept) && p.accept.length);
@@ -3387,7 +3443,9 @@ const itemsOf = (q) => (q.type === "diagram" ? q.pins.map((p, i) => Object.assig
 
 function initPT() {
   D.practice.sections.forEach((s) => {
-    const sec = { name: s.name, mode: s.mode || "practice", exam: s.exam || s.name, tips: s.tips || [], examTips: s.examTips || [], sources: s.sources || {}, qs: s.questions, byId: {}, cur: 0, st: {}, oo: {} };
+    const sec = { name: s.name, mode: s.mode || "practice", exam: s.exam || s.name, tips: s.tips || [], examTips: s.examTips || [], guide: s.guide || null, grader: s.grader || null, sources: Object.assign({}, s.sources || {}), qs: s.questions.slice(), byId: {}, cur: 0, st: {}, oo: {} };
+    /* Practice sets for AAQ / EBQ also hold articles and prompts this browser generated with Gemini. */
+    if (sec.grader && sec.mode === "practice" && typeof gemGenerated === "function") gemGenerated(sec.grader).forEach((g) => (sec.sources[g.src.id] = g.src, sec.qs.unshift(g.q)));
     sec.qs.forEach((q) => {
       if (q.type === "tf") {
         q.options = ["True", "False"];
@@ -3406,6 +3464,14 @@ function initPT() {
 
 /* Points earned on one question, 0 to 1, or null if not answered yet. Multi-part items earn partial credit. */
 function frac(q, s) {
+  /* AAQ / EBQ: points from the checker (or Gemini), with any part the student overrode counted as full or zero. */
+  if (q.type === "wfr") {
+    if (!s.revealed) return null;
+    const g = s.ai || s.auto,
+      max = q.parts.reduce((n, p) => n + (p.max || 1), 0);
+    const got = q.parts.reduce((n, p) => n + (s.pm[p.k] === true ? p.max || 1 : s.pm[p.k] === false ? 0 : (g && g.parts[p.k] && g.parts[p.k].pts) || 0), 0);
+    return max ? got / max : 0;
+  }
   if (isWritten(q)) {
     const ks = q.parts.map((p) => p.k),
       pm = s.pm || {};
@@ -3437,11 +3503,14 @@ function cur3() {
 function secScore(sec, ids, st) {
   let pts = 0,
     n = 0;
+  /* AAQ / EBQ questions count their real points (7 each); everything else counts 1 per question. */
   ids.forEach((id) => {
-    const f = frac(sec.byId[id], st[id]);
+    const q = sec.byId[id],
+      f = frac(q, st[id]),
+      w = q.type === "wfr" ? q.parts.reduce((m, p) => m + (p.max || 1), 0) : 1;
     if (f !== null) {
-      n++;
-      pts += f;
+      n += w;
+      pts += f * w;
     }
   });
   return fmt1(pts) + " of " + plural(n, "point") + " so far";
@@ -3461,10 +3530,39 @@ function srcHTML(s) {
   /* A source can have text, a table, or both (text first, as in a business case with a data table). */
   if (s.paras) h += s.paras.map((p, i) => '<p class="stext"><span class="pn">Paragraph ' + (i + 1) + "</span> " + esc(p) + "</p>").join("");
   else if (s.text) h += '<p class="stext">' + esc(s.text) + "</p>";
-  if (s.table) h += tableHTML({ rows: s.table });
+  /* Headed blocks (an article's sections, or an EBQ's sources); the table can follow a named block. */
+  if (s.blocks)
+    s.blocks.forEach((b) => {
+      h += '<h4 class="sblock">' + esc(b.h) + '</h4><p class="stext">' + esc(b.p) + "</p>";
+      if (s.table && s.tableAfter === b.h) h += tableHTML({ rows: s.table });
+    });
+  if (s.table && !(s.blocks && s.blocks.some((b) => b.h === s.tableAfter))) h += tableHTML({ rows: s.table });
   return h + "</figure>";
 }
+/* Guide text from the content (bold and line breaks allowed; everything else escaped). */
+const richText = (t) => esc(t).replace(/&lt;(\/?b|br)&gt;/g, "<$1>");
+function guideHTML2(blocks) {
+  return blocks
+    .map((b) =>
+      b.h
+        ? "<h4>" + richText(b.h) + "</h4>"
+        : b.p
+          ? "<p>" + richText(b.p) + "</p>"
+          : b.rows
+            ? '<dl class="grows">' + b.rows.map((r) => "<div><dt>" + richText(r[0]) + "</dt><dd>" + richText(r[1]) + "</dd></div>").join("") + "</dl>"
+            : b.table
+              ? '<div class="tscroll"><table class="gt"><thead><tr>' + b.table[0].map((c) => "<th>" + richText(c) + "</th>").join("") + "</tr></thead><tbody>" + b.table.slice(1).map((r) => "<tr>" + r.map((c) => "<td>" + richText(c) + "</td>").join("") + "</tr>").join("") + "</tbody></table></div>"
+              : "",
+    )
+    .join("");
+}
 function introHTML(sec) {
+  if (sec.guide) {
+    const open = !!PT.intro[sec.name];
+    let g = '<div class="intro"><button class="lnk disclose" data-act="ptintro" aria-expanded="' + open + '">' + ICON.chev + (sec.grader === "ebq" ? "How the EBQ works" : "How the AAQ works") + "</button>";
+    if (open) g += (sec.examTips.length ? ul(sec.examTips) : "") + guideHTML2(sec.guide);
+    return g + "</div>";
+  }
   if (!sec.tips.length && !sec.examTips.length) return "";
   const open = !!PT.intro[sec.name];
   let h =
@@ -3561,7 +3659,111 @@ function diagramHTML(q, s) {
     "</figure>"
   );
 }
-function writtenHTML(q, s, nav, topic) {
+/* AAQ / EBQ question: an answer box per part; Check grades each part with the key-word checker (or Gemini),
+   showing points, what the rubric found and missed, tips, the common mistake, and the model answer. */
+function wfrHTML(q, s, nav, topic, sec) {
+  const g = s.ai || s.auto,
+    max = q.parts.reduce((n, p) => n + (p.max || 1), 0),
+    gemOn = typeof gemKey === "function" && !!gemKey();
+  let h = "";
+  if (s.revealed && g) {
+    const f = frac(q, s),
+      tot = Math.round(f * max * 10) / 10;
+    h +=
+      '<div class="wscore"><span class="wsl">Your score, ' +
+      (s.ai ? "graded by Gemini" : "checklist grader") +
+      '</span><span class="wsn">' +
+      fmt1(tot) +
+      " of " +
+      max +
+      '</span><p class="muted">' +
+      (tot === max ? "Full marks. Try another one or a timed run." : tot >= max - 2 ? "Solid. Fix the parts marked below and recheck." : "Read the feedback under each part, compare with the model answer, then edit and recheck.") +
+      "</p>" +
+      (s.ai && s.ai.overall ? "<p>" + esc(s.ai.overall) + "</p>" : "") +
+      "</div>";
+  }
+  if (s.aiLoading) h += '<p class="wnote">Grading with Gemini. This usually takes 5 to 20 seconds.</p>';
+  if (s.aiErr) h += '<p class="wnote bad">Gemini couldn\'t grade this: ' + esc(s.aiErr) + (q.r || q.grader === "ebq" ? " Showing the checklist grader instead." : "") + "</p>";
+  if (s.revealed && !g) h += '<p class="wnote">This article was generated with Gemini, so it has no checklist. Use Grade with Gemini, or compare with the model answers.</p>';
+  q.parts.forEach((p) => {
+    const meta = frqPart(q.grader, p.k),
+      r = g && s.revealed ? g.parts[p.k] : null,
+      over = s.pm[p.k];
+    const pts = r ? (over === true ? p.max : over === false ? 0 : r.pts) : null;
+    h +=
+      '<div class="wpart"><div class="wph"><span><b>Part ' +
+      esc(meta.label || p.k) +
+      "</b>" +
+      (meta.name ? ", " + esc(meta.name) : "") +
+      (meta.verb ? ' <span class="muted">(' + esc(meta.verb) + ")</span>" : "") +
+      '</span><span class="wpts' +
+      (pts === null ? "" : pts === p.max ? " ok" : " no") +
+      '">' +
+      (pts === null ? plural(p.max, "point") : fmt1(pts) + " of " + p.max) +
+      "</span></div>" +
+      '<p class="wpq">' +
+      esc(p.prompt) +
+      '</p><textarea rows="' +
+      (meta.rows || (p.max > 1 || "EF".indexOf(p.k) >= 0 ? 5 : 3)) +
+      '" data-ans="' +
+      esc(p.k) +
+      '" aria-label="Answer for part ' +
+      esc(meta.label || p.k) +
+      '" placeholder="' +
+      esc(meta.verb === "Identify" ? "One clear sentence" : q.grader === "ebq" ? (p.k === "A" ? "Your claim" : /ii$/.test(p.k) ? "This supports my claim because… This can be explained by…" : "Evidence… (Source #)") : "Write your answer") +
+      '">' +
+      esc(s.ans[p.k] || "") +
+      "</textarea>";
+    if (s.revealed) {
+      if (r)
+        h +=
+          '<ul class="wchecks">' +
+          r.checks.map((c) => '<li class="' + (c.ok ? "ok" : "no") + '"><span aria-hidden="true">' + (c.ok ? "✓" : "✗") + "</span> " + esc(c.text) + "</li>").join("") +
+          "</ul>" +
+          r.tips.map((t) => '<p class="wtip"><b>Tip:</b> ' + esc(t) + "</p>").join("");
+      if (r && r.pts < r.max && meta.mistake) h += '<p class="wtip"><b>Common mistake:</b> ' + esc(meta.mistake) + "</p>";
+      if (meta.tip) h += '<p class="wtip"><b>Pro tip:</b> ' + esc(meta.tip) + "</p>";
+      h += "<details" + (!r || r.pts < r.max ? " open" : "") + '><summary>Model answer</summary><p>' + esc(p.model) + "</p></details>";
+      h +=
+        '<div class="selfmark" role="group" aria-label="Override part ' +
+        esc(meta.label || p.k) +
+        '"><span>Override</span><button class="mk' +
+        (over === true ? " on right" : "") +
+        '" data-act="ptpart" data-p="' +
+        esc(p.k) +
+        '" data-v="1" aria-pressed="' +
+        (over === true) +
+        '">I got it</button><button class="mk' +
+        (over === false ? " on wrong" : "") +
+        '" data-act="ptpart" data-p="' +
+        esc(p.k) +
+        '" data-v="0" aria-pressed="' +
+        (over === false) +
+        '">I missed it</button></div>';
+    }
+    h += "</div>";
+  });
+  if (s.revealed && q.grader === "ebq") {
+    const ideas = ebqIdeas(q, sec.sources[q.src]);
+    if (ideas.length) h += '<p class="wtip"><b>Concepts that fit this prompt:</b> ' + esc(ideas.join(", ")) + ". Other concepts from class can work too.</p>";
+  }
+  h +=
+    '<div class="qnav"><button class="btn" data-act="ptcheck">' +
+    (s.revealed ? "Recheck my answers" : "Check my answers") +
+    "</button>" +
+    (gemOn ? '<button class="btn sec" data-act="gemgrade"' + (s.aiLoading ? " disabled" : "") + ">Grade with Gemini</button>" : "") +
+    '<button class="btn ghost" data-act="ptclear">Clear answers</button>' +
+    nav +
+    "</div>" +
+    '<p class="hint">' +
+    (gemOn
+      ? "Gemini grades against the " + (q.grader === "ebq" ? "EBQ" : "AAQ") + " rubric. AI can make mistakes, so compare with the model answer too."
+      : "The checklist grader looks for the pieces the rubric requires; it can't judge your reasoning like a real reader. For AI grading, add a free Gemini key in Settings.") +
+    "</p>";
+  return h;
+}
+function writtenHTML(q, s, nav, topic, sec) {
+  if (q.type === "wfr") return wfrHTML(q, s, nav, topic, sec);
   let h = q.title ? '<h3 class="qhead">' + esc(q.title) + "</h3>" : "";
   if (q.stem) h += '<div class="stem">' + esc(q.stem) + "</div>";
   if (q.lead) h += '<p class="stem">' + esc(q.lead) + "</p>";
@@ -3648,7 +3850,7 @@ function ptSectionHTML() {
       " of " +
       ids.length +
       ' now correct. Right answers here update the main section. <button class="lnk" data-act="ptendretest">Back to the full section</button></div>';
-  h += introHTML(sec);
+  h += introHTML(sec) + (typeof gemGenHTML === "function" ? gemGenHTML(sec) : "");
   h +=
     '<div class="pals" role="group" aria-label="Questions">' +
     ids
@@ -3699,7 +3901,7 @@ function ptSectionHTML() {
         n = it.filter((x, i) => s.items[i] === x.ans).length;
       h += '<div class="fb' + (s.correct ? " ok" : n ? "" : " bad") + '"><b>' + n + " of " + it.length + " correct.</b> You earn " + fmt1(n / it.length) + " of 1 point." + topic + "</div>";
     }
-  } else h += writtenHTML(q, s, nav, topic);
+  } else h += writtenHTML(q, s, nav, topic, sec);
   return h + "</section>";
 }
 
@@ -3718,6 +3920,7 @@ function ptControls(M) {
     (sec.shuffled ? "Shuffled" : "Shuffle questions") +
     "</button>" +
     (sec.shuffled ? '<button class="btn ghost" data-act="ptunshuffle">' + ICON.undo + "Original order</button>" : "") +
+    (sec.qs.some((q) => q.type === "wfr") ? '<button class="btn ghost" data-act="ptrandom">' + ICON.shuffle + (sec.grader === "ebq" ? "Random prompt I haven't done" : "Random article I haven't done") + "</button>" : "") +
     '<button class="btn ghost" data-act="ptretest">' +
     ICON.redo +
     'Retest missed questions</button><button class="btn ghost" data-act="ptprint">' +
@@ -3780,7 +3983,14 @@ function syncMain() {
 }
 function checkCur() {
   const c = cur3();
-  if (isWritten(c.q)) {
+  if (c.q.type === "wfr") {
+    /* Check (or recheck after editing): the key-word checker grades every part; earlier overrides and AI grades are dropped. */
+    c.s.auto = frqGrade(c.q, c.v.sec.sources[c.q.src], c.s.ans);
+    c.s.ai = null;
+    c.s.aiErr = "";
+    c.s.pm = {};
+    c.s.revealed = true;
+  } else if (isWritten(c.q)) {
     if (isTyped(c.q) && !c.s.revealed) c.q.parts.forEach((p) => (c.s.pm[p.k] = typedOk(c.s.ans[p.k], p.accept)));
     c.s.revealed = true;
   }
@@ -3861,6 +4071,28 @@ ACT.ptpart = (t) => {
   const c = cur3();
   c.s.pm[t.dataset.p] = t.dataset.v === "1";
   c.s.mark = null;
+  syncMain();
+  render();
+};
+/* Jump to a question in this section that hasn't been checked yet. */
+ACT.ptrandom = () => {
+  const v = curView(),
+    open = v.ids.map((id, n) => (frac(v.sec.byId[id], v.st[id]) === null ? n : -1)).filter((n) => n >= 0);
+  if (!open.length) {
+    PT.msg = "You've checked every one in this set.";
+    return render();
+  }
+  v.h.cur = open[Math.floor(Math.random() * open.length)];
+  render();
+  window.scrollTo(0, 0);
+};
+ACT.ptclear = () => {
+  const c = cur3();
+  c.s.ans = {};
+  c.s.auto = c.s.ai = null;
+  c.s.pm = {};
+  c.s.revealed = false;
+  c.s.aiErr = "";
   syncMain();
   render();
 };
@@ -4055,6 +4287,606 @@ function PTreset() {
   PTsave();
 }
 
+/* 92-frqcheck.js */
+/* Free-response checking for AP Psych AAQ and EBQ practice ("wfr" practice questions).
+   The rules, wording and tips are Phineas's (from his AP Psych kit, used with his permission), ported as is.
+   The checker looks for the pieces the rubric requires; it can't judge reasoning like a real reader, so the
+   student can always override a part with "I got it" / "I missed it", or use optional Gemini grading
+   (js/93-gemini.js). Rubric data comes from the unit's practice.json: q.r per article, practice.frq for the
+   shared word lists, part names and concepts. */
+let FRQ_CFG = null;
+function frqCfg() {
+  if (FRQ_CFG) return FRQ_CFG;
+  const f = (D && D.practice && D.practice.frq) || {};
+  FRQ_CFG = Object.assign({}, f, {
+    concepts: (f.concepts || []).map((c) => [c[0], new RegExp(c[1], c[2] || "")]),
+    stopSet: new Set(f.stop || []),
+  });
+  return FRQ_CFG;
+}
+const frqPart = (grader, k) => ((grader === "aaq" ? frqCfg().aaqParts : frqCfg().ebqParts) || []).find((p) => p.k === k) || { k: k, name: k, verb: "", pts: 1, tip: "", mistake: "" };
+const frqPartLabel = (grader, k) => frqPart(grader, k).label || k;
+
+/* ---------- AAQ (his gradeAAQ) ---------- */
+const aaqHas = (t, list) => (list || []).find((w) => t.includes(w));
+const aaqWords = (t) => (t.trim().match(/\S+/g) || []).length;
+function gradeAAQPart(art, k, raw) {
+  const C = frqCfg(),
+    AAQ_METHODS = C.methods || {},
+    AAQ_WORDS = C.words || {};
+  const t = (" " + (raw || "") + " ").toLowerCase().replace(/[’‘]/g, "'").replace(/[“”]/g, '"').replace(/\s+/g, " ");
+  const R = art.r[k],
+    checks = [],
+    tips = [];
+  let pts = 0;
+  const ck = (ok, good, bad) => {
+    checks.push({ ok, text: ok ? good : bad });
+    return ok;
+  };
+  if (!raw || !raw.trim()) return { pts: 0, max: k === "F" ? 2 : 1, checks: [{ ok: false, text: "No answer written. Even a one-sentence attempt can earn the point." }], tips };
+  const n = aaqWords(raw);
+  if (k === "A") {
+    const right = aaqHas(t, R.keys);
+    const named = Object.entries(AAQ_METHODS)
+      .filter(([m, keys]) => m !== R.answer && aaqHas(t, keys))
+      .map(([m]) => m);
+    if (ck(!!right, `Names the correct method: ${R.answer}.`, named.length ? `You named ${named.join(" / ")}, but this study is a ${R.answer}.` : `Doesn't name a research method. The answer is: ${R.answer}.`)) pts = 1;
+    if (!right && R.trap && named.includes(R.trap)) tips.push(R.trapHint);
+    if (right && named.length) tips.push(`You also mentioned ${named.join(" / ")}. Only name one method, or a reader may see it as contradicting yourself.`);
+    if (!aaqHas(t, R.clues)) tips.push('Not required for the point, but backing it up with a clue from the article ("participants were randomly assigned…") shows you understand why.');
+    if (n > 50) tips.push('"Identify" only needs one clear sentence. Save the time for Parts E and F.');
+  }
+  if (k === "B") {
+    let all = true;
+    R.groups.forEach((g, i) => {
+      if (!ck(!!aaqHas(t, g), R.labels[i] + ".", "Missing: " + R.labels[i].toLowerCase() + ".")) all = false;
+    });
+    if (all) pts = 1;
+    if (!all && /\b(is|means|refers to) (the|a|an)? ?(ability|process|tendency|state)\b/.test(t))
+      tips.push("That sounds like a textbook definition. The rubric wants how the researchers MEASURED it in this study. The answer is always in the Method section.");
+  }
+  if (k === "C") {
+    const num = aaqHas(t, R.nums),
+      cmp = aaqHas(t, AAQ_WORDS.compare) || (R.needPositive && aaqHas(t, ["positive"])),
+      mean = aaqHas(t, R.meaning),
+      subj = aaqHas(t, R.subject);
+    ck(!!num, "Uses the statistic from the article.", "Doesn't mention the actual numbers from the Results.");
+    const corr = R.needPositive || R.kind === "corr";
+    const dir =
+      R.kind === "other"
+        ? true
+        : corr
+          ? ck(
+              !!aaqHas(t, ["positive", "negative", "more", "higher", "increase", "go up", "goes up", "tend", "fewer", "less", "lower"]),
+              "Says the direction of the relationship (positive or negative).",
+              "Doesn't say the direction. A + sign means positive (both go up together); a − sign means negative (one goes up as the other goes down).",
+            )
+          : ck(!!cmp && !!subj, "Compares the groups (which one did better).", "Doesn't clearly say which group scored higher or lower.");
+    const meaning = ck(!!mean, "Connects the number to what was being studied.", "Doesn't say what the number MEANS for the research question. Restating numbers alone earns 0.");
+    if (dir && meaning) pts = 1;
+    if (num && !meaning) tips.push('You have the numbers. Now add "which indicates that…" and say what it means.');
+    if (R.speedHint && !aaqHas(t, ["faster", "quicker", "less time", "shorter", "lower"])) tips.push("Careful: here a LOWER time is BETTER (faster). Say which group was faster.");
+    if (corr && aaqHas(t, ["cause", "causes", "led to", "makes"])) tips.push('Don\'t say one variable "causes" the other in Part C. A correlation only shows a relationship.');
+  }
+  if (k === "D") {
+    const hit = R.eth.find((g) => aaqHas(t, g.keys.map((x) => x.toLowerCase())));
+    const otherHit = R.notIn.find((x) =>
+      aaqHas(
+        t,
+        {
+          consent: ["informed consent", "consent"],
+          confid: ["confidential", "anonym"],
+          withdraw: ["withdraw"],
+          debrief: ["debrief"],
+          harm: ["protection from harm"],
+          approval: ["institutional", "review board", "irb", "ethics board"],
+        }[x] || [],
+      ),
+    );
+    const named = ck(
+      !!hit,
+      `Identifies a guideline this study followed: ${hit ? hit.name : ""}.`,
+      otherHit ? "The guideline you named isn't described in this article. Stick to what the text shows." : "Doesn't name a specific ethical guideline (informed consent, confidentiality, debriefing, right to withdraw, protection from harm…).",
+    );
+    const desc = ck(
+      !!(hit && aaqHas(t, hit.ev)),
+      "Describes how the researchers applied it, with evidence from the article.",
+      hit ? `Name is there, but describe HOW they did it in this study (find the sentence in the Method that shows ${hit.name.toLowerCase()}).` : "Doesn't describe how the researchers applied a guideline.",
+    );
+    if (named && desc) pts = 1;
+    tips.push("Guidelines this article actually describes: " + R.eth.map((g) => g.name).join(", ") + ".");
+  }
+  if (k === "E") {
+    const claim = ck(!!aaqHas(t, AAQ_WORDS.claim), "Makes a claim about whether the findings generalize.", 'Doesn\'t make a clear claim ("The findings can / cannot be generalized to…").');
+    const demo = ck(!!aaqHas(t, R.demo), "Cites specific participant demographics from the study.", "Doesn't cite specific demographics (percentages, ages, location). This is the #1 way students lose this point.");
+    const pop = ck(!!aaqHas(t, R.pop), "Names a population the results may or may not apply to.", 'Doesn\'t name a specific population (e.g., "older adults," "teens in other states").');
+    if (claim && demo && pop) pts = 1;
+    if (!/\d/.test(raw)) tips.push("Put a number in: quote a percentage or age range straight from the demographic table.");
+    if (n < 20) tips.push('"Explain" needs reasoning. One short sentence usually isn\'t enough here.');
+  }
+  if (k === "F") {
+    const data = ck(!!aaqHas(t, R.data), "Point 1: Uses a specific result (numbers) from the study.", "Point 1 missing: quote specific numbers from the Results section.");
+    const stance = aaqHas(t, AAQ_WORDS.support),
+      link = aaqHas(t, AAQ_WORDS.link),
+      concept = aaqHas(t, R.concept);
+    const accurate = R.stanceWant !== "refute" || !!aaqHas(t, ["not support", "doesn't support", "does not support", "refute", "cannot", "can't", "partially", "not prove", "doesn't prove", "does not prove", "not show caus", "correlational"]);
+    if (stance && link && concept && !accurate) {
+      ck(false, "", "Point 2 missing: the explanation isn't accurate. " + R.stanceHint);
+      pts = data ? 1 : 0;
+      return { pts, max: 2, checks, tips };
+    }
+    const expl = ck(
+      !!(stance && link && concept),
+      "Point 2: Says support/refute and explains how the result connects to the hypothesis.",
+      !stance ? "Point 2 missing: say clearly whether the results SUPPORT or REFUTE the hypothesis." : !link ? 'Point 2 missing: explain HOW the data connects ("…which shows that…", "because…").' : "Point 2 missing: connect it back to the specific concept in the hypothesis.",
+    );
+    pts = (data ? 1 : 0) + (expl ? 1 : 0);
+    if (R.stanceWant === "refute" && stance && !aaqHas(t, ["not support", "doesn't support", "does not support", "refute", "cannot", "can't", "partially", "correlation does not", "correlational"])) tips.push(R.stanceHint);
+    if (n < 25) tips.push("Part F is worth 2 points. Plan on 2–3 sentences: claim, data, and how the data proves the claim.");
+  }
+  return { pts, max: k === "F" ? 2 : 1, checks, tips };
+}
+
+/* ---------- EBQ (his gradeEBQ) ---------- */
+const ebqNorm = (s) =>
+  (" " + (s || "") + " ")
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/[“”]/g, '"')
+    .replace(/[–—]/g, "-")
+    .replace(/\s+/g, " ");
+const ebqSrcText = (set) => ebqNorm(set.sources.map((s) => s.title + " " + s.text).join(" "));
+const ebqNums = (t) => (ebqNorm(t).match(/\d+(?:[.:,]\d+)?/g) || []).map((x) => x.replace(/,/g, ""));
+const ebqWords = (t) => new Set((ebqNorm(t).match(/[a-z]{5,}/g) || []).filter((w) => !frqCfg().stopSet.has(w)));
+function ebqConcepts(set, raw) {
+  const t = ebqNorm(raw),
+    src = ebqSrcText(set),
+    used = [],
+    fromSrc = [];
+  frqCfg().concepts.forEach(([n, re]) => {
+    if (re.test(t)) (re.test(src) ? fromSrc : used).push(n);
+  });
+  return { used, fromSrc };
+}
+function ebqCites(raw) {
+  const t = ebqNorm(raw),
+    s = new Set();
+  for (const m of t.matchAll(/\bsources?\s*#?\s*([123])\b/g)) s.add(+m[1]);
+  return [...s];
+}
+function ebqEvidence(set, raw) {
+  const cites = ebqCites(raw),
+    t = raw.replace(/\bsources?\s*#?\s*[123]\b/gi, " "),
+    nums = ebqNums(t).filter((n) => !/^[123]$/.test(n)),
+    words = ebqWords(t);
+  const match = (i) => {
+    if (!set.sources[i - 1]) return { nHit: 0, wHit: 0, ok: false };
+    const st = set.sources[i - 1].title + " " + set.sources[i - 1].text,
+      sn = new Set(ebqNums(st)),
+      sw = ebqWords(st);
+    const nHit = nums.filter((n) => sn.has(n)).length,
+      wHit = [...words].filter((w) => sw.has(w)).length;
+    return { nHit, wHit, ok: (nHit >= 1 && wHit >= 2) || wHit >= 5 };
+  };
+  const per = [1, 2, 3].map(match),
+    best = per.reduce((b, m, i) => (m.nHit * 3 + m.wHit > b.s ? { s: m.nHit * 3 + m.wHit, i: i + 1 } : b), { s: 0, i: 0 }).i;
+  return { cites, per, best, nums };
+}
+function ebqExplains(raw) {
+  const t = ebqNorm(raw),
+    n = (t.match(/[a-z']+/g) || []).length;
+  return n >= 10 && /\b(because|support|supports|shows?|since|therefore|this means|which means|suggests?|so|as a result|explains?|demonstrat\w*|proves?|indicates?|leads? to|causes?|meaning|backs up|consistent with|reflects?)\b/.test(t);
+}
+function gradeEBQ(set, ans) {
+  const parts = {},
+    ev = {},
+    conc = {};
+  let total = 0;
+  const P = (k, pts, max, checks, tips = []) => {
+    parts[k] = { pts, max, checks, tips };
+    total += pts;
+  };
+  const blank = (k) => !(ans[k] || "").trim();
+  {
+    const k = "A",
+      raw = ans[k] || "",
+      t = ebqNorm(raw),
+      n = (t.match(/[a-z']+/g) || []).length,
+      c = [],
+      tips = [];
+    if (blank(k)) P(k, 0, 1, [{ ok: false, text: "No claim written." }]);
+    else {
+      const pos = /\b(should|shouldn't|must|need to|ought|because|depends?|unless|only|especially|more|less|fewer|increases?|decreases?|reduces?|raises?|lowers?|improves?|worsens?|harms?|hurts?|helps?|protects?|prevents?|benefits?|better|worse|effective|ineffective|outweigh|not)\b/.test(t);
+      const topic = (set.topicWords || []).some((w) => t.includes(w.toLowerCase())),
+        specific = n >= 8,
+        ok = pos && specific && topic;
+      c.push({ ok: specific, text: specific ? "Specific enough: more than a one-line slogan." : 'Too short/vague. A claim like "X affects Y" earns 0. Say HOW or WHAT should happen.' });
+      c.push({ ok: pos, text: pos ? "Takes a clear, defensible position." : 'No clear position. Use words like "should," "because," "reduces," or "depends on."' });
+      c.push({ ok: topic, text: topic ? "Responds to the question's topic." : "Doesn't clearly respond to the question. Use the topic's key words." });
+      if (!ok) tips.push("Formula: [Who] should/shouldn't [do what] because [result the sources show].");
+      P(k, ok ? 1 : 0, 1, c, tips);
+    }
+  }
+  for (const k of ["Bi", "Ci"]) {
+    const raw = ans[k] || "",
+      c = [],
+      tips = [];
+    if (blank(k)) {
+      P(k, 0, 1, [{ ok: false, text: "No evidence written." }]);
+      continue;
+    }
+    const e = ebqEvidence(set, raw);
+    ev[k] = e;
+    const cited = e.cites.length > 0,
+      src = e.cites[0] || 0;
+    c.push({ ok: cited, text: cited ? `Cites Source ${e.cites.join(" and ")}.` : 'No citation. Add "(Source 1)" after the evidence or start with "According to Source 2,…".' });
+    const spec = src ? e.per[src - 1].ok : false,
+      wrong = src && !spec && e.best && e.best !== src && e.per[e.best - 1].ok;
+    if (cited)
+      c.push({
+        ok: spec,
+        text: spec
+          ? `Uses specific evidence from Source ${src}${e.per[src - 1].nHit ? " (with its data)" : ""}.`
+          : wrong
+            ? `This evidence looks like it comes from Source ${e.best}, not Source ${src}. Check your citation.`
+            : `Not specific enough. Quote the actual data from Source ${src} (numbers, groups, what changed).`,
+      });
+    let diff = true;
+    if (k === "Ci" && cited && ev.Bi && ev.Bi.cites.length) {
+      diff = !e.cites.every((x) => ev.Bi.cites.includes(x));
+      c.push({ ok: diff, text: diff ? "Uses a different source than Part B(i)." : `Same source as Part B(i) (Source ${src}). Part C must use a DIFFERENT source.` });
+    }
+    if (!e.nums.length) tips.push("Numbers make evidence specific: include a statistic from the source.");
+    P(k, cited && spec && diff ? 1 : 0, 1, c, tips);
+  }
+  for (const k of ["Bii", "Cii"]) {
+    const raw = ans[k] || "",
+      c = [],
+      tips = [];
+    if (blank(k)) {
+      P(k, 0, 2, [{ ok: false, text: "No explanation written." }]);
+      continue;
+    }
+    const ex = ebqExplains(raw),
+      cc = ebqConcepts(set, raw);
+    conc[k] = cc;
+    c.push({ ok: ex, text: ex ? "Explains how the evidence supports your claim." : 'Doesn\'t explain HOW the evidence supports your claim. Start with "This supports my claim because…".' });
+    let used = cc.used;
+    if (k === "Cii" && conc.Bii) {
+      const same = used.filter((x) => conc.Bii.used.includes(x));
+      used = used.filter((x) => !conc.Bii.used.includes(x));
+      if (same.length && !used.length) c.push({ ok: false, text: `Uses the same concept as Part B(ii) (${same.join(", ")}). C(ii) needs a DIFFERENT one, so it's capped at 1 point.` });
+    }
+    const app = ex && used.length > 0;
+    if (used.length) c.push({ ok: app, text: app ? `Applies a psych concept: ${used.slice(0, 3).join(", ")}.` : `Names ${used[0]}, but you also need to explain how the evidence supports your claim.` });
+    else if (cc.fromSrc.length) c.push({ ok: false, text: `"${cc.fromSrc[0]}" appears in the sources, so it doesn't count as an applied concept. Bring in a concept from class.` });
+    else if (!(k === "Cii" && conc.Bii && cc.used.length))
+      c.push({ ok: false, text: "No psych concept from class applied. Name one (e.g., social comparison theory, operant conditioning, circadian rhythm) and use it to explain WHY." });
+    if (app && !/\b(this (can be|is) explained|explained by|according to|because of|due to|through|by|which)\b/.test(ebqNorm(raw))) tips.push('Link the concept to the evidence: "This can be explained by ___, which…".');
+    P(k, (ex ? 1 : 0) + (app ? 1 : 0), 2, c, tips);
+  }
+  return { parts, total };
+}
+
+/* ---------- engine glue ---------- */
+/* An EBQ question's sources, in the shape his grader expects. */
+function ebqSet(q, src) {
+  return {
+    question: src ? src.title : "",
+    topicWords: q.topicWords || [],
+    sources: ((src && src.blocks) || []).map((b) => ({ title: b.h.replace(/^Source \d+:\s*/, ""), text: b.p })),
+  };
+}
+/* Check every part of a wfr question with the key-word checker. Returns {parts: {k: {pts, max, checks, tips}}, total, max}. */
+function frqGrade(q, src, ans) {
+  let parts = {};
+  if (q.grader === "aaq") {
+    if (!q.r) return null; /* an AI-generated article has no rubric: only Gemini can grade it */
+    q.parts.forEach((p) => (parts[p.k] = gradeAAQPart(q, p.k, ans[p.k] || "")));
+  } else if (q.grader === "ebq") parts = gradeEBQ(ebqSet(q, src), ans).parts;
+  else return null;
+  const total = q.parts.reduce((n, p) => n + ((parts[p.k] && parts[p.k].pts) || 0), 0),
+    max = q.parts.reduce((n, p) => n + (p.max || 1), 0);
+  return { parts, total, max };
+}
+/* Psych concepts that fit an EBQ prompt: the ones his model answers use. */
+function ebqIdeas(q, src) {
+  const set = ebqSet(q, src);
+  return [...new Set(["Bii", "Cii"].flatMap((k) => ebqConcepts(set, (q.parts.find((p) => p.k === k) || {}).model || "").used))];
+}
+
+/* 93-gemini.js */
+/* Optional Gemini AI grading and generation for AAQ / EBQ practice (units whose practice.json has "frq").
+   Each student pastes their own free Gemini API key in Settings. The key is kept only in this browser
+   (localStorage "sk:gemini") and is sent only to Google's Gemini API; it is never part of the site's code.
+   Prompts follow Phineas's (his rubric text comes from practice.frq). If a request fails, the key-word
+   checker (js/92-frqcheck.js) is used instead. */
+const GEMK = "sk:gemini";
+const gemGet = () => readJSON(GEMK) || { key: "", model: "gemini-2.5-flash" };
+const gemKey = () => gemGet().key || "";
+const GENK = () => "sk:" + COURSE.id + ":" + (UNIT ? UNIT.id : "") + ":gen";
+const hasFrq = () => !!(D && D.practice && D.practice.frq);
+
+async function gemini(prompt) {
+  const G = gemGet();
+  if (!G.key) throw new Error("No Gemini API key saved.");
+  const ctl = typeof AbortController === "function" ? new AbortController() : null,
+    to = ctl ? setTimeout(() => ctl.abort(), 60000) : 0;
+  let r;
+  try {
+    r = await fetch("https://generativelanguage.googleapis.com/v1beta/models/" + encodeURIComponent(G.model || "gemini-2.5-flash") + ":generateContent", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "x-goog-api-key": G.key },
+      body: JSON.stringify({ contents: [{ role: "user", parts: [{ text: prompt }] }], generationConfig: { responseMimeType: "application/json", temperature: 0.3 } }),
+      signal: ctl ? ctl.signal : undefined,
+    });
+  } catch (e) {
+    throw new Error(e && e.name === "AbortError" ? "Gemini took too long to answer. Try again." : "Couldn't reach Gemini. Check your internet connection.");
+  } finally {
+    if (to) clearTimeout(to);
+  }
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error((j.error && j.error.message) || "HTTP " + r.status);
+  const txt = (((j.candidates || [])[0] || {}).content || { parts: [] }).parts.map((p) => p.text || "").join("");
+  if (!txt) throw new Error("Gemini returned no answer" + (j.promptFeedback && j.promptFeedback.blockReason ? " (blocked: " + j.promptFeedback.blockReason + ")" : "") + ".");
+  try {
+    return JSON.parse(txt.replace(/^```(json)?\s*|\s*```$/g, ""));
+  } catch (e) {
+    throw new Error("Gemini's answer wasn't in the expected format. Try again.");
+  }
+}
+
+/* ---------- grading (his prompts) ---------- */
+const aaqArticleText = (src) => src.title + "\n\n" + (src.blocks || []).map((b) => b.h.toUpperCase() + "\n" + b.p).join("\n\n") + (src.table ? "\n\nPARTICIPANT DEMOGRAPHICS\n" + src.table.slice(1).map((r) => r[0] + ": " + r[1]).join("\n") : "");
+const ebqText = (src) => (src.blocks || []).map((b, i) => "SOURCE " + (i + 1) + ": " + b.h.replace(/^Source \d+:\s*/, "") + "\n" + b.p).join("\n\n");
+async function gemGradeQ(q, src, ans) {
+  const C = frqCfg(),
+    lab = (k) => frqPartLabel(q.grader, k),
+    ks = q.parts.map((p) => p.k);
+  let prompt;
+  if (q.grader === "aaq")
+    prompt =
+      C.aaqRubric +
+      "\n\nARTICLE:\n" +
+      aaqArticleText(src) +
+      "\n\nQUESTIONS:\n" +
+      q.parts.map((p) => p.k + ". " + p.prompt).join("\n") +
+      "\n\nREFERENCE ANSWERS (one correct way to answer; other correct answers also earn credit):\n" +
+      q.parts.map((p) => p.k + ". " + p.model).join("\n") +
+      "\n\nSTUDENT ANSWERS:\n" +
+      q.parts.map((p) => p.k + ". " + ((ans[p.k] || "").trim() || "(blank)")).join("\n") +
+      '\n\nGrade each part for a high school student. Respond with JSON only, exactly in this shape:\n{"parts":{"A":{"points":0,"earned":["what they did right"],"missing":["what is missing or wrong, specific to their answer"],"tip":"one concrete tip to fix or remember this"}, "B":{...}, "C":{...}, "D":{...}, "E":{...}, "F":{"points":0,...}}, "overall":"2-3 sentences: biggest strengths and what to practice next"}\npoints must be 0 or 1 for A-E and 0, 1, or 2 for F. Keep each list item under 25 words and speak directly to the student ("you").';
+  else
+    prompt =
+      C.ebqRubric +
+      "\n\nQUESTION: " +
+      src.title +
+      "\n\n" +
+      ebqText(src) +
+      "\n\nREFERENCE ANSWER (one correct way; other claims and concepts also earn credit):\n" +
+      q.parts.map((p) => lab(p.k) + ". " + p.model).join("\n") +
+      "\n\nSTUDENT ANSWERS:\n" +
+      q.parts.map((p) => lab(p.k) + ". " + ((ans[p.k] || "").trim() || "(blank)")).join("\n") +
+      "\n\nGrade each part for a high school student. Respond with JSON only, exactly in this shape, using the keys " +
+      ks.join(", ") +
+      ':\n{"parts":{"A":{"points":0,"earned":["what they did right"],"missing":["what is missing or wrong, specific to their answer"],"tip":"one concrete tip"}, "Bi":{...}, "Bii":{...}, "Ci":{...}, "Cii":{...}}, "overall":"2-3 sentences: biggest strengths and what to practice next"}\npoints: A, Bi, Ci are 0 or 1; Bii and Cii are 0, 1, or 2. Keep each list item under 25 words and speak directly to the student ("you").';
+  const res = await gemini(prompt),
+    parts = {};
+  let total = 0;
+  q.parts.forEach((p) => {
+    const g = (res.parts || {})[p.k] || {},
+      pts = Math.max(0, Math.min(p.max, Math.round(+g.points || 0)));
+    parts[p.k] = { pts, max: p.max, ai: true, checks: [...(g.earned || []).map((t) => ({ ok: true, text: String(t) })), ...(g.missing || []).map((t) => ({ ok: false, text: String(t) }))], tips: g.tip ? [String(g.tip)] : [] };
+    total += pts;
+  });
+  return { parts, total, overall: res.overall ? String(res.overall) : "", ai: true };
+}
+ACT.gemgrade = async () => {
+  return gemGradeCur();
+};
+/* Exposed for the click-through test, which awaits it. */
+window.ACT_gemgradeForTest = () => gemGradeCur();
+async function gemGradeCur() {
+  const c = cur3();
+  if (!c.q || c.q.type !== "wfr" || c.s.aiLoading) return;
+  const src = c.v.sec.sources[c.q.src],
+    s = c.s;
+  s.aiLoading = true;
+  s.aiErr = "";
+  render();
+  try {
+    s.ai = await gemGradeQ(c.q, src, s.ans);
+  } catch (e) {
+    s.ai = null;
+    s.aiErr = e.message || String(e);
+  }
+  s.auto = frqGrade(c.q, src, s.ans);
+  s.pm = {};
+  s.revealed = true;
+  s.aiLoading = false;
+  syncMain();
+  PTsave();
+  render();
+}
+
+/* ---------- generating new articles and prompts (his prompts) ---------- */
+function gemStore() {
+  const o = readJSON(GENK()) || {};
+  return { aaq: o.aaq || [], ebq: o.ebq || [] };
+}
+function genToQ(kind, a) {
+  if (kind === "aaq")
+    return {
+      src: { id: "a-" + a.id, title: a.title, attr: "Generated by Gemini for practice. Fictional study.", label: "AI-generated practice article", blocks: a.sections.map((x) => ({ h: x[0], p: x[1] })), table: [a.table.head].concat(a.table.rows), tableAfter: "Participants" },
+      q: { id: "aaq-" + a.id, type: "wfr", grader: "aaq", gen: true, topic: a.topic, title: a.title, src: "a-" + a.id, parts: frqCfg().aaqParts.map((p) => ({ k: p.k, prompt: a.q[p.k], model: a.model[p.k], max: p.pts })) },
+    };
+  return {
+    src: { id: "e-" + a.id, title: a.question, label: "Generated by Gemini for practice. Fictional sources.", blocks: a.sources.map((x, i) => ({ h: "Source " + (i + 1) + ": " + x.title, p: x.text })) },
+    q: { id: "ebq-" + a.id, type: "wfr", grader: "ebq", gen: true, topic: a.topic, title: a.title, src: "e-" + a.id, topicWords: a.topicWords || [], parts: frqCfg().ebqParts.map((p) => ({ k: p.k, prompt: p.q, model: a.model[p.k], max: p.pts })) },
+  };
+}
+/* Read by initPT: generated items go at the top of that practice set. */
+function gemGenerated(kind) {
+  if (!UNIT || !hasFrq()) return [];
+  return gemStore()[kind].map((a) => {
+    try {
+      return genToQ(kind, a);
+    } catch (e) {
+      return null;
+    }
+  }).filter(Boolean);
+}
+async function gemGenerate(kind, topic, method) {
+  let prompt;
+  if (kind === "aaq") {
+    prompt =
+      "Write ONE new practice article for the AP Psychology Article Analysis Question (AAQ), like a summarized peer-reviewed study, for high school students.\nTopic: " +
+      topic +
+      ". Research method: " +
+      (method || "choose experiment or correlational study") +
+      '.\nRequirements: realistic but fictional study; plain clear language; 5 sections titled Introduction, Participants, Method, Results, Discussion (each 2-6 sentences); the Introduction states the hypothesis or claim; the Method clearly describes how each variable was measured (an operational definition with specific numbers/scales) and explicitly describes 2-3 ethical practices (e.g., informed consent, confidentiality, right to withdraw, debriefing, protection from harm, institutional approval) without always naming them; the Results include specific statistics (group means, or a correlation coefficient r, plus a p-value and/or effect size); the Participants section gives location and age, and the demographics table gives 5-8 rows of percentages (gender, race/ethnicity, age range).\nQuestions must follow the AAQ format: A "Identify the research method used in the study." B "State the operational definition of <a specific variable>." C "Describe what <a specific statistic> indicates..." D "Identify one ethical guideline the researchers followed and describe how they applied it." E "Explain the extent to which the research findings can be generalized, using specific evidence from the participants." F "Explain how the results support or refute the <hypothesis or claim>." For a correlational study, make F\'s claim causal so students must explain that correlation does not show causation.\nAlso write a full-credit model answer for each part.\nRespond with JSON only: {"title":"","topic":"' +
+      topic +
+      '","sections":[["Introduction",""],["Participants",""],["Method",""],["Results",""],["Discussion",""]],"table":{"head":["Characteristic","Percent"],"rows":[["",""]]},"q":{"A":"","B":"","C":"","D":"","E":"","F":""},"model":{"A":"","B":"","C":"","D":"","E":"","F":""}}';
+  } else {
+    prompt =
+      "Write ONE new practice set for the AP Psychology Evidence-Based Question (EBQ) for high school students.\nTopic: " +
+      topic +
+      '.\nRequirements: a debatable question that starts "Develop and justify an argument about whether…"; three short summarized sources (realistic but fictional studies, 2-4 sentences each, with a title) that each give specific data (sample size, ages, location, group results with numbers). The sources should mostly support one side but leave room for a nuanced claim. Do NOT name AP Psychology theories in the sources (students must bring those in themselves).\nAlso write a full-credit model answer: A a specific defensible claim; Bi evidence from one source with a citation like "(Source 1)"; Bii explains how it supports the claim AND applies a named AP Psychology concept not mentioned in the sources; Ci evidence from a DIFFERENT source with a citation; Cii explains AND applies a DIFFERENT AP Psychology concept.\nRespond with JSON only: {"title":"","topic":"' +
+      topic +
+      '","question":"","sources":[{"title":"","text":""},{"title":"","text":""},{"title":"","text":""}],"topicWords":["2-5 lowercase key words from the question"],"model":{"A":"","Bi":"","Bii":"","Ci":"","Cii":""}}';
+  }
+  const a = await gemini(prompt);
+  if (kind === "aaq" && (!a.title || !Array.isArray(a.sections) || !a.q || !a.model || !a.table || !Array.isArray(a.table.rows))) throw new Error("Gemini returned an incomplete article. Try again.");
+  if (kind === "ebq" && (!a.title || !a.question || !Array.isArray(a.sources) || a.sources.length !== 3 || !a.model)) throw new Error("Gemini returned an incomplete EBQ. Try again.");
+  a.id = "gen" + Date.now();
+  a.topic = (a.topic || topic) + ", AI-generated";
+  const st = gemStore();
+  st[kind].unshift(a);
+  st[kind] = st[kind].slice(0, 30);
+  writeJSON(GENK(), st);
+  return a;
+}
+/* Panel at the top of an AAQ / EBQ practice set, shown once a key is saved. */
+function gemGenHTML(sec) {
+  if (!sec.grader || sec.mode !== "practice" || !hasFrq() || !gemKey()) return "";
+  const C = frqCfg(),
+    topics = sec.grader === "ebq" ? C.ebqTopics : C.aaqTopics,
+    g = UI.gemGen || {};
+  return (
+    '<div class="gemgen"><label>New ' +
+    (sec.grader === "ebq" ? "EBQ prompt" : "AAQ article") +
+    ' on <select data-gem="topic">' +
+    (topics || []).map((t) => "<option" + (g.topic === t ? " selected" : "") + ">" + esc(t) + "</option>").join("") +
+    "</select></label>" +
+    (sec.grader === "aaq"
+      ? '<label>Method <select data-gem="method"><option value="">Experiment or correlational</option>' +
+        ["experiment", "correlational study", "case study", "naturalistic observation", "meta-analysis"].map((m) => "<option" + (g.method === m ? " selected" : "") + ">" + m + "</option>").join("") +
+        "</select></label>"
+      : "") +
+    '<button class="btn sec small" data-act="gemgen"' +
+    (g.loading ? " disabled" : "") +
+    ">" +
+    (g.loading ? "Generating…" : "Generate with Gemini") +
+    "</button>" +
+    (g.msg ? '<span class="hint">' + esc(g.msg) + "</span>" : "") +
+    "</div>"
+  );
+}
+document.addEventListener("change", (e) => {
+  const t = e.target;
+  if (!t || !t.dataset || !t.dataset.gem) return;
+  UI.gemGen = UI.gemGen || {};
+  UI.gemGen[t.dataset.gem] = t.value;
+});
+ACT.gemgen = async () => {
+  const sec = PT.secs[PT.sec];
+  if (!sec || !sec.grader) return;
+  const C = frqCfg(),
+    g = (UI.gemGen = UI.gemGen || {}),
+    topics = sec.grader === "ebq" ? C.ebqTopics : C.aaqTopics;
+  g.loading = true;
+  g.msg = "";
+  render();
+  try {
+    const a = await gemGenerate(sec.grader, g.topic || topics[0], sec.grader === "aaq" ? g.method || "" : "");
+    const it = genToQ(sec.grader, a);
+    sec.sources[it.src.id] = it.src;
+    sec.qs.unshift(it.q);
+    sec.byId[it.q.id] = it.q;
+    sec.st[it.q.id] = newSt();
+    sec.orig.unshift(it.q.id);
+    sec.order.unshift(it.q.id);
+    PT.retest = null;
+    sec.cur = 0;
+    g.msg = "Added at the start of this set.";
+  } catch (e) {
+    g.msg = e.message || String(e);
+  }
+  g.loading = false;
+  render();
+};
+
+/* ---------- Settings box ---------- */
+function gemCardHTML() {
+  if (!hasFrq()) return "";
+  const G = gemGet(),
+    m = UI.gemMsg || "";
+  return (
+    '<h3>Gemini AI grading (optional)</h3><div class="gemcard">' +
+    "<p>Without this, every AAQ and EBQ is graded by the built-in checklist grader. With a free Gemini key, you can also have answers graded like an AP reader would, and generate unlimited new articles and prompts.</p>" +
+    (G.key ? "<p><b>A key is saved in this browser</b> (it ends in …" + esc(G.key.slice(-4)) + ").</p>" : "") +
+    '<h4>How to get a free key</h4><ol class="gemsteps">' +
+    '<li>Go to <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">aistudio.google.com</a> and sign in with a Google account.</li>' +
+    '<li>Click <b>Get API key</b>, then <b>Create API key</b>. If you don\'t see those buttons, look for <b>API keys</b> in the menu on the left. Google may make a project for you; that\'s fine.</li>' +
+    "<li>Copy the key (a long code that starts with <b>AIza</b>).</li>" +
+    "<li>Paste it below, press <b>Save</b>, then press <b>Test</b> to make sure it works.</li></ol>" +
+    '<div class="gemrow"><label>API key <input type="password" autocomplete="off" spellcheck="false" id="gemkey" placeholder="' +
+    (G.key ? "Paste a new key to replace it" : "Paste your Gemini API key") +
+    '"></label><label>Model <input type="text" id="gemmodel" spellcheck="false" value="' +
+    esc(G.model || "gemini-2.5-flash") +
+    '"></label></div><div class="qnav"><button class="btn" data-act="gemsave">Save</button><button class="btn sec" data-act="gemtest"' +
+    (G.key ? "" : " disabled") +
+    '>Test</button><button class="btn ghost danger" data-act="gemremove"' +
+    (G.key ? "" : " disabled") +
+    ">Remove key</button></div>" +
+    (m ? '<p class="gemmsg">' + esc(m) + "</p>" : "") +
+    '<h4>Good to know</h4><ul class="gemnotes">' +
+    "<li>It's free with daily limits. If you hit the limit, try again later; the checklist grader always works.</li>" +
+    "<li>School Google accounts, and accounts for students under 18, may not be allowed to make a key. A personal Google account usually works (ask a parent if you need to).</li>" +
+    "<li>The key is saved only in this browser on this device. It's never part of the website, and your answers are sent only to Google's Gemini service for grading.</li>" +
+    "<li>On a shared or school computer, press <b>Remove key</b> when you're done, since anyone using this browser could use it.</li>" +
+    "<li>AI can make mistakes. Always compare with the model answer.</li></ul></div>"
+  );
+}
+ACT.gemsave = () => {
+  const k = (document.getElementById("gemkey") || {}).value || "",
+    m = ((document.getElementById("gemmodel") || {}).value || "").trim() || "gemini-2.5-flash",
+    G = gemGet();
+  if (k.trim()) G.key = k.trim();
+  G.model = m;
+  writeJSON(GEMK, G);
+  UI.gemMsg = G.key ? "Saved. Press Test to check it works." : "Paste a key first.";
+  render();
+};
+ACT.gemremove = () => {
+  try {
+    localStorage.removeItem(GEMK);
+  } catch (e) {}
+  UI.gemMsg = "Key removed from this browser.";
+  render();
+};
+ACT.gemtest = async () => {
+  UI.gemMsg = "Testing…";
+  render();
+  try {
+    const r = await gemini('Reply with JSON only: {"ok":true}');
+    UI.gemMsg = r && r.ok ? "It works. Grade with Gemini now appears on every AAQ and EBQ." : "Gemini answered, but not as expected. Try again.";
+  } catch (e) {
+    UI.gemMsg = "That didn't work: " + (e.message || e) + " Check that you copied the whole key.";
+  }
+  render();
+};
+
 /* 95-results.js */
 /* Per-exam results page (score with partial credit, by type, what to study next, question by question) and
    the Progress tab (every practice topic ranked weakest first). */
@@ -4087,6 +4919,20 @@ function resDetail(q, s) {
         .join("") +
       "</ul>"
     );
+  if (q.type === "wfr") {
+    const g = s.ai || s.auto;
+    return (
+      '<ol class="fparts">' +
+      q.parts
+        .map((p) => {
+          const r = g && g.parts[p.k],
+            pts = s.pm[p.k] === true ? p.max : s.pm[p.k] === false ? 0 : r ? r.pts : null;
+          return "<li><p><b>Part " + esc(frqPartLabel(q.grader, p.k)) + (pts === null ? "" : ", " + fmt1(pts) + " of " + p.max) + ".</b> " + esc(p.prompt) + "</p><p><b>Your answer:</b> " + esc(s.ans[p.k] || "(blank)") + '</p><p class="muted"><b>Model answer:</b> ' + esc(p.model) + "</p></li>";
+        })
+        .join("") +
+      "</ol>"
+    );
+  }
   return (
     '<ol class="fparts" type="a">' +
     q.parts
@@ -4189,8 +5035,8 @@ function resHTML(group) {
   h += "<h3>Question by question</h3>";
   rows.forEach((r) => {
     const st = r.f0 === null ? "none" : r.f0 === 1 ? "ok" : r.f0 > 0 ? "partial" : "bad";
-    const parts = isWritten(r.q) ? r.q.parts.length : r.q.type === "label" || r.q.type === "diagram" ? itemsOf(r.q).length : 1;
-    const lbl = { ok: "Correct", bad: "Missed", none: "Not answered", partial: "Partly right, " + fmt1(r.f0 * parts) + " of " + parts }[st];
+    const parts = r.q.type === "wfr" ? r.q.parts.reduce((n, p) => n + (p.max || 1), 0) : isWritten(r.q) ? r.q.parts.length : r.q.type === "label" || r.q.type === "diagram" ? itemsOf(r.q).length : 1;
+    const lbl = { ok: r.q.type === "wfr" ? "Full marks" : "Correct", bad: "Missed", none: "Not answered", partial: (r.q.type === "wfr" ? "" : "Partly right, ") + fmt1(r.f0 * parts) + " of " + parts + (r.q.type === "wfr" ? " points" : "") }[st];
     const stem = r.q.title || r.q.stem || r.q.lead || "";
     h +=
       '<details class="resq ' +
