@@ -6,6 +6,7 @@
   "accent": "#2C5AA0",
   "accentDark": "#86AEEF",
   "examTab": "Full exam",
+  "midterm": { "week": "2026-12-14", "mockQs": 40, "verify": "VERIFY: the week of Dec 14 is from David; the exact day, length, format and which units are on it are not confirmed yet, and mockQs (40) is a placeholder." },
   "units": [
     {
       "id": "ch03",
