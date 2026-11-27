@@ -683,6 +683,10 @@ input.fhide { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-e
   .midread dd { border-top: 0; padding-top: 0; }
 }
 
+/* "How much time" and "How many days" dropdowns in the setup pop-ups */
+.minsel { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin: 18px 0 6px; font-weight: 600; }
+.minsel select { font-weight: 400; font-size: 1rem; min-width: 11rem; padding: 8px 10px; }
+
 </style></head>
 <body><div id="app"></div>
 <noscript>This study kit needs JavaScript.</noscript>
@@ -1082,6 +1086,34 @@ function sure(title, text, yesLabel, yes) {
   }
   confirmBox(title, text, yesLabel, yes);
 }
+
+/* "How much time": one dropdown from 15 minutes to 5 hours instead of a few fixed buttons (Tonight's session,
+   Study plan, Midterm review). MINS_SET[key](minutes) saves a choice; the pop-up isn't redrawn, so keyboard focus
+   stays on the menu. */
+const MINS_OPTS = [15, 30, 45, 60, 75, 90, 105, 120, 150, 180, 210, 240, 300];
+const minsLabel = (m) => {
+  const h = Math.floor(m / 60),
+    r = m % 60;
+  return h ? h + (h === 1 ? " hour" : " hours") + (r ? " " + r + " min" : "") : m + " min";
+};
+const MINS_SET = {};
+function minsSelectHTML(key, value, label) {
+  const opts = !value || MINS_OPTS.indexOf(value) >= 0 ? MINS_OPTS : MINS_OPTS.concat([value]).sort((a, b) => a - b);
+  return (
+    '<label class="minsel"><span>' +
+    esc(label || "Time") +
+    '</span><select data-mins="' +
+    esc(key) +
+    '">' +
+    opts.map((m) => '<option value="' + m + '"' + (m === value ? " selected" : "") + ">" + minsLabel(m) + "</option>").join("") +
+    "</select></label>"
+  );
+}
+document.addEventListener("change", (e) => {
+  const t = e.target;
+  if (!t.matches || !t.matches("select[data-mins]") || !MINS_SET[t.dataset.mins]) return;
+  MINS_SET[t.dataset.mins](Number(t.value));
+});
 
 /* 10-shell.js */
 /* Course home (list of units) and the frame around an open unit: header, progress meter, tabs, deck chips. */
@@ -1582,7 +1614,7 @@ function startHTML() {
     '<button class="choice main" data-act="tnstart"><span class="ch">Test tomorrow?</span><span class="cd">' +
     (tonightOn
       ? "Tonight's session: round " + Math.min(T.cur + 1, T.rounds.length) + " of " + T.rounds.length + "."
-      : "About an hour tonight, in short rounds: read a few terms, answer them, and the ones you miss come back.") +
+      : "Pick how long you have, then go in short rounds: read a few terms, answer them, and the ones you miss come back.") +
     '</span><span class="cgo">' +
     (tonightOn ? "Continue tonight's session" : "Start tonight's session") +
     "</span></button>";
@@ -3239,7 +3271,6 @@ function breakdownHTML(R) {
       already set up; a bar under the tabs shows the current step on every screen; steps finish on their own
       when the lesson, quiz, flashcard round or practice section is done. Steps can be reordered, removed and
       restored, and the route ends with a re-check that shows before and after. Saved in SAVE.plan. */
-const PL_MINS = [15, 30, 60, 90];
 const PL_RATE = [
   ["know", "I know it well", "I know it"],
   ["shaky", "It's shaky", "Shaky"],
@@ -3290,7 +3321,16 @@ function daysLeft() {
     t = new Date(p[0], p[1] - 1, p[2]);
   return Math.max(0, Math.round((t - today0()) / DAY));
 }
-const studyDays = () => Math.max(1, Math.min(14, daysLeft()));
+/* How many days the route covers: the student's choice (P.days) or every day until the test, at most 14.
+   With no test date the default is a week, and up to 14 days can be chosen. */
+const noDate = () => planState().nodate || !planState().date;
+const dayLimit = () => (noDate() ? 14 : Math.max(1, Math.min(14, daysLeft())));
+const daysDefault = () => (noDate() ? 7 : dayLimit());
+const studyDays = () => Math.max(1, Math.min(dayLimit(), planState().days || daysDefault()));
+function daysHint(n) {
+  const end = new Date(today0().getTime() + (n - 1) * DAY);
+  return n === 1 ? "Just today: everything goes in one day." : "Starts today and runs " + n + " days in a row, ending " + dayName(end) + ". The mock test and re-check go on the last day.";
+}
 function dateLine() {
   const P = planState(),
     n = daysLeft();
@@ -3299,7 +3339,10 @@ function dateLine() {
     t = new Date(p[0], p[1] - 1, p[2]);
   return n === 0 ? "Your test is today" : n === 1 ? "Your test is tomorrow (" + dayName(t) + ")" : "Your test is in " + n + " days (" + dayName(t) + ")";
 }
-const budget = () => (planState().mins >= 90 ? 120 : planState().mins || 30);
+/* Minutes a day. Plans made before the dropdown (Nov 27) had a "90+" button that meant 2 hours. */
+const oldPlus = () => planState().mins === 90 && !planState().minsExact;
+const budget = () => (oldPlus() ? 120 : planState().mins || 30);
+const minsText = () => (oldPlus() ? "90+ min" : minsLabel(planState().mins || 30));
 
 /* ---------- what each section needs ---------- */
 function secHistory(s) {
@@ -3653,10 +3696,19 @@ function planWizard() {
         pchip("nodate", "1", "Not sure yet", P.nodate) +
         "</div>" +
         (P.date || P.nodate ? '<p class="hint">' + esc(dateLine()) + ".</p>" : ""),
-      () =>
-        '<h2>How much time can you study each day?</h2><div class="chips" role="group" aria-label="Minutes each day">' +
-        PL_MINS.map((m) => pchip("mins", m, m === 90 ? "90+ min" : m + " min", P.mins === m)).join("") +
-        "</div>",
+      () => {
+        const n = Math.min(dayLimit(), P.days || daysDefault());
+        let o = "";
+        for (let i = 1; i <= dayLimit(); i++) o += '<option value="' + i + '"' + (i === n ? " selected" : "") + ">" + plural(i, "day") + "</option>";
+        return (
+          '<h2>How many days do you want to study?</h2><label class="minsel"><span>Days</span><select data-pdays>' +
+          o +
+          '</select></label><p class="hint" id="pdayshint">' +
+          esc(daysHint(n)) +
+          "</p>"
+        );
+      },
+      () => "<h2>How much time can you study each day?</h2>" + minsSelectHTML("plan", P.mins || 30, "Each day"),
       () =>
         '<h2>How do you like to study?</h2><div class="mopts">' +
         [
@@ -3693,8 +3745,8 @@ function planWizard() {
         const sg = focusSuggest();
         return (
           '<h2>Focus timer?</h2><p class="muted">Work, then a short break. Suggested for ' +
-          (P.mins || 30) +
-          " minutes a day: <b>" +
+          esc(minsText()) +
+          " a day: <b>" +
           sg[0] +
           " + " +
           sg[1] +
@@ -3708,8 +3760,10 @@ function planWizard() {
       () =>
         '<h2>Your plan</h2><ul class="msum"><li>Test<span>' +
         esc(P.date || P.nodate ? dateLine() : "Not set (counts as a week)") +
+        "</span></li><li>Days<span>" +
+        esc(plural(studyDays(), "day") + ", starting today") +
         "</span></li><li>Each day<span>" +
-        (P.mins ? (P.mins === 90 ? "90+" : P.mins) + " minutes" : "30 minutes") +
+        esc(minsText()) +
         "</span></li><li>Style<span>" +
         (P.style === "quiz" ? "Quiz me first" : "Read first") +
         "</span></li><li>Decks rated<span>" +
@@ -3725,6 +3779,8 @@ function planWizard() {
     onDone: () => {
       if (!P.date && !P.nodate) P.nodate = true;
       if (!P.mins) P.mins = 30;
+      P.minsExact = true;
+      if (!P.days) P.days = studyDays();
       ds.forEach((d) => {
         if (!P.rate[d.id] && !planSecs().filter((s) => s.d.id === d.id).every((s) => P.rateSec[s.id])) P.rate[d.id] = "shaky";
       });
@@ -3831,7 +3887,7 @@ function planMapHTML() {
     steps = activeSteps(),
     finished = steps.filter(stepDone),
     cur = currentStep();
-  let h = '<section class="panel plan"><div class="rtop"><h2>Your study route</h2><span class="muted">' + esc(dateLine()) + ", " + (P.mins >= 90 ? "90+" : P.mins) + " minutes a day</span></div>";
+  let h = '<section class="panel plan"><div class="rtop"><h2>Your study route</h2><span class="muted">' + esc(dateLine()) + ". Plan: " + esc(plural(studyDays(), "day") + ", " + minsText() + " a day") + "</span></div>";
   h +=
     '<div class="qnav">' +
     (cur ? '<button class="btn" data-act="plgo" data-k="' + esc(cur.key) + '">' + (finished.length ? "Continue my route" : "Start my route") + "</button>" : "") +
@@ -3858,7 +3914,7 @@ function planMapHTML() {
     const dt = new Date(today0().getTime() + day.i * DAY);
     h += '<div class="plday"><h4>' + (day.i === 0 ? "Today" : "Day " + (day.i + 1)) + ", " + esc(dayName(dt)) + '<span class="muted"> (about ' + day.min + " min)</span></h4>";
     if (day.min > budget() + 10)
-      h += '<p class="hint plover">That\'s more than your ' + (P.mins >= 90 ? "90+" : P.mins) + " minutes. Choose more time each day (Change my answers), or remove a step you can skip.</p>";
+      h += '<p class="hint plover">That\'s more than your ' + esc(minsText()) + ". Choose more time each day (Change my answers), or remove a step you can skip.</p>";
     h += '<ol class="plsteps">';
     day.steps.forEach((st) => (h += stepHTML(st, stepNo(st))));
     h += "</ol></div>";
@@ -3937,6 +3993,20 @@ ACT.plset = (t) => {
   save();
   render();
 };
+MINS_SET.plan = (m) => {
+  const P = planState();
+  P.mins = m;
+  P.minsExact = true;
+  save();
+};
+document.addEventListener("change", (e) => {
+  const t = e.target;
+  if (!t || !t.matches || !t.matches("select[data-pdays]")) return;
+  planState().days = Number(t.value);
+  save();
+  const h = document.getElementById("pdayshint");
+  if (h) h.textContent = daysHint(studyDays());
+});
 document.addEventListener("change", (e) => {
   const t = e.target;
   if (!t || !t.dataset || t.dataset.plan !== "date") return;
@@ -4023,8 +4093,7 @@ ACT.plpause = () => {
    a round come back at the start of the next one. The session ends with a 10-question mixed check.
    Research behind it: testing beats rereading, and trying a question before studying helps as long as the answer
    follows (see the redesign brief). Saved in SAVE.tonight for today only. */
-const TN_MINS = [30, 45, 60, 90],
-  TN_FINAL = 10;
+const TN_FINAL = 10;
 const tonightState = () => (SAVE && SAVE.tonight) || null;
 const tonightToday = (T) => T && T.day === isoDay(today0());
 const tnCard = (id) => BYID[id];
@@ -4084,9 +4153,9 @@ function tonightSetup() {
           .join("") +
         "</div>",
       () =>
-        '<h2>How long do you have tonight?</h2><div class="chips" role="group" aria-label="Minutes tonight">' +
-        TN_MINS.map((m) => '<button class="chip" data-act="tnset" data-k="mins" data-v="' + m + '" aria-pressed="' + (UI.tnDraft.mins === m) + '">' + m + " min</button>").join("") +
-        '</div><p class="muted">Terms you already marked as known are skipped. If there\'s more than fits, the rest waits in Learn.</p>',
+        "<h2>How long do you have tonight?</h2>" +
+        minsSelectHTML("tonight", UI.tnDraft.mins, "Time tonight") +
+        '<p class="muted">Terms you already marked as known are skipped. If there\'s more than fits, the rest waits in Learn.</p>',
       () => {
         const plan = tonightRounds(UI.tnDraft.mins);
         if (!plan.rounds.length) return "<h2>Tonight's session</h2><p>You've marked every term in this unit as known. The session will be just the mixed check.</p>";
@@ -4119,6 +4188,7 @@ function tonightSetup() {
     },
   });
 }
+MINS_SET.tonight = (m) => UI.tnDraft && (UI.tnDraft.mins = m);
 ACT.tnset = (t) => {
   const d = UI.tnDraft;
   if (t.dataset.k === "mins") d.mins = Number(t.dataset.v);
@@ -4490,7 +4560,6 @@ focusTick();
    test is one of the best ways to study. Answers here also update each unit's own trouble terms, so the unit's Learn
    and Quiz bring those terms back. The real dates, length and format come from course.json "midterm" (VERIFY until
    the teacher posts them). Saved in SAVE.mid of the midterm page (sk:<course>:mid:kit). */
-const MID_MINS = [15, 30, 45, 60];
 function midState() {
   if (!SAVE.mid) SAVE.mid = { v: 1, date: null, nodate: false, units: null, mins: null, style: "quiz", check: true, setup: false, hist: {}, days: {}, seed: 1, last: [] };
   return SAVE.mid;
@@ -4537,8 +4606,15 @@ function midStrength(u) {
 }
 const midWord = (p) => (p === null ? "Not checked yet" : p >= 85 ? "Strong" : p >= 60 ? "Getting there" : "Needs work");
 
-/* Questions per day from the minutes: about 0.7 a minute, between 10 and 45. */
-const midCount = () => Math.min(45, Math.max(10, Math.round((midState().mins || 30) * 0.7)));
+/* Questions per day from the minutes: about 0.7 a minute, at least 10. A long day (say 2 hours) is split into
+   rounds of at most 45 questions, so nobody faces one giant set. midCount() is the size of one round. */
+const midTotal = () => Math.max(10, Math.round((midState().mins || 30) * 0.7));
+const midRounds = () => Math.ceil(midTotal() / 45);
+const midCount = () => Math.ceil(midTotal() / midRounds());
+const midDayText = () => {
+  const r = midRounds();
+  return r > 1 ? minsLabel(midState().mins || 30) + " a day: " + r + " rounds of " + midCount() + " questions" : plural(midCount(), "question") + ", about " + minsLabel(midState().mins || 30);
+};
 /* Weak units get more questions: weight 1 to 3 by strength (not checked counts as halfway), at least 1 each. */
 function midAlloc(n) {
   const us = midPicked(),
@@ -4705,19 +4781,21 @@ function midHTML() {
       '<div class="qnav"><button class="btn" data-act="midsetup">Set it up (1 minute)</button><button class="btn sec" data-act="midgo">Just start mixed review</button></div></section>';
   } else {
     const n = midDaysLeft(),
-      today = M.days[isoDay(today0())] || 0;
+      today = M.days[isoDay(today0())] || 0,
+      rounds = midRounds(),
+      done = Math.min(rounds, Math.floor(today / midCount()));
     h +=
       '<section class="panel midtoday"><div><h2>Today\'s review</h2><p class="muted">' +
       (n === null ? "" : n < 0 ? "Your midterm date has passed. " : n === 0 ? "Midterm today: a short warm-up. " : plural(n, "day") + " to go. ") +
-      plural(midCount(), "question") +
-      ", about " +
-      (M.mins || 30) +
-      " minutes, mixed from " +
+      esc(midDayText()) +
+      ", mixed from " +
       plural(midPicked().length, "unit") +
       ".</p>" +
-      (today ? '<p class="midok">' + ICON.check + "Done today: " + plural(today, "question") + ".</p>" : "") +
+      (today
+        ? '<p class="midok">' + ICON.check + "Done today: " + (rounds > 1 ? done + " of " + rounds + " rounds (" + plural(today, "question") + ")" : plural(today, "question")) + ".</p>"
+        : "") +
       '</div><button class="btn" data-act="midgo">' +
-      (today ? "Do another round" : "Start today's review") +
+      (!today ? "Start today's review" : rounds > 1 && done < rounds ? "Start round " + (done + 1) + " of " + rounds : "Do another round") +
       "</button></section>";
   }
   h += '<h2 class="starth">Your units</h2><ul class="midtiles">';
@@ -4805,10 +4883,7 @@ function midSetup() {
           .join("") +
         "</div>" +
         (M.units.length ? "" : '<p class="hint">Pick at least one unit to go on.</p>'),
-      () =>
-        '<h2>How much time each day?</h2><div class="chips" role="group" aria-label="Minutes each day">' +
-        MID_MINS.map((m) => mchip("mins", m, m + " min", (M.mins || 30) === m)).join("") +
-        "</div>",
+      () => "<h2>How much time each day?</h2>" + minsSelectHTML("mid", M.mins || 30, "Each day") + '<p class="muted">Long days are split into rounds of up to 45 questions.</p>',
       () =>
         '<h2>How do you like to study?</h2><div class="mopts">' +
         [
@@ -4836,9 +4911,7 @@ function midSetup() {
             .join(", ") || "All",
         ) +
         "</span></li><li>Each day<span>" +
-        (M.mins || 30) +
-        " minutes, about " +
-        plural(midCount(), "question") +
+        esc(midDayText()) +
         "</span></li><li>Style<span>" +
         (M.style === "read" ? "Read first" : "Quiz me first") +
         "</span></li><li>Quick check<span>" +
@@ -4858,6 +4931,10 @@ function midSetup() {
   });
 }
 ACT.midsetup = () => midSetup();
+MINS_SET.mid = (m) => {
+  midState().mins = m;
+  save();
+};
 ACT.midset = (t) => {
   const M = midState(),
     k = t.dataset.k,
