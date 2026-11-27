@@ -19,7 +19,25 @@
             {
               "k": "a",
               "prompt": "What ion is formed by all members of the halogens?",
-              "model": "A 1- ion (an anion), such as F⁻, Cl⁻, Br⁻ or I⁻."
+              "model": "A 1- ion (an anion), such as F⁻, Cl⁻, Br⁻ or I⁻.",
+              "check": [
+                [
+                  "1-",
+                  "-1",
+                  "negative 1",
+                  "negative one",
+                  "minus 1",
+                  "minus one",
+                  "1 minus",
+                  "f-",
+                  "cl-",
+                  "br-",
+                  "i-"
+                ]
+              ],
+              "checkLabels": [
+                "Says a 1− ion"
+              ]
             },
             {
               "k": "b",
@@ -39,12 +57,36 @@
             {
               "k": "a",
               "prompt": "What is the charge on X? Explain.",
-              "model": "2+. Two Cl⁻ ions give 2-, so X must be 2+ for the compound to be neutral."
+              "model": "2+. Two Cl⁻ ions give 2-, so X must be 2+ for the compound to be neutral.",
+              "check": [
+                [
+                  "2+",
+                  "+2",
+                  "positive 2",
+                  "positive two",
+                  "plus 2",
+                  "x2+",
+                  "x 2+"
+                ]
+              ],
+              "checkLabels": [
+                "Says 2+"
+              ]
             },
             {
               "k": "b",
               "prompt": "What is the identity of element X?",
-              "model": "Protons = 10 + 2 = 12, so X is magnesium (Mg²⁺)."
+              "model": "Protons = 10 + 2 = 12, so X is magnesium (Mg²⁺).",
+              "check": [
+                [
+                  "magnesium",
+                  "mg",
+                  "mg2+"
+                ]
+              ],
+              "checkLabels": [
+                "Names magnesium"
+              ]
             }
           ]
         },
@@ -59,12 +101,30 @@
             {
               "k": "a",
               "prompt": "Identify the metal.",
-              "model": "Alkali metals form 1+ ions, so protons = 36 + 1 = 37: rubidium (Rb⁺)."
+              "model": "Alkali metals form 1+ ions, so protons = 36 + 1 = 37: rubidium (Rb⁺).",
+              "check": [
+                [
+                  "rubidium",
+                  "rb",
+                  "rb+"
+                ]
+              ],
+              "checkLabels": [
+                "Names rubidium"
+              ]
             },
             {
               "k": "b",
               "prompt": "What is the correct formula for this compound?",
-              "model": "Rb⁺ and Cl⁻ balance one to one: RbCl."
+              "model": "Rb⁺ and Cl⁻ balance one to one: RbCl.",
+              "check": [
+                [
+                  "rbcl"
+                ]
+              ],
+              "checkLabels": [
+                "Writes RbCl"
+              ]
             }
           ]
         },
@@ -79,17 +139,53 @@
             {
               "k": "a",
               "prompt": "How many protons, neutrons and electrons are in the ion?",
-              "model": "Protons = 82 (lead's atomic number). Neutrons = 297 - 82 = 215. Electrons = 82 - 2 = 80."
+              "model": "Protons = 82 (lead's atomic number). Neutrons = 297 - 82 = 215. Electrons = 82 - 2 = 80.",
+              "check": [
+                [
+                  "82"
+                ],
+                [
+                  "215"
+                ],
+                [
+                  "80"
+                ]
+              ],
+              "checkLabels": [
+                "82 protons",
+                "215 neutrons",
+                "80 electrons"
+              ]
             },
             {
               "k": "b",
               "prompt": "How many subatomic particles in total?",
-              "model": "82 + 215 + 80 = 377."
+              "model": "82 + 215 + 80 = 377.",
+              "check": [
+                [
+                  "377"
+                ]
+              ],
+              "checkLabels": [
+                "Gives 377"
+              ]
             },
             {
               "k": "c",
               "prompt": "Write the isotopic notation.",
-              "model": "²⁹⁷₈₂Pb²⁺: mass number 297 on top, atomic number 82 below, charge 2+ at the upper right."
+              "model": "²⁹⁷₈₂Pb²⁺: mass number 297 on top, atomic number 82 below, charge 2+ at the upper right.",
+              "check": [
+                [
+                  "297"
+                ],
+                [
+                  "82"
+                ]
+              ],
+              "checkLabels": [
+                "Mass number 297",
+                "Atomic number 82"
+              ]
             }
           ]
         },
@@ -109,7 +205,17 @@
             {
               "k": "b",
               "prompt": "What is the molar mass?",
-              "model": "40.08 + 2(12.01) + 2(14.01) = 92.12 g/mol."
+              "model": "40.08 + 2(12.01) + 2(14.01) = 92.12 g/mol.",
+              "check": [
+                [
+                  "92.12",
+                  "92.1",
+                  "92"
+                ]
+              ],
+              "checkLabels": [
+                "Gives 92.12 g/mol"
+              ]
             }
           ]
         },
@@ -124,12 +230,36 @@
             {
               "k": "a",
               "prompt": "Give the ion each element forms.",
-              "model": "Barium (group 2) forms Ba²⁺; phosphorus (group 15) forms P³⁻."
+              "model": "Barium (group 2) forms Ba²⁺; phosphorus (group 15) forms P³⁻.",
+              "check": [
+                [
+                  "ba2+",
+                  "2+",
+                  "+2"
+                ],
+                [
+                  "p3-",
+                  "3-",
+                  "-3"
+                ]
+              ],
+              "checkLabels": [
+                "Barium forms a 2+ ion",
+                "Phosphorus forms a 3− ion"
+              ]
             },
             {
               "k": "b",
               "prompt": "What ionic compound forms?",
-              "model": "Cross the charges: Ba₃P₂. Check: 3(+2) + 2(-3) = 0."
+              "model": "Cross the charges: Ba₃P₂. Check: 3(+2) + 2(-3) = 0.",
+              "check": [
+                [
+                  "ba3p2"
+                ]
+              ],
+              "checkLabels": [
+                "Writes Ba₃P₂"
+              ]
             }
           ]
         },
@@ -144,12 +274,36 @@
             {
               "k": "a",
               "prompt": "Give the ion each element forms.",
-              "model": "Lithium (group 1) forms Li⁺; nitrogen (group 15) forms N³⁻."
+              "model": "Lithium (group 1) forms Li⁺; nitrogen (group 15) forms N³⁻.",
+              "check": [
+                [
+                  "li+",
+                  "1+",
+                  "+1"
+                ],
+                [
+                  "n3-",
+                  "3-",
+                  "-3"
+                ]
+              ],
+              "checkLabels": [
+                "Lithium forms a 1+ ion",
+                "Nitrogen forms a 3− ion"
+              ]
             },
             {
               "k": "b",
               "prompt": "What ionic compound forms?",
-              "model": "Cross the charges: Li₃N. Check: 3(+1) + (-3) = 0."
+              "model": "Cross the charges: Li₃N. Check: 3(+1) + (-3) = 0.",
+              "check": [
+                [
+                  "li3n"
+                ]
+              ],
+              "checkLabels": [
+                "Writes Li₃N"
+              ]
             }
           ]
         },
@@ -164,12 +318,30 @@
             {
               "k": "a",
               "prompt": "What element is this?",
-              "model": "Protons = 46 + 4 = 50, so it is tin (Sn⁴⁺)."
+              "model": "Protons = 46 + 4 = 50, so it is tin (Sn⁴⁺).",
+              "check": [
+                [
+                  "tin",
+                  "sn",
+                  "sn4+"
+                ]
+              ],
+              "checkLabels": [
+                "Names tin"
+              ]
             },
             {
               "k": "b",
               "prompt": "What is its mass number?",
-              "model": "Mass number = protons + neutrons = 50 + 70 = 120."
+              "model": "Mass number = protons + neutrons = 50 + 70 = 120.",
+              "check": [
+                [
+                  "120"
+                ]
+              ],
+              "checkLabels": [
+                "Gives 120"
+              ]
             }
           ]
         },
@@ -184,7 +356,17 @@
             {
               "k": "a",
               "prompt": "What is the molar mass?",
-              "model": "2(1.008) + 12.01 + 3(16.00) = 62.03 g/mol."
+              "model": "2(1.008) + 12.01 + 3(16.00) = 62.03 g/mol.",
+              "check": [
+                [
+                  "62.03",
+                  "62.0",
+                  "62"
+                ]
+              ],
+              "checkLabels": [
+                "Gives 62.03 g/mol"
+              ]
             }
           ]
         },

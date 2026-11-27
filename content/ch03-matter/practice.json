@@ -182,7 +182,18 @@
             {
               "k": "c",
               "prompt": "Name one physical property of the wax that changed during melting.",
-              "model": "The state changed from solid to liquid. (Also acceptable: shape or texture.)"
+              "model": "The state changed from solid to liquid. (Also acceptable: shape or texture.)",
+              "check": [
+                [
+                  "state",
+                  "solid to liquid",
+                  "shape",
+                  "texture"
+                ]
+              ],
+              "checkLabels": [
+                "Names the state (or shape or texture)"
+              ]
             },
             {
               "k": "d",
@@ -205,7 +216,23 @@
             {
               "k": "a",
               "prompt": "Calculate the change in mass. Did the mass increase or decrease?",
-              "model": "45.58 g - 45.20 g = +0.38 g. The mass increased."
+              "model": "45.58 g - 45.20 g = +0.38 g. The mass increased.",
+              "check": [
+                [
+                  "0.38"
+                ],
+                [
+                  "increase",
+                  "increased",
+                  "gained",
+                  "went up",
+                  "more"
+                ]
+              ],
+              "checkLabels": [
+                "Gives the change, 0.38 g",
+                "Says the mass increased"
+              ]
             },
             {
               "k": "b",
@@ -238,7 +265,15 @@
             {
               "k": "a",
               "prompt": "Calculate the mass lost to the reaction.",
-              "model": "2.50 g - 2.31 g = 0.19 g lost."
+              "model": "2.50 g - 2.31 g = 0.19 g lost.",
+              "check": [
+                [
+                  "0.19"
+                ]
+              ],
+              "checkLabels": [
+                "Gives 0.19 g"
+              ]
             },
             {
               "k": "b",
@@ -271,7 +306,15 @@
             {
               "k": "a",
               "prompt": "Calculate the mass of the solid left on the filter paper.",
-              "model": "1.12 g - 0.85 g = 0.27 g."
+              "model": "1.12 g - 0.85 g = 0.27 g.",
+              "check": [
+                [
+                  "0.27"
+                ]
+              ],
+              "checkLabels": [
+                "Gives 0.27 g"
+              ]
             },
             {
               "k": "b",
@@ -331,7 +374,15 @@
             {
               "k": "c",
               "prompt": "Are your separation steps physical or chemical? Justify.",
-              "model": "Physical. The sand, salt and water keep their identities; no new substances form and no bonds are broken."
+              "model": "Physical. The sand, salt and water keep their identities; no new substances form and no bonds are broken.",
+              "check": [
+                [
+                  "physical"
+                ]
+              ],
+              "checkLabels": [
+                "Says physical"
+              ]
             },
             {
               "k": "d",
@@ -366,7 +417,16 @@
             {
               "k": "d",
               "prompt": "State how many molecules of H₂ form for each O₂ when two water molecules decompose.",
-              "model": "Two H₂O make two H₂ and one O₂, so two H₂ molecules form for each O₂."
+              "model": "Two H₂O make two H₂ and one O₂, so two H₂ molecules form for each O₂.",
+              "check": [
+                [
+                  "two",
+                  "2"
+                ]
+              ],
+              "checkLabels": [
+                "Says two H₂ for each O₂"
+              ]
             }
           ],
           "topic": "States of matter"
@@ -381,7 +441,19 @@
             {
               "k": "a",
               "prompt": "Classify the iron and sulfur before heating and the dark solid after heating as element, compound or mixture.",
-              "model": "Before heating: a mixture (of two elements). After heating: a compound (iron sulfide)."
+              "model": "Before heating: a mixture (of two elements). After heating: a compound (iron sulfide).",
+              "check": [
+                [
+                  "mixture"
+                ],
+                [
+                  "compound"
+                ]
+              ],
+              "checkLabels": [
+                "Before heating: a mixture",
+                "After heating: a compound"
+              ]
             },
             {
               "k": "b",
@@ -424,7 +496,27 @@
             {
               "k": "c",
               "prompt": "Give the melting point and boiling point from the data and say whether they are physical or chemical properties.",
-              "model": "Melting point 0 °C and boiling point 100 °C. Both are physical properties because they are measured without forming a new substance."
+              "model": "Melting point 0 °C and boiling point 100 °C. Both are physical properties because they are measured without forming a new substance.",
+              "check": [
+                [
+                  "0 °c",
+                  "0°c",
+                  "0 degrees",
+                  "zero degrees",
+                  "0 c"
+                ],
+                [
+                  "100"
+                ],
+                [
+                  "physical"
+                ]
+              ],
+              "checkLabels": [
+                "Melting point 0 °C",
+                "Boiling point 100 °C",
+                "Says they are physical properties"
+              ]
             },
             {
               "k": "d",
@@ -454,7 +546,15 @@
             {
               "k": "c",
               "prompt": "A small piece and a large piece of copper are compared. Which property would be the same and which would be different, and what are these called?",
-              "model": "The density would be the same (an intensive property that does not depend on the amount). The mass and volume would differ (extensive properties that depend on the amount)."
+              "model": "The density would be the same (an intensive property that does not depend on the amount). The mass and volume would differ (extensive properties that depend on the amount).",
+              "check": [
+                [
+                  "density"
+                ]
+              ],
+              "checkLabels": [
+                "Names density as the property that stays the same"
+              ]
             },
             {
               "k": "d",
@@ -474,12 +574,28 @@
             {
               "k": "a",
               "prompt": "Classify the batter as element, compound or mixture and justify.",
-              "model": "Mixture. The ingredients are mixed together without being chemically combined and each keeps its own properties."
+              "model": "Mixture. The ingredients are mixed together without being chemically combined and each keeps its own properties.",
+              "check": [
+                [
+                  "mixture"
+                ]
+              ],
+              "checkLabels": [
+                "Says mixture"
+              ]
             },
             {
               "k": "b",
               "prompt": "Classify melting the butter and justify.",
-              "model": "Physical change. Solid butter becomes liquid butter, a change of state; it is still butter and can solidify again."
+              "model": "Physical change. Solid butter becomes liquid butter, a change of state; it is still butter and can solidify again.",
+              "check": [
+                [
+                  "physical"
+                ]
+              ],
+              "checkLabels": [
+                "Says physical change"
+              ]
             },
             {
               "k": "c",
@@ -509,7 +625,17 @@
             {
               "k": "b",
               "prompt": "Name a method to remove the sand and seaweed and explain why it works.",
-              "model": "Filtration. The sand and seaweed are solid particles too large to pass through the filter paper, but the water with dissolved salt passes through."
+              "model": "Filtration. The sand and seaweed are solid particles too large to pass through the filter paper, but the water with dissolved salt passes through.",
+              "check": [
+                [
+                  "filtration",
+                  "filter",
+                  "filtering"
+                ]
+              ],
+              "checkLabels": [
+                "Names filtration"
+              ]
             },
             {
               "k": "c",
@@ -2909,7 +3035,24 @@
             {
               "k": "d",
               "prompt": "Name the change of state for each and say whether energy is added or removed: ice to water, steam to water, water to ice, dry ice to gas, frost forming on a window.",
-              "model": "Ice to water: melting, energy added. Steam to water: condensation, energy removed. Water to ice: freezing, energy removed. Dry ice to gas: sublimation, energy added. Frost forming: deposition, energy removed."
+              "model": "Ice to water: melting, energy added. Steam to water: condensation, energy removed. Water to ice: freezing, energy removed. Dry ice to gas: sublimation, energy added. Frost forming: deposition, energy removed.",
+              "check": [
+                [
+                  "melting"
+                ],
+                [
+                  "condensation",
+                  "condensing"
+                ],
+                [
+                  "freezing"
+                ]
+              ],
+              "checkLabels": [
+                "Ice to water: melting",
+                "Steam to water: condensation",
+                "Water to ice: freezing"
+              ]
             }
           ],
           "topic": "States of matter"
@@ -2929,7 +3072,16 @@
             {
               "k": "b",
               "prompt": "Smoke from the machine and fog from the same machine are both colloids with the same name. Give the name and the structure of each.",
-              "model": "Both are aerosols. Smoke is a solid dispersed in a gas; fog is a liquid dispersed in a gas."
+              "model": "Both are aerosols. Smoke is a solid dispersed in a gas; fog is a liquid dispersed in a gas.",
+              "check": [
+                [
+                  "aerosol",
+                  "aerosols"
+                ]
+              ],
+              "checkLabels": [
+                "Names aerosol"
+              ]
             },
             {
               "k": "c",
@@ -2969,7 +3121,15 @@
             {
               "k": "d",
               "prompt": "Is density an intensive or extensive property? Explain with Liquid X.",
-              "model": "Intensive. Density does not depend on the amount: 10 mL or 1 L of Liquid X still has a density of 0.85 g/mL. Mass and volume are extensive."
+              "model": "Intensive. Density does not depend on the amount: 10 mL or 1 L of Liquid X still has a density of 0.85 g/mL. Mass and volume are extensive.",
+              "check": [
+                [
+                  "intensive"
+                ]
+              ],
+              "checkLabels": [
+                "Says intensive"
+              ]
             }
           ],
           "topic": "Properties"
